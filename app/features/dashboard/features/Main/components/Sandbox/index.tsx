@@ -9,7 +9,6 @@ import { useEffect, useRef, useState } from "react";
 
 /**
  * Sandbox Component.
- *
  * Orchestrates multiple features (Playground, Test, Logs) in a tabbed interface.
  */
 export default function Sandbox({ tabId }: { tabId: string }) {
