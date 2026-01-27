@@ -1,0 +1,46 @@
+[
+  {
+    "_key": "2dd75e19-5c7b-4fd1-b272-44a1c94dd8eb",
+    "_id": "nodes/2dd75e19-5c7b-4fd1-b272-44a1c94dd8eb",
+    "created_at": "2026-01-22T12:44:49.068116Z",
+    "updated_at": "2026-01-26T20:21:53.598309Z",
+    "name": "Jarvis",
+    "description": "Jarvis",
+    "qname": "jarvis",
+    "node_type": "project",
+    "theme_config": {
+      "navbarColor": null,
+      "leftSidebarColor": "#f9f9f9",
+      "rightSidebarColor": "#f9f9f9",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#49454F",
+      "iconColor": "#0F0F0F",
+      "cardColor": "#d5ebd0"
+    },
+    "icon": null,
+    "current_version": 0,
+    "documents": [
+      "documents/e8e84bcb-7f1e-41e8-be5b-180f0f0f1a05"
+    ],
+    "status": "active",
+    "orphan_reason": null,
+    "path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis"
+  },
+  {
+    "_key": "a71c08c2-81e6-4d86-b029-38342179ce15",
+    "_id": "nodes/a71c08c2-81e6-4d86-b029-38342179ce15",
+    "created_at": "2026-01-23T19:15:21.770940Z",
+    "updated_at": "2026-01-23T19:15:21.770943Z",
+    "name": "sample_project2",
+    "description": "v-noc is a tool for creating and managing projects.",
+    "qname": "sample_project2",
+    "node_type": "project",
+    "theme_config": null,
+    "icon": null,
+    "current_version": 0,
+    "documents": [],
+    "status": "active",
+    "orphan_reason": null,
+    "path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/"
+  }
+]
