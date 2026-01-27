@@ -83,6 +83,7 @@ export function useResolvedTheme() {
 
   }, [selectedNode, selectedPath, projectData?.theme_config]);
 
+
   const cssVariables: React.CSSProperties & Record<string, string> = theme ? {
     "--navbar-color": theme.navbarColor,
     "--left-sidebar-color": theme.leftSidebarColor,

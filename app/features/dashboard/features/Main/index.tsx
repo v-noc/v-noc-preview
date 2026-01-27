@@ -38,7 +38,6 @@ const Workspace = ({ tabId }: WorkspaceProps) => {
   const setDocSidebarOpen = useProjectStore(
     (s: ProjectStore) => s.setDocSidebarOpen,
   );
-  const bottomPanelRef = useRef<ImperativePanelHandle>(null);
 
   // 2. Docs logic (using React 19 rules & useEffectEvent)
   const {
