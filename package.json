@@ -48,6 +48,7 @@
     "@tanstack/react-virtual": "^3.13.12",
     "@types/hast": "^3.0.4",
     "@vercel/analytics": "^1.6.1",
+    "@vercel/react-router": "^1.2.5",
     "@xyflow/react": "^12.8.2",
     "autoprefixer": "^10.4.21",
     "class-variance-authority": "^0.7.1",
