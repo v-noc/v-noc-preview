@@ -5,10 +5,10 @@ import { useWorkspaceState } from "./hooks/useWorkspaceState";
 import { useWorkspaceActions } from "./hooks/useWorkspaceActions";
 import useProjectStore from "@/features/dashboard/store/useProjectStore";
 import type { ProjectStore } from "@/features/dashboard/store/useProjectStore";
-import { WorkspaceHeader } from "./components/WorkspaceHeader";
-import { WorkspaceTabs } from "./components/WorkspaceTabs";
-import { WorkspaceLayout } from "./components/WorkspaceLayout";
-import { DocSidebar } from "./components/Docs/DocSidebar";
+import WorkspaceHeader from "./components/WorkspaceHeader";
+import WorkspaceTabs from "./components/WorkspaceTabs";
+import WorkspaceLayout from "./components/WorkspaceLayout";
+import DocSidebar from "./components/Docs/DocSidebar";
 import { useWorkspaceDocs } from "./hooks/useWorkspaceDocs";
 
 /**
@@ -31,12 +31,12 @@ const Workspace = ({ tabId }: WorkspaceProps) => {
   const { handlePromote } = useWorkspaceActions(tabId);
 
   const [tabValue, setTabValue] = useState("docs");
-  const [isSandboxOpen, setIsSandboxOpen] = useState(true);
+
   const isDocSidebarOpen = useProjectStore(
-    (s: ProjectStore) => s.isDocSidebarOpen[tabId]
+    (s: ProjectStore) => s.isDocSidebarOpen[tabId],
   );
   const setDocSidebarOpen = useProjectStore(
-    (s: ProjectStore) => s.setDocSidebarOpen
+    (s: ProjectStore) => s.setDocSidebarOpen,
   );
   const bottomPanelRef = useRef<ImperativePanelHandle>(null);
 
@@ -51,7 +51,7 @@ const Workspace = ({ tabId }: WorkspaceProps) => {
     tabId,
     effectiveNode,
     selectedNode,
-    secondarySelectedNode
+    secondarySelectedNode,
   );
 
   // 3. Effects
@@ -65,23 +65,9 @@ const Workspace = ({ tabId }: WorkspaceProps) => {
   // It will remember its open/closed state across node changes
   // We don't force close on node change - let the user control it
 
-  // 4. Sync panel collapsed state
-  useEffect(() => {
-    const panel = bottomPanelRef.current;
-    if (!panel) return;
-    if (isSandboxOpen && panel.isCollapsed()) {
-      panel.expand();
-    } else if (!isSandboxOpen && !panel.isCollapsed()) {
-      panel.collapse();
-    }
-  }, [isSandboxOpen]);
-
   return (
     <WorkspaceLayout
       tabId={tabId}
-      bottomPanelRef={bottomPanelRef}
-      isSandboxOpen={isSandboxOpen}
-      onToggleSandbox={setIsSandboxOpen}
       rightSidebarContent={
         tabValue !== "docs" && documents.length > 0 && isDocSidebarOpen ? (
           <DocSidebar

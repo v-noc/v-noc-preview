@@ -5,6 +5,7 @@ import Playground from "./features/Playground";
 import LogsContainer from "./features/Logs";
 import Test from "./features/Test";
 import { useSandboxState } from "./hooks/useSandboxState";
+import { useEffect, useRef, useState } from "react";
 
 /**
  * Sandbox Component.
@@ -20,6 +21,14 @@ export default function Sandbox({ tabId }: { tabId: string }) {
     handleRun,
     handleOpenSettings,
   } = useSandboxState();
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return <div></div>;
 
   return (
     <Tabs

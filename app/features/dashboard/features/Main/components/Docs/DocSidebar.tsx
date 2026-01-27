@@ -28,7 +28,7 @@ interface DocSidebarProps {
  * - Handle document selection
  * - Render DocumentEditor with selected document
  */
-export function DocSidebar({
+export default function DocSidebar({
   documents,
   selectedDocumentId,
   nodeId,
@@ -52,7 +52,7 @@ export function DocSidebar({
                   "flex items-center gap-1.5 px-3 py-1.5 text-xs rounded-md transition-all cursor-pointer whitespace-nowrap",
                   selectedDocumentId === doc._key
                     ? "bg-white border border-border shadow-sm font-semibold text-foreground ring-1 ring-black/5"
-                    : "hover:bg-white/50 text-muted-foreground border border-transparent hover:text-foreground"
+                    : "hover:bg-white/50 text-muted-foreground border border-transparent hover:text-foreground",
                 )}
               >
                 <span className="truncate max-w-[120px]">

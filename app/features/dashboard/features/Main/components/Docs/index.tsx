@@ -1,3 +1,4 @@
+import { Suspense, useEffect, useState } from "react";
 import { DocumentEditor } from "./DocumentEditor";
 import type { DocumentData } from "@/services/documents";
 
@@ -29,6 +30,11 @@ type DocumentsProps = {
  * @deprecated Consider using DocumentEditor directly for new code.
  */
 const Documents = ({ document, onChange, nodeId }: DocumentsProps) => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   // Convert legacy format to DocumentType
   const doc: DocumentData | null = document
     ? "_key" in document
@@ -44,13 +50,19 @@ const Documents = ({ document, onChange, nodeId }: DocumentsProps) => {
         }
     : null;
 
+  // 3. Return null or a skeleton on the server
+  if (!isMounted) {
+    return <div className="h-full w-full bg-background" />;
+  }
   return (
-    <DocumentEditor
-      document={doc}
-      nodeId={nodeId}
-      autoSave={!!nodeId}
-      onChange={onChange}
-    />
+    <Suspense fallback={<div className="h-full w-full bg-background" />}>
+      <DocumentEditor
+        document={doc}
+        nodeId={nodeId}
+        autoSave={!!nodeId}
+        onChange={onChange}
+      />
+    </Suspense>
   );
 };
 

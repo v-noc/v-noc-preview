@@ -1,3 +1,4 @@
+"use client";
 import "@blocknote/core/fonts/inter.css";
 import { createCodeBlockSpec } from "@blocknote/core";
 import { codeBlockOptions } from "@blocknote/code-block";
@@ -102,9 +103,9 @@ export function DocumentEditor({
             updateMutation.mutate({ id: payload.id, data: payload.data });
           }
         },
-        { waitMs: debounceMs }
+        { waitMs: debounceMs },
       ),
-    [autoSave, nodeId, debounceMs, updateMutation]
+    [autoSave, nodeId, debounceMs, updateMutation],
   );
 
   // Load content when document changes
@@ -168,7 +169,7 @@ export function DocumentEditor({
               block &&
               typeof block === "object" &&
               block !== null &&
-              "id" in block
+              "id" in block,
           );
 
           if (isValidBlocks) {

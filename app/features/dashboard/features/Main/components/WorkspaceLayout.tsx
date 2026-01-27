@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import {
   ResizableHandle,
   ResizablePanel,
@@ -8,34 +9,44 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import Sandbox from "./Sandbox";
 import useProjectStore from "@/features/dashboard/store/useProjectStore";
 import type { ProjectStore } from "@/features/dashboard/store/useProjectStore";
+import type { ImperativePanelHandle } from "react-resizable-panels";
 
 interface WorkspaceLayoutProps {
   topPanelContent: React.ReactNode;
   rightSidebarContent?: React.ReactNode;
   tabId: string;
-  isSandboxOpen: boolean;
-  onToggleSandbox: (open: boolean) => void;
-  bottomPanelRef: React.RefObject<any>;
 }
 
 /**
  * Presentational component for the Workspace Layout.
  * Orchestrates the relationship between the main editor/docs area and the sandbox.
  */
-export function WorkspaceLayout({
+export default function WorkspaceLayout({
   topPanelContent,
   rightSidebarContent,
   tabId,
-  isSandboxOpen,
-  onToggleSandbox,
-  bottomPanelRef,
 }: WorkspaceLayoutProps) {
+  const [isSandboxOpen, setIsSandboxOpen] = useState(false);
+  // const [isSandboxOpen, onToggleSandbox] = useState(false);
   const docSidebarSize = useProjectStore(
-    (s: ProjectStore) => s.docSidebarSize[tabId]
+    (s: ProjectStore) => s.docSidebarSize[tabId],
   );
   const setDocSidebarSize = useProjectStore(
-    (s: ProjectStore) => s.setDocSidebarSize
+    (s: ProjectStore) => s.setDocSidebarSize,
   );
+
+  const bottomPanelRef = useRef<ImperativePanelHandle>(null);
+
+  // 4. Sync panel collapsed state
+  useEffect(() => {
+    const panel = bottomPanelRef.current;
+    if (!panel) return;
+    if (isSandboxOpen && panel.isCollapsed()) {
+      panel.expand();
+    } else if (!isSandboxOpen && !panel.isCollapsed()) {
+      panel.collapse();
+    }
+  }, [isSandboxOpen]);
 
   const handleHorizontalLayout = (sizes: number[]) => {
     // When rightSidebarContent exists, sizes[0] is main content, sizes[1] is DocSidebar
@@ -70,13 +81,17 @@ export function WorkspaceLayout({
             onLayout={handleHorizontalLayout}
           >
             <ResizablePanel defaultSize={mainContentDefaultSize} minSize={30}>
-              <div className="h-full w-full overflow-hidden">{topPanelContent}</div>
+              <div className="h-full w-full overflow-hidden">
+                {topPanelContent}
+              </div>
             </ResizablePanel>
             {rightSidebarContent && (
               <>
                 <ResizableHandle className="w-1 bg-border" />
                 <ResizablePanel defaultSize={sidebarDefaultSize} minSize={20}>
-                  <div className="h-full w-full overflow-hidden">{rightSidebarContent}</div>
+                  <div className="h-full w-full overflow-hidden">
+                    {rightSidebarContent}
+                  </div>
                 </ResizablePanel>
               </>
             )}
@@ -89,6 +104,12 @@ export function WorkspaceLayout({
           ref={bottomPanelRef}
           defaultSize={30}
           minSize={16}
+          onCollapse={() => {
+            setIsSandboxOpen(false);
+          }}
+          onExpand={() => {
+            setIsSandboxOpen(true);
+          }}
           collapsible
           className="relative rounded group"
         >
@@ -97,7 +118,7 @@ export function WorkspaceLayout({
           <button
             type="button"
             aria-label="Close sandbox"
-            onClick={() => onToggleSandbox(false)}
+            onClick={() => setIsSandboxOpen(false)}
             className="absolute -top-2 group-hover:flex hidden left-1/2 -translate-x-1/2 z-50 rounded-full border bg-background/90 px-4 py-1 text-xs shadow-sm hover:bg-accent"
           >
             <ChevronDown className="h-3.5 w-3.5" />
@@ -110,7 +131,7 @@ export function WorkspaceLayout({
         <button
           type="button"
           aria-label="Open sandbox"
-          onClick={() => onToggleSandbox(true)}
+          onClick={() => setIsSandboxOpen(true)}
           className="absolute bottom-2 left-1/2 -translate-x-1/2 z-50 rounded-full border bg-white/90 px-2.5 py-1 text-xs shadow-sm backdrop-blur hover:bg-white"
         >
           <ChevronUp className="h-3.5 w-3.5 inline-block mr-1 align-middle" />
