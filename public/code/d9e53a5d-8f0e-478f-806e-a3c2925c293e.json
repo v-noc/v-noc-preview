@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d9e53a5d-8f0e-478f-806e-a3c2925c293e",
+  "name": "NodeManager",
+  "node_type": "call",
+  "qname": "nodes/eb64ed16-d96d-4f11-b214-d64a26c7d337::nodes/07447706-7e70-4ae6-9c26-44bccbca737c",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "cg = CallGraphGenerator(args.module, args.package,",
+  "position": {
+    "line_no": 66,
+    "col_offset": 41,
+    "end_line_no": 66,
+    "end_col_offset": 54
+  }
+}

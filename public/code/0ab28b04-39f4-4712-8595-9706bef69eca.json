@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0ab28b04-39f4-4712-8595-9706bef69eca",
+  "name": "visit_Tuple",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.visit_Tuple",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def visit_Tuple(self, node):\n    \"\"\"ID: 0ab28b04-39f4-4712-8595-9706bef69eca\"\"\"\n    for elt in node.elts:\n        self.visit(elt)\n",
+  "position": {
+    "line_no": 215,
+    "col_offset": 4,
+    "end_line_no": 219,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4f5e1a20-0899-4b50-a731-4f0984713624",
+  "name": "add_returnitem",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.returns.ReturnManager.add_returnitem",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/returns.py",
+  "file_name": "returns",
+  "code": "def add_returnitem(self, currentNs, left, row, right: str):\n    \"\"\"ID: 4f5e1a20-0899-4b50-a731-4f0984713624\"\"\"\n    right = utils.join_ns(*right.split(\".\")[:-1])\n\n    print(\"add_returnitem \\n\\n\")\n    item = ReturnItem(left, row, right)\n    if not currentNs in self.returns:\n        self.returns[currentNs] = []\n    self.returns[currentNs].append(item)\n",
+  "position": {
+    "line_no": 20,
+    "col_offset": 4,
+    "end_line_no": 29,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ad0b6723-9bb1-42af-9c2d-609b1c36492d",
+  "name": "self.do_pass",
+  "node_type": "call",
+  "qname": "nodes/a5e900d6-e57c-457c-b547-ec7905cbac1a::nodes/449d73e4-0385-4a1f-9f16-2e3e3cc10574",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "",
+  "position": {
+    "line_no": 160,
+    "col_offset": 8,
+    "end_line_no": 172,
+    "end_col_offset": 9
+  }
+}

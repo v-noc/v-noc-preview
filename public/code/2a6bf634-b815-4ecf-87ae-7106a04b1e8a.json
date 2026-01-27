@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2a6bf634-b815-4ecf-87ae-7106a04b1e8a",
+  "name": "get_modules",
+  "node_type": "function",
+  "qname": "Jarvis.formats.fasten.Fasten.get_modules",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "def get_modules(self):\n    \"\"\"ID: 2a6bf634-b815-4ecf-87ae-7106a04b1e8a\"\"\"\n    mods = {}\n\n    for modname, module in self.internal_mods.items():\n        name = self.to_uri(modname)\n        filename = module[\"filename\"]\n        namespaces = module[\"methods\"]\n\n        mods[name] = {\"sourceFile\": filename, \"namespaces\": {}}\n\n        for namespace, info in namespaces.items():\n            namespace_uri = self.to_uri(modname, info[\"name\"])\n\n            unique = self.get_unique_and_increment()\n            mods[name][\"namespaces\"][unique] = dict(\n                namespace=namespace_uri,\n                metadata=dict(first=info[\"first\"], last=info[\"last\"]),\n            )\n            self.namespace_map[namespace_uri] = unique\n\n    return mods\n",
+  "position": {
+    "line_no": 161,
+    "col_offset": 4,
+    "end_line_no": 183,
+    "end_col_offset": 0
+  }
+}

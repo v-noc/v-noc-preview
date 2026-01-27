@@ -1,0 +1,15 @@
+{
+  "id": "nodes/8c9a5206-f3c1-42b2-89c2-a727447551ad",
+  "name": "self.getYPOint",
+  "node_type": "call",
+  "qname": "nodes/e67fa117-3a23-42fd-8268-1f84fe28526c::nodes/b7b220b6-dd48-45cc-b823-fda1e70661f1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "xPointList = self.getYPOint(row, xList)",
+  "position": {
+    "line_no": 567,
+    "col_offset": 25,
+    "end_line_no": 567,
+    "end_col_offset": 51
+  }
+}

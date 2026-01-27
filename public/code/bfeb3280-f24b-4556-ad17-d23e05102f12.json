@@ -1,0 +1,9 @@
+{
+  "id": "nodes/bfeb3280-f24b-4556-ad17-d23e05102f12",
+  "name": "__init__",
+  "node_type": "file",
+  "qname": "sample_project2.__init__",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/__init__.py",
+  "file_name": "__init__",
+  "code": "\"\"\"FileID: bfeb3280-f24b-4556-ad17-d23e05102f12\n\nFolderID: c7f3cf54-19c0-4a1d-be6e-aa338c35195f\"\"\""
+}

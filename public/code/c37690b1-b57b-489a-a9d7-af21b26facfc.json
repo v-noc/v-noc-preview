@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c37690b1-b57b-489a-a9d7-af21b26facfc",
+  "name": "self.get_scope",
+  "node_type": "call",
+  "qname": "nodes/589bdc56-392f-4563-a500-6fe3f7ed02b9::nodes/a56f2399-550d-4f4f-ac01-7fbc376da65a",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "current_scope = self.get_scope(current_ns)",
+  "position": {
+    "line_no": 81,
+    "col_offset": 24,
+    "end_line_no": 81,
+    "end_col_offset": 50
+  }
+}

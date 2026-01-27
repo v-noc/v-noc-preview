@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e0138cd5-0e34-4106-b174-c78c4e9e545d",
+  "name": "create",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.create",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def create(self, ns, def_type):\n    \"\"\"ID: e0138cd5-0e34-4106-b174-c78c4e9e545d\"\"\"\n    if not ns or not isinstance(ns, str):\n        raise DefinitionError(\"Invalid namespace argument\")\n    if def_type not in Definition.types:\n        raise DefinitionError(\"Invalid def type argument\")\n    if self.get(ns):\n        raise DefinitionError(\"Definition already exists\")\n    self.defs[ns] = Definition(ns, def_type)\n\n    return self.defs[ns]\n",
+  "position": {
+    "line_no": 50,
+    "col_offset": 4,
+    "end_line_no": 61,
+    "end_col_offset": 0
+  }
+}

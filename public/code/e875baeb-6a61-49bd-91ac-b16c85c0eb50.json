@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e875baeb-6a61-49bd-91ac-b16c85c0eb50",
+  "name": "self.pushStack",
+  "node_type": "call",
+  "qname": "nodes/336be0e5-b19f-41da-a1d9-e9ca99b29d2c::nodes/dd3cd62b-13f3-4251-8360-789787d7bb96",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "self.pushStack(cls_def)",
+  "position": {
+    "line_no": 1025,
+    "col_offset": 8,
+    "end_line_no": 1025,
+    "end_col_offset": 31
+  }
+}

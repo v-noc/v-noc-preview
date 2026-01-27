@@ -1,0 +1,15 @@
+{
+  "id": "nodes/efeb22b6-88b1-4bae-91ba-2b5f9afe8fcb",
+  "name": "output_key_errs",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.output_key_errs",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def output_key_errs(self):\n    \"\"\"ID: efeb22b6-88b1-4bae-91ba-2b5f9afe8fcb\"\"\"\n    return self.key_errs.get()\n",
+  "position": {
+    "line_no": 179,
+    "col_offset": 4,
+    "end_line_no": 182,
+    "end_col_offset": 0
+  }
+}

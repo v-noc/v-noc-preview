@@ -1,0 +1,15 @@
+{
+  "id": "nodes/bbb264c7-e418-4010-ad27-4009b4fe0cd9",
+  "name": "handle_function_def",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.handle_function_def",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def handle_function_def(self, parent_ns, fn_name):\n    \"\"\"ID: bbb264c7-e418-4010-ad27-4009b4fe0cd9\"\"\"\n    full_ns = utils.join_ns(parent_ns, fn_name)\n    defi = self.get(full_ns)\n    if not defi:\n        defi = self.create(full_ns, utils.constants.FUN_DEF)\n        defi.decorator_names = set()\n    else:\n        defi.decorator_names = set()\n    defi.def_type = utils.constants.FUN_DEF\n    return_ns = utils.join_ns(full_ns, utils.constants.RETURN_NAME)\n    if not self.get(return_ns):\n        self.create(return_ns, utils.constants.RETURN_DEF)\n\n    return defi\n",
+  "position": {
+    "line_no": 95,
+    "col_offset": 4,
+    "end_line_no": 110,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/009c9aae-15f1-40bd-92e7-0ce154441c5c",
+  "name": "visit_ExceptHandler",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_ExceptHandler",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def visit_ExceptHandler(self, node):\n    \"\"\"ID: 009c9aae-15f1-40bd-92e7-0ce154441c5c\"\"\"\n    for item in node.body:\n        self.visit(item)\n    pass\n",
+  "position": {
+    "line_no": 1623,
+    "col_offset": 4,
+    "end_line_no": 1628,
+    "end_col_offset": 0
+  }
+}

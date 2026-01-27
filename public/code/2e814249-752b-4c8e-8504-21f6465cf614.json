@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2e814249-752b-4c8e-8504-21f6465cf614",
+  "name": "create",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.modules.ModuleManager.create",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/modules.py",
+  "file_name": "modules",
+  "code": "def create(self, name, fname, external=False):\n    \"\"\"ID: 2e814249-752b-4c8e-8504-21f6465cf614\"\"\"\n    mod = Module(name, fname)\n    if external:\n        self.external[name] = mod\n    else:\n        self.internal[name] = mod\n    return mod\n",
+  "position": {
+    "line_no": 29,
+    "col_offset": 4,
+    "end_line_no": 37,
+    "end_col_offset": 0
+  }
+}

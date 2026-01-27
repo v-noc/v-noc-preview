@@ -1,0 +1,15 @@
+{
+  "id": "nodes/fa6f5e5b-a1e0-43cb-8bcd-d33ced206630",
+  "name": "handle_if_def",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.handle_if_def",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def handle_if_def(self, parent_ns, if_name,def_type = utils.constants.IF_DEF):\n    \"\"\"ID: fa6f5e5b-a1e0-43cb-8bcd-d33ced206630\"\"\"\n    full_ns = utils.join_ns(parent_ns, if_name)\n    defi = self.get(full_ns)\n    if not defi:\n        defi = self.create(full_ns,def_type)\n    return defi\n",
+  "position": {
+    "line_no": 121,
+    "col_offset": 4,
+    "end_line_no": 128,
+    "end_col_offset": 0
+  }
+}

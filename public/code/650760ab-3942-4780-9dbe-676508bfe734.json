@@ -1,0 +1,15 @@
+{
+  "id": "nodes/650760ab-3942-4780-9dbe-676508bfe734",
+  "name": "get_ns",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.get_ns",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def get_ns(self):\n    \"\"\"ID: 650760ab-3942-4780-9dbe-676508bfe734\"\"\"\n    return self.fullns\n",
+  "position": {
+    "line_no": 154,
+    "col_offset": 4,
+    "end_line_no": 157,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e0859f49-e48f-4c18-a0d7-70679467351e",
+  "name": "self.cg.get",
+  "node_type": "call",
+  "qname": "nodes/368a8639-063a-4a8e-a9fc-8b34f6dce17d::nodes/8db4e6a1-97b4-4670-b2a9-b9998a568883",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "return self.cg.get()",
+  "position": {
+    "line_no": 177,
+    "col_offset": 15,
+    "end_line_no": 177,
+    "end_col_offset": 28
+  }
+}

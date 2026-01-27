@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2d99cf47-8454-41d8-b935-31f5a129e514",
+  "name": "utils.join_ns",
+  "node_type": "call",
+  "qname": "nodes/4f5e1a20-0899-4b50-a731-4f0984713624::nodes/442d954e-986a-4c2a-92fa-9791c5bbdcd1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/returns.py",
+  "file_name": "returns",
+  "code": "print(\"\\n\")",
+  "position": {
+    "line_no": 17,
+    "col_offset": 16,
+    "end_line_no": 17,
+    "end_col_offset": 53
+  }
+}

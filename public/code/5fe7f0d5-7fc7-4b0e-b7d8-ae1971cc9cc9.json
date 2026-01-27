@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5fe7f0d5-7fc7-4b0e-b7d8-ae1971cc9cc9",
+  "name": "analyze",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.analyze",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def analyze(self):\n    \"\"\"ID: 5fe7f0d5-7fc7-4b0e-b7d8-ae1971cc9cc9\"\"\"\n    import time\n\n    start = time.time()\n    gol.set_value('cnt',0)\n    self.do_pass(\n        ExtProcessor,\n        True,\n        set(),\n        self.import_manager,\n        self.scope_manager,\n        self.def_manager,\n        self.class_manager,\n        self.module_manager,\n        self.change_manager,\n        self.node_manager,\n        self.cg,\n    )\n    end = time.time()\n",
+  "position": {
+    "line_no": 154,
+    "col_offset": 4,
+    "end_line_no": 174,
+    "end_col_offset": 0
+  }
+}

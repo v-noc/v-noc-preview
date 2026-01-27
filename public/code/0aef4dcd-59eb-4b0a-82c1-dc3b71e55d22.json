@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0aef4dcd-59eb-4b0a-82c1-dc3b71e55d22",
+  "name": "GrandParent",
+  "node_type": "class",
+  "qname": "sample_project2.core.model.parent.GrandParent",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/core/model/parent.py",
+  "file_name": "parent",
+  "code": "class GrandParent:\n    \"\"\" ID: 0aef4dcd-59eb-4b0a-82c1-dc3b71e55d22 \"\"\"\n\n    @context_logger('3dc29628-2e38-4867-8bb1-0a1aa6460292')\n    def get_name(self):\n        \"\"\" ID: f524bf69-3e1f-4d6d-906e-f8cdf912292b \"\"\"\n        pass\n\n    @context_logger('87c6376e-34d9-449e-b29e-7675b9867aaa')\n    def walk(self):\n        \"\"\" ID: e3a37c00-22fd-490c-b94d-dd39e6d94859 \"\"\"\n        pass\n\n    @context_logger('0eb3b811-0c9a-40f6-99c3-d0975285c1e6')\n    def sleep(self):\n        \"\"\" ID: dfbbacc3-b91d-4e51-8e6c-72c6f9d93f66 \"\"\"\n        pass\n",
+  "position": {
+    "line_no": 5,
+    "col_offset": 0,
+    "end_line_no": 22,
+    "end_col_offset": 0
+  }
+}

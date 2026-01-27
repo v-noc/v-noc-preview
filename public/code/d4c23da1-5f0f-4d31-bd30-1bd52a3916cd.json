@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d4c23da1-5f0f-4d31-bd30-1bd52a3916cd",
+  "name": "add_external_def",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Import.add_external_def",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def add_external_def(name, target, row=0):\n    \"\"\"ID: d4c23da1-5f0f-4d31-bd30-1bd52a3916cd\"\"\"\n    # add an external def for the name\n    defi = self.def_manager.get(name)\n    if not defi:\n        defi = self.def_manager.create(name, utils.constants.EXT_DEF)\n    scope = self.scope_manager.get_scope(self.current_ns)\n    if target != \"*\":\n        # add a def for the target that points to the name\n        tgt_ns = utils.join_ns(scope.get_ns(), target)\n        tgt_defi: Definition = self.def_manager.get(tgt_ns)\n        if not tgt_defi:\n            tgt_defi = self.def_manager.create(\n                tgt_ns, utils.constants.NAME_DEF)\n        # tgt_defi.add_name_point(row).add(defi.get_ns())\n        tgt_defi.add_value_point(row, defi.get_ns())\n        scope.add_def(target, tgt_defi)\n",
+  "position": {
+    "line_no": 411,
+    "col_offset": 8,
+    "end_line_no": 428,
+    "end_col_offset": 0
+  }
+}

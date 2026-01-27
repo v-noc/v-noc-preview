@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7a2fe9ea-77b8-4b0b-a414-922b0a090012",
+  "name": "NodeManager",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.nodes.NodeManager",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/nodes.py",
+  "file_name": "nodes",
+  "code": "class NodeManager:\n    \"\"\"ID: 7a2fe9ea-77b8-4b0b-a414-922b0a090012\"\"\"\n    def __init__(self):\n        \"\"\"ID: 07447706-7e70-4ae6-9c26-44bccbca737c\"\"\"\n        self.nodes = {}\n    def add(self,ns,node):\n        \"\"\"ID: 149319b3-f280-4911-b0c5-0f44386fe3e9\"\"\"\n        if ns in self.nodes:\n            return\n        self.nodes[ns] = node\n    def get(self,ns):\n        \"\"\"ID: 53315dab-ada8-4a90-b066-e1d228af5d73\"\"\"\n        if ns in self.nodes:\n            return self.nodes[ns]\n        return None",
+  "position": {
+    "line_no": 4,
+    "col_offset": 0,
+    "end_line_no": 18,
+    "end_col_offset": 19
+  }
+}

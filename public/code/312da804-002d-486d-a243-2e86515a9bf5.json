@@ -1,0 +1,15 @@
+{
+  "id": "nodes/312da804-002d-486d-a243-2e86515a9bf5",
+  "name": "cls",
+  "node_type": "call",
+  "qname": "nodes/449d73e4-0385-4a1f-9f16-2e3e3cc10574::nodes/b05d9cac-1fa9-4199-8d66-999f463b045c",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "processor = cls(\n    input_file,\n    input_mod,\n    modules_analyzed=modules_analyzed,\n    decy=self.decy,\n    *args,\n    **kwargs\n)",
+  "position": {
+    "line_no": 127,
+    "col_offset": 24,
+    "end_line_no": 134,
+    "end_col_offset": 13
+  }
+}

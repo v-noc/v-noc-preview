@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ae96b0a6-c9a1-414e-b8e2-b7ce486670e5",
+  "name": "do_assign",
+  "node_type": "call",
+  "qname": "nodes/c801575e-f69e-44a7-a90c-df6ed9acb83e::nodes/ce075edb-58d3-4c12-8ffd-2ef84e23ec4d",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "do_assign(decoded[pos], elt)",
+  "position": {
+    "line_no": 596,
+    "col_offset": 24,
+    "end_line_no": 596,
+    "end_col_offset": 52
+  }
+}

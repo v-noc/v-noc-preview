@@ -1,0 +1,15 @@
+{
+  "id": "nodes/57d38c89-06c4-405e-9e6d-1b6a5b38b187",
+  "name": "get_as_graph",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.get_as_graph",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def get_as_graph(self):\n    \"\"\"ID: 57d38c89-06c4-405e-9e6d-1b6a5b38b187\"\"\"\n    return self.def_manager.get_defs().items()",
+  "position": {
+    "line_no": 229,
+    "col_offset": 4,
+    "end_line_no": 232,
+    "end_col_offset": 0
+  }
+}

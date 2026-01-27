@@ -1,4 +1,4 @@
-import { json, type ActionFunctionArgs, type LoaderFunctionArgs } from "react-router";
+import { type ActionFunctionArgs, type LoaderFunctionArgs } from "react-router";
 import { projectActions } from "@/services/serverActions";
 
 /**
@@ -9,7 +9,7 @@ import { projectActions } from "@/services/serverActions";
 export async function loader({ request }: LoaderFunctionArgs) {
   const url = new URL(request.url);
   const pathname = url.pathname;
-  
+
   // Extract key from pathname (e.g., /api/v1/projects/{key})
   // Remove /api/v1/projects prefix and get the key
   const key = pathname.replace('/api/v1/projects', '').replace(/^\//, '').split('?')[0];
@@ -18,14 +18,14 @@ export async function loader({ request }: LoaderFunctionArgs) {
     if (key && key.length > 0) {
       // Get single project by key
       const project = projectActions.getProjectByKey(key);
-      return json(project);
+      return Response.json(project);
     } else {
       // Get all projects
       const projects = projectActions.getProjects();
-      return json(projects);
+      return Response.json(projects);
     }
   } catch (error) {
-    return json(
+    return Response.json(
       { error: error instanceof Error ? error.message : 'Failed to fetch project' },
       { status: 404 }
     );
@@ -34,7 +34,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
 // Disable POST/PUT for now
 export async function action({ request }: ActionFunctionArgs) {
-  return json(
+  return Response.json(
     { error: 'POST/PUT requests are disabled' },
     { status: 405 }
   );

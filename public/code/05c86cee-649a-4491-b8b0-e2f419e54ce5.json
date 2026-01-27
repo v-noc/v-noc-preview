@@ -1,0 +1,15 @@
+{
+  "id": "nodes/05c86cee-649a-4491-b8b0-e2f419e54ce5",
+  "name": "do_assign",
+  "node_type": "call",
+  "qname": "nodes/b7c2c1bc-b3e7-4f95-8666-c5f568a5c90d::nodes/b7c2c1bc-b3e7-4f95-8666-c5f568a5c90d",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "for pos, elt in enumerate(target.elt",
+  "position": {
+    "line_no": 255,
+    "col_offset": 24,
+    "end_line_no": 255,
+    "end_col_offset": 52
+  }
+}

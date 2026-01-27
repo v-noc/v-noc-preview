@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f14477c8-26c9-4679-b6f9-988b5db7246a",
+  "name": "find_cls_fun_ns",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.find_cls_fun_ns",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def find_cls_fun_ns(self, clsNs, fn):\n    \"\"\"ID: f14477c8-26c9-4679-b6f9-988b5db7246a\"\"\"\n    clsNode: ClassNode = self.class_manager.get(clsNs)\n    for tmpClsNs in clsNode.mro:\n        tmpScope: ScopeItem = self.scope_manager.get_scope(tmpClsNs)\n        if not tmpScope:\n            continue\n        if tmpScope.get_def(fn):\n            selfDefi: Definition = tmpScope.get_def(\"self\")\n            if not selfDefi:\n                continue\n            selfDefi.add_value_point(0, clsNs)\n            return tmpScope.get_def(fn)\n    return None\n    pass\n",
+  "position": {
+    "line_no": 2132,
+    "col_offset": 4,
+    "end_line_no": 2147,
+    "end_col_offset": 0
+  }
+}

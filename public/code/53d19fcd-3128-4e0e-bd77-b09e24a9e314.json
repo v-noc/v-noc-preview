@@ -1,0 +1,15 @@
+{
+  "id": "nodes/53d19fcd-3128-4e0e-bd77-b09e24a9e314",
+  "name": "gol.get_value",
+  "node_type": "call",
+  "qname": "nodes/a8cc5569-ddd3-4b32-bc3a-e93fde639f87::nodes/116b5a12-2b2b-4705-b412-5bcf43353d93",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "if not gol.get_value('precision')",
+  "position": {
+    "line_no": 252,
+    "col_offset": 15,
+    "end_line_no": 252,
+    "end_col_offset": 41
+  }
+}

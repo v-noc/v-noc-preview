@@ -1,0 +1,15 @@
+{
+  "id": "nodes/700d95e9-68c9-4558-9fe1-ea468720c11e",
+  "name": "__lt__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.PointItem.__lt__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def __lt__(self, other):\n    \"\"\"ID: 700d95e9-68c9-4558-9fe1-ea468720c11e\"\"\"\n    return self.row < other.row\n",
+  "position": {
+    "line_no": 38,
+    "col_offset": 4,
+    "end_line_no": 41,
+    "end_col_offset": 0
+  }
+}

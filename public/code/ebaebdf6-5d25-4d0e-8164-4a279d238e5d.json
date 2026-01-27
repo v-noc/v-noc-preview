@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ebaebdf6-5d25-4d0e-8164-4a279d238e5d",
+  "name": "get_point",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.get_point",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def get_point(self, ns, row=0):\n    \"\"\"ID: ebaebdf6-5d25-4d0e-8164-4a279d238e5d\"\"\"\n    def helper(ns: str):\n        \"\"\"ID: c0bacd5e-f5c2-48be-9d6a-4a0c038b16b5\"\"\"\n        rightList = []\n        defi: Definition = self.def_manager.get(ns)\n        while not defi or defi.get_type() in [\n            utils.constants.NA_DEF,\n            utils.constants.PARAM_DEF,\n            utils.constants.RETURN_DEF,\n        ]:\n            rIndex = ns.rfind(\".\")\n            if rIndex == -1:\n                break\n            rightList.insert(0, ns[rIndex:])\n            ns = ns[:rIndex]\n            defi = self.def_manager.get(ns)\n        rIndex = ns.rfind(\".\")\n        if rIndex != -1:\n            rightList.insert(0, ns[rIndex:])\n            ns = ns[:rIndex]\n        return [ns], rightList\n    if \"__iter__.<RETURN>\" in ns:\n        print()\n    if not isinstance(ns, str):\n        return []\n    leftList, rightList = helper(ns)\n    while rightList:\n        leftList = list(\n            map(lambda x: self.mergeLeftRight(\n                x, row, rightList[0]), leftList)\n        )\n        rightList.remove(rightList[0])\n        leftList = self.flatten(list(map(self.convert, leftList)))\n    if not leftList:\n        return leftList\n    leftList = list(\n        filter(lambda x: x, self.flatten(\n            list(map(self.convert_final, leftList))))\n    )\n    for x in leftList:\n        if \"__iter__.<RETURN>\" in x:\n            print()\n    return leftList\n",
+  "position": {
+    "line_no": 1890,
+    "col_offset": 4,
+    "end_line_no": 1934,
+    "end_col_offset": 0
+  }
+}

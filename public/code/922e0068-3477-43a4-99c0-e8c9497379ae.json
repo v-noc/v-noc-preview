@@ -1,0 +1,15 @@
+{
+  "id": "nodes/922e0068-3477-43a4-99c0-e8c9497379ae",
+  "name": "output_internal_mods",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.output_internal_mods",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def output_internal_mods(self):\n    \"\"\"ID: 922e0068-3477-43a4-99c0-e8c9497379ae\"\"\"\n    return self._generate_mods(self.module_manager.get_internal_modules())\n",
+  "position": {
+    "line_no": 203,
+    "col_offset": 4,
+    "end_line_no": 206,
+    "end_col_offset": 0
+  }
+}

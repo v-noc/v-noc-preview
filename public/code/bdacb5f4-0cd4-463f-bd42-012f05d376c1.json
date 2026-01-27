@@ -1,0 +1,15 @@
+{
+  "id": "nodes/bdacb5f4-0cd4-463f-bd42-012f05d376c1",
+  "name": "get_mro",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.classes.ClassNode.get_mro",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "def get_mro(self):\n    \"\"\"ID: bdacb5f4-0cd4-463f-bd42-012f05d376c1\"\"\"\n    return self.mro\n",
+  "position": {
+    "line_no": 64,
+    "col_offset": 4,
+    "end_line_no": 67,
+    "end_col_offset": 0
+  }
+}

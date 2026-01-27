@@ -1,0 +1,15 @@
+{
+  "id": "nodes/8cbc322e-cfc5-4c19-a5a3-ccceec38c401",
+  "name": "get_modules",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.callgraph.CallGraph.get_modules",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/callgraph.py",
+  "file_name": "callgraph",
+  "code": "def get_modules(self):\n    \"\"\"ID: 8cbc322e-cfc5-4c19-a5a3-ccceec38c401\"\"\"\n    return self.modnames\n",
+  "position": {
+    "line_no": 105,
+    "col_offset": 4,
+    "end_line_no": 108,
+    "end_col_offset": 0
+  }
+}

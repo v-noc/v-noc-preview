@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c5963533-c1e8-4059-a11f-f8fd0dd15fc3",
+  "name": "PointItem",
+  "node_type": "call",
+  "qname": "nodes/f86a5fd1-32d8-45a5-9a16-02079be64ae4::nodes/d0ffe58a-fe3e-426a-a99a-0c78e934b7a1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "decoded = self.decode_node(val",
+  "position": {
+    "line_no": 248,
+    "col_offset": 16,
+    "end_line_no": 248,
+    "end_col_offset": 38
+  }
+}

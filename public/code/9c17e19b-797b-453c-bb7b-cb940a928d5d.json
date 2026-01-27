@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9c17e19b-797b-453c-bb7b-cb940a928d5d",
+  "name": "self._retrieve_attribute_names",
+  "node_type": "call",
+  "qname": "nodes/edeeaaf8-b4cc-4402-9031-e3df3b720b49::nodes/85b6196c-9cc3-4577-8d0d-43ffe1df7345",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "if not isinstance(decoded_left, Definition):",
+  "position": {
+    "line_no": 312,
+    "col_offset": 20,
+    "end_line_no": 312,
+    "end_col_offset": 56
+  }
+}

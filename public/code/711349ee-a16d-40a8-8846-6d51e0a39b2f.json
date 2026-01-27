@@ -1,0 +1,15 @@
+{
+  "id": "nodes/711349ee-a16d-40a8-8846-6d51e0a39b2f",
+  "name": "merge_def",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.merge_def",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def merge_def(self, name, to_merge):\n    \"\"\"ID: 711349ee-a16d-40a8-8846-6d51e0a39b2f\"\"\"\n    if not name in self.defs:\n        self.defs[name] = to_merge\n        return\n\n    self.defs[name].merge_points_to(to_merge.get_points_to())\n",
+  "position": {
+    "line_no": 234,
+    "col_offset": 4,
+    "end_line_no": 241,
+    "end_col_offset": 0
+  }
+}

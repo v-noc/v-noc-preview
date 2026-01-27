@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1596247c-311d-4f73-87fb-da748a8e621e",
+  "name": "get_while_else_name",
+  "node_type": "function",
+  "qname": "Jarvis.utils.common.get_while_else_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/common.py",
+  "file_name": "common",
+  "code": "def get_while_else_name(counter):\n    \"\"\"ID: 1596247c-311d-4f73-87fb-da748a8e621e\"\"\"\n    return \"<whileelse{}>\".format(counter)\n",
+  "position": {
+    "line_no": 43,
+    "col_offset": 0,
+    "end_line_no": 46,
+    "end_col_offset": 0
+  }
+}

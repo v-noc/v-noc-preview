@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0ccb41f1-8f72-4c2f-89fb-8d5b49af9699",
+  "name": "get_element",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.get_element",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def get_element(self,key):\n    \"\"\"ID: 0ccb41f1-8f72-4c2f-89fb-8d5b49af9699\"\"\"\n    if key not in self.memo:\n        return []\n    return self.memo[key]\n",
+  "position": {
+    "line_no": 297,
+    "col_offset": 4,
+    "end_line_no": 302,
+    "end_col_offset": 0
+  }
+}

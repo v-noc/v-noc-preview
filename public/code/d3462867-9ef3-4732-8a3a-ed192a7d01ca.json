@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d3462867-9ef3-4732-8a3a-ed192a7d01ca",
+  "name": "visit_FunctionDef",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_FunctionDef",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def visit_FunctionDef(self, node):\n    \"\"\"ID: d3462867-9ef3-4732-8a3a-ed192a7d01ca\"\"\"\n    curNs = self._handle_ns()\n    fn_def = self._handle_function_def(node, node.name, curNs)\n    curScope: ScopeItem = self.scope_manager.get_scope(curNs)\n    fn_scope: ScopeItem = self.scope_manager.get_scope(fn_def.get_ns())\n    if not self.scope_manager.get_scope(fn_def.get_ns()):\n        fn_scope = self.scope_manager.create_scope(\n            fn_def.get_ns(), curScope)\n    curScope.add_def(node.name, fn_def)\n    self.node_manager.add(fn_def.get_ns(), node)\n\n    if node.decorator_list:\n        reversed_decorators = list(reversed(node.decorator_list))\n        if hasattr(fn_def, \"decorator_names\") and reversed_decorators:\n            last_decoded = self.decode_node(reversed_decorators[-1])\n            for d in last_decoded:\n                if not isinstance(d, Definition):\n                    continue\n        for index, decorator in enumerate(reversed_decorators):\n            if index == 0:\n                self.visit_Call(decorator, True, [fn_def])\n            else:\n                decorate_defi_list = self.getYPOint(\n                    node.lineno, self.decode_node(reversed_decorators[index - 1]))\n                decorate_return_list = list(\n                    map(lambda x: utils.join_ns(x, utils.constants.RETURN_NAME), decorate_defi_list))\n                # self.visit_Call(decorator, True, self.decode_node(reversed_decorators[index-1]))\n                self.visit_Call(decorator, True, decorate_return_list)\n    # self.pushStack(fn_def)\n    # super().visit_FunctionDef(node)\n    pass\n",
+  "position": {
+    "line_no": 915,
+    "col_offset": 4,
+    "end_line_no": 947,
+    "end_col_offset": 0
+  }
+}

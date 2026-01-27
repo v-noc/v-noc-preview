@@ -1,0 +1,15 @@
+{
+  "id": "nodes/14773b67-313d-4a18-a2f6-49a6dcb5efdf",
+  "name": "utils.join_ns",
+  "node_type": "call",
+  "qname": "nodes/c801575e-f69e-44a7-a90c-df6ed9acb83e::nodes/442d954e-986a-4c2a-92fa-9791c5bbdcd1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "leftTargetNs = utils.join_ns(\n    self.current_ns, target.id)",
+  "position": {
+    "line_no": 612,
+    "col_offset": 43,
+    "end_line_no": 613,
+    "end_col_offset": 59
+  }
+}

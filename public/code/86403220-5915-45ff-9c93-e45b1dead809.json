@@ -1,0 +1,15 @@
+{
+  "id": "nodes/86403220-5915-45ff-9c93-e45b1dead809",
+  "name": "utils.get_lambda_name",
+  "node_type": "call",
+  "qname": "nodes/95cd9b5a-5a26-44fb-89de-447e83c99a40::nodes/f64fdbbf-4774-4958-a381-562ca589c7d3",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "lambda_name = utils.get_lambda_name(lambda_counter)",
+  "position": {
+    "line_no": 1050,
+    "col_offset": 26,
+    "end_line_no": 1050,
+    "end_col_offset": 63
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6d70db9c-9094-4525-8fc2-3a5ec720a6e6",
+  "name": "_retrieve_base_names",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase._retrieve_base_names",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def _retrieve_base_names(self, node):\n    \"\"\"ID: 6d70db9c-9094-4525-8fc2-3a5ec720a6e6\"\"\"\n    if not isinstance(node, ast.Attribute):\n        raise Exception(\"The node is not an attribute\")\n\n    decoded = self.decode_node(node.value)\n    if not decoded:\n        return set()\n\n    names = set()\n    for name in decoded:\n        if not name or not isinstance(name, Definition):\n            continue\n        names.add(name.get_ns())\n        # for base in self.closured.get(name.get_ns(), []):\n        #     cls = self.class_manager.get(base)\n        #     if not cls:\n        #         continue\n        #\n        #     for item in cls.get_mro():\n        #         names.add(item)\n    return names\n",
+  "position": {
+    "line_no": 357,
+    "col_offset": 4,
+    "end_line_no": 379,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/08a9a5f5-aa69-4a67-bf4a-e10800e80e31",
+  "name": "dd",
+  "node_type": "function",
+  "qname": "sample_project2.main.dd",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/main.py",
+  "file_name": "main",
+  "code": "def dd():\n    \"\"\"ID: 08a9a5f5-aa69-4a67-bf4a-e10800e80e31\"\"\"\n\n    pass\n",
+  "position": {
+    "line_no": 21,
+    "col_offset": 0,
+    "end_line_no": 25,
+    "end_col_offset": 0
+  }
+}

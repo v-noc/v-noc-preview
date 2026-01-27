@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3889b84f-afa2-434c-9710-e60ad2d641ef",
+  "name": "output_classes",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.output_classes",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def output_classes(self):\n    \"\"\"ID: 3889b84f-afa2-434c-9710-e60ad2d641ef\"\"\"\n    classes = {}\n    for cls, node in self.class_manager.get_classes().items():\n        classes[cls] = {\n            \"mro\": node.get_mro(),\n            \"module\": node.get_module(),\n        }\n    return classes\n",
+  "position": {
+    "line_no": 219,
+    "col_offset": 4,
+    "end_line_no": 228,
+    "end_col_offset": 0
+  }
+}

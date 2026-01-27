@@ -1,0 +1,15 @@
+{
+  "id": "nodes/eef30659-d939-444c-9f4b-4cdb9b0402c1",
+  "name": "ScopeItem",
+  "node_type": "call",
+  "qname": "nodes/6b46d427-fd8a-4fac-805a-0ecb94b88cbb::nodes/c849a6c9-6106-4ebf-bd65-6f2d3752da4b",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "sc = ScopeItem(namespace, parent)",
+  "position": {
+    "line_no": 95,
+    "col_offset": 17,
+    "end_line_no": 95,
+    "end_col_offset": 45
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4005c293-cf9d-47fc-a053-432b57fac9eb",
+  "name": "_handle_args",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor._handle_args",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def _handle_args(self, node):\n    \"\"\"ID: 4005c293-cf9d-47fc-a053-432b57fac9eb\"\"\"\n    params_list = []\n\n    for args_node in node.args:\n        self.visit(args_node)\n        decoded = self.decode_node(args_node)\n        for args_defi in decoded:\n            if isinstance(args_defi, Definition):\n                params_list.append(args_defi.get_ns())\n            else:\n                params_list.append(args_defi)\n    for keyword in node.keywords:\n        tmpItem = {}\n        self.visit(keyword.value)\n        decoded = self.decode_node(keyword.value)\n        paramDefiDict = {}\n        for args_defi in decoded:\n            if isinstance(args_defi, Definition):\n                if keyword not in paramDefiDict:\n                    tmpItem.setdefault(keyword.arg, [args_defi.get_ns()])\n                else:\n                    tmpItem[keyword].append(args_defi.get_ns())\n            else:\n                if keyword not in paramDefiDict:\n                    tmpItem.setdefault(keyword.arg, [args_defi])\n                else:\n                    tmpItem[keyword.arg].append(args_defi)\n        params_list.append(tmpItem)\n    return params_list\n",
+  "position": {
+    "line_no": 1495,
+    "col_offset": 4,
+    "end_line_no": 1525,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6d12fe52-4db0-4223-ae19-eb49b8f4ef85",
+  "name": "ImportManagerError",
+  "node_type": "call",
+  "qname": "nodes/381fe10a-79ca-4d49-83a9-b73c7e1733f8::nodes/9993afe1-6927-40d2-8884-a024afaba05e",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "",
+  "position": {
+    "line_no": 130,
+    "col_offset": 18,
+    "end_line_no": 130,
+    "end_col_offset": 57
+  }
+}

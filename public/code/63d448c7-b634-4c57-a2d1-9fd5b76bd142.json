@@ -1,0 +1,15 @@
+{
+  "id": "nodes/63d448c7-b634-4c57-a2d1-9fd5b76bd142",
+  "name": "find_ns",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.__str__.find_ns",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def find_ns(ns):\n    \"\"\"ID: 63d448c7-b634-4c57-a2d1-9fd5b76bd142\"\"\"\n    for defiNs,defi in self.defs.items():\n        if defi.get_ns() == ns:\n            return defi\n    return None\n",
+  "position": {
+    "line_no": 262,
+    "col_offset": 8,
+    "end_line_no": 268,
+    "end_col_offset": 0
+  }
+}

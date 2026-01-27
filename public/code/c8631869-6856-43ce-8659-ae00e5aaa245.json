@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c8631869-6856-43ce-8659-ae00e5aaa245",
+  "name": "analyze_local",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.analyze_allfunction.analyze_local",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def analyze_local(local):\n    \"\"\"ID: c8631869-6856-43ce-8659-ae00e5aaa245\"\"\"\n    moduleNode: Module = self.module_manager.get(local)\n    if not moduleNode:\n        return\n    methodDict: dict = moduleNode.get_methods()\n    for method in list(methodDict.keys()):\n        methodDefi = self.def_manager.get(method)\n        self.pushStack(methodDefi, False, True)\n",
+  "position": {
+    "line_no": 1651,
+    "col_offset": 8,
+    "end_line_no": 1660,
+    "end_col_offset": 0
+  }
+}

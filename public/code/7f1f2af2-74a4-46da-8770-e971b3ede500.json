@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7f1f2af2-74a4-46da-8770-e971b3ede500",
+  "name": "ModuleManager",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.modules.ModuleManager",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/modules.py",
+  "file_name": "modules",
+  "code": "class ModuleManager:\n    \"\"\"ID: 7f1f2af2-74a4-46da-8770-e971b3ede500\"\"\"\n    def __init__(self):\n        \"\"\"ID: e085da26-4e5b-470b-a739-2fe2e6c6d92a\"\"\"\n        self.internal = {}\n        self.external = {}\n        self.local = set()\n    def create(self, name, fname, external=False):\n        \"\"\"ID: 2e814249-752b-4c8e-8504-21f6465cf614\"\"\"\n        mod = Module(name, fname)\n        if external:\n            self.external[name] = mod\n        else:\n            self.internal[name] = mod\n        return mod\n\n    def get(self, name):\n        \"\"\"ID: 0faf5f90-654c-482f-b311-2eb5821de762\"\"\"\n        if name in self.internal:\n            return self.internal[name]\n        if name in self.external:\n            return self.external[name]\n\n    def get_func_name(self,moduleNs,funcName):\n        \"\"\"ID: a54f8577-d05f-4ee4-b643-66c0d8a2bb52\"\"\"\n        funcDict:Module = self.get(moduleNs)\n        if funcName in funcDict.methods:\n            return funcDict.methods[funcName]\n    def get_internal_modules(self):\n        \"\"\"ID: f39aae77-629d-4969-80cd-a68389f45065\"\"\"\n        return self.internal\n\n    def get_external_modules(self):\n        \"\"\"ID: 3adc9c81-4e4c-488a-a57c-4a129423b81c\"\"\"\n        return self.external\n\n    def add_local_modules(self,moduleNs):\n        \"\"\"ID: 424d3781-9099-4bd5-b2e8-d70d83709fdd\"\"\"\n        self.local.add(moduleNs)\n\n    def get_local_modules(self):\n        \"\"\"ID: 7624d7e2-85ce-441b-908a-5b6353f18c1b\"\"\"\n        return self.local\n",
+  "position": {
+    "line_no": 22,
+    "col_offset": 0,
+    "end_line_no": 65,
+    "end_col_offset": 0
+  }
+}

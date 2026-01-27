@@ -1,0 +1,9 @@
+{
+  "id": "nodes/435e26f0-b71c-44f3-aa2b-79696098d670",
+  "name": "__init__",
+  "node_type": "file",
+  "qname": "sample_project2.core.utils.__init__",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/core/utils/__init__.py",
+  "file_name": "__init__",
+  "code": "\"\"\"FolderID: e14f9027-d43a-4701-aca9-442f61d5dc0d\n\nFileID: 435e26f0-b71c-44f3-aa2b-79696098d670\"\"\""
+}

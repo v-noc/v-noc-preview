@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a8cc5569-ddd3-4b32-bc3a-e93fde639f87",
+  "name": "self.add_value_point",
+  "node_type": "call",
+  "qname": "nodes/c8962097-c2a6-46f4-b0f6-696f8005bbe6::nodes/874cf03e-1063-4a63-a0e2-ed3faa4eaa62",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "self.add_value_point(row,values)",
+  "position": {
+    "line_no": 340,
+    "col_offset": 8,
+    "end_line_no": 340,
+    "end_col_offset": 40
+  }
+}

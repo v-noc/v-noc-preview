@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a54f8577-d05f-4ee4-b643-66c0d8a2bb52",
+  "name": "get_func_name",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.modules.ModuleManager.get_func_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/modules.py",
+  "file_name": "modules",
+  "code": "def get_func_name(self,moduleNs,funcName):\n    \"\"\"ID: a54f8577-d05f-4ee4-b643-66c0d8a2bb52\"\"\"\n    funcDict:Module = self.get(moduleNs)\n    if funcName in funcDict.methods:\n        return funcDict.methods[funcName]\n",
+  "position": {
+    "line_no": 45,
+    "col_offset": 4,
+    "end_line_no": 50,
+    "end_col_offset": 0
+  }
+}

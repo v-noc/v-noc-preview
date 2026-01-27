@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2a08bbbd-f81f-4f23-a9c3-feaebbee2885",
+  "name": "visit_Return",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Return",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def visit_Return(self, node):\n    \"\"\"ID: 2a08bbbd-f81f-4f23-a9c3-feaebbee2885\"\"\"\n    self._visit_return(node)\n",
+  "position": {
+    "line_no": 1526,
+    "col_offset": 4,
+    "end_line_no": 1529,
+    "end_col_offset": 0
+  }
+}

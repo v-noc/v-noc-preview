@@ -1,0 +1,15 @@
+{
+  "id": "nodes/595fc2e1-e899-42d3-af0f-854b49390cde",
+  "name": "super().__init__",
+  "node_type": "call",
+  "qname": "nodes/aa7131e9-afd7-420d-baa9-69456eb07b99::nodes/321fc4ad-2dab-43e1-80f6-349c0fbeee46",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/core/utils/helper.py",
+  "file_name": "helper",
+  "code": "logger_core.logger.error('",
+  "position": {
+    "line_no": 13,
+    "col_offset": 8,
+    "end_line_no": 13,
+    "end_col_offset": 30
+  }
+}

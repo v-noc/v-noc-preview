@@ -1,0 +1,15 @@
+{
+  "id": "nodes/173852e5-4d50-4bbb-8ac4-48bd54821858",
+  "name": "merge_modules_analyzed",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.merge_modules_analyzed",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def merge_modules_analyzed(self, analyzed):\n    \"\"\"ID: 173852e5-4d50-4bbb-8ac4-48bd54821858\"\"\"\n    self.modules_analyzed = self.modules_analyzed.union(analyzed)\n",
+  "position": {
+    "line_no": 60,
+    "col_offset": 4,
+    "end_line_no": 63,
+    "end_col_offset": 0
+  }
+}

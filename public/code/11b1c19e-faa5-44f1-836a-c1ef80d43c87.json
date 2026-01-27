@@ -1,0 +1,15 @@
+{
+  "id": "nodes/11b1c19e-faa5-44f1-836a-c1ef80d43c87",
+  "name": "main",
+  "node_type": "function",
+  "qname": "sample_project2.main.main",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/main.py",
+  "file_name": "main",
+  "code": "def main():\n    \"\"\" ID: 11b1c19e-faa5-44f1-836a-c1ef80d43c87 \"\"\"\n    child = create_child()\n    child.get_name()\n    logger_core.logger.warning(\"main function called \")\n",
+  "position": {
+    "line_no": 8,
+    "col_offset": 0,
+    "end_line_no": 13,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/55d97af9-0e14-4777-ab9b-d8eb6994b03c",
+  "name": "ChangeManager",
+  "node_type": "call",
+  "qname": "nodes/eb64ed16-d96d-4f11-b214-d64a26c7d337::nodes/f6125e7c-8e02-40f8-bc4b-b17a8d2847d1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "print(\"args \", args)",
+  "position": {
+    "line_no": 63,
+    "col_offset": 30,
+    "end_line_no": 63,
+    "end_col_offset": 45
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/495a87db-98f2-4250-b089-9edb7d69bbef",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def __init__(self, fullns, def_type):\n    \"\"\"ID: 495a87db-98f2-4250-b089-9edb7d69bbef\"\"\"\n    self.fullns = fullns\n    self.def_type = def_type\n    self.points = []\n    self.bias = set()\n    self.lines = set()\n",
+  "position": {
+    "line_no": 221,
+    "col_offset": 4,
+    "end_line_no": 228,
+    "end_col_offset": 0
+  }
+}

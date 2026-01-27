@@ -1,0 +1,15 @@
+{
+  "id": "nodes/85b6196c-9cc3-4577-8d0d-43ffe1df7345",
+  "name": "_retrieve_attribute_names",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase._retrieve_attribute_names",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def _retrieve_attribute_names(self, node):\n    \"\"\"ID: 85b6196c-9cc3-4577-8d0d-43ffe1df7345\"\"\"\n    if not getattr(self, \"closured\", None):\n        return set()\n\n    parent_names = self._retrieve_parent_names(node)\n    names = set()\n    for parent_name in parent_names:\n        for name in self.closured.get(parent_name, []):\n            defi = self.def_manager.get(name)\n            if not defi:\n                continue\n            if defi.get_type() == utils.constants.CLS_DEF:\n                cls_names = self.find_cls_fun_ns(defi.get_ns(), node.attr)\n                if cls_names:\n                    names = names.union(cls_names)\n            if defi.get_type() in [utils.constants.FUN_DEF, utils.constants.MOD_DEF]:\n                names.add(utils.join_ns(name, node.attr))\n            if defi.get_type() == utils.constants.EXT_DEF:\n                # HACK: extenral attributes can lead to infinite loops\n                # Identify them here\n                if node.attr in name:\n                    continue\n                ext_name = utils.join_ns(name, node.attr)\n                if not self.def_manager.get(ext_name):\n                    self.def_manager.create(\n                        ext_name, utils.constants.EXT_DEF)\n                names.add(ext_name)\n    return names\n",
+  "position": {
+    "line_no": 399,
+    "col_offset": 4,
+    "end_line_no": 428,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7aeb2df1-87ed-409e-8ad6-efe1fea0e0ac",
+  "name": "reset_counters",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.reset_counters",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def reset_counters(self):\n    \"\"\"ID: 7aeb2df1-87ed-409e-8ad6-efe1fea0e0ac\"\"\"\n    for key, scope in self.scope_manager.get_scopes().items():\n        scope.reset_counters()\n",
+  "position": {
+    "line_no": 92,
+    "col_offset": 4,
+    "end_line_no": 96,
+    "end_col_offset": 0
+  }
+}

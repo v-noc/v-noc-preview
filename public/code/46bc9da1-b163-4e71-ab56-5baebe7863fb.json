@@ -1,0 +1,15 @@
+{
+  "id": "nodes/46bc9da1-b163-4e71-ab56-5baebe7863fb",
+  "name": "callScope.reset_counters",
+  "node_type": "call",
+  "qname": "nodes/cfe57b4d-776b-40a9-b102-36f2891f9564::nodes/80a57f81-486c-4ff7-b9ec-5623b09fadbf",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "",
+  "position": {
+    "line_no": 193,
+    "col_offset": 12,
+    "end_line_no": 193,
+    "end_col_offset": 38
+  }
+}

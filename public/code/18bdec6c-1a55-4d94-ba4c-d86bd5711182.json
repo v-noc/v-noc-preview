@@ -1,0 +1,15 @@
+{
+  "id": "nodes/18bdec6c-1a55-4d94-ba4c-d86bd5711182",
+  "name": "self.getYPOint",
+  "node_type": "call",
+  "qname": "nodes/6ed537f3-6b8c-43e9-850e-8bfa9835d252::nodes/b7b220b6-dd48-45cc-b823-fda1e70661f1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "self.pushStack(function2Defi, isEntry=True)\nleftPoint = self.getYPOint(\n    node.lineno, utils.join_ns(\n",
+  "position": {
+    "line_no": 335,
+    "col_offset": 28,
+    "end_line_no": 338,
+    "end_col_offset": 17
+  }
+}

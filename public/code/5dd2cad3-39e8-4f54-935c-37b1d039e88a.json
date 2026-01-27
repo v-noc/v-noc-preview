@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5dd2cad3-39e8-4f54-935c-37b1d039e88a",
+  "name": "_get_mod_name",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator._get_mod_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def _get_mod_name(self, entry, pkg):\n    \"\"\"ID: 5dd2cad3-39e8-4f54-935c-37b1d039e88a\"\"\"\n    input_mod = utils.to_mod_name(os.path.relpath(entry, pkg))\n    if input_mod.endswith(\"__init__\"):\n        input_mod = \".\".join(input_mod.split(\".\")[:-1])\n\n    return input_mod\n",
+  "position": {
+    "line_no": 101,
+    "col_offset": 4,
+    "end_line_no": 108,
+    "end_col_offset": 0
+  }
+}

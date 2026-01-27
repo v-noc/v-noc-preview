@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3e9c4897-27da-4ad3-bf65-ef523aef6f7d",
+  "name": "self.set_filepath",
+  "node_type": "call",
+  "qname": "nodes/5bc1ceb4-0867-4bfb-a014-69c7d2e9b67e::nodes/9c5dd1ef-9566-445d-a99b-6760ed07fb30",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "self.set_filepath(mod_name,mod.__file__)",
+  "position": {
+    "line_no": 190,
+    "col_offset": 12,
+    "end_line_no": 190,
+    "end_col_offset": 52
+  }
+}

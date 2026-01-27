@@ -1,0 +1,15 @@
+{
+  "id": "nodes/943a5388-518c-4d39-89eb-0f682f2493d2",
+  "name": "self.def_manager.get",
+  "node_type": "call",
+  "qname": "nodes/2fa7d733-f94b-4da1-a57b-b3f6d6f72361::nodes/ca3b7d8f-93c5-45a7-bde7-b214e13c0d53",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def update(self, row, changeList: dict):",
+  "position": {
+    "line_no": 1799,
+    "col_offset": 32,
+    "end_line_no": 1799,
+    "end_col_offset": 69
+  }
+}

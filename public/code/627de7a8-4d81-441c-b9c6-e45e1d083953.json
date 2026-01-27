@@ -1,0 +1,15 @@
+{
+  "id": "nodes/627de7a8-4d81-441c-b9c6-e45e1d083953",
+  "name": "self.get_prefix_defi",
+  "node_type": "call",
+  "qname": "nodes/cf4e2780-a1e3-411e-a8b5-b5a15f7dfb96::nodes/ef9a7afc-7be6-44ce-8bbd-573165dbea89",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "paramsDefiList += self.get_prefix_defi(param.get_ns())",
+  "position": {
+    "line_no": 257,
+    "col_offset": 30,
+    "end_line_no": 257,
+    "end_col_offset": 66
+  }
+}

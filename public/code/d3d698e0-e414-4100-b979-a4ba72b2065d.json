@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d3d698e0-e414-4100-b979-a4ba72b2065d",
+  "name": "self.def_manager.get",
+  "node_type": "call",
+  "qname": "nodes/14e92320-e762-45c7-ad6d-ea59d3b625f5::nodes/ca3b7d8f-93c5-45a7-bde7-b214e13c0d53",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "defi: Definition = self.def_manager.get(\n    utils.join_ns(x, f))",
+  "position": {
+    "line_no": 579,
+    "col_offset": 39,
+    "end_line_no": 580,
+    "end_col_offset": 44
+  }
+}

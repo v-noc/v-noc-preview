@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1c69c882-8398-4b53-91a6-7ef583f4cf9f",
+  "name": "get_scope_copy_name",
+  "node_type": "function",
+  "qname": "Jarvis.utils.common.get_scope_copy_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/common.py",
+  "file_name": "common",
+  "code": "def get_scope_copy_name(counter):\n    \"\"\"ID: 1c69c882-8398-4b53-91a6-7ef583f4cf9f\"\"\"\n    return \"<copy{}>\".format(counter)\n",
+  "position": {
+    "line_no": 46,
+    "col_offset": 0,
+    "end_line_no": 49,
+    "end_col_offset": 0
+  }
+}

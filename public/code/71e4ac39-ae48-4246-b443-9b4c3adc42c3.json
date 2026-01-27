@@ -1,0 +1,15 @@
+{
+  "id": "nodes/71e4ac39-ae48-4246-b443-9b4c3adc42c3",
+  "name": "add_parent",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.classes.ClassNode.add_parent",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "def add_parent(self, parent):\n    \"\"\"ID: 71e4ac39-ae48-4246-b443-9b4c3adc42c3\"\"\"\n    if isinstance(parent, str):\n        self.mro.append(parent)\n    elif isinstance(parent, list):\n        for item in parent:\n            if item in self.mro:\n                continue\n            self.mro.append(item)\n    self.fix_mro()\n",
+  "position": {
+    "line_no": 44,
+    "col_offset": 4,
+    "end_line_no": 54,
+    "end_col_offset": 0
+  }
+}

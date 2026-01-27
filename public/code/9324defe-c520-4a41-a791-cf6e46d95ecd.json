@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9324defe-c520-4a41-a791-cf6e46d95ecd",
+  "name": "utils.join_ns",
+  "node_type": "call",
+  "qname": "nodes/fa6f5e5b-a1e0-43cb-8bcd-d33ced206630::nodes/442d954e-986a-4c2a-92fa-9791c5bbdcd1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "full_ns = utils.join_ns(parent_ns, if_name)",
+  "position": {
+    "line_no": 123,
+    "col_offset": 18,
+    "end_line_no": 123,
+    "end_col_offset": 51
+  }
+}

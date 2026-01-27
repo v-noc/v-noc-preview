@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a6e698e3-eeb3-42e2-b4c0-ea52abfced6d",
+  "name": "self.find_cls_fun_ns",
+  "node_type": "call",
+  "qname": "nodes/7f399411-4fd8-43ab-b480-25c1d2af9ed1::nodes/a9943e1f-ae57-41e6-ac50-6dd66683c334",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "for name in self.closured.get(parent_name, []):",
+  "position": {
+    "line_no": 407,
+    "col_offset": 32,
+    "end_line_no": 407,
+    "end_col_offset": 78
+  }
+}

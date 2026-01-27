@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1620c680-e32d-4745-a228-0a6f81a7821c",
+  "name": "self.get_graph",
+  "node_type": "call",
+  "qname": "nodes/11c242a3-876a-4b5f-af32-2e69cec19e4c::nodes/2b16aa17-f128-4479-96e9-555acdadb389",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "\"graph\": self.get_graph()",
+  "position": {
+    "line_no": 251,
+    "col_offset": 21,
+    "end_line_no": 251,
+    "end_col_offset": 37
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/87c0135a-044f-431f-b4d2-aa905587b15b",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.classes.ClassNode.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "def __init__(self, ns, module):\n    \"\"\"ID: 87c0135a-044f-431f-b4d2-aa905587b15b\"\"\"\n    self.ns = ns\n    self.module = module\n    self.mro = [ns]\n",
+  "position": {
+    "line_no": 39,
+    "col_offset": 4,
+    "end_line_no": 44,
+    "end_col_offset": 0
+  }
+}

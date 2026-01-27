@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9b7c2371-0731-4ef0-a517-2d670a7dd243",
+  "name": "_get_module_path",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager._get_module_path",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def _get_module_path(self):\n    \"\"\"ID: 9b7c2371-0731-4ef0-a517-2d670a7dd243\"\"\"\n    return self.current_module\n",
+  "position": {
+    "line_no": 113,
+    "col_offset": 4,
+    "end_line_no": 116,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0800561a-8514-42b5-aad5-ec0a3ff8edc0",
+  "name": "create_edge",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.create_edge",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def create_edge(self, dest):\n    \"\"\"ID: 0800561a-8514-42b5-aad5-ec0a3ff8edc0\"\"\"\n    if not dest or not isinstance(dest, str):\n        raise ImportManagerError(\"Invalid node name\")\n\n    node = self.get_node(self._get_module_path())\n    if not node:\n        return\n        # raise ImportManagerError(\"Can't add edge to a non existing node\")\n\n    node[\"imports\"].add(dest)\n",
+  "position": {
+    "line_no": 94,
+    "col_offset": 4,
+    "end_line_no": 105,
+    "end_col_offset": 0
+  }
+}

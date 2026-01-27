@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f7c21343-f4c3-4c85-a425-954b5e5ca107",
+  "name": "main",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis_cli.main",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "def main():\n    \"\"\"ID: f7c21343-f4c3-4c85-a425-954b5e5ca107\"\"\"\n    start_time = time.time()\n\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\"module\",\n                        nargs=\"*\",\n                        help=\"Modules to be processed\")\n    parser.add_argument(\n        \"--package\",\n        help=\"Package containing the code to be analyzed\",\n        default=None\n    )\n    parser.add_argument(\n        \"--decy\",\n        action=\"store_true\",\n        help=\"whether iterate the dependency\",\n        default=False\n    )\n    parser.add_argument(\n        \"--precision\",\n        action=\"store_true\",\n        help=\"whether flow-sensitive\",\n        default=False\n    )\n    parser.add_argument(\n        \"--entry_point\",\n        nargs=\"*\",\n        help=\"Entry Points to be processed\",\n        default=None\n    )\n\n    parser.add_argument(\n        \"-o\",\n        \"--output\",\n        help=\"Output path\",\n        default=None\n    )\n    args = parser.parse_args()\n    print(\"args \", args)\n    if not args.module:\n        raise Exception(\"Need Modules to be processed\")\n    cg = CallGraphGenerator(args.module, args.package, decy=args.decy,\n                            precision=args.precision, moduleEntry=args.entry_point)\n    cg.analyze()\n\n    formatter = formats.Simple(cg)\n    output = formatter.generate()\n    # if args.operation == CALL_GRAPH_OP:\n    #     if args.fasten:\n    #         formatter = formats.Fasten(cg, args.package,\n    #                                    args.product, args.forge, args.version, args.timestamp)\n    #     else:\n    #         formatter = formats.Simple(cg)\n    #     output = formatter.generate()\n    # else:\n    #     output = cg.output_key_errs()\n    output = formatter.generate()\n    as_formatter = formats.AsGraph(cg)\n\n    if args.output:\n        with open(args.output, \"w+\") as f:\n            f.write(json.dumps(output))\n    else:\n        print(json.dumps(output))\n",
+  "position": {
+    "line_no": 24,
+    "col_offset": 0,
+    "end_line_no": 89,
+    "end_col_offset": 0
+  }
+}

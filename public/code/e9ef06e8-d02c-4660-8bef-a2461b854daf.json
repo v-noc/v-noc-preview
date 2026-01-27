@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e9ef06e8-d02c-4660-8bef-a2461b854daf",
+  "name": "setUp",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.setUp",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def setUp(self):\n    \"\"\"ID: e9ef06e8-d02c-4660-8bef-a2461b854daf\"\"\"\n    self.import_manager = ImportManager()\n    self.scope_manager = ScopeManager()\n    self.def_manager = DefinitionManager()\n    self.class_manager: ClassManager = ClassManager()\n    self.module_manager = ModuleManager()\n    self.change_manager = ChangeManager()\n    self.return_manager = ReturnManager()\n    self.cg = CallGraph()\n    self.node_manager: NodeManager = NodeManager()\n    gol._init()\n    if self.precision:\n        gol.set_value(\"precision\", self.precision)\n",
+  "position": {
+    "line_no": 56,
+    "col_offset": 4,
+    "end_line_no": 70,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "nodes/372f9c6e-7ea2-44ed-9678-b56a0ca8c3f1",
+  "name": "main",
+  "node_type": "file",
+  "qname": "sample_project2.main",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/main.py",
+  "file_name": "main",
+  "code": "\"\"\"FileID: 372f9c6e-7ea2-44ed-9678-b56a0ca8c3f1\"\"\"\nfrom .core.utils.helper import create_child\nfrom vn_logger import logger_core, context_logger, configure_logger\n# from asyncio import run\n\n\n@context_logger('11b1c19e-faa5-44f1-836a-c1ef80d43c87')\ndef main():\n    \"\"\" ID: 11b1c19e-faa5-44f1-836a-c1ef80d43c87 \"\"\"\n    child = create_child()\n    child.get_name()\n    logger_core.logger.warning(\"main function called \")\n\n\n@context_logger('fb04a14a-2746-4212-8bdd-cb70779c416c')\ndef runner():\n    \"\"\" ID: fb04a14a-2746-4212-8bdd-cb70779c416c \"\"\"\n    pass\n\n\ndef dd():\n    \"\"\"ID: 08a9a5f5-aa69-4a67-bf4a-e10800e80e31\"\"\"\n\n    pass\n\n\nif __name__ == '__main__':\n    configure_logger('http://127.0.0.1:8050/api/v1/jsonrpc',\n                     'f2298069-74dc-4f90-93be-3c79ee435cb3')\n    print('main')\n    main()\n\ndd()\n"
+}

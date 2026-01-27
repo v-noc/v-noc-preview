@@ -1,0 +1,15 @@
+{
+  "id": "nodes/93a19904-6289-4ef6-9b3e-bad83779fb4b",
+  "name": "get_modules_analyzed",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.get_modules_analyzed",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def get_modules_analyzed(self):\n    \"\"\"ID: 93a19904-6289-4ef6-9b3e-bad83779fb4b\"\"\"\n    return self.modules_analyzed\n",
+  "position": {
+    "line_no": 56,
+    "col_offset": 4,
+    "end_line_no": 59,
+    "end_col_offset": 0
+  }
+}

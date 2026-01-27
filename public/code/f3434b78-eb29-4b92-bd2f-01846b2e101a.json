@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f3434b78-eb29-4b92-bd2f-01846b2e101a",
+  "name": "get_int_name",
+  "node_type": "function",
+  "qname": "Jarvis.utils.common.get_int_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/common.py",
+  "file_name": "common",
+  "code": "def get_int_name(counter):\n    \"\"\"ID: f3434b78-eb29-4b92-bd2f-01846b2e101a\"\"\"\n    return \"<int{}>\".format(counter)\n",
+  "position": {
+    "line_no": 30,
+    "col_offset": 0,
+    "end_line_no": 33,
+    "end_col_offset": 0
+  }
+}

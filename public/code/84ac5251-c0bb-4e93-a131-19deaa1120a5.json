@@ -1,0 +1,15 @@
+{
+  "id": "nodes/84ac5251-c0bb-4e93-a131-19deaa1120a5",
+  "name": "get_while_name",
+  "node_type": "function",
+  "qname": "Jarvis.utils.common.get_while_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/common.py",
+  "file_name": "common",
+  "code": "def get_while_name(counter):\n    \"\"\"ID: 84ac5251-c0bb-4e93-a131-19deaa1120a5\"\"\"\n    return \"<while{}>\".format(counter)\n",
+  "position": {
+    "line_no": 40,
+    "col_offset": 0,
+    "end_line_no": 43,
+    "end_col_offset": 0
+  }
+}

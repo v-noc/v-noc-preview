@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0ec85a8c-9855-4131-8afd-e63b2671a951",
+  "name": "self.popStack",
+  "node_type": "call",
+  "qname": "nodes/371b7396-e242-48c4-a993-3ed7e8da101f::nodes/0499f7a6-bcad-471a-830d-135fe1810d1f",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "\"\"\"ID: efeb22b6-88b1-4bae-91ba-2b5f9afe8fcb",
+  "position": {
+    "line_no": 180,
+    "col_offset": 16,
+    "end_line_no": 180,
+    "end_col_offset": 51
+  }
+}

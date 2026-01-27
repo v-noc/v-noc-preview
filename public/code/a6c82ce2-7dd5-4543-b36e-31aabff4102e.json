@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a6c82ce2-7dd5-4543-b36e-31aabff4102e",
+  "name": "x_defi.get_ns",
+  "node_type": "call",
+  "qname": "nodes/c4edd516-6376-41ed-b3d3-889430d036bb::nodes/2d90a126-ca55-4fab-80ff-2bbeba0673b5",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "if self.iSDefiInScope(x_defi.get_ns()",
+  "position": {
+    "line_no": 556,
+    "col_offset": 42,
+    "end_line_no": 556,
+    "end_col_offset": 57
+  }
+}

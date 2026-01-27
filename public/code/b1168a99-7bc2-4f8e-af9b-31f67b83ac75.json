@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b1168a99-7bc2-4f8e-af9b-31f67b83ac75",
+  "name": "CallGraphError",
+  "node_type": "call",
+  "qname": "nodes/a75d51c4-000f-4dd1-bd3a-89cd22bfc0c0::nodes/0a506f69-933a-4c88-8d60-f9e421b562c8",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "class ExtProcessor(ProcessingBase):",
+  "position": {
+    "line_no": 36,
+    "col_offset": 18,
+    "end_line_no": 36,
+    "end_col_offset": 66
+  }
+}

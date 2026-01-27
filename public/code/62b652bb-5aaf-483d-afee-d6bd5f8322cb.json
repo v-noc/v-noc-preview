@@ -1,0 +1,15 @@
+{
+  "id": "nodes/62b652bb-5aaf-483d-afee-d6bd5f8322cb",
+  "name": "Module",
+  "node_type": "call",
+  "qname": "nodes/2e814249-752b-4c8e-8504-21f6465cf614::nodes/a852b606-b80d-4fce-8819-87606d49068d",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/modules.py",
+  "file_name": "modules",
+  "code": "mod = Module(name, fname)",
+  "position": {
+    "line_no": 31,
+    "col_offset": 14,
+    "end_line_no": 31,
+    "end_col_offset": 33
+  }
+}

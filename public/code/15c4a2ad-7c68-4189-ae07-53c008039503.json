@@ -1,0 +1,15 @@
+{
+  "id": "nodes/15c4a2ad-7c68-4189-ae07-53c008039503",
+  "name": "update_change",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Call.update_change",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def update_change(change: dict):\n    \"\"\"ID: 15c4a2ad-7c68-4189-ae07-53c008039503\"\"\"\n    for key, change in change.items():\n        scopens = self.get_scope_ns(key)\n        if not scopens:\n            return\n        scope: ScopeItem = self.scope_manager.get_scope(scopens)\n        if not scope:\n            return\n        field = key[len(scopens) + 1:]\n        defi: Definition = self.def_manager.get(key)\n        if not defi:\n            defi = self.def_manager.create(\n                key, utils.constants.NAME_DEF)\n        defi.add_value_point(\n            node.lineno, change.get_last_point_value())\n        scope.add_def(field, defi)\n    pass\n",
+  "position": {
+    "line_no": 1455,
+    "col_offset": 8,
+    "end_line_no": 1473,
+    "end_col_offset": 0
+  }
+}

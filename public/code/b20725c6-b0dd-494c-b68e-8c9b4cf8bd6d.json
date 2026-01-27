@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b20725c6-b0dd-494c-b68e-8c9b4cf8bd6d",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def __init__(self):\n    \"\"\"ID: b20725c6-b0dd-494c-b68e-8c9b4cf8bd6d\"\"\"\n    self.import_graph = dict()\n    self.current_module = \"\"\n    self.input_file = \"\"\n    self.mod_dir = None\n    self.old_path_hooks = None\n    self.old_path = None\n",
+  "position": {
+    "line_no": 60,
+    "col_offset": 4,
+    "end_line_no": 68,
+    "end_col_offset": 0
+  }
+}

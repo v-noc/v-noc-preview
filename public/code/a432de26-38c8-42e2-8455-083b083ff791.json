@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a432de26-38c8-42e2-8455-083b083ff791",
+  "name": "self.add_node",
+  "node_type": "call",
+  "qname": "nodes/5041ff54-1725-474b-b2a6-324e4f2907c0::nodes/e234dd61-fe33-4ef0-ae4b-c5ba90dafcc4",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def extract_state(self",
+  "position": {
+    "line_no": 71,
+    "col_offset": 8,
+    "end_line_no": 71,
+    "end_col_offset": 26
+  }
+}

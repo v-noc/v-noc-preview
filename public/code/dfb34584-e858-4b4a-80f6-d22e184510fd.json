@@ -1,0 +1,9 @@
+{
+  "id": "nodes/dfb34584-e858-4b4a-80f6-d22e184510fd",
+  "name": "as_graph",
+  "node_type": "file",
+  "qname": "Jarvis.formats.as_graph",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/as_graph.py",
+  "file_name": "as_graph",
+  "code": "# Copyright [pythonJaRvis] [name of copyright owner]\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this file except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#     http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n\n\"\"\"FileID: dfb34584-e858-4b4a-80f6-d22e184510fd\"\"\"\nfrom .base import BaseFormatter\n\n\nclass AsGraph(BaseFormatter):\n    \"\"\"ID: 68847bd2-232a-4125-898c-6f880c2315d8\"\"\"\n\n    def __init__(self, cg_generator):\n        \"\"\"ID: dbafc68e-027e-4c78-ac6b-48aaca993e03\"\"\"\n        self.cg_generator = cg_generator\n\n    def generate(self):\n        \"\"\"ID: 0726711e-82bd-4e72-af93-a566bbeebc17\"\"\"\n        graph = self.cg_generator.get_as_graph()\n        output = {}\n        for key, defi in graph:\n            output[key] = list(defi.get_name_pointer().get().copy())\n        return output\n"
+}

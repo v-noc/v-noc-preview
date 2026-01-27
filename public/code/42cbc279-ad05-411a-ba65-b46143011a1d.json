@@ -1,0 +1,15 @@
+{
+  "id": "nodes/42cbc279-ad05-411a-ba65-b46143011a1d",
+  "name": "DefinitionError",
+  "node_type": "call",
+  "qname": "nodes/63726b14-a104-4e06-82bc-49661fba2954::nodes/f4ad934f-22b6-4cf6-a077-646bab29131f",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "self.precision = precision",
+  "position": {
+    "line_no": 53,
+    "col_offset": 18,
+    "end_line_no": 53,
+    "end_col_offset": 63
+  }
+}

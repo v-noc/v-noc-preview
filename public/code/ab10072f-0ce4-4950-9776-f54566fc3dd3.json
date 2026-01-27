@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ab10072f-0ce4-4950-9776-f54566fc3dd3",
+  "name": "CallItem",
+  "node_type": "call",
+  "qname": "nodes/9099dc11-d899-499a-92bb-48725378d0fa::nodes/6610425e-51da-421a-99e9-b8747bc6b7f3",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/calls.py",
+  "file_name": "calls",
+  "code": "item = CallItem(row,self.seq,func_name,ns,paramList,inherit)",
+  "position": {
+    "line_no": 38,
+    "col_offset": 15,
+    "end_line_no": 38,
+    "end_col_offset": 68
+  }
+}

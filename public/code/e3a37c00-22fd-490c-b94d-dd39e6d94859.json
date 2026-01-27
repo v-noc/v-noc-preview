@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e3a37c00-22fd-490c-b94d-dd39e6d94859",
+  "name": "walk",
+  "node_type": "function",
+  "qname": "sample_project2.core.model.parent.GrandParent.walk",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/core/model/parent.py",
+  "file_name": "parent",
+  "code": "def walk(self):\n    \"\"\" ID: e3a37c00-22fd-490c-b94d-dd39e6d94859 \"\"\"\n    pass\n",
+  "position": {
+    "line_no": 14,
+    "col_offset": 4,
+    "end_line_no": 17,
+    "end_col_offset": 0
+  }
+}

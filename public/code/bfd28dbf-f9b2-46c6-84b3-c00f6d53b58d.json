@@ -1,0 +1,15 @@
+{
+  "id": "nodes/bfd28dbf-f9b2-46c6-84b3-c00f6d53b58d",
+  "name": "self.create_namespaces_map",
+  "node_type": "call",
+  "qname": "nodes/2b16aa17-f128-4479-96e9-555acdadb389::nodes/b39f969c-8b1b-4723-af74-9144f3be64ee",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "internal, external = self.create_namespaces_map()",
+  "position": {
+    "line_no": 219,
+    "col_offset": 29,
+    "end_line_no": 219,
+    "end_col_offset": 57
+  }
+}

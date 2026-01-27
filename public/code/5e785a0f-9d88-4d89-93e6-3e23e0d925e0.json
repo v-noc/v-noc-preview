@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5e785a0f-9d88-4d89-93e6-3e23e0d925e0",
+  "name": "visitor",
+  "node_type": "call",
+  "qname": "nodes/dd3cd62b-13f3-4251-8360-789787d7bb96::nodes/2851c6d3-46d9-49d0-872c-8d473e001c68",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "elif callDefi.get_type() == utils.constants.MAP_DEF:",
+  "position": {
+    "line_no": 175,
+    "col_offset": 12,
+    "end_line_no": 175,
+    "end_col_offset": 75
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e077c12e-0188-450f-bd11-14d9fc167350",
+  "name": "create_scope",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeManager.create_scope",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def create_scope(self, namespace, parent):\n    \"\"\"ID: e077c12e-0188-450f-bd11-14d9fc167350\"\"\"\n    if not namespace in self.scopes:\n        sc = ScopeItem(namespace, parent)\n        self.scopes[namespace] = sc\n    return self.scopes[namespace]\n",
+  "position": {
+    "line_no": 92,
+    "col_offset": 4,
+    "end_line_no": 98,
+    "end_col_offset": 0
+  }
+}

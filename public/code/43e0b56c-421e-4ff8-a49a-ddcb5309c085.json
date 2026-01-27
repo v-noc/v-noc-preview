@@ -1,0 +1,15 @@
+{
+  "id": "nodes/43e0b56c-421e-4ff8-a49a-ddcb5309c085",
+  "name": "leftDefi.set_element",
+  "node_type": "call",
+  "qname": "nodes/c801575e-f69e-44a7-a90c-df6ed9acb83e::nodes/553e97b2-7eac-41c2-94de-767e38ec0904",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "leftDefi.set_element(key, list(\n    map(lambda x: x.get_ns() if isinstance(x, Definition) else x, decoded)))",
+  "position": {
+    "line_no": 653,
+    "col_offset": 28,
+    "end_line_no": 654,
+    "end_col_offset": 104
+  }
+}

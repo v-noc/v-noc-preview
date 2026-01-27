@@ -1,0 +1,15 @@
+{
+  "id": "nodes/12351fb5-c5d4-4ee0-9867-c9040f0cfc1b",
+  "name": "self.def_manager.create",
+  "node_type": "call",
+  "qname": "nodes/56aa2749-180c-458c-9458-5c1bd58620fc::nodes/e0138cd5-0e34-4106-b174-c78c4e9e545d",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "",
+  "position": {
+    "line_no": 207,
+    "col_offset": 27,
+    "end_line_no": 208,
+    "end_col_offset": 54
+  }
+}

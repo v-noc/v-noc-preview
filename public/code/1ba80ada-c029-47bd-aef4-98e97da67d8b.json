@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1ba80ada-c029-47bd-aef4-98e97da67d8b",
+  "name": "add_scope",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeManager.add_scope",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def add_scope(self,namespace,item,parent):\n    \"\"\"ID: 1ba80ada-c029-47bd-aef4-98e97da67d8b\"\"\"\n    if not namespace in self.scopes:\n        self.scopes[namespace] = item\n        item.parent = parent\n",
+  "position": {
+    "line_no": 105,
+    "col_offset": 4,
+    "end_line_no": 110,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c5923829-b86b-4910-a8f2-826bd7c72eca",
+  "name": "dd",
+  "node_type": "call",
+  "qname": "nodes/372f9c6e-7ea2-44ed-9678-b56a0ca8c3f1::nodes/08a9a5f5-aa69-4a67-bf4a-e10800e80e31",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/main.py",
+  "file_name": "main",
+  "code": "dd()",
+  "position": {
+    "line_no": 33,
+    "col_offset": 0,
+    "end_line_no": 33,
+    "end_col_offset": 4
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1da03ad1-5042-42b7-a02b-9a19c17aefda",
+  "name": "changedDefi.add_value_point",
+  "node_type": "call",
+  "qname": "nodes/79677cbc-ff01-4701-9d06-53b779c51648::nodes/874cf03e-1063-4a63-a0e2-ed3faa4eaa62",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "changedDefi.add_value_point(row, change.get_last_point_value())",
+  "position": {
+    "line_no": 1813,
+    "col_offset": 16,
+    "end_line_no": 1813,
+    "end_col_offset": 79
+  }
+}

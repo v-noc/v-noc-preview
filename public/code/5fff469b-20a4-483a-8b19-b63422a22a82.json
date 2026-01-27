@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5fff469b-20a4-483a-8b19-b63422a22a82",
+  "name": "iterate_call_args",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.iterate_call_args",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def iterate_call_args(self, defi, node):\n    \"\"\"ID: 5fff469b-20a4-483a-8b19-b63422a22a82\"\"\"\n    for pos, arg in enumerate(node.args):\n        self.visit(arg)\n        decoded = self.decode_node(arg)\n        if defi.is_function_def():\n            pos_arg_names = defi.get_name_pointer().get_pos_arg(pos)\n            # if arguments for this position exist update their namespace\n            if not pos_arg_names:\n                continue\n            for name in pos_arg_names:\n                arg_def = self.def_manager.get(name)\n                if not arg_def:\n                    continue\n                for d in decoded:\n                    if isinstance(d, Definition):\n                        arg_def.get_name_pointer().add(d.get_ns())\n                    else:\n                        arg_def.get_lit_pointer().add(d)\n        else:\n            for d in decoded:\n                if isinstance(d, Definition):\n                    defi.get_name_pointer().add_pos_arg(pos, None, d.get_ns())\n                else:\n                    defi.get_name_pointer().add_pos_lit_arg(pos, None, d)\n\n    for keyword in node.keywords:\n        self.visit(keyword.value)\n        decoded = self.decode_node(keyword.value)\n        if defi.is_function_def():\n            arg_names = defi.get_name_pointer().get_arg(keyword.arg)\n            if not arg_names:\n                continue\n            for name in arg_names:\n                arg_def = self.def_manager.get(name)\n                if not arg_def:\n                    continue\n                for d in decoded:\n                    if isinstance(d, Definition):\n                        arg_def.get_name_pointer().add(d.get_ns())\n                    else:\n                        arg_def.get_lit_pointer().add(d)\n        else:\n            for d in decoded:\n                if isinstance(d, Definition):\n                    defi.get_name_pointer().add_arg(keyword.arg, d.get_ns())\n                else:\n                    defi.get_name_pointer().add_lit_arg(keyword.arg, d)\n",
+  "position": {
+    "line_no": 429,
+    "col_offset": 4,
+    "end_line_no": 477,
+    "end_col_offset": 0
+  }
+}

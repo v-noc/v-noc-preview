@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f070d3bb-f82c-484a-8183-1c3335c9553f",
+  "name": "_clear_caches",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager._clear_caches",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def _clear_caches(self):\n    \"\"\"ID: f070d3bb-f82c-484a-8183-1c3335c9553f\"\"\"\n    importlib.invalidate_caches()\n    sys.path_importer_cache.clear()\n",
+  "position": {
+    "line_no": 107,
+    "col_offset": 4,
+    "end_line_no": 111,
+    "end_col_offset": 0
+  }
+}

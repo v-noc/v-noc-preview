@@ -1,0 +1,15 @@
+{
+  "id": "nodes/dc90e476-f010-45df-88bd-bb12d3117d45",
+  "name": "scope.add_def",
+  "node_type": "call",
+  "qname": "nodes/9462cc91-f4af-451b-b12a-e88ce90ab642::nodes/6bd4570a-5038-447b-ac0c-bcae98ff1ba2",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "scope.add_def(field, defi)",
+  "position": {
+    "line_no": 211,
+    "col_offset": 16,
+    "end_line_no": 211,
+    "end_col_offset": 42
+  }
+}

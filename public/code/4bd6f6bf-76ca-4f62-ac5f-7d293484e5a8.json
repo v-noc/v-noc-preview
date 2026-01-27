@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4bd6f6bf-76ca-4f62-ac5f-7d293484e5a8",
+  "name": "defi.get_type",
+  "node_type": "call",
+  "qname": "nodes/d3071413-ba3d-4e6e-849e-a7810a709a2c::nodes/85c5e032-e4b3-4f0f-ab12-d7677d016c98",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "if defi and defi.get_type()",
+  "position": {
+    "line_no": 555,
+    "col_offset": 28,
+    "end_line_no": 555,
+    "end_col_offset": 43
+  }
+}

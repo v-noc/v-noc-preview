@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6e445d46-a576-41e8-a8ee-223eadd6808b",
+  "name": "gg",
+  "node_type": "function",
+  "qname": "sample_project2.core.utils.helper.gg",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/core/utils/helper.py",
+  "file_name": "helper",
+  "code": "def gg():\n    \"\"\"ID: 6e445d46-a576-41e8-a8ee-223eadd6808b\"\"\"\n    pass",
+  "position": {
+    "line_no": 18,
+    "col_offset": 0,
+    "end_line_no": 21,
+    "end_col_offset": 0
+  }
+}

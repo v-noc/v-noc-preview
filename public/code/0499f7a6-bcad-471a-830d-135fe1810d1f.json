@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0499f7a6-bcad-471a-830d-135fe1810d1f",
+  "name": "popStack",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.popStack",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def popStack(self, row=0, isEntry=False):\n    \"\"\"ID: 0499f7a6-bcad-471a-830d-135fe1810d1f\"\"\"\n    callNs: str = self.callStack.pop()\n    callDefi: Definition = self.def_manager.get(callNs)\n    callScope: ScopeItem = self.scope_manager.get_scope(callNs)\n    if callScope:\n        callScope.reset_counters()\n\n    def update_change(change: dict):\n        \"\"\"ID: 99ffac1c-5c09-4fe8-9523-e784c1a04621\"\"\"\n        for key, change in change.items():\n            scopens = self.get_scope_ns(key)\n            if not scopens:\n                return\n            scope: ScopeItem = self.scope_manager.get_scope(scopens)\n            if not scope:\n                return\n            field = key[len(scopens) + 1:]\n            defi: Definition = self.def_manager.get(key)\n            if not defi:\n                defi = self.def_manager.create(\n                    key, utils.constants.NAME_DEF)\n            defi.add_value_point(row, change.get_last_point_value())\n            scope.add_def(field, defi)\n\n    if isEntry:\n        if self.change_manager.getChange(callNs):\n            update_change(self.change_manager.getChange(callNs))\n    if not self.current_ns:\n        return\n    imp = self.module_manager.get(self.get_module_ns(self.current_ns))\n    self.import_manager.set_current_mod(imp.name, imp.filename)\n",
+  "position": {
+    "line_no": 188,
+    "col_offset": 4,
+    "end_line_no": 220,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a7905c2c-697b-405f-beaf-000c3257e31d",
+  "name": "transfer",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.gol.transfer",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/gol.py",
+  "file_name": "gol",
+  "code": "def transfer():\n    \"\"\"ID: a7905c2c-697b-405f-beaf-000c3257e31d\"\"\"\n    print(_global_dict)",
+  "position": {
+    "line_no": 27,
+    "col_offset": 0,
+    "end_line_no": 30,
+    "end_col_offset": 0
+  }
+}

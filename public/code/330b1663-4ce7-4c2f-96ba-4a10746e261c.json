@@ -1,0 +1,15 @@
+{
+  "id": "nodes/330b1663-4ce7-4c2f-96ba-4a10746e261c",
+  "name": "handle_module",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeManager.handle_module",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def handle_module(self, modulename, filename, contents):\n    \"\"\"ID: 330b1663-4ce7-4c2f-96ba-4a10746e261c\"\"\"\n    functions = []\n    classes = []\n    def process(namespace, parent, table):\n        \"\"\"ID: 6c4f4996-b235-4c8a-96c4-48f660a59f8a\"\"\"\n        name = table.get_name() if table.get_name() != 'top' else ''\n        if name:\n            fullns = utils.join_ns(namespace, name)\n        else:\n            fullns = namespace\n\n        if table.get_type() == \"function\":\n            functions.append(fullns)\n\n        if table.get_type() == \"class\":\n            classes.append(fullns)\n\n        sc = self.create_scope(fullns, parent)\n\n        for t in table.get_children():\n            process(fullns, sc, t)\n\n    process(modulename, None, symtable.symtable(contents, filename, compile_type=\"exec\"))\n    return {\"functions\": functions, \"classes\": classes}\n",
+  "position": {
+    "line_no": 37,
+    "col_offset": 4,
+    "end_line_no": 62,
+    "end_col_offset": 0
+  }
+}

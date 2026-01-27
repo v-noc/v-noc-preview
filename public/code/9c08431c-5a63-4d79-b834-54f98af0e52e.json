@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9c08431c-5a63-4d79-b834-54f98af0e52e",
+  "name": "self.getYPOint",
+  "node_type": "call",
+  "qname": "nodes/d3462867-9ef3-4732-8a3a-ed192a7d01ca::nodes/b7b220b6-dd48-45cc-b823-fda1e70661f1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "decorate_defi_list = self.getYPOint(\n    node.lineno, self.decode_node(reversed_decorators[index - 1]))",
+  "position": {
+    "line_no": 938,
+    "col_offset": 41,
+    "end_line_no": 939,
+    "end_col_offset": 86
+  }
+}

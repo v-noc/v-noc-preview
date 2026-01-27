@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ab485f07-5439-462f-9bea-39e656df3797",
+  "name": "analyze",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.analyze",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def analyze(self):\n    \"\"\"ID: ab485f07-5439-462f-9bea-39e656df3797\"\"\"\n    if not self.filename:\n        return\n    if not self.import_manager.get_node(self.modname):\n        self.import_manager.create_node(self.modname)\n        self.import_manager.set_filepath(self.modname, self.filename)\n\n    try:\n        self.visit(ast.parse(self.contents, self.filename))\n    except Exception:\n        pass\n",
+  "position": {
+    "line_no": 1629,
+    "col_offset": 4,
+    "end_line_no": 1641,
+    "end_col_offset": 0
+  }
+}

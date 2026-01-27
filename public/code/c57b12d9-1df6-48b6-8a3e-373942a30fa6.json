@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c57b12d9-1df6-48b6-8a3e-373942a30fa6",
+  "name": "self.do_pass",
+  "node_type": "call",
+  "qname": "nodes/5fe7f0d5-7fc7-4b0e-b7d8-ae1971cc9cc9::nodes/449d73e4-0385-4a1f-9f16-2e3e3cc10574",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "self.do_pass(\n    ExtProcessor,\n    True,\n    set(),\n    self.import_manager,\n    self.scope_manager,\n    self.def_manager,\n    self.class_manager,\n    self.module_manager,\n    self.change_manager,\n    self.node_manager,\n    self.cg,\n)",
+  "position": {
+    "line_no": 160,
+    "col_offset": 8,
+    "end_line_no": 172,
+    "end_col_offset": 9
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5de833be-fe9c-48cd-a1d9-e13fc53c5910",
+  "name": "clear_point",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.clear_point",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def clear_point(self):\n    \"\"\"ID: 5de833be-fe9c-48cd-a1d9-e13fc53c5910\"\"\"\n    self.points = []\n",
+  "position": {
+    "line_no": 239,
+    "col_offset": 4,
+    "end_line_no": 242,
+    "end_col_offset": 0
+  }
+}

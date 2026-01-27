@@ -1,0 +1,15 @@
+{
+  "id": "nodes/29347aca-3658-4977-8f52-6eab314e4bd8",
+  "name": "get_or_create",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.get_or_create",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def get_or_create(self, ns, x, def_type):\n    \"\"\"ID: 29347aca-3658-4977-8f52-6eab314e4bd8\"\"\"\n    defi = self.def_manager.get(utils.join_ns(ns, x))\n    if not defi:\n        defi = self.def_manager.getOrCreate(utils.join_ns(ns, x), def_type)\n    nsScope: ScopeItem = self.scope_manager.get_scope(ns)\n    if not nsScope:\n        return None\n    nsScope.add_def(x, defi)\n    return defi\n",
+  "position": {
+    "line_no": 1703,
+    "col_offset": 4,
+    "end_line_no": 1713,
+    "end_col_offset": 0
+  }
+}

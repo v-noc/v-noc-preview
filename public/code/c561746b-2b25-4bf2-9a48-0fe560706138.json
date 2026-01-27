@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c561746b-2b25-4bf2-9a48-0fe560706138",
+  "name": "get_methods",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.modules.Module.get_methods",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/modules.py",
+  "file_name": "modules",
+  "code": "def get_methods(self):\n    \"\"\"ID: c561746b-2b25-4bf2-9a48-0fe560706138\"\"\"\n    return self.methods\n",
+  "position": {
+    "line_no": 81,
+    "col_offset": 4,
+    "end_line_no": 84,
+    "end_col_offset": 0
+  }
+}

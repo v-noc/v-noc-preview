@@ -1,0 +1,15 @@
+{
+  "id": "nodes/bc060745-6845-419f-a6f4-220161c09bda",
+  "name": "_get_target_ns",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor._get_target_ns",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def _get_target_ns(self, target):\n    \"\"\"ID: bc060745-6845-419f-a6f4-220161c09bda\"\"\"\n    if isinstance(target, ast.Name):\n        id = target.id\n        return [utils.join_ns(self.current_ns, id)]\n    if isinstance(target, ast.Attribute):\n        bases = self._get_target_ns(target.value)\n        res = []\n        for base in bases:\n            if not base:\n                continue\n            res.append(utils.join_ns(base.get_ns(), target.attr))\n        return res\n    if isinstance(target, ast.Subscript):\n        return self.retrieve_subscript_names(target)\n    return []\n",
+  "position": {
+    "line_no": 1686,
+    "col_offset": 4,
+    "end_line_no": 1702,
+    "end_col_offset": 0
+  }
+}

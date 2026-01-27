@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f14dd175-b15f-4a37-883a-ceedf47a4a37",
+  "name": "_handle_assign",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase._handle_assign",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def _handle_assign(self, targetns, decoded, row=0, defiType=utils.constants.NAME_DEF):\n    \"\"\"ID: f14dd175-b15f-4a37-883a-ceedf47a4a37\"\"\"\n    defi: Definition = self.def_manager.get(targetns)\n    if not defi:\n        defi = self.def_manager.create(targetns, defiType)\n    if defi.get_type == utils.constants.NA_DEF:\n        defi.def_type = utils.constants.NAME_DEF\n    try:\n        iter(decoded)\n    except TypeError:\n        return defi\n    defi.add_value_point(row, decoded)\n    return defi\n",
+  "position": {
+    "line_no": 220,
+    "col_offset": 4,
+    "end_line_no": 233,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2b16aa17-f128-4479-96e9-555acdadb389",
+  "name": "get_graph",
+  "node_type": "function",
+  "qname": "Jarvis.formats.fasten.Fasten.get_graph",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "def get_graph(self):\n    \"\"\"ID: 2b16aa17-f128-4479-96e9-555acdadb389\"\"\"\n    graph = {\"internalCalls\": [], \"externalCalls\": []}\n\n    internal, external = self.create_namespaces_map()\n\n    for src, dst in self.edges:\n        uris = []\n        for node in [src, dst]:\n            if node in internal:\n                mod = internal[node]\n                uri = self.to_uri(mod, node)\n                uris.append(self.namespace_map.get(uri, uri))\n            elif node in external:\n                mod = external[node]\n                uris.append(self.to_external_uri(mod, node))\n\n        if len(uris) == 2:\n            # internal uris have been converted to ints\n            if type(uris[1]) == str and uris[1].startswith(\"//\"):\n                graph[\"externalCalls\"].append([uris[0], uris[1]])\n            else:\n                graph[\"internalCalls\"].append([uris[0], uris[1]])\n    return graph\n",
+  "position": {
+    "line_no": 215,
+    "col_offset": 4,
+    "end_line_no": 239,
+    "end_col_offset": 0
+  }
+}

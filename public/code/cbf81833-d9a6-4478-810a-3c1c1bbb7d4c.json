@@ -1,0 +1,15 @@
+{
+  "id": "nodes/cbf81833-d9a6-4478-810a-3c1c1bbb7d4c",
+  "name": "defi.add_value_point",
+  "node_type": "call",
+  "qname": "nodes/ca62ce0d-b4fa-4798-9bd3-fc7e57646881::nodes/874cf03e-1063-4a63-a0e2-ed3faa4eaa62",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "return self._generate_mods(self.module_manager.get_external_modu",
+  "position": {
+    "line_no": 209,
+    "col_offset": 16,
+    "end_line_no": 209,
+    "end_col_offset": 72
+  }
+}

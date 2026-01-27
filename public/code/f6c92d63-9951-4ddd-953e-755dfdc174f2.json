@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f6c92d63-9951-4ddd-953e-755dfdc174f2",
+  "name": "runn",
+  "node_type": "function",
+  "qname": "sample_project2.hello.runn",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/hello.py",
+  "file_name": "hello",
+  "code": "def runn():\n    \"\"\"ID: f6c92d63-9951-4ddd-953e-755dfdc174f2\"\"\"\n    pass\n",
+  "position": {
+    "line_no": 2,
+    "col_offset": 0,
+    "end_line_no": 5,
+    "end_col_offset": 0
+  }
+}

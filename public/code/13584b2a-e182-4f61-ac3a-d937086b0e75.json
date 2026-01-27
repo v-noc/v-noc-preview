@@ -1,0 +1,15 @@
+{
+  "id": "nodes/13584b2a-e182-4f61-ac3a-d937086b0e75",
+  "name": "Simple",
+  "node_type": "class",
+  "qname": "Jarvis.formats.simple.Simple",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/simple.py",
+  "file_name": "simple",
+  "code": "class Simple(BaseFormatter):\n    \"\"\"ID: 13584b2a-e182-4f61-ac3a-d937086b0e75\"\"\"\n    def __init__(self, cg_generator):\n        \"\"\"ID: 4c7e8a8a-ea08-4752-a47e-749b02f98b29\"\"\"\n        self.cg_generator = cg_generator\n\n    def generate(self):\n        \"\"\"ID: 0b61f2c4-9617-49a3-a974-c64cd894cc0e\"\"\"\n        output = self.cg_generator.output()\n        output_cg = {}\n        for node in output:\n            output_cg[node] = list(output[node])\n        return output_cg",
+  "position": {
+    "line_no": 19,
+    "col_offset": 0,
+    "end_line_no": 32,
+    "end_col_offset": 0
+  }
+}

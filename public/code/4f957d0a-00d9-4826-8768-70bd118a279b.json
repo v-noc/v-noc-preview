@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4f957d0a-00d9-4826-8768-70bd118a279b",
+  "name": "get_if_counter",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.get_if_counter",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def get_if_counter(self):\n    \"\"\"ID: 4f957d0a-00d9-4826-8768-70bd118a279b\"\"\"\n    return self.if_counter\n",
+  "position": {
+    "line_no": 188,
+    "col_offset": 4,
+    "end_line_no": 191,
+    "end_col_offset": 0
+  }
+}

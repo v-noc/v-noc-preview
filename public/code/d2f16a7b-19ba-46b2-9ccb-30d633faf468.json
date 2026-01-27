@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d2f16a7b-19ba-46b2-9ccb-30d633faf468",
+  "name": "super().analyze_submodules",
+  "node_type": "call",
+  "qname": "nodes/cad7c8cb-faf2-4765-8c4b-d3fb888e4bc7::nodes/36bdab9a-ba16-41fa-88d9-133c7a8552b8",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "super().analyze_submodules(\n    ExtProcessor,\n    self.import_manager,\n    self.scope_manager,\n    self.def_manager,\n    self.class_manager,\n    self.module_manager,\n    self.call_manager,\n    self.return_manager,\n    self.cg,\n    self.callStack,\n    self.visited_scope,\n    modules_analyzed=self.get_modules_analyzed(),\n)",
+  "position": {
+    "line_no": 1581,
+    "col_offset": 8,
+    "end_line_no": 1594,
+    "end_col_offset": 9
+  }
+}

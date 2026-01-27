@@ -1,0 +1,15 @@
+{
+  "id": "nodes/02a1199c-e568-423f-830c-7d9a8d60c2c2",
+  "name": "self.add_node",
+  "node_type": "call",
+  "qname": "nodes/3ece3248-0134-4199-8f7a-03b2b931ce53::nodes/e234dd61-fe33-4ef0-ae4b-c5ba90dafcc4",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/callgraph.py",
+  "file_name": "callgraph",
+  "code": "self.add_node(src)",
+  "position": {
+    "line_no": 77,
+    "col_offset": 8,
+    "end_line_no": 77,
+    "end_col_offset": 26
+  }
+}

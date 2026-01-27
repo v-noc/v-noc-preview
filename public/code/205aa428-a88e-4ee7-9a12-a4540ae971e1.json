@@ -1,0 +1,15 @@
+{
+  "id": "nodes/205aa428-a88e-4ee7-9a12-a4540ae971e1",
+  "name": "self.get",
+  "node_type": "call",
+  "qname": "nodes/d3a82040-181d-4a1a-83b3-21b5a1c0bac0::nodes/ca3b7d8f-93c5-45a7-bde7-b214e13c0d53",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "for item in a:",
+  "position": {
+    "line_no": 88,
+    "col_offset": 15,
+    "end_line_no": 88,
+    "end_col_offset": 27
+  }
+}

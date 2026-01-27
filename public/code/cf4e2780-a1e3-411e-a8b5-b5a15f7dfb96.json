@@ -1,0 +1,15 @@
+{
+  "id": "nodes/cf4e2780-a1e3-411e-a8b5-b5a15f7dfb96",
+  "name": "get_params_defiNs",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.get_params_defiNs",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def get_params_defiNs(self)->list:\n    \"\"\"ID: cf4e2780-a1e3-411e-a8b5-b5a15f7dfb96\"\"\"\n    paramsDefiList = []\n    for param in self.params:\n        if param.get_type() == utils.constants.NAME_DEF:\n            continue\n        paramsDefiList += self.get_prefix_defi(param.get_ns())\n    return paramsDefiList\n",
+  "position": {
+    "line_no": 251,
+    "col_offset": 4,
+    "end_line_no": 259,
+    "end_col_offset": 0
+  }
+}

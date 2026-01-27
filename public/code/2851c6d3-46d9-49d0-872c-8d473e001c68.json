@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2851c6d3-46d9-49d0-872c-8d473e001c68",
+  "name": "visit_With",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.visit_With",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def visit_With(self, node, if_name=None):\n    \"\"\"ID: 2851c6d3-46d9-49d0-872c-8d473e001c68\"\"\"\n    self.name_stack.append(if_name)\n    self.method_stack.append(if_name)\n    for stmt in node.body:\n        self.visit(stmt)\n    self.method_stack.pop()\n    self.name_stack.pop()\n",
+  "position": {
+    "line_no": 109,
+    "col_offset": 4,
+    "end_line_no": 117,
+    "end_col_offset": 0
+  }
+}

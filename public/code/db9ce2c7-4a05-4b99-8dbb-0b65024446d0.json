@@ -1,0 +1,15 @@
+{
+  "id": "nodes/db9ce2c7-4a05-4b99-8dbb-0b65024446d0",
+  "name": "Child",
+  "node_type": "class",
+  "qname": "sample_project2.core.model.child.Child",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/core/model/child.py",
+  "file_name": "child",
+  "code": "class Child(Parent, Uncle):\n    \"\"\" ID: db9ce2c7-4a05-4b99-8dbb-0b65024446d0 \"\"\"\n\n    @context_logger('f9b3e29d-ce9e-49ea-9599-ae4ce349f326')\n    def __init__(self, name: str):\n        \"\"\" ID: f9b3e29d-ce9e-49ea-9599-ae4ce349f326 \"\"\"\n        self.name = name\n        super().__init__(name)\n\n    @context_logger('31705d6d-c950-41f5-96b5-4d2f01690c78')\n    def get_name(self) -> str:\n        \"\"\" ID: 31705d6d-c950-41f5-96b5-4d2f01690c78 \"\"\"\n        return self.name\n\n    @context_logger('2b10cd92-9cb3-40ed-828f-b446e99bfc90')\n    def set_name(self, name) -> str:\n        \"\"\" ID: 2b10cd92-9cb3-40ed-828f-b446e99bfc90 \"\"\"\n        self.name = name\n\n    def fly(self):\n        \"\"\" ID: fc638f7e-f2a8-4fbc-8ee8-037cbb8f35c2 \"\"\"\n        pass",
+  "position": {
+    "line_no": 6,
+    "col_offset": 0,
+    "end_line_no": 28,
+    "end_col_offset": 0
+  }
+}

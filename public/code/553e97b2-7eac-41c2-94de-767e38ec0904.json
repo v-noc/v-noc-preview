@@ -1,0 +1,15 @@
+{
+  "id": "nodes/553e97b2-7eac-41c2-94de-767e38ec0904",
+  "name": "set_element",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.set_element",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def set_element(self,key,value):\n    \"\"\"ID: 553e97b2-7eac-41c2-94de-767e38ec0904\"\"\"\n    if self.def_type not in [utils.constants.LIST_DEF, utils.constants.MAP_DEF]:\n        return\n        # raise DefinitionError(\"the definition doesn't belong to [List or Dict]\")\n    if not getattr(self,'memo',None):\n        self.memo = {}\n    self.memo[key] = value\n",
+  "position": {
+    "line_no": 288,
+    "col_offset": 4,
+    "end_line_no": 296,
+    "end_col_offset": 0
+  }
+}

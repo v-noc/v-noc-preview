@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ca3b7d8f-93c5-45a7-bde7-b214e13c0d53",
+  "name": "get",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.get",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def get(self, ns) :\n    \"\"\"ID: ca3b7d8f-93c5-45a7-bde7-b214e13c0d53\"\"\"\n    if ns in self.defs:\n        return self.defs[ns]\n    return None\n",
+  "position": {
+    "line_no": 75,
+    "col_offset": 4,
+    "end_line_no": 80,
+    "end_col_offset": 0
+  }
+}

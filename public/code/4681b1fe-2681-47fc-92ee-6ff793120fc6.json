@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4681b1fe-2681-47fc-92ee-6ff793120fc6",
+  "name": "getChange",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.ChangeManager.getChange",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def getChange(self, ns):\n    \"\"\"ID: 4681b1fe-2681-47fc-92ee-6ff793120fc6\"\"\"\n    if ns in self.changes:\n        return self.changes[ns]\n    self.changes[ns] = {}\n    return self.changes[ns]\n",
+  "position": {
+    "line_no": 315,
+    "col_offset": 4,
+    "end_line_no": 321,
+    "end_col_offset": 0
+  }
+}

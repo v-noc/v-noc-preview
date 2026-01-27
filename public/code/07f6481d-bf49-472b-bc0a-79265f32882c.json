@@ -1,0 +1,15 @@
+{
+  "id": "nodes/07f6481d-bf49-472b-bc0a-79265f32882c",
+  "name": "add_defi",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeManager.add_defi",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def add_defi(self, ns, target, defi):\n    \"\"\"ID: 07f6481d-bf49-472b-bc0a-79265f32882c\"\"\"\n    scope = self.get_scope(ns)\n    if scope:\n        scope.add_def(target, defi)\n",
+  "position": {
+    "line_no": 63,
+    "col_offset": 4,
+    "end_line_no": 68,
+    "end_col_offset": 0
+  }
+}

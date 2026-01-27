@@ -1,0 +1,15 @@
+{
+  "id": "nodes/24e06812-6395-4568-a3e2-695ab2f40996",
+  "name": "get_arg",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.pointers.NamePointer.get_arg",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "def get_arg(self, name):\n    \"\"\"ID: 24e06812-6395-4568-a3e2-695ab2f40996\"\"\"\n    if self.args.get(name, None):\n        return self.args[name]\n",
+  "position": {
+    "line_no": 136,
+    "col_offset": 4,
+    "end_line_no": 140,
+    "end_col_offset": 0
+  }
+}

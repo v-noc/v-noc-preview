@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2d90a126-ca55-4fab-80ff-2bbeba0673b5",
+  "name": "get_ns",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.get_ns",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def get_ns(self):\n    \"\"\"ID: 2d90a126-ca55-4fab-80ff-2bbeba0673b5\"\"\"\n    return self.fullns\n",
+  "position": {
+    "line_no": 277,
+    "col_offset": 4,
+    "end_line_no": 280,
+    "end_col_offset": 0
+  }
+}

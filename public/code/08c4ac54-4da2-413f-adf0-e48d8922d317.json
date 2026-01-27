@@ -1,0 +1,15 @@
+{
+  "id": "nodes/08c4ac54-4da2-413f-adf0-e48d8922d317",
+  "name": "current_method",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.current_method",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def current_method(self):\n    \"\"\"ID: 08c4ac54-4da2-413f-adf0-e48d8922d317\"\"\"\n    return \".\".join(self.method_stack)\n",
+  "position": {
+    "line_no": 70,
+    "col_offset": 4,
+    "end_line_no": 73,
+    "end_col_offset": 0
+  }
+}

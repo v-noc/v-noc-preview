@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f0b1cb6f-3493-40d6-bec5-4c52a8c72094",
+  "name": "inc_lambda_counter",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.inc_lambda_counter",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def inc_lambda_counter(self, val=1):\n    \"\"\"ID: f0b1cb6f-3493-40d6-bec5-4c52a8c72094\"\"\"\n    self.lambda_counter += val\n    return self.lambda_counter\n",
+  "position": {
+    "line_no": 196,
+    "col_offset": 4,
+    "end_line_no": 200,
+    "end_col_offset": 0
+  }
+}

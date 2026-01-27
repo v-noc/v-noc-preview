@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5bfe6df0-4c99-4d02-83f6-319a5e6bc7db",
+  "name": "ChangeItem",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.definitions.ChangeItem",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "class ChangeItem(Definition):\n    \"\"\"ID: 5bfe6df0-4c99-4d02-83f6-319a5e6bc7db\"\"\"\n    def __init__(self, row, values,if_union = False):\n        \"\"\"ID: c8962097-c2a6-46f4-b0f6-696f8005bbe6\"\"\"\n        self.points = []\n        self.bias = set()\n        self.if_union = if_union\n        self.add_value_point(row,values)\n    def addPoint(self,row,values):\n        \"\"\"ID: a6e7f066-999c-48a0-94fa-7b47515aa476\"\"\"\n        point = PointItem(row,values)\n        heapq.heappush(self.points,point)\n",
+  "position": {
+    "line_no": 333,
+    "col_offset": 0,
+    "end_line_no": 345,
+    "end_col_offset": 0
+  }
+}

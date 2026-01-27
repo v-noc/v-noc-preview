@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4c61ebbc-5472-48ad-a4ea-cfcc71319b10",
+  "name": "set_current_mod",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.set_current_mod",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def set_current_mod(self, name, fname):\n    \"\"\"ID: 4c61ebbc-5472-48ad-a4ea-cfcc71319b10\"\"\"\n    self.current_module = name\n    self.input_file = os.path.abspath(fname)\n",
+  "position": {
+    "line_no": 117,
+    "col_offset": 4,
+    "end_line_no": 121,
+    "end_col_offset": 0
+  }
+}

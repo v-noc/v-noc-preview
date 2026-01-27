@@ -1,0 +1,15 @@
+{
+  "id": "nodes/59174ed9-32e9-46f4-b15a-bd556c64cd5e",
+  "name": "self.retrieve_subscript_names",
+  "node_type": "call",
+  "qname": "nodes/d72a4c0e-6b1b-4dcb-b420-ee1ae351adec::nodes/1cd8b67b-fd10-48ef-b508-f3bd9efe8280",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "elif isinstance(node, ast.List):",
+  "position": {
+    "line_no": 336,
+    "col_offset": 20,
+    "end_line_no": 336,
+    "end_col_offset": 55
+  }
+}

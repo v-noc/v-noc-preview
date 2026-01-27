@@ -1,0 +1,15 @@
+{
+  "id": "nodes/455000a3-a495-4765-b791-d5cb636daafb",
+  "name": "get_version",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.get_version",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def get_version(self,mod_name):\n    \"\"\"ID: 455000a3-a495-4765-b791-d5cb636daafb\"\"\"\n    tmp = pkg_resources.find_distributions(mod_name,True)\n    print(tmp)\n    pass\n",
+  "position": {
+    "line_no": 197,
+    "col_offset": 4,
+    "end_line_no": 202,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9616e910-c2bd-4bb1-8f50-67e98ff2a91b",
+  "name": "process_str",
+  "node_type": "call",
+  "qname": "nodes/232cdd99-a3b1-406c-9dc2-f7ff544c2e33::nodes/765b94b5-f41f-46db-82ea-a0933c14fda3",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "if not args.module:",
+  "position": {
+    "line_no": 64,
+    "col_offset": 14,
+    "end_line_no": 64,
+    "end_col_offset": 30
+  }
+}

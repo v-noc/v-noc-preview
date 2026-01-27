@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2e7ed7ed-3290-4e43-ab16-4019161fd0d5",
+  "name": "create_node",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.create_node",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def create_node(self, name):\n    \"\"\"ID: 2e7ed7ed-3290-4e43-ab16-4019161fd0d5\"\"\"\n    if not name or not isinstance(name, str):\n        raise ImportManagerError(\"Invalid node name\")\n\n    if self.get_node(name):\n        return\n        raise ImportManagerError(\"Can't create a node a second time\")\n\n    self.import_graph[name] = {\"filename\": \"\", \"imports\": set()}\n    return self.import_graph[name]\n",
+  "position": {
+    "line_no": 82,
+    "col_offset": 4,
+    "end_line_no": 93,
+    "end_col_offset": 0
+  }
+}

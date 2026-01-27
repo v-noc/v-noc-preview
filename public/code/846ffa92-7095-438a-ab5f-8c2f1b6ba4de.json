@@ -1,0 +1,15 @@
+{
+  "id": "nodes/846ffa92-7095-438a-ab5f-8c2f1b6ba4de",
+  "name": "pushStack",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.pushStack",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def pushStack(self, ns):\n    \"\"\"ID: 846ffa92-7095-438a-ab5f-8c2f1b6ba4de\"\"\"\n    self.callStack.append(ns)\n    self.current_ns = self.callStack[-1]\n    body = self.node_manager.get(ns)\n    self.visit(body)\n    pass\n",
+  "position": {
+    "line_no": 42,
+    "col_offset": 4,
+    "end_line_no": 49,
+    "end_col_offset": 0
+  }
+}

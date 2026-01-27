@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b9d58288-bb16-482c-987b-26a3adb41d14",
+  "name": "get_classes",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.classes.ClassManager.get_classes",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "def get_classes(self):\n    \"\"\"ID: b9d58288-bb16-482c-987b-26a3adb41d14\"\"\"\n    return self.names\n",
+  "position": {
+    "line_no": 33,
+    "col_offset": 4,
+    "end_line_no": 36,
+    "end_col_offset": 0
+  }
+}

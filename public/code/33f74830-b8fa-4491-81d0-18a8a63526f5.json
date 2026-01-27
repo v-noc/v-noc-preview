@@ -1,0 +1,15 @@
+{
+  "id": "nodes/33f74830-b8fa-4491-81d0-18a8a63526f5",
+  "name": "add_range",
+  "node_type": "call",
+  "qname": "nodes/c7caac6a-24b6-40a3-b261-35a0388ceaa4::nodes/735bd0b2-9158-4a62-a018-278ab531a12c",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "add_range(begin, end)",
+  "position": {
+    "line_no": 128,
+    "col_offset": 24,
+    "end_line_no": 128,
+    "end_col_offset": 45
+  }
+}

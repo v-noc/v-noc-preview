@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d520d6ff-9930-4391-9c82-bf530ce7522b",
+  "name": "get_dict_name",
+  "node_type": "function",
+  "qname": "Jarvis.utils.common.get_dict_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/common.py",
+  "file_name": "common",
+  "code": "def get_dict_name(counter):\n    \"\"\"ID: d520d6ff-9930-4391-9c82-bf530ce7522b\"\"\"\n    return \"<dict{}>\".format(counter)\n",
+  "position": {
+    "line_no": 22,
+    "col_offset": 0,
+    "end_line_no": 25,
+    "end_col_offset": 0
+  }
+}

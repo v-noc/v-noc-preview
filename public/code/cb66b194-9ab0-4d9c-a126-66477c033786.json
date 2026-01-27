@@ -1,0 +1,9 @@
+{
+  "id": "nodes/cb66b194-9ab0-4d9c-a126-66477c033786",
+  "name": "hello",
+  "node_type": "file",
+  "qname": "sample_project2.hello",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/hello.py",
+  "file_name": "hello",
+  "code": "\"\"\"FileID: cb66b194-9ab0-4d9c-a126-66477c033786\"\"\"\ndef runn():\n    \"\"\"ID: f6c92d63-9951-4ddd-953e-755dfdc174f2\"\"\"\n    pass\n\n\nasync def gifhj():\n    \"\"\"ID: fe252706-863d-4187-b2f4-cc403ee9fb28\"\"\"\n    pass\n"
+}

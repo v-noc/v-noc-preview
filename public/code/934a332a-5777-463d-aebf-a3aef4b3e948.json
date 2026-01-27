@@ -1,0 +1,15 @@
+{
+  "id": "nodes/934a332a-5777-463d-aebf-a3aef4b3e948",
+  "name": "calleeDefi.get_last_point_value",
+  "node_type": "call",
+  "qname": "nodes/19ce68b1-d9e2-4821-863b-abff3e5aa9f9::nodes/3b34a6de-0ef3-4a3b-ab7d-6c60b5e60ce4",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "nsList = calleeDefi.get_last_point_value()",
+  "position": {
+    "line_no": 2221,
+    "col_offset": 21,
+    "end_line_no": 2221,
+    "end_col_offset": 54
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/442d954e-986a-4c2a-92fa-9791c5bbdcd1",
+  "name": "join_ns",
+  "node_type": "function",
+  "qname": "Jarvis.utils.common.join_ns",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/common.py",
+  "file_name": "common",
+  "code": "def join_ns(*args):\n    \"\"\"ID: 442d954e-986a-4c2a-92fa-9791c5bbdcd1\"\"\"\n    return \".\".join([arg for arg in args])\n",
+  "position": {
+    "line_no": 49,
+    "col_offset": 0,
+    "end_line_no": 52,
+    "end_col_offset": 0
+  }
+}

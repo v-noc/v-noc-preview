@@ -1,0 +1,15 @@
+{
+  "id": "nodes/28b76732-7f66-413c-9c2d-32efa4f1e52d",
+  "name": "self.scope_manager.get_scope",
+  "node_type": "call",
+  "qname": "nodes/0ec85a8c-9855-4131-8afd-e63b2671a951::nodes/a56f2399-550d-4f4f-ac01-7fbc376da65a",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def _generate_mods(self, mods):",
+  "position": {
+    "line_no": 191,
+    "col_offset": 31,
+    "end_line_no": 191,
+    "end_col_offset": 67
+  }
+}

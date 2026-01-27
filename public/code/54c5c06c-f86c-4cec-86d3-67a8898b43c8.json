@@ -1,0 +1,15 @@
+{
+  "id": "nodes/54c5c06c-f86c-4cec-86d3-67a8898b43c8",
+  "name": "DefinitionError",
+  "node_type": "call",
+  "qname": "nodes/7092a8db-f289-4c42-b39b-9db63579e356::nodes/f4ad934f-22b6-4cf6-a077-646bab29131f",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "raise DefinitionError(\"the definition doesn't belong to [List or Dict]\")",
+  "position": {
+    "line_no": 305,
+    "col_offset": 18,
+    "end_line_no": 305,
+    "end_col_offset": 84
+  }
+}

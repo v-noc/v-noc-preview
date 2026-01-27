@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9412cf58-6ed6-436d-850d-78bc044a9d2e",
+  "name": "visit_else",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.visit_else",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def visit_else(self, node, else_name=None):\n    \"\"\"ID: 9412cf58-6ed6-436d-850d-78bc044a9d2e\"\"\"\n    self.name_stack.append(else_name)\n    self.method_stack.append(else_name)\n    for stmt in node.orelse:\n        self.visit(stmt)\n    self.method_stack.pop()\n    self.name_stack.pop()\n",
+  "position": {
+    "line_no": 127,
+    "col_offset": 4,
+    "end_line_no": 135,
+    "end_col_offset": 0
+  }
+}

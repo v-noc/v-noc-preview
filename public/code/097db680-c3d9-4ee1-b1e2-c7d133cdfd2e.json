@@ -1,0 +1,15 @@
+{
+  "id": "nodes/097db680-c3d9-4ee1-b1e2-c7d133cdfd2e",
+  "name": "dfs",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.convert.dfs",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def dfs(curStr: str):\n    \"\"\"ID: 097db680-c3d9-4ee1-b1e2-c7d133cdfd2e\"\"\"\n    queue = [curStr]\n    visited = set()\n    while queue:\n        cur = queue[0]\n        queue.remove(cur)\n        if cur in [\"<map>\", \"<int>\", \"<str>\", \"<list>\"]:\n            visited.add(cur)\n            continue\n        curDefi: Definition = self.def_manager.get(cur)\n        if not curDefi:\n            visited.add(cur)\n            continue\n        if curDefi.get_type() in [\n            utils.constants.NAME_DEF,\n            utils.constants.NA_DEF,\n            utils.constants.PARAM_DEF,\n            utils.constants.RETURN_DEF,\n        ]:\n            PointValueList = curDefi.get_last_point_value()\n            visited = visited.union(set(PointValueList))\n            for pointValue in PointValueList:\n                if pointValue not in visited:\n                    queue.append(pointValue)\n            continue\n        if curDefi.get_type() == utils.constants.INT_DEF:\n            visited.add(\"<int>\")\n        if curDefi.get_type() == utils.constants.STR_DEF:\n            visited.add(\"<str>\")\n        if curDefi.get_type() == utils.constants.LIST_DEF:\n            visited.add(\"<list>\")\n        if curDefi.get_type() == utils.constants.MAP_DEF:\n            visited.add(\"<map>\")\n        if \"<str>\" in curDefi.get_ns():\n            visited.add(\"<str>\")\n        if \"<list>\" in curDefi.get_ns():\n            visited.add(\"<list>\")\n        if \"<dict>\" in curDefi.get_ns():\n            visited.add(\"<dict>\")\n        if \"<int>\" in curDefi.get_ns():\n            visited.add(\"<int>\")\n        visited.add(cur)\n    return visited\n",
+  "position": {
+    "line_no": 1952,
+    "col_offset": 8,
+    "end_line_no": 1996,
+    "end_col_offset": 0
+  }
+}

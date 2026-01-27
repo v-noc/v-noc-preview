@@ -1,0 +1,15 @@
+{
+  "id": "nodes/96167dc1-0e4b-43ae-bb0f-74c049272dc7",
+  "name": "add_arg",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.pointers.NamePointer.add_arg",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "def add_arg(self, name, item):\n    \"\"\"ID: 96167dc1-0e4b-43ae-bb0f-74c049272dc7\"\"\"\n    arg = self.get_or_create(name)\n    if isinstance(item, str):\n        self.args[name].add(item)\n    elif isinstance(item, set):\n        self.args[name] = self.args[name].union(item)\n    else:\n        raise Exception()\n",
+  "position": {
+    "line_no": 84,
+    "col_offset": 4,
+    "end_line_no": 93,
+    "end_col_offset": 0
+  }
+}

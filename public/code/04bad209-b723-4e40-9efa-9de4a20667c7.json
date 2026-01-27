@@ -1,0 +1,15 @@
+{
+  "id": "nodes/04bad209-b723-4e40-9efa-9de4a20667c7",
+  "name": "get_custom_loader",
+  "node_type": "call",
+  "qname": "nodes/228b5be9-4c8b-4876-bd0a-5ece2b1d81bc::nodes/45de7d63-5a96-41ed-bdc5-87d6cac44fd1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "",
+  "position": {
+    "line_no": 259,
+    "col_offset": 17,
+    "end_line_no": 259,
+    "end_col_offset": 40
+  }
+}

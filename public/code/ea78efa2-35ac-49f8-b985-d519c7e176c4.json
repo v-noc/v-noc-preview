@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ea78efa2-35ac-49f8-b985-d519c7e176c4",
+  "name": "add_params",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.add_params",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def add_params(self,defi):\n    \"\"\"ID: ea78efa2-35ac-49f8-b985-d519c7e176c4\"\"\"\n    self.params.append(defi)\n",
+  "position": {
+    "line_no": 162,
+    "col_offset": 4,
+    "end_line_no": 165,
+    "end_col_offset": 0
+  }
+}

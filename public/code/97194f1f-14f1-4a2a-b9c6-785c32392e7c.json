@@ -1,0 +1,15 @@
+{
+  "id": "nodes/97194f1f-14f1-4a2a-b9c6-785c32392e7c",
+  "name": "inc_list_counter",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.inc_list_counter",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def inc_list_counter(self, val=1):\n    \"\"\"ID: 97194f1f-14f1-4a2a-b9c6-785c32392e7c\"\"\"\n    self.list_counter += val\n    return self.list_counter\n",
+  "position": {
+    "line_no": 206,
+    "col_offset": 4,
+    "end_line_no": 210,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/253e8aac-fcbc-4dc6-a10b-013a89035274",
+  "name": "child.get_name",
+  "node_type": "call",
+  "qname": "nodes/11b1c19e-faa5-44f1-836a-c1ef80d43c87::nodes/31705d6d-c950-41f5-96b5-4d2f01690c78",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/main.py",
+  "file_name": "main",
+  "code": "child.get_name()",
+  "position": {
+    "line_no": 11,
+    "col_offset": 4,
+    "end_line_no": 11,
+    "end_col_offset": 20
+  }
+}

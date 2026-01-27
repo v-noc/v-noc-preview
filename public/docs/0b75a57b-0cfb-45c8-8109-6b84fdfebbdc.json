@@ -1,0 +1,11 @@
+[
+  {
+    "_key": "3c2442e5-b804-45ec-bfee-d8ceb31e6582",
+    "_id": "documents/3c2442e5-b804-45ec-bfee-d8ceb31e6582",
+    "created_at": "2026-01-25T10:44:25.957342Z",
+    "updated_at": "2026-01-25T10:44:28.760328Z",
+    "name": "Overview",
+    "description": "overview",
+    "data": "[{\"id\":\"4eeccd6f-07d5-4451-bdba-99d28e157788\",\"type\":\"heading\",\"props\":{\"backgroundColor\":\"default\",\"textColor\":\"default\",\"textAlignment\":\"left\",\"level\":2,\"isToggleable\":false},\"content\":[{\"type\":\"text\",\"text\":\"get_mod_dir\",\"styles\":{\"code\":true}}],\"children\":[]},{\"id\":\"f363fcba-7992-4177-b099-01c7efbdbce8\",\"type\":\"paragraph\",\"props\":{\"backgroundColor\":\"default\",\"textColor\":\"default\",\"textAlignment\":\"left\"},\"content\":[{\"type\":\"text\",\"text\":\"Purpose:\\n\\n\",\"styles\":{\"bold\":true}},{\"type\":\"text\",\"text\":\"Provides access to the currently configured project root directory.\",\"styles\":{}}],\"children\":[]},{\"id\":\"3253e4a8-551e-49a8-b8aa-e3d3b08598ac\",\"type\":\"paragraph\",\"props\":{\"backgroundColor\":\"default\",\"textColor\":\"default\",\"textAlignment\":\"left\"},\"content\":[{\"type\":\"text\",\"text\":\"What it does:\\n\\n\",\"styles\":{\"bold\":true}},{\"type\":\"text\",\"text\":\"Returns the package path set during initialization. This value is used throughout the import analysis to determine whether a module is internal and to help resolve relative paths.\",\"styles\":{}}],\"children\":[]},{\"id\":\"ebed2a38-7c67-43af-b534-8393db2bc2b3\",\"type\":\"paragraph\",\"props\":{\"backgroundColor\":\"default\",\"textColor\":\"default\",\"textAlignment\":\"left\"},\"content\":[],\"children\":[]}]"
+  }
+]

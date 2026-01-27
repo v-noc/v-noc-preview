@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b4209f19-328c-4034-9830-b81a0712373a",
+  "name": "self.cg.get_edges",
+  "node_type": "call",
+  "qname": "nodes/5271e455-2052-4c87-9c7a-7dda79af475f::nodes/a51341c6-b584-4413-98ab-3feee3dc4675",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "return self.cg.get_edges()",
+  "position": {
+    "line_no": 189,
+    "col_offset": 15,
+    "end_line_no": 189,
+    "end_col_offset": 34
+  }
+}

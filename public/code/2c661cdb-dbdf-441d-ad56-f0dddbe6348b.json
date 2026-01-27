@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2c661cdb-dbdf-441d-ad56-f0dddbe6348b",
+  "name": "generate",
+  "node_type": "function",
+  "qname": "Jarvis.formats.base.BaseFormatter.generate",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/base.py",
+  "file_name": "base",
+  "code": "def generate(self):\n    \"\"\"ID: 2c661cdb-dbdf-441d-ad56-f0dddbe6348b\"\"\"\n    raise NotImplementedError(\"generate method not implemented in child class\")",
+  "position": {
+    "line_no": 18,
+    "col_offset": 4,
+    "end_line_no": 21,
+    "end_col_offset": 0
+  }
+}

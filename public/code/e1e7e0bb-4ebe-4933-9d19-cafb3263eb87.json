@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e1e7e0bb-4ebe-4933-9d19-cafb3263eb87",
+  "name": "visit_Module",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.visit_Module",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def visit_Module(self, node):\n    \"\"\"ID: e1e7e0bb-4ebe-4933-9d19-cafb3263eb87\"\"\"\n    self.name_stack.append(self.modname)\n    self.method_stack.append(self.modname)\n    self.scope_manager.get_scope(self.modname).reset_counters()\n    self.generic_visit(node)\n    self.method_stack.pop()\n    self.name_stack.pop()\n",
+  "position": {
+    "line_no": 74,
+    "col_offset": 4,
+    "end_line_no": 82,
+    "end_col_offset": 0
+  }
+}

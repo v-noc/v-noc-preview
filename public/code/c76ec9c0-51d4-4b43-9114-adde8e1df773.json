@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c76ec9c0-51d4-4b43-9114-adde8e1df773",
+  "name": "cls",
+  "node_type": "call",
+  "qname": "nodes/2cb59061-8114-47f3-be50-fc91c3b24c9a::nodes/b05d9cac-1fa9-4199-8d66-999f463b045c",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "elif isinstance(target, ast.Attrib",
+  "position": {
+    "line_no": 621,
+    "col_offset": 18,
+    "end_line_no": 621,
+    "end_col_offset": 50
+  }
+}

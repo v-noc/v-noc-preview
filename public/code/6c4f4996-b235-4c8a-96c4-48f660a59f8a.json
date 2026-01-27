@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6c4f4996-b235-4c8a-96c4-48f660a59f8a",
+  "name": "process",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeManager.handle_module.process",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def process(namespace, parent, table):\n    \"\"\"ID: 6c4f4996-b235-4c8a-96c4-48f660a59f8a\"\"\"\n    name = table.get_name() if table.get_name() != 'top' else ''\n    if name:\n        fullns = utils.join_ns(namespace, name)\n    else:\n        fullns = namespace\n\n    if table.get_type() == \"function\":\n        functions.append(fullns)\n\n    if table.get_type() == \"class\":\n        classes.append(fullns)\n\n    sc = self.create_scope(fullns, parent)\n\n    for t in table.get_children():\n        process(fullns, sc, t)\n",
+  "position": {
+    "line_no": 41,
+    "col_offset": 8,
+    "end_line_no": 59,
+    "end_col_offset": 0
+  }
+}

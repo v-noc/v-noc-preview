@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7092a8db-f289-4c42-b39b-9db63579e356",
+  "name": "del_element",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.del_element",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def del_element(self,key):\n    \"\"\"ID: 7092a8db-f289-4c42-b39b-9db63579e356\"\"\"\n    if self.def_type not in [utils.constants.LIST_DEF, utils.constants.MAP_DEF]:\n        raise DefinitionError(\"the definition doesn't belong to [List or Dict]\")\n    if not getattr(self,'memo'):\n        return\n    del self.memo[key]\n",
+  "position": {
+    "line_no": 302,
+    "col_offset": 4,
+    "end_line_no": 309,
+    "end_col_offset": 0
+  }
+}

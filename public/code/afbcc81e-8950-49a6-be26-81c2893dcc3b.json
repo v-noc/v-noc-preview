@@ -1,0 +1,15 @@
+{
+  "id": "nodes/afbcc81e-8950-49a6-be26-81c2893dcc3b",
+  "name": "_get_fun_defaults",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor._get_fun_defaults",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def _get_fun_defaults(self, node):\n    \"\"\"ID: afbcc81e-8950-49a6-be26-81c2893dcc3b\"\"\"\n    defaults = {}\n    if node.args.posonlyargs:\n        start = len(node.args.args) - len(node.args.defaults)\n        for cnt, d in enumerate(node.args.defaults, start=start):\n            if not d:\n                continue\n            self.visit(d)\n            # defaults[node.args.args[cnt].arg] = self.decode_node(d)\n            # print(node.lineno)\n            # print(cnt,node.args.posonlyargs)\n            if cnt >= len(node.args.posonlyargs):\n                continue\n            defaults[node.args.posonlyargs[cnt].arg] = self.getYPOint(\n                node.lineno, self.decode_node(d)\n            )\n        return defaults\n    # try:\n    start = len(node.args.args) - len(node.args.defaults)\n\n    for cnt, d in enumerate(node.args.defaults, start=start):\n        if not d:\n            continue\n        self.visit(d)\n        defaults[node.args.args[cnt].arg] = self.getYPOint(\n            node.lineno, self.decode_node(d)\n        )\n    return defaults\n",
+  "position": {
+    "line_no": 749,
+    "col_offset": 4,
+    "end_line_no": 778,
+    "end_col_offset": 0
+  }
+}

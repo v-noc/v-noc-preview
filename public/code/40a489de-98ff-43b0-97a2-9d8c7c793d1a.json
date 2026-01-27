@@ -1,0 +1,15 @@
+{
+  "id": "nodes/40a489de-98ff-43b0-97a2-9d8c7c793d1a",
+  "name": "equal",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.analyze_allfunction.equal",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def equal(prev):\n    \"\"\"ID: 40a489de-98ff-43b0-97a2-9d8c7c793d1a\"\"\"\n    if not prev:\n        return False\n    if set(prev.keys()) == set(\n            self.module_manager.get_internal_modules().copy()\n    ):\n        return True\n    return False\n",
+  "position": {
+    "line_no": 1663,
+    "col_offset": 8,
+    "end_line_no": 1672,
+    "end_col_offset": 0
+  }
+}

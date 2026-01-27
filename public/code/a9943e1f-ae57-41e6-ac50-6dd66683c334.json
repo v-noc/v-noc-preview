@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a9943e1f-ae57-41e6-ac50-6dd66683c334",
+  "name": "find_cls_fun_ns",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.find_cls_fun_ns",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def find_cls_fun_ns(self, cls_name, fn):\n    \"\"\"ID: a9943e1f-ae57-41e6-ac50-6dd66683c334\"\"\"\n    cls = self.class_manager.get(cls_name)\n    if not cls:\n        return set()\n\n    ext_names = set()\n    for item in cls.get_mro():\n        ns = utils.join_ns(item, fn)\n        names = set()\n        if getattr(self, \"closured\", None) and self.closured.get(ns, None):\n            names = self.closured[ns]\n        else:\n            names.add(ns)\n\n        if self.def_manager.get(ns):\n            return names\n\n        parent = self.def_manager.get(item)\n        if parent and parent.get_type() == utils.constants.EXT_DEF:\n            ext_names.add(ns)\n\n    for name in ext_names:\n        self.def_manager.create(name, utils.constants.EXT_DEF)\n        self.add_ext_mod_node(name)\n    return ext_names\n",
+  "position": {
+    "line_no": 642,
+    "col_offset": 4,
+    "end_line_no": 668,
+    "end_col_offset": 0
+  }
+}

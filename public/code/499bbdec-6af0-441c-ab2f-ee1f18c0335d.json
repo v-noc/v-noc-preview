@@ -1,0 +1,15 @@
+{
+  "id": "nodes/499bbdec-6af0-441c-ab2f-ee1f18c0335d",
+  "name": "_is_init_file",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager._is_init_file",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def _is_init_file(self):\n    \"\"\"ID: 499bbdec-6af0-441c-ab2f-ee1f18c0335d\"\"\"\n    return self.input_file.endswith(\"__init__.py\")\n",
+  "position": {
+    "line_no": 157,
+    "col_offset": 4,
+    "end_line_no": 160,
+    "end_col_offset": 0
+  }
+}

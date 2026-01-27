@@ -1,0 +1,15 @@
+{
+  "id": "nodes/78c560b9-f264-4bc9-bf70-cf63983a26ce",
+  "name": "super().__init__",
+  "node_type": "call",
+  "qname": "nodes/312da804-002d-486d-a243-2e86515a9bf5::nodes/dfb5fb19-13cc-489e-a619-59e3ed4cc2a0",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "self.class_manager: ClassManager = ClassManager()",
+  "position": {
+    "line_no": 61,
+    "col_offset": 8,
+    "end_line_no": 61,
+    "end_col_offset": 61
+  }
+}

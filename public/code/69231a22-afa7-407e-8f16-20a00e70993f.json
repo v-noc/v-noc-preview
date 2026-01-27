@@ -1,0 +1,15 @@
+{
+  "id": "nodes/69231a22-afa7-407e-8f16-20a00e70993f",
+  "name": "CallItem",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.calls.CallItem",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/calls.py",
+  "file_name": "calls",
+  "code": "class CallItem(object):\n    \"\"\"ID: 69231a22-afa7-407e-8f16-20a00e70993f\"\"\"\n    types = [\n        utils.constants.FUN_DEF,\n        utils.constants.CLS_DEF,\n        utils.constants.EXT_DEF,\n        utils.constants.NA_DEF\n    ]\n\n    def __init__(self,row :int,seq:int,funcDefi:str ,ns:str , params:set,inherit):\n        \"\"\"ID: 6610425e-51da-421a-99e9-b8747bc6b7f3\"\"\"\n        self.row = row\n        self.funcDefi = funcDefi\n        self.seq = seq\n        self.ns = ns\n        self.params = params\n    def get_ns(self):\n        \"\"\"ID: 029a487b-81d0-4acb-bb5d-d6461f3bc74c\"\"\"\n        return self.ns\n\n    def __lt__(self, other):\n        \"\"\"ID: 9005ddc9-dcb2-4ece-b1ea-6127782dc1f7\"\"\"\n        return self.row < other.row or self.seq < other.seq\n",
+  "position": {
+    "line_no": 48,
+    "col_offset": 0,
+    "end_line_no": 71,
+    "end_col_offset": 0
+  }
+}

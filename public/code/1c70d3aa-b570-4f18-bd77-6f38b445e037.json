@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1c70d3aa-b570-4f18-bd77-6f38b445e037",
+  "name": "mod.add_method",
+  "node_type": "call",
+  "qname": "nodes/72b1d325-3f41-4c11-a04e-49c273a92cae::nodes/1ba8b3d4-86ea-4f2b-990e-1c0b30318fec",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "mod.add_method(fn_def.get_ns(), node.lineno, self._get_last_line(node))",
+  "position": {
+    "line_no": 798,
+    "col_offset": 8,
+    "end_line_no": 798,
+    "end_col_offset": 79
+  }
+}

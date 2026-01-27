@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9d3ee7ce-f152-473f-af3c-52ff9a322340",
+  "name": "get_final_pointName",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.get_final_pointName",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def get_final_pointName(self, defiNs, row):\n    \"\"\"ID: 9d3ee7ce-f152-473f-af3c-52ff9a322340\"\"\"\n    curDefi: Definition = self.get(defiNs)\n    if not curDefi:\n        return [defiNs], row\n    if not curDefi.points:\n        return [defiNs], row\n    # pointItem: PointItem = curDefi.get_point(row)\n    pointValues:set() = curDefi.get_last_point_value()\n    if not pointValues:\n        pointValues = curDefi.get_last_point_value()\n        if not pointValues:\n            return [defiNs],row\n    return pointValues,row\n",
+  "position": {
+    "line_no": 137,
+    "col_offset": 4,
+    "end_line_no": 151,
+    "end_col_offset": 0
+  }
+}

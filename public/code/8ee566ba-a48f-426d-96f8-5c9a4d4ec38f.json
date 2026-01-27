@@ -1,0 +1,15 @@
+{
+  "id": "nodes/8ee566ba-a48f-426d-96f8-5c9a4d4ec38f",
+  "name": "curScope.add_def",
+  "node_type": "call",
+  "qname": "nodes/2fa7d733-f94b-4da1-a57b-b3f6d6f72361::nodes/6bd4570a-5038-447b-ac0c-bcae98ff1ba2",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "curScope: ScopeItem = self.scope_manager.get_scope(curScopeNs)\nif curScope:",
+  "position": {
+    "line_no": 1815,
+    "col_offset": 20,
+    "end_line_no": 1816,
+    "end_col_offset": 73
+  }
+}

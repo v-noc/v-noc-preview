@@ -1,0 +1,11 @@
+[
+  {
+    "_key": "36d431db-d7d7-4d4e-aa08-132136ed3fdb",
+    "_id": "documents/36d431db-d7d7-4d4e-aa08-132136ed3fdb",
+    "created_at": "2026-01-25T10:43:17.736582Z",
+    "updated_at": "2026-01-25T10:43:52.570853Z",
+    "name": "Overview",
+    "description": "overview",
+    "data": "[{\"id\":\"877f411b-972a-4a7f-bf9c-1a524af70abb\",\"type\":\"heading\",\"props\":{\"backgroundColor\":\"default\",\"textColor\":\"default\",\"textAlignment\":\"left\",\"level\":2,\"isToggleable\":false},\"content\":[{\"type\":\"text\",\"text\":\"set_pkg\",\"styles\":{\"code\":true}}],\"children\":[]},{\"id\":\"a409e15e-0a7f-4678-8afc-eba382dd0446\",\"type\":\"paragraph\",\"props\":{\"backgroundColor\":\"default\",\"textColor\":\"default\",\"textAlignment\":\"left\"},\"content\":[{\"type\":\"text\",\"text\":\"Purpose:\\n\\n\",\"styles\":{\"bold\":true}},{\"type\":\"text\",\"text\":\"Defines the root directory of the project being analyzed.\",\"styles\":{}}],\"children\":[]},{\"id\":\"17d47c9c-f708-4e4e-9831-e36f5b073964\",\"type\":\"paragraph\",\"props\":{\"backgroundColor\":\"default\",\"textColor\":\"default\",\"textAlignment\":\"left\"},\"content\":[{\"type\":\"text\",\"text\":\"What it does:\\n\\n\",\"styles\":{\"bold\":true}},{\"type\":\"text\",\"text\":\"Stores the provided package path as the analysis scope. This path is later used to distinguish \",\"styles\":{}},{\"type\":\"text\",\"text\":\"internal project modules\",\"styles\":{\"bold\":true}},{\"type\":\"text\",\"text\":\" from \",\"styles\":{}},{\"type\":\"text\",\"text\":\"external dependencies\",\"styles\":{\"bold\":true}},{\"type\":\"text\",\"text\":\".\",\"styles\":{}}],\"children\":[]},{\"id\":\"46f8a8a3-6b76-470c-9cf0-a07e8580da39\",\"type\":\"paragraph\",\"props\":{\"backgroundColor\":\"default\",\"textColor\":\"default\",\"textAlignment\":\"left\"},\"content\":[{\"type\":\"text\",\"text\":\"When it\u2019s used:\\n\\n\",\"styles\":{\"bold\":true}},{\"type\":\"text\",\"text\":\"Called during initialization, before import hooks are installed, to establish the boundary for import tracking.\",\"styles\":{}}],\"children\":[]},{\"id\":\"ab759747-b40a-4155-8aad-96ca3b6355f4\",\"type\":\"paragraph\",\"props\":{\"backgroundColor\":\"default\",\"textColor\":\"default\",\"textAlignment\":\"left\"},\"content\":[],\"children\":[]}]"
+  }
+]

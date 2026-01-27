@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4f9d1d2e-701f-4113-854a-5c078b9c5643",
+  "name": "popStack",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.popStack",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def popStack(self):\n    \"\"\"ID: 4f9d1d2e-701f-4113-854a-5c078b9c5643\"\"\"\n    ns = self.callStack.pop()\n    changeDict = self.change_manager.getChange(ns)\n    pass\n",
+  "position": {
+    "line_no": 50,
+    "col_offset": 4,
+    "end_line_no": 55,
+    "end_col_offset": 0
+  }
+}

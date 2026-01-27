@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5c70c66b-dcee-49be-a3ce-57eb8a7283e4",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def __init__(self):\n    \"\"\"ID: 5c70c66b-dcee-49be-a3ce-57eb8a7283e4\"\"\"\n    self.defs = {}\n    self.copyMap = {}\n",
+  "position": {
+    "line_no": 45,
+    "col_offset": 4,
+    "end_line_no": 49,
+    "end_col_offset": 0
+  }
+}

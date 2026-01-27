@@ -1,0 +1,15 @@
+{
+  "id": "nodes/309b809b-5f38-4793-a2f5-33757ab4c46d",
+  "name": "self.find_field",
+  "node_type": "call",
+  "qname": "nodes/6ed537f3-6b8c-43e9-850e-8bfa9835d252::nodes/e6240ef3-f91b-4675-af03-ee5559a65bd2",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "# tmp2 = self.find_field(leftDefi[0].get_ns(),\"__exit__\")\nfunction1Defi = self.find_field(",
+  "position": {
+    "line_no": 322,
+    "col_offset": 32,
+    "end_line_no": 323,
+    "end_col_offset": 54
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d8706207-ce63-4ac4-b442-2b696566f792",
+  "name": "super().__init__",
+  "node_type": "call",
+  "qname": "nodes/5e129659-fa04-4997-8ef5-947452b8be41::nodes/321fc4ad-2dab-43e1-80f6-349c0fbeee46",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/main.py",
+  "file_name": "main",
+  "code": "",
+  "position": {
+    "line_no": 13,
+    "col_offset": 8,
+    "end_line_no": 13,
+    "end_col_offset": 30
+  }
+}

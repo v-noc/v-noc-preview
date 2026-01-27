@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6b576d6e-54b9-4288-a958-3c66b30f55c2",
+  "name": "ClassNode",
+  "node_type": "call",
+  "qname": "nodes/128f266f-3ff9-4877-9709-cf23dd9e1edd::nodes/87c0135a-044f-431f-b4d2-aa905587b15b",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "from machinery import gol",
+  "position": {
+    "line_no": 29,
+    "col_offset": 18,
+    "end_line_no": 29,
+    "end_col_offset": 41
+  }
+}

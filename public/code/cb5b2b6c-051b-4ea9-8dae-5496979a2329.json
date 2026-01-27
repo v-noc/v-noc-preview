@@ -1,0 +1,15 @@
+{
+  "id": "nodes/cb5b2b6c-051b-4ea9-8dae-5496979a2329",
+  "name": "self.fix_mro",
+  "node_type": "call",
+  "qname": "nodes/71e4ac39-ae48-4246-b443-9b4c3adc42c3::nodes/1ce2fb9a-3993-440f-8d03-23e731705131",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "self.fix_mro()",
+  "position": {
+    "line_no": 53,
+    "col_offset": 8,
+    "end_line_no": 53,
+    "end_col_offset": 22
+  }
+}

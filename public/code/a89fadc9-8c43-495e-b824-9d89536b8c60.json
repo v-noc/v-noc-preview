@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a89fadc9-8c43-495e-b824-9d89536b8c60",
+  "name": "ReturnItem",
+  "node_type": "call",
+  "qname": "nodes/4f5e1a20-0899-4b50-a731-4f0984713624::nodes/578e1c1f-c60d-48e4-89d7-2da9bcd0bbb2",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/returns.py",
+  "file_name": "returns",
+  "code": "return self.returns",
+  "position": {
+    "line_no": 18,
+    "col_offset": 15,
+    "end_line_no": 18,
+    "end_col_offset": 41
+  }
+}

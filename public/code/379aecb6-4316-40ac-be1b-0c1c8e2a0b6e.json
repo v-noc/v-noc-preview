@@ -1,0 +1,15 @@
+{
+  "id": "nodes/379aecb6-4316-40ac-be1b-0c1c8e2a0b6e",
+  "name": "PointerError",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.pointers.PointerError",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "class PointerError(Exception):\n    \"\"\"ID: 379aecb6-4316-40ac-be1b-0c1c8e2a0b6e\"\"\"\n    pass",
+  "position": {
+    "line_no": 170,
+    "col_offset": 0,
+    "end_line_no": 173,
+    "end_col_offset": 0
+  }
+}

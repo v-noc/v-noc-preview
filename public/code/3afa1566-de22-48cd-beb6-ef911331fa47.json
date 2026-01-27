@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3afa1566-de22-48cd-beb6-ef911331fa47",
+  "name": "self.get_node",
+  "node_type": "call",
+  "qname": "nodes/4b34d16c-5941-491c-9ed7-f7383ca2bfef::nodes/8c17e5a4-b296-420c-9430-de802ea9c927",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "state[\"classes\"] = {}",
+  "position": {
+    "line_no": 87,
+    "col_offset": 11,
+    "end_line_no": 87,
+    "end_col_offset": 30
+  }
+}

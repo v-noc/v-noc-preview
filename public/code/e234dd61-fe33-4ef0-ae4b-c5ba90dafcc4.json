@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e234dd61-fe33-4ef0-ae4b-c5ba90dafcc4",
+  "name": "add_node",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.callgraph.CallGraph.add_node",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/callgraph.py",
+  "file_name": "callgraph",
+  "code": "def add_node(self, name, modname=\"\"):\n    \"\"\"ID: e234dd61-fe33-4ef0-ae4b-c5ba90dafcc4\"\"\"\n    if not isinstance(name, str):\n        raise CallGraphError(\"Only string node names allowed\")\n    if not name:\n        return\n        raise CallGraphError(\"Empty node name\")\n\n    if not name in self.cg:\n        self.cg[name] = set()\n        self.modnames[name] = modname\n\n    if name in self.cg and not self.modnames[name]:\n        self.modnames[name] = modname\n",
+  "position": {
+    "line_no": 33,
+    "col_offset": 4,
+    "end_line_no": 47,
+    "end_col_offset": 0
+  }
+}

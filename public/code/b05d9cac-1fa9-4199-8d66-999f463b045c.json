@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b05d9cac-1fa9-4199-8d66-999f463b045c",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def __init__(\n        self,\n        filename,\n        modname,\n        import_manager,\n        scope_manager,\n        def_manager,\n        class_manager,\n        module_manager,\n        change_manager,\n        node_manager,\n        cg,\n        callStack=[],\n        visited_scope=set(),\n        modules_analyzed=None,\n        decy=True,\n):\n    \"\"\"ID: b05d9cac-1fa9-4199-8d66-999f463b045c\"\"\"\n    if filename.endswith(\".so\") or filename.endswith(\"unicode.py\"):\n        self.import_manager = None\n        self.modules_analyzed = set()\n        self.filename = None\n        return\n    super().__init__(filename, modname, modules_analyzed)\n    self.modname = modname\n    if self.current_ns:\n        imp = self.get_module_ns(self.current_ns)\n        self.modname = imp.name\n        self.filename = imp.filename\n    self.mod_dir = \"/\".join(self.filename.split(\"/\")[:-1])\n    self.import_manager: ImportManager = import_manager\n    self.scope_manager: ScopeManager = scope_manager\n    self.def_manager: DefinitionManager = def_manager\n    self.class_manager: ClassManager = class_manager\n    self.module_manager: ModuleManager = module_manager\n    self.change_manager: ChangeManager = change_manager\n    self.node_manager: NodeManager = node_manager\n    self.match = {}\n    self.decy = decy\n    self.cg: CallGraph = cg\n    self.callStack = callStack\n    self.visited_scope = visited_scope\n",
+  "position": {
+    "line_no": 39,
+    "col_offset": 4,
+    "end_line_no": 81,
+    "end_col_offset": 0
+  }
+}

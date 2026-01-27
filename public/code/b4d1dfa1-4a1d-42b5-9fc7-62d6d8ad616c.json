@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b4d1dfa1-4a1d-42b5-9fc7-62d6d8ad616c",
+  "name": "add_inputs",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeManager.add_inputs",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def add_inputs(self,ns,*args):\n    \"\"\"ID: b4d1dfa1-4a1d-42b5-9fc7-62d6d8ad616c\"\"\"\n    scope = self.get_scope(ns)\n    if scope:\n        scope.add_inputs(args)\n",
+  "position": {
+    "line_no": 128,
+    "col_offset": 4,
+    "end_line_no": 133,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b0d273f3-df4b-4883-bf04-7c1bd6023dad",
+  "name": "get_module_name",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.get_module_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def get_module_name(self, ns: str):\n    \"\"\"ID: b0d273f3-df4b-4883-bf04-7c1bd6023dad\"\"\"\n    while ns.rfind('.') != -1:\n        rIndex = ns.rfind('.')\n        moduleNs = ns[:rIndex]\n        if self.get(moduleNs) and self.get(moduleNs).get_type() == utils.constants.MOD_DEF:\n            return moduleNs\n        ns = moduleNs\n",
+  "position": {
+    "line_no": 164,
+    "col_offset": 4,
+    "end_line_no": 172,
+    "end_col_offset": 0
+  }
+}

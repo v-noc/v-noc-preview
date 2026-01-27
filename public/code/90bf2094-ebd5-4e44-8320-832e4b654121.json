@@ -1,0 +1,15 @@
+{
+  "id": "nodes/90bf2094-ebd5-4e44-8320-832e4b654121",
+  "name": "visit_Dict",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.visit_Dict",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def visit_Dict(self, node, listNode=None):\n    \"\"\"ID: 90bf2094-ebd5-4e44-8320-832e4b654121\"\"\"\n    # if not self.scope_manager.get_scope(self.current_ns):\n    #     return\n    # counter = self.scope_manager.get_scope(self.current_ns).inc_dict_counter()\n    # dict_name = utils.get_dict_name(counter)\n    #\n    # sc = self.scope_manager.get_scope(utils.join_ns(self.current_ns, dict_name))\n    # if not sc:\n    #     for key, val in zip(node.keys, node.values):\n    #         if key:\n    #             self.visit(key)\n    #         if val:\n    #             self.visit(val)\n    #     return\n    # self.name_stack.append(dict_name)\n    # sc.reset_counters()\n    for key, val in zip(node.keys, node.values):\n        if key:\n            self.visit(key)\n        if val:\n            self.visit(val)\n",
+  "position": {
+    "line_no": 145,
+    "col_offset": 4,
+    "end_line_no": 167,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/cd5d88e9-6f73-4815-bd53-fd6de0dc147f",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.pointers.Pointer.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "def __init__(self):\n    \"\"\"ID: cd5d88e9-6f73-4815-bd53-fd6de0dc147f\"\"\"\n    self.values = set()\n",
+  "position": {
+    "line_no": 24,
+    "col_offset": 4,
+    "end_line_no": 27,
+    "end_col_offset": 0
+  }
+}

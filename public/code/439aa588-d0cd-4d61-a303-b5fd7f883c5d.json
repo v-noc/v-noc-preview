@@ -1,0 +1,15 @@
+{
+  "id": "nodes/439aa588-d0cd-4d61-a303-b5fd7f883c5d",
+  "name": "self.is_function_def",
+  "node_type": "call",
+  "qname": "nodes/a80645aa-d435-40e9-bea8-d50ea44d916e::nodes/f0e939e3-cdb3-4e02-bd40-ea639f716011",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "return self.is_function_def()",
+  "position": {
+    "line_no": 269,
+    "col_offset": 15,
+    "end_line_no": 269,
+    "end_col_offset": 37
+  }
+}

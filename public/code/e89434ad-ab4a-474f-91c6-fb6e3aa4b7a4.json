@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e89434ad-ab4a-474f-91c6-fb6e3aa4b7a4",
+  "name": "merge",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.pointers.Pointer.merge",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "def merge(self, pointer):\n    \"\"\"ID: e89434ad-ab4a-474f-91c6-fb6e3aa4b7a4\"\"\"\n    self.values = self.values.union(pointer.values)\n",
+  "position": {
+    "line_no": 40,
+    "col_offset": 4,
+    "end_line_no": 43,
+    "end_col_offset": 0
+  }
+}

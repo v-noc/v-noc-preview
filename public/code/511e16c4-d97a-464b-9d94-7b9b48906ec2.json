@@ -1,0 +1,15 @@
+{
+  "id": "nodes/511e16c4-d97a-464b-9d94-7b9b48906ec2",
+  "name": "get_list_name",
+  "node_type": "function",
+  "qname": "Jarvis.utils.common.get_list_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/common.py",
+  "file_name": "common",
+  "code": "def get_list_name(counter):\n    \"\"\"ID: 511e16c4-d97a-464b-9d94-7b9b48906ec2\"\"\"\n    return \"<list{}>\".format(counter)\n",
+  "position": {
+    "line_no": 26,
+    "col_offset": 0,
+    "end_line_no": 29,
+    "end_col_offset": 0
+  }
+}

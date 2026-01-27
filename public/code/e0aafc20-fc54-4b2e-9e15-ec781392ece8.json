@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e0aafc20-fc54-4b2e-9e15-ec781392ece8",
+  "name": "merge",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.pointers.NamePointer.merge",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "def merge(self, pointer):\n    \"\"\"ID: e0aafc20-fc54-4b2e-9e15-ec781392ece8\"\"\"\n    super().merge(pointer)\n    if hasattr(pointer, \"get_pos_names\"):\n        for pos, name in pointer.get_pos_names().items():\n            self.pos_to_name[pos] = name\n        for name, arg in pointer.get_args().items():\n            self.add_arg(name, arg)\n",
+  "position": {
+    "line_no": 161,
+    "col_offset": 4,
+    "end_line_no": 169,
+    "end_col_offset": 0
+  }
+}

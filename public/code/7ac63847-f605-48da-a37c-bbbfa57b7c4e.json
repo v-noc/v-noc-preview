@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7ac63847-f605-48da-a37c-bbbfa57b7c4e",
+  "name": "set_version",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.set_version",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def set_version(self, node_name, version):\n    \"\"\"ID: 7ac63847-f605-48da-a37c-bbbfa57b7c4e\"\"\"\n    if not version or not isinstance(version, str):\n        raise ImportManagerError(\"Invalid node name\")\n\n    node = self.get_node(node_name)\n    if not node:\n        raise ImportManagerError(\"Node does not exist\")\n\n    node[\"version\"] = os.path.abspath(version)\n",
+  "position": {
+    "line_no": 139,
+    "col_offset": 4,
+    "end_line_no": 149,
+    "end_col_offset": 0
+  }
+}

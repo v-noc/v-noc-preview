@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f6125e7c-8e02-40f8-bc4b-b17a8d2847d1",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.ChangeManager.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def __init__(self):\n    \"\"\"ID: f6125e7c-8e02-40f8-bc4b-b17a8d2847d1\"\"\"\n    self.changes = {}\n",
+  "position": {
+    "line_no": 311,
+    "col_offset": 4,
+    "end_line_no": 314,
+    "end_col_offset": 0
+  }
+}

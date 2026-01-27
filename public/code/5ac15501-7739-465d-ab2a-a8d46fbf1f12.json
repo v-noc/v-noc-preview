@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5ac15501-7739-465d-ab2a-a8d46fbf1f12",
+  "name": "store",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor._visit_assign.store",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def store(xList, f, y):\n    \"\"\"ID: 5ac15501-7739-465d-ab2a-a8d46fbf1f12\"\"\"\n    curScope: ScopeItem = self.scope_manager.get_scope(self.current_ns)\n    xPointList = self.getYPOint(row, xList)\n    y_point = self.getYPOint(row, y)\n    for x in xPointList:\n        if (\n                curScope.get_def(x)\n                and curScope.get_def(x).get_type() == utils.constants.NAME_DEF\n        ):\n            curScope.get_def(x).add_value_point(row, y_point)\n        else:\n            self.change_manager.addChange(\n                self.current_ns, utils.join_ns(x, f), row, y_point\n            )\n            defi: Definition = self.def_manager.get(\n                utils.join_ns(x, f))\n            if defi:\n                defi.add_value_point(row, y_point)\n    pass\n",
+  "position": {
+    "line_no": 564,
+    "col_offset": 8,
+    "end_line_no": 584,
+    "end_col_offset": 0
+  }
+}

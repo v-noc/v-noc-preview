@@ -1,0 +1,15 @@
+{
+  "id": "nodes/259c9c8d-6723-4813-93c7-924151b64877",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.key_err.KeyErrors.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/key_err.py",
+  "file_name": "key_err",
+  "code": "def __init__(self):\n    \"\"\"ID: 259c9c8d-6723-4813-93c7-924151b64877\"\"\"\n    self.key_errs = []\n",
+  "position": {
+    "line_no": 24,
+    "col_offset": 4,
+    "end_line_no": 27,
+    "end_col_offset": 0
+  }
+}

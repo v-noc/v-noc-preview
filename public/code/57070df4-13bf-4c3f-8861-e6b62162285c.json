@@ -1,0 +1,15 @@
+{
+  "id": "nodes/57070df4-13bf-4c3f-8861-e6b62162285c",
+  "name": "Pointer",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.pointers.Pointer",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "class Pointer(object):\n    \"\"\"ID: 57070df4-13bf-4c3f-8861-e6b62162285c\"\"\"\n    def __init__(self):\n        \"\"\"ID: cd5d88e9-6f73-4815-bd53-fd6de0dc147f\"\"\"\n        self.values = set()\n\n    def add(self, item):\n        \"\"\"ID: 0f1742a1-6cea-4a0c-b444-3c102a3b89e7\"\"\"\n        self.values.add(item)\n\n    def add_set(self, s):\n        \"\"\"ID: b0aee678-06a1-499d-9d3f-b7cf86be0662\"\"\"\n        self.values = self.values.union(s)\n\n    def get(self):\n        \"\"\"ID: 4d3cec85-141b-442a-8b25-7284af825f6c\"\"\"\n        return self.values\n\n    def merge(self, pointer):\n        \"\"\"ID: e89434ad-ab4a-474f-91c6-fb6e3aa4b7a4\"\"\"\n        self.values = self.values.union(pointer.values)\n",
+  "position": {
+    "line_no": 22,
+    "col_offset": 0,
+    "end_line_no": 43,
+    "end_col_offset": 0
+  }
+}

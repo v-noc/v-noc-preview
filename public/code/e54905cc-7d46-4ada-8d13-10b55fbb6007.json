@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e54905cc-7d46-4ada-8d13-10b55fbb6007",
+  "name": "x_defi.add_value_point",
+  "node_type": "call",
+  "qname": "nodes/11f51ac0-9123-4b66-a958-26c331907ad7::nodes/874cf03e-1063-4a63-a0e2-ed3faa4eaa62",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "x_defi.add_value_point(row, y_point)",
+  "position": {
+    "line_no": 554,
+    "col_offset": 20,
+    "end_line_no": 554,
+    "end_col_offset": 56
+  }
+}

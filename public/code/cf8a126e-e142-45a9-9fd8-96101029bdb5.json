@@ -1,0 +1,15 @@
+{
+  "id": "nodes/cf8a126e-e142-45a9-9fd8-96101029bdb5",
+  "name": "current_ns",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.current_ns",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def current_ns(self):\n    \"\"\"ID: cf8a126e-e142-45a9-9fd8-96101029bdb5\"\"\"\n    return self.callStack[-1] if self.callStack else \".\".join(self.name_stack)\n",
+  "position": {
+    "line_no": 65,
+    "col_offset": 4,
+    "end_line_no": 68,
+    "end_col_offset": 0
+  }
+}

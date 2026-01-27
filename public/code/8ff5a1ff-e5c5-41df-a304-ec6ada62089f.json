@@ -1,0 +1,15 @@
+{
+  "id": "nodes/8ff5a1ff-e5c5-41df-a304-ec6ada62089f",
+  "name": "_generate_mods",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator._generate_mods",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def _generate_mods(self, mods):\n    \"\"\"ID: 8ff5a1ff-e5c5-41df-a304-ec6ada62089f\"\"\"\n    res = {}\n    for mod, node in mods.items():\n        res[mod] = {\n            \"filename\": os.path.relpath(node.get_filename(), self.package)\n            if node.get_filename()\n            else None,\n            \"methods\": node.get_methods(),\n        }\n    return res\n",
+  "position": {
+    "line_no": 191,
+    "col_offset": 4,
+    "end_line_no": 202,
+    "end_col_offset": 0
+  }
+}

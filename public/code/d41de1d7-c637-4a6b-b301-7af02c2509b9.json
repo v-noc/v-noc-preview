@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d41de1d7-c637-4a6b-b301-7af02c2509b9",
+  "name": "self._get_mod_name",
+  "node_type": "call",
+  "qname": "nodes/c57b12d9-1df6-48b6-8a3e-373942a30fa6::nodes/5dd2cad3-39e8-4f54-935c-37b1d039e88a",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "input_mod = self._get_mod_name(entry_point, input_pkg)",
+  "position": {
+    "line_no": 118,
+    "col_offset": 24,
+    "end_line_no": 118,
+    "end_col_offset": 66
+  }
+}

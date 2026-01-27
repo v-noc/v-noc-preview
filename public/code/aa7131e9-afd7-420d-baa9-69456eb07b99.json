@@ -1,0 +1,15 @@
+{
+  "id": "nodes/aa7131e9-afd7-420d-baa9-69456eb07b99",
+  "name": "Child",
+  "node_type": "call",
+  "qname": "nodes/1a5b7f13-911d-450a-ad84-3ffe6b577edd::nodes/f9b3e29d-ce9e-49ea-9599-ae4ce349f326",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/core/utils/helper.py",
+  "file_name": "helper",
+  "code": "child = Child('whhat')",
+  "position": {
+    "line_no": 11,
+    "col_offset": 12,
+    "end_line_no": 11,
+    "end_col_offset": 26
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b7b220b6-dd48-45cc-b823-fda1e70661f1",
+  "name": "getYPOint",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.getYPOint",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def getYPOint(self, row, yList):\n    \"\"\"ID: b7b220b6-dd48-45cc-b823-fda1e70661f1\"\"\"\n    def closure():\n        \"\"\"ID: 4419fdf4-5af4-4c12-af87-c401a645b3fd\"\"\"\n        def func(callee):\n            \"\"\"ID: 996b570d-3fca-4409-a164-5b44d3a5e96d\"\"\"\n            if isinstance(callee, Definition):\n                callee = callee.get_ns()\n            if isinstance(callee, ScopeItem):\n                callee = callee.get_ns()\n            return self.resolve(callee, row)\n\n        return func\n\n    if not isinstance(yList, list):\n        yList = [yList]\n    yList = self.flatten(yList)\n    yList = list(filter(lambda x: x, yList))\n    if not yList:\n        return []\n    return reduce(lambda x, y: x + y, map(closure(), yList))\n",
+  "position": {
+    "line_no": 92,
+    "col_offset": 4,
+    "end_line_no": 113,
+    "end_col_offset": 0
+  }
+}

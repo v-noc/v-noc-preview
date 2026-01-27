@@ -1,0 +1,15 @@
+{
+  "id": "nodes/80a57f81-486c-4ff7-b9ec-5623b09fadbf",
+  "name": "reset_counters",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.reset_counters",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def reset_counters(self):\n    \"\"\"ID: 80a57f81-486c-4ff7-b9ec-5623b09fadbf\"\"\"\n    self.lambda_counter = 0\n    self.dict_counter = 0\n    self.list_counter = 0\n    self.if_counter = 0\n    self.while_counter = 0\n",
+  "position": {
+    "line_no": 221,
+    "col_offset": 4,
+    "end_line_no": 228,
+    "end_col_offset": 0
+  }
+}

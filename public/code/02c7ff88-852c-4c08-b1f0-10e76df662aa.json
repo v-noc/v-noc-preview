@@ -1,0 +1,15 @@
+{
+  "id": "nodes/02c7ff88-852c-4c08-b1f0-10e76df662aa",
+  "name": "analyze_local",
+  "node_type": "call",
+  "qname": "nodes/52275115-f030-42c1-93a9-2c04fcdbec95::nodes/c8631869-6856-43ce-8659-ae00e5aaa245",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "analyze_local(local)",
+  "position": {
+    "line_no": 1679,
+    "col_offset": 16,
+    "end_line_no": 1679,
+    "end_col_offset": 36
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e87c7634-d9d7-4c45-8407-d346b7de812e",
+  "name": "visit_Lambda",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.visit_Lambda",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def visit_Lambda(self, node, lambda_name=None):\n    \"\"\"ID: e87c7634-d9d7-4c45-8407-d346b7de812e\"\"\"\n    self.name_stack.append(lambda_name)\n    self.method_stack.append(lambda_name)\n    self.visit(node.body)\n    self.method_stack.pop()\n    self.name_stack.pop()\n",
+  "position": {
+    "line_no": 92,
+    "col_offset": 4,
+    "end_line_no": 99,
+    "end_col_offset": 0
+  }
+}

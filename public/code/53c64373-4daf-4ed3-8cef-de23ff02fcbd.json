@@ -1,0 +1,15 @@
+{
+  "id": "nodes/53c64373-4daf-4ed3-8cef-de23ff02fcbd",
+  "name": "addCopy",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.addCopy",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def addCopy(self,copyNs,ns):\n    \"\"\"ID: 53c64373-4daf-4ed3-8cef-de23ff02fcbd\"\"\"\n    copyDefi = self.defs.get(copyNs)\n    copyDefi.isCopy = True\n    self.copyMap[copyNs] = ns\n",
+  "position": {
+    "line_no": 81,
+    "col_offset": 4,
+    "end_line_no": 86,
+    "end_col_offset": 0
+  }
+}

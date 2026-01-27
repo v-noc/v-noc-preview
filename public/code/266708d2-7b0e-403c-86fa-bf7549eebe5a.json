@@ -1,0 +1,15 @@
+{
+  "id": "nodes/266708d2-7b0e-403c-86fa-bf7549eebe5a",
+  "name": "CallGraph",
+  "node_type": "call",
+  "qname": "nodes/eb6f2efa-13a8-465b-8cf2-d7baed695e80::nodes/4e656e3a-cd6c-4914-9483-cf8366b92e7b",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "self.cg = CallGraph()",
+  "position": {
+    "line_no": 65,
+    "col_offset": 18,
+    "end_line_no": 65,
+    "end_col_offset": 29
+  }
+}

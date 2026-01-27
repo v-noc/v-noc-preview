@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7cead2d5-c022-41c3-8165-e78ec4419b3f",
+  "name": "get_last_final_pointName",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.get_last_final_pointName",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def get_last_final_pointName(self, defiNs) -> list:\n    \"\"\"ID: 7cead2d5-c022-41c3-8165-e78ec4419b3f\"\"\"\n    queue = [defiNs]\n    finalDefiNsList = []\n    while queue:\n        curDefiNs = queue[0]\n        queue.remove(curDefiNs)\n        curDefi: Definition = self.get(curDefiNs)\n        curItemLists = curDefi.get_last_point_value()\n        if not curItemLists:\n            finalDefiNsList.append(curDefiNs)\n        else:\n            queue += curItemLists\n    return finalDefiNsList\n",
+  "position": {
+    "line_no": 185,
+    "col_offset": 4,
+    "end_line_no": 199,
+    "end_col_offset": 0
+  }
+}

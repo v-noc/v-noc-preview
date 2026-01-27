@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9e371152-8a79-470c-b9f7-e65f1554ad79",
+  "name": "handle_class_def",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.handle_class_def",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def handle_class_def(self, parent_ns, cls_name,cls_ns):\n    \"\"\"ID: 9e371152-8a79-470c-b9f7-e65f1554ad79\"\"\"\n    full_ns = utils.join_ns(cls_ns, cls_name)\n    defi: Definition = self.get(full_ns)\n    if not defi:\n        defi = self.create(full_ns, utils.constants.CLS_DEF)\n    else:\n        defi.def_type = utils.constants.CLS_DEF\n    return defi\n",
+  "position": {
+    "line_no": 111,
+    "col_offset": 4,
+    "end_line_no": 120,
+    "end_col_offset": 0
+  }
+}

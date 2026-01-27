@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3972aa22-9439-4c76-a0e8-6a15c101180c",
+  "name": "gol.get_value",
+  "node_type": "call",
+  "qname": "nodes/f86a5fd1-32d8-45a5-9a16-02079be64ae4::nodes/116b5a12-2b2b-4705-b412-5bcf43353d93",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "self.visit(target)",
+  "position": {
+    "line_no": 252,
+    "col_offset": 15,
+    "end_line_no": 252,
+    "end_col_offset": 41
+  }
+}

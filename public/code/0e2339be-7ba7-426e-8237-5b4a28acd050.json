@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0e2339be-7ba7-426e-8237-5b4a28acd050",
+  "name": "PointItem",
+  "node_type": "call",
+  "qname": "nodes/a8cc5569-ddd3-4b32-bc3a-e93fde639f87::nodes/d0ffe58a-fe3e-426a-a99a-0c78e934b7a1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "point = PointItem(row, values)",
+  "position": {
+    "line_no": 248,
+    "col_offset": 16,
+    "end_line_no": 248,
+    "end_col_offset": 38
+  }
+}

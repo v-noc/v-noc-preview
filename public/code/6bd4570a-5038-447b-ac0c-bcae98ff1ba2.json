@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6bd4570a-5038-447b-ac0c-bcae98ff1ba2",
+  "name": "add_def",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.add_def",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def add_def(self, name, defi):\n    \"\"\"ID: 6bd4570a-5038-447b-ac0c-bcae98ff1ba2\"\"\"\n    self.defs[name] = defi\n",
+  "position": {
+    "line_no": 230,
+    "col_offset": 4,
+    "end_line_no": 233,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f0be8e4b-7681-4558-9015-9987dc51170b",
+  "name": "get_module",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.classes.ClassNode.get_module",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "def get_module(self):\n    \"\"\"ID: f0be8e4b-7681-4558-9015-9987dc51170b\"\"\"\n    return self.module\n",
+  "position": {
+    "line_no": 68,
+    "col_offset": 4,
+    "end_line_no": 71,
+    "end_col_offset": 0
+  }
+}

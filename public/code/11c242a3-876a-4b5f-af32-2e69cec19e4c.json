@@ -1,0 +1,15 @@
+{
+  "id": "nodes/11c242a3-876a-4b5f-af32-2e69cec19e4c",
+  "name": "generate",
+  "node_type": "function",
+  "qname": "Jarvis.formats.fasten.Fasten.generate",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "def generate(self):\n    \"\"\"ID: 11c242a3-876a-4b5f-af32-2e69cec19e4c\"\"\"\n    return {\n        \"product\": self.product,\n        \"forge\": self.forge,\n        \"generator\": \"PyCG\",\n        \"depset\": self.find_dependencies(self.package),\n        \"version\": self.version,\n        \"timestamp\": self.timestamp,\n        \"modules\": self.get_modules(),\n        \"cha\": self.class_hiearchy(),\n        \"graph\": self.get_graph(),\n    }",
+  "position": {
+    "line_no": 240,
+    "col_offset": 4,
+    "end_line_no": 253,
+    "end_col_offset": 0
+  }
+}

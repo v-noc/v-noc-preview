@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4c7e8a8a-ea08-4752-a47e-749b02f98b29",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.formats.simple.Simple.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/simple.py",
+  "file_name": "simple",
+  "code": "def __init__(self, cg_generator):\n    \"\"\"ID: 4c7e8a8a-ea08-4752-a47e-749b02f98b29\"\"\"\n    self.cg_generator = cg_generator\n",
+  "position": {
+    "line_no": 21,
+    "col_offset": 4,
+    "end_line_no": 24,
+    "end_col_offset": 0
+  }
+}

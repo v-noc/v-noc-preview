@@ -1,0 +1,15 @@
+{
+  "id": "nodes/735bd0b2-9158-4a62-a018-278ab531a12c",
+  "name": "add_range",
+  "node_type": "function",
+  "qname": "Jarvis.formats.fasten.Fasten.find_dependencies.add_range",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "def add_range(begin, end):\n    \"\"\"ID: 735bd0b2-9158-4a62-a018-278ab531a12c\"\"\"\n    if begin and end:\n        if begin[1] and end[1]:\n            constraints.append(\"[{}..{}]\".format(begin[0], end[0]))\n        elif begin[1]:\n            constraints.append(\"[{}..{})\".format(begin[0], end[0]))\n        elif end[1]:\n            constraints.append(\"({}..{}]\".format(begin[0], end[0]))\n        else:\n            constraints.append(\"({}..{})\".format(begin[0], end[0]))\n    elif begin:\n        if begin[1]:\n            constraints.append(\"[{}..]\".format(begin[0]))\n        else:\n            constraints.append(\"({}..]\".format(begin[0]))\n    elif end:\n        if end[1]:\n            constraints.append(\"[..{}]\".format(end[0]))\n        else:\n            constraints.append(\"[..{})\".format(end[0]))\n",
+  "position": {
+    "line_no": 100,
+    "col_offset": 12,
+    "end_line_no": 121,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4e0bdae5-2857-474f-ac1c-df514c06b557",
+  "name": "closure_2_parameter",
+  "node_type": "function",
+  "qname": "Jarvis.utils.common.closure_2_parameter",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/common.py",
+  "file_name": "common",
+  "code": "def closure_2_parameter(a1,func):\n    \"\"\"ID: 4e0bdae5-2857-474f-ac1c-df514c06b557\"\"\"\n    def closure(a2):\n        \"\"\"ID: 71841d6d-3f06-4dc4-8c3b-089bf8579f90\"\"\"\n        return func(a1,a2)\n    return closure",
+  "position": {
+    "line_no": 63,
+    "col_offset": 0,
+    "end_line_no": 69,
+    "end_col_offset": 0
+  }
+}

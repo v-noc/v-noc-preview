@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1640a283-7820-4242-97a2-72bab4228b29",
+  "name": "self.change_manager.getChange",
+  "node_type": "call",
+  "qname": "nodes/079d27a4-76fb-4727-b1ba-e5d202c86c2e::nodes/4681b1fe-2681-47fc-92ee-6ff793120fc6",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "ifChange, elseChange = self.change_manager.getChange(\n    ifFullNs\n)",
+  "position": {
+    "line_no": 1730,
+    "col_offset": 31,
+    "end_line_no": 1732,
+    "end_col_offset": 9
+  }
+}

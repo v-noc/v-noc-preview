@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ba090f37-6f33-4cd1-bcca-9cab8fc15d9e",
+  "name": "get_or_create",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.pointers.NamePointer.get_or_create",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "def get_or_create(self, name):\n    \"\"\"ID: ba090f37-6f33-4cd1-bcca-9cab8fc15d9e\"\"\"\n    if not name in self.args:\n        self.args[name] = set()\n    return self.args[name]\n",
+  "position": {
+    "line_no": 78,
+    "col_offset": 4,
+    "end_line_no": 83,
+    "end_col_offset": 0
+  }
+}

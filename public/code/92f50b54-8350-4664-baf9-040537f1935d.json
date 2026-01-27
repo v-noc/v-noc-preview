@@ -1,0 +1,15 @@
+{
+  "id": "nodes/92f50b54-8350-4664-baf9-040537f1935d",
+  "name": "self.find_cls_fun_ns",
+  "node_type": "call",
+  "qname": "nodes/01febdce-8ffb-4776-a049-2ac831ed8f6a::nodes/f14477c8-26c9-4679-b6f9-988b5db7246a",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "return self.find_cls_fun_ns(scopeNs, field)",
+  "position": {
+    "line_no": 2129,
+    "col_offset": 19,
+    "end_line_no": 2129,
+    "end_col_offset": 55
+  }
+}

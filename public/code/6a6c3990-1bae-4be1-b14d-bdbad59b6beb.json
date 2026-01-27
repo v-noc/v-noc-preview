@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6a6c3990-1bae-4be1-b14d-bdbad59b6beb",
+  "name": "handle_scopes",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Import.handle_scopes",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def handle_scopes(imp_name, tgt_name, modname):\n    \"\"\"ID: 6a6c3990-1bae-4be1-b14d-bdbad59b6beb\"\"\"\n    def create_def(scope, name):\n        \"\"\"ID: e52308e5-6d6f-4934-8a73-0679158fc978\"\"\"\n        if name not in scope.get_defs():\n            def_ns = utils.join_ns(scope.get_ns(), name)\n            defi = self.def_manager.get(def_ns)\n            if not defi:\n                defi = self.def_manager.create(\n                    def_ns, utils.constants.NAME_DEF)\n            current_scope.add_def(name, defi)\n\n    current_scope = self.scope_manager.get_scope(self.current_ns)\n    imported_scope = self.scope_manager.get_scope(modname)\n    if tgt_name == \"*\":\n        if imported_scope:\n            for name, defi in imported_scope.get_defs().items():\n                create_def(current_scope, name)\n                current_scope.get_def(name).add_value_point(\n                    node.lineno, defi.get_ns()\n                )\n    else:\n        if imported_scope:\n            defi = imported_scope.get_def(imp_name)\n            if not defi:\n                defi = self.def_manager.get(imp_name)\n            if not defi:\n                return\n            if (\n                    modname == tgt_name\n                    and defi.get_type() != utils.constants.MOD_DEF\n            ):\n                create_def(current_scope, tgt_name)\n                current_scope.get_def(tgt_name).add_value_point(\n                    node.lineno, modname\n                )\n            else:\n                create_def(current_scope, tgt_name)\n                current_scope.get_def(tgt_name).add_value_point(\n                    node.lineno, defi.get_ns()\n                )\n",
+  "position": {
+    "line_no": 368,
+    "col_offset": 8,
+    "end_line_no": 409,
+    "end_col_offset": 0
+  }
+}

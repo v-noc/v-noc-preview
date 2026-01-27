@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e484df75-0ec3-4509-afa0-9e2870469115",
+  "name": "self._handle_assign",
+  "node_type": "call",
+  "qname": "nodes/450bb786-1107-4126-8a9d-55812530e5eb::nodes/f14dd175-b15f-4a37-883a-ceedf47a4a37",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "if not tns:",
+  "position": {
+    "line_no": 261,
+    "col_offset": 27,
+    "end_line_no": 261,
+    "end_col_offset": 60
+  }
+}

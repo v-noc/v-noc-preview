@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0f82af27-d06f-4fcb-bb4f-ceaa93b64ac6",
+  "name": "utils.join_ns",
+  "node_type": "call",
+  "qname": "nodes/44f20d9b-a8a4-4f30-a3dc-47f68e35ee9d::nodes/442d954e-986a-4c2a-92fa-9791c5bbdcd1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "# add a def for the target that points to the ",
+  "position": {
+    "line_no": 419,
+    "col_offset": 25,
+    "end_line_no": 419,
+    "end_col_offset": 62
+  }
+}

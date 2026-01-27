@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7ddd0871-1cb5-4c64-be96-e1625dcb44fc",
+  "name": "self.get",
+  "node_type": "call",
+  "qname": "nodes/422f0a42-25a3-418c-8ffb-ffe004bfb445::nodes/ca3b7d8f-93c5-45a7-bde7-b214e13c0d53",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "if not self.get(ns)",
+  "position": {
+    "line_no": 88,
+    "col_offset": 15,
+    "end_line_no": 88,
+    "end_col_offset": 27
+  }
+}

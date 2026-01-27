@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d3dafeeb-4f2b-42c4-b78b-c6f2a5e6be34",
+  "name": "self.get_modules",
+  "node_type": "call",
+  "qname": "nodes/11c242a3-876a-4b5f-af32-2e69cec19e4c::nodes/2a6bf634-b815-4ecf-87ae-7106a04b1e8a",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "\"modules\": self.get_modules()",
+  "position": {
+    "line_no": 249,
+    "col_offset": 23,
+    "end_line_no": 249,
+    "end_col_offset": 41
+  }
+}

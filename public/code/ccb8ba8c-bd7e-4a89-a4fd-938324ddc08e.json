@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ccb8ba8c-bd7e-4a89-a4fd-938324ddc08e",
+  "name": "self.get_scope_name",
+  "node_type": "call",
+  "qname": "nodes/73513dd8-84f4-46eb-ae0e-c6ed634cb097::nodes/2ba11a01-d630-4c46-a5f7-ff485df567c6",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "return self.get_scope_name(first)",
+  "position": {
+    "line_no": 175,
+    "col_offset": 15,
+    "end_line_no": 175,
+    "end_col_offset": 41
+  }
+}

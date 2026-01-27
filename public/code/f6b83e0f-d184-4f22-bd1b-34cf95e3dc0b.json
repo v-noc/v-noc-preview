@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f6b83e0f-d184-4f22-bd1b-34cf95e3dc0b",
+  "name": "pop_returnItem",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.returns.ReturnManager.pop_returnItem",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/returns.py",
+  "file_name": "returns",
+  "code": "def pop_returnItem(self, currentNs, row, funcName):\n    \"\"\"ID: f6b83e0f-d184-4f22-bd1b-34cf95e3dc0b\"\"\"\n    if not currentNs in self.returns:\n        return None\n    for item in self.returns[currentNs]:\n        if item.row == row and item.right == funcName:\n            self.returns[currentNs].remove(item)\n            return item.left\n",
+  "position": {
+    "line_no": 36,
+    "col_offset": 4,
+    "end_line_no": 44,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1ce2fb9a-3993-440f-8d03-23e731705131",
+  "name": "fix_mro",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.classes.ClassNode.fix_mro",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "def fix_mro(self):\n    \"\"\"ID: 1ce2fb9a-3993-440f-8d03-23e731705131\"\"\"\n    new_mro = []\n    for idx, item in enumerate(self.mro):\n        if self.mro[idx+1:].count(item) > 0:\n            continue\n        new_mro.append(item)\n    self.mro = new_mro\n",
+  "position": {
+    "line_no": 55,
+    "col_offset": 4,
+    "end_line_no": 63,
+    "end_col_offset": 0
+  }
+}

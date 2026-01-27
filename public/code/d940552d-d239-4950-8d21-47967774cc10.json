@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d940552d-d239-4950-8d21-47967774cc10",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def __init__(\n    self,\n    entry_points,\n    package,\n    decy=False,\n    moduleEntry=[],\n    precision=False\n):\n    \"\"\"ID: d940552d-d239-4950-8d21-47967774cc10\"\"\"\n    self.entry_points = entry_points\n    self.package = package\n    self.state = None\n    self.decy = decy\n    self.moduleEntry = moduleEntry\n    self.precision = precision\n    self.setUp()\n",
+  "position": {
+    "line_no": 39,
+    "col_offset": 4,
+    "end_line_no": 55,
+    "end_col_offset": 0
+  }
+}

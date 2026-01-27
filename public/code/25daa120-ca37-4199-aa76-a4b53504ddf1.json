@@ -1,0 +1,15 @@
+{
+  "id": "nodes/25daa120-ca37-4199-aa76-a4b53504ddf1",
+  "name": "set_pkg",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.set_pkg",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def set_pkg(self, input_pkg):\n    \"\"\"ID: 25daa120-ca37-4199-aa76-a4b53504ddf1\"\"\"\n    self.mod_dir = input_pkg\n",
+  "position": {
+    "line_no": 69,
+    "col_offset": 4,
+    "end_line_no": 72,
+    "end_col_offset": 0
+  }
+}

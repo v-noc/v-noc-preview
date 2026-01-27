@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4e656e3a-cd6c-4914-9483-cf8366b92e7b",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.callgraph.CallGraph.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/callgraph.py",
+  "file_name": "callgraph",
+  "code": "def __init__(self):\n    \"\"\"ID: 4e656e3a-cd6c-4914-9483-cf8366b92e7b\"\"\"\n    self.cg = {}\n    self.modnames = {}\n",
+  "position": {
+    "line_no": 28,
+    "col_offset": 4,
+    "end_line_no": 32,
+    "end_col_offset": 0
+  }
+}

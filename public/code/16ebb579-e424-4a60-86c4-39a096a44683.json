@@ -1,0 +1,15 @@
+{
+  "id": "nodes/16ebb579-e424-4a60-86c4-39a096a44683",
+  "name": "iSDefiInScope",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.iSDefiInScope",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def iSDefiInScope(self, defins: Definition, scopens: ScopeItem):\n    \"\"\"ID: 16ebb579-e424-4a60-86c4-39a096a44683\"\"\"\n    defi = self.def_manager.get(defins)\n    scope = self.scope_manager.get_scope(scopens)\n    for name, scopeDefi in scope.get_defs().items():\n        if defi == scopeDefi:\n            return True\n    return False\n",
+  "position": {
+    "line_no": 2148,
+    "col_offset": 4,
+    "end_line_no": 2156,
+    "end_col_offset": 0
+  }
+}

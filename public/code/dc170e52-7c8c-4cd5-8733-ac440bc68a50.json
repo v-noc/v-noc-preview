@@ -1,0 +1,15 @@
+{
+  "id": "nodes/dc170e52-7c8c-4cd5-8733-ac440bc68a50",
+  "name": "ChangeItem",
+  "node_type": "call",
+  "qname": "nodes/16d677c3-6944-479c-b31e-6e217c445c78::nodes/c8962097-c2a6-46f4-b0f6-696f8005bbe6",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "item = ChangeItem(row, values)",
+  "position": {
+    "line_no": 326,
+    "col_offset": 15,
+    "end_line_no": 326,
+    "end_col_offset": 38
+  }
+}

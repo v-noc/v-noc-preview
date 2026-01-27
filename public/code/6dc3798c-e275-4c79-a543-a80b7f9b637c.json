@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6dc3798c-e275-4c79-a543-a80b7f9b637c",
+  "name": "ReturnManager",
+  "node_type": "call",
+  "qname": "nodes/eb6f2efa-13a8-465b-8cf2-d7baed695e80::nodes/6800e6e6-ac3d-4307-9948-c8b25a967731",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "self.return_manager = ReturnManager()",
+  "position": {
+    "line_no": 64,
+    "col_offset": 30,
+    "end_line_no": 64,
+    "end_col_offset": 45
+  }
+}

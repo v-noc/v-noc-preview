@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e6aee0e9-e262-4a93-911b-3442ea18f3b5",
+  "name": "self.get_unique_and_increment",
+  "node_type": "call",
+  "qname": "nodes/d3dafeeb-4f2b-42c4-b78b-c6f2a5e6be34::nodes/29f150ce-d0de-4c91-a96a-36fbfec15b10",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "unique = self.get_unique_and_increment()",
+  "position": {
+    "line_no": 175,
+    "col_offset": 25,
+    "end_line_no": 175,
+    "end_col_offset": 56
+  }
+}

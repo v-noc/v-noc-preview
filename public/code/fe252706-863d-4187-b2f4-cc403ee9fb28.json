@@ -1,0 +1,15 @@
+{
+  "id": "nodes/fe252706-863d-4187-b2f4-cc403ee9fb28",
+  "name": "gifhj",
+  "node_type": "function",
+  "qname": "sample_project2.hello.gifhj",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/hello.py",
+  "file_name": "hello",
+  "code": "async def gifhj():\n    \"\"\"ID: fe252706-863d-4187-b2f4-cc403ee9fb28\"\"\"\n    pass",
+  "position": {
+    "line_no": 7,
+    "col_offset": 0,
+    "end_line_no": 10,
+    "end_col_offset": 0
+  }
+}

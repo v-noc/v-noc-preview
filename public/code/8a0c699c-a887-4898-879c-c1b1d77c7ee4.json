@@ -1,0 +1,15 @@
+{
+  "id": "nodes/8a0c699c-a887-4898-879c-c1b1d77c7ee4",
+  "name": "is_builtin",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.is_builtin",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def is_builtin(self, name):\n    \"\"\"ID: 8a0c699c-a887-4898-879c-c1b1d77c7ee4\"\"\"\n    return name in __builtins__\n",
+  "position": {
+    "line_no": 1682,
+    "col_offset": 4,
+    "end_line_no": 1685,
+    "end_col_offset": 0
+  }
+}

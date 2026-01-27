@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d7d868fa-ea4b-44e3-97cc-d2a0daf5506f",
+  "name": "merge_change",
+  "node_type": "call",
+  "qname": "nodes/1e8ef5aa-5587-4171-9f86-739a40f68105::nodes/fef56969-c486-42db-a632-0366d50ed01c",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "changeDict = merge_change(callList)",
+  "position": {
+    "line_no": 1488,
+    "col_offset": 21,
+    "end_line_no": 1488,
+    "end_col_offset": 43
+  }
+}

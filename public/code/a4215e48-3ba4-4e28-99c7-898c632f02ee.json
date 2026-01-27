@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a4215e48-3ba4-4e28-99c7-898c632f02ee",
+  "name": "output_edges",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.output_edges",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def output_edges(self):\n    \"\"\"ID: a4215e48-3ba4-4e28-99c7-898c632f02ee\"\"\"\n    return self.key_errors\n",
+  "position": {
+    "line_no": 183,
+    "col_offset": 4,
+    "end_line_no": 186,
+    "end_col_offset": 0
+  }
+}

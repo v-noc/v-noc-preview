@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a3f8a734-40e7-4eb6-bb9a-2b85c13033cd",
+  "name": "remove_hooks",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.remove_hooks",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def remove_hooks(self):\n    \"\"\"ID: a3f8a734-40e7-4eb6-bb9a-2b85c13033cd\"\"\"\n    sys.path_hooks = self.old_path_hooks\n    sys.path = self.old_path\n\n    self._clear_caches()\n",
+  "position": {
+    "line_no": 268,
+    "col_offset": 4,
+    "end_line_no": 274,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6dc12a39-9826-4459-ae4b-546b476b6945",
+  "name": "CallManager",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.calls.CallManager",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/calls.py",
+  "file_name": "calls",
+  "code": "class CallManager(object):\n    \"\"\"ID: 6dc12a39-9826-4459-ae4b-546b476b6945\"\"\"\n    def __init__(self):\n        \"\"\"ID: 3aadd1c4-1135-4041-a834-feda26a5abd2\"\"\"\n        self.calls = {}\n        self.seq = 1\n\n\n    def call(self,row,func_name,ns,params,inherit = False):\n        \"\"\"ID: 9099dc11-d899-499a-92bb-48725378d0fa\"\"\"\n        dict_all = {}\n        paramList = []\n        for param in params:\n            if isinstance(param ,dict):\n                dict_all.update(param)\n            else:\n                paramList.append(param)\n        if dict_all:\n            paramList.append(dict_all)\n        item = CallItem(row,self.seq,func_name,ns,paramList,inherit)\n        if not self.calls.__contains__(ns):\n            self.calls[ns] = []\n        heapq.heappush(self.calls[ns],item)\n        self.seq += 1\n\n    def get(self,callNs):\n        \"\"\"ID: e39cf035-2571-439b-9bf6-1f8e3b0395ea\"\"\"\n        if callNs in self.calls:\n            return self.calls[callNs]\n",
+  "position": {
+    "line_no": 19,
+    "col_offset": 0,
+    "end_line_no": 48,
+    "end_col_offset": 0
+  }
+}

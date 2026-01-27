@@ -1,0 +1,15 @@
+{
+  "id": "nodes/8826740f-3b16-41a2-826b-8f8542e0a667",
+  "name": "self.get",
+  "node_type": "call",
+  "qname": "nodes/9d3ee7ce-f152-473f-af3c-52ff9a322340::nodes/ca3b7d8f-93c5-45a7-bde7-b214e13c0d53",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "curDefi: Definition = self.get(defiNs)",
+  "position": {
+    "line_no": 139,
+    "col_offset": 30,
+    "end_line_no": 139,
+    "end_col_offset": 46
+  }
+}

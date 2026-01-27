@@ -1,0 +1,15 @@
+{
+  "id": "nodes/449d73e4-0385-4a1f-9f16-2e3e3cc10574",
+  "name": "do_pass",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.do_pass",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def do_pass(\n    self, cls, install_hooks=False, modules_analyzed=set(), *args, **kwargs\n):\n    \"\"\"ID: 449d73e4-0385-4a1f-9f16-2e3e3cc10574\"\"\"\n    modules_analyzed = modules_analyzed\n    processor: ExtProcessor = None\n    input_pkg = None\n    for entry_point in self.entry_points:\n        input_pkg = self.package\n        input_mod = self._get_mod_name(entry_point, input_pkg)\n        input_file = os.path.abspath(entry_point)\n        if not input_mod:\n            continue\n        if not input_pkg:\n            input_pkg = os.path.dirname(input_file)\n        if install_hooks:\n            self.import_manager.set_pkg(input_pkg)\n            self.import_manager.install_hooks()\n        processor = cls(\n            input_file,\n            input_mod,\n            modules_analyzed=modules_analyzed,\n            decy=self.decy,\n            *args,\n            **kwargs\n        )\n        self.module_manager.add_local_modules(input_mod)\n        processor.analyze()\n        modules_analyzed = modules_analyzed.union(processor.get_modules_analyzed())\n        if install_hooks:\n            self.remove_import_hooks()\n    if install_hooks:\n        self.import_manager.set_pkg(input_pkg)\n        self.import_manager.install_hooks()\n    if not self.moduleEntry:\n        self.moduleEntry = []\n        for local in self.module_manager.local:\n            moduleNode = self.module_manager.get(local)\n            if not moduleNode:\n                continue\n            methodDict: dict = moduleNode.get_methods()\n            for method in methodDict.keys():\n                self.moduleEntry.append(method)\n    processor.analyze_localfunction(self.moduleEntry)\n",
+  "position": {
+    "line_no": 109,
+    "col_offset": 4,
+    "end_line_no": 153,
+    "end_col_offset": 0
+  }
+}

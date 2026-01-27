@@ -1,0 +1,15 @@
+{
+  "id": "nodes/8441e3b4-2281-4a9a-b3c1-b086d4eb485d",
+  "name": "utils.join_ns",
+  "node_type": "call",
+  "qname": "nodes/5a1e4f1a-3c34-4311-8715-bff3805374bf::nodes/442d954e-986a-4c2a-92fa-9791c5bbdcd1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "ns = utils.join_ns(item, fn)",
+  "position": {
+    "line_no": 650,
+    "col_offset": 17,
+    "end_line_no": 650,
+    "end_col_offset": 40
+  }
+}

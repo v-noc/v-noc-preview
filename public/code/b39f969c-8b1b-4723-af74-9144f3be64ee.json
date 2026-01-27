@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b39f969c-8b1b-4723-af74-9144f3be64ee",
+  "name": "create_namespaces_map",
+  "node_type": "function",
+  "qname": "Jarvis.formats.fasten.Fasten.create_namespaces_map",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "def create_namespaces_map(self):\n    \"\"\"ID: b39f969c-8b1b-4723-af74-9144f3be64ee\"\"\"\n    namespaces_maps = [{}, {}]\n    for res, hmap in zip(namespaces_maps, [self.internal_mods, self.external_mods]):\n        for mod in hmap:\n            for namespace in hmap[mod][\"methods\"]:\n                res[namespace] = mod\n\n    return namespaces_maps\n",
+  "position": {
+    "line_no": 205,
+    "col_offset": 4,
+    "end_line_no": 214,
+    "end_col_offset": 0
+  }
+}

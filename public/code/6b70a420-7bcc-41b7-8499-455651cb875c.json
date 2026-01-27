@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6b70a420-7bcc-41b7-8499-455651cb875c",
+  "name": "get_suffix",
+  "node_type": "function",
+  "qname": "Jarvis.utils.common.get_suffix",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/common.py",
+  "file_name": "common",
+  "code": "def get_suffix(first:str,second:str):\n    \"\"\"ID: 6b70a420-7bcc-41b7-8499-455651cb875c\"\"\"\n    if len(first) > len(second):\n        first,second = second,first\n    return second.replace(first,'')\n",
+  "position": {
+    "line_no": 57,
+    "col_offset": 0,
+    "end_line_no": 62,
+    "end_col_offset": 0
+  }
+}

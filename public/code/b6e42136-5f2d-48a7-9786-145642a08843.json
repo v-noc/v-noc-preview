@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b6e42136-5f2d-48a7-9786-145642a08843",
+  "name": "get_filename",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.modules.Module.get_filename",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/modules.py",
+  "file_name": "modules",
+  "code": "def get_filename(self):\n    \"\"\"ID: b6e42136-5f2d-48a7-9786-145642a08843\"\"\"\n    return self.filename\n",
+  "position": {
+    "line_no": 77,
+    "col_offset": 4,
+    "end_line_no": 80,
+    "end_col_offset": 0
+  }
+}

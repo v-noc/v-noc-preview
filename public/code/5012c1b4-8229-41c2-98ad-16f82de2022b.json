@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5012c1b4-8229-41c2-98ad-16f82de2022b",
+  "name": "utils.get_while_name",
+  "node_type": "call",
+  "qname": "nodes/6ed537f3-6b8c-43e9-850e-8bfa9835d252::nodes/84ac5251-c0bb-4e93-a131-19deaa1120a5",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "if_counter = current_scope.inc_while_count",
+  "position": {
+    "line_no": 282,
+    "col_offset": 18,
+    "end_line_no": 282,
+    "end_col_offset": 50
+  }
+}

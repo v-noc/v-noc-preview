@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a627267a-45e1-413e-9954-a168f7f1e39c",
+  "name": "add",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.key_err.KeyErrors.add",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/key_err.py",
+  "file_name": "key_err",
+  "code": "def add(self, filename, lineno, namespace, key):\n    \"\"\"ID: a627267a-45e1-413e-9954-a168f7f1e39c\"\"\"\n    self.key_errs.append({\n        \"filename\": filename,\n        \"lineno\": lineno,\n        \"namespace\": namespace,\n        \"key\": key\n    })\n",
+  "position": {
+    "line_no": 28,
+    "col_offset": 4,
+    "end_line_no": 36,
+    "end_col_offset": 0
+  }
+}

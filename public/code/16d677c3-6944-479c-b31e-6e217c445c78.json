@@ -1,0 +1,15 @@
+{
+  "id": "nodes/16d677c3-6944-479c-b31e-6e217c445c78",
+  "name": "addChange",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.ChangeManager.addChange",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def addChange(self, ns, defins, row, values):\n    \"\"\"ID: 16d677c3-6944-479c-b31e-6e217c445c78\"\"\"\n    if ns not in self.changes:\n        self.changes[ns] = {}\n    item = ChangeItem(row, values)\n    if defins not in self.changes[ns]:\n        # self.changes[ns].setdefault(defins, item)\n        self.changes[ns][defins] = item\n    else:\n        self.changes[ns].get(defins).addPoint(row,values)\n",
+  "position": {
+    "line_no": 322,
+    "col_offset": 4,
+    "end_line_no": 332,
+    "end_col_offset": 0
+  }
+}

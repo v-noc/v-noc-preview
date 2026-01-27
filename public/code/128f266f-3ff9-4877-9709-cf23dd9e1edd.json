@@ -1,0 +1,15 @@
+{
+  "id": "nodes/128f266f-3ff9-4877-9709-cf23dd9e1edd",
+  "name": "self.class_manager.create",
+  "node_type": "call",
+  "qname": "nodes/336be0e5-b19f-41da-a1d9-e9ca99b29d2c::nodes/1bd359f5-8911-40fb-937d-e422cda26e75",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "cls: ClassNode = self.class_manager.create(\n    cls_def.get_ns(), self.modname)",
+  "position": {
+    "line_no": 975,
+    "col_offset": 29,
+    "end_line_no": 976,
+    "end_col_offset": 47
+  }
+}

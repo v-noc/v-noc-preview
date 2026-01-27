@@ -1,0 +1,15 @@
+{
+  "id": "nodes/330bba9e-46bd-43f0-a76a-52f5276d1faa",
+  "name": "compute_mro",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.classes.ClassNode.compute_mro",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "def compute_mro(self):\n    \"\"\"ID: 330bba9e-46bd-43f0-a76a-52f5276d1faa\"\"\"\n    res = []\n    self.mro.reverse()\n    for parent in self.mro:\n        if not parent in res:\n            res.append(parent)\n\n    res.reverse()\n    self.mro = res\n",
+  "position": {
+    "line_no": 72,
+    "col_offset": 4,
+    "end_line_no": 82,
+    "end_col_offset": 0
+  }
+}

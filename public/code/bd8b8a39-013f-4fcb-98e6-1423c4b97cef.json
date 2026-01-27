@@ -1,0 +1,15 @@
+{
+  "id": "nodes/bd8b8a39-013f-4fcb-98e6-1423c4b97cef",
+  "name": "transform_defi",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.transform_defi",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def transform_defi(self, ns, row) -> list:\n    \"\"\"ID: bd8b8a39-013f-4fcb-98e6-1423c4b97cef\"\"\"\n    defi: Definition = self.defs.get(ns)\n    transDefiNames = []\n    for point_ns in defi.get_name_pointer(row):\n        transDefiNames.append(point_ns)\n    return transDefiNames\n",
+  "position": {
+    "line_no": 129,
+    "col_offset": 4,
+    "end_line_no": 136,
+    "end_col_offset": 0
+  }
+}

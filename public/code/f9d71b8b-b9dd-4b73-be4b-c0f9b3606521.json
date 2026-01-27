@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f9d71b8b-b9dd-4b73-be4b-c0f9b3606521",
+  "name": "clear_mro",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.classes.ClassNode.clear_mro",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "def clear_mro(self):\n    \"\"\"ID: f9d71b8b-b9dd-4b73-be4b-c0f9b3606521\"\"\"\n    self.mro = [self.ns]\n",
+  "position": {
+    "line_no": 83,
+    "col_offset": 4,
+    "end_line_no": 86,
+    "end_col_offset": 0
+  }
+}

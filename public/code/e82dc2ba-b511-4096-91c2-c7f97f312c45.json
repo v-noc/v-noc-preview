@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e82dc2ba-b511-4096-91c2-c7f97f312c45",
+  "name": "Uncle",
+  "node_type": "class",
+  "qname": "sample_project2.core.model.parent.Uncle",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/core/model/parent.py",
+  "file_name": "parent",
+  "code": "class Uncle(GrandParent):\n    \"\"\" ID: e82dc2ba-b511-4096-91c2-c7f97f312c45 \"\"\"\n\n    @context_logger('e8d53c87-d9c4-468c-a6a9-ee587d26863c')\n    def get_name(self):\n        \"\"\" ID: 6f0276d2-c919-4e74-9f0f-16b1c008ae28 \"\"\"\n        pass\n\n    @context_logger('38e05933-5526-49fb-a2c9-2b31e1de8ba4')\n    def walk(self):\n        \"\"\" ID: fab8038a-5741-42ce-8410-217dc4a1afc6 \"\"\"\n        pass\n\n    @context_logger('a9c59927-fde1-43ae-bb7f-814b908c92ab')\n    def run(self):\n        \"\"\" ID: 2c33578a-b0ea-4c32-a707-ef8ee4be0fed \"\"\"\n        pass\n",
+  "position": {
+    "line_no": 24,
+    "col_offset": 0,
+    "end_line_no": 41,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2688f820-2101-4de6-8802-cc6324228d71",
+  "name": "_init",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.gol._init",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/gol.py",
+  "file_name": "gol",
+  "code": "def _init():  # \u521d\u59cb\u5316\n    \"\"\"ID: 2688f820-2101-4de6-8802-cc6324228d71\"\"\"\n    global _global_dict\n    _global_dict = {}\n",
+  "position": {
+    "line_no": 4,
+    "col_offset": 0,
+    "end_line_no": 8,
+    "end_col_offset": 0
+  }
+}

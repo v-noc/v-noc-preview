@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d0ffe58a-fe3e-426a-a99a-0c78e934b7a1",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.PointItem.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def __init__(self, row, values=set()):\n    \"\"\"ID: d0ffe58a-fe3e-426a-a99a-0c78e934b7a1\"\"\"\n    if isinstance(values, list):\n        values = set(values)\n    elif isinstance(values,str):\n        values = set([values])\n    self.points_to = values\n    self.row = row\n",
+  "position": {
+    "line_no": 30,
+    "col_offset": 4,
+    "end_line_no": 38,
+    "end_col_offset": 0
+  }
+}

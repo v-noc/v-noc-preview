@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7487e125-ac21-45f0-8a0f-4f23aae1b4a9",
+  "name": "Module",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.modules.Module",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/modules.py",
+  "file_name": "modules",
+  "code": "class Module:\n    \"\"\"ID: 7487e125-ac21-45f0-8a0f-4f23aae1b4a9\"\"\"\n    def __init__(self, name, filename):\n        \"\"\"ID: a852b606-b80d-4fce-8819-87606d49068d\"\"\"\n        self.name = name\n        self.filename = filename\n        self.methods = dict()\n\n    def get_name(self):\n        \"\"\"ID: e99e782d-bd4e-4ee4-90aa-f6aa438579bf\"\"\"\n        return self.name\n\n    def get_filename(self):\n        \"\"\"ID: b6e42136-5f2d-48a7-9786-145642a08843\"\"\"\n        return self.filename\n\n    def get_methods(self):\n        \"\"\"ID: c561746b-2b25-4bf2-9a48-0fe560706138\"\"\"\n        return self.methods\n\n    def add_method(self, method, first=None, last=None):\n        \"\"\"ID: 1ba8b3d4-86ea-4f2b-990e-1c0b30318fec\"\"\"\n        if not self.methods.get(method, None):\n            self.methods[method] = dict(\n                    name=method,\n                    first=first,\n                    last=last)",
+  "position": {
+    "line_no": 65,
+    "col_offset": 0,
+    "end_line_no": 92,
+    "end_col_offset": 0
+  }
+}

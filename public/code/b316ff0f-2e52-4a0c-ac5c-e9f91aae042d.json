@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b316ff0f-2e52-4a0c-ac5c-e9f91aae042d",
+  "name": "defi.get_type",
+  "node_type": "call",
+  "qname": "nodes/f398845d-353c-4797-a13a-30fbe1b0a751::nodes/85c5e032-e4b3-4f0f-ab12-d7677d016c98",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "",
+  "position": {
+    "line_no": 2087,
+    "col_offset": 26,
+    "end_line_no": 2087,
+    "end_col_offset": 41
+  }
+}

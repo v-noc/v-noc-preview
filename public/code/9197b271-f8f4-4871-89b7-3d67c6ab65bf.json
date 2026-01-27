@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9197b271-f8f4-4871-89b7-3d67c6ab65bf",
+  "name": "add_pos_arg",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.pointers.NamePointer.add_pos_arg",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "def add_pos_arg(self, pos, name, item):\n    \"\"\"ID: 9197b271-f8f4-4871-89b7-3d67c6ab65bf\"\"\"\n    pos = self._sanitize_pos(pos)\n    if not name:\n        if self.pos_to_name.get(pos, None):\n            name = self.pos_to_name[pos]\n        else:\n            name = str(pos)\n    self.pos_to_name[pos] = name\n    self.name_to_pos[name] = pos\n\n    self.add_arg(name, item)\n",
+  "position": {
+    "line_no": 104,
+    "col_offset": 4,
+    "end_line_no": 116,
+    "end_col_offset": 0
+  }
+}

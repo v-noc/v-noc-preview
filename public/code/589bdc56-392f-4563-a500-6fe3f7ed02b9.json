@@ -1,0 +1,15 @@
+{
+  "id": "nodes/589bdc56-392f-4563-a500-6fe3f7ed02b9",
+  "name": "get_def",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeManager.get_def",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def get_def(self, current_ns, var_name):\n    \"\"\"ID: 589bdc56-392f-4563-a500-6fe3f7ed02b9\"\"\"\n    current_scope = self.get_scope(current_ns)\n    while current_scope:\n        defi= current_scope.get_def(var_name)\n        if defi:\n            return defi\n        current_scope = current_scope.parent\n",
+  "position": {
+    "line_no": 79,
+    "col_offset": 4,
+    "end_line_no": 87,
+    "end_col_offset": 0
+  }
+}

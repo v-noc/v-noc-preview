@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f309a7cc-8159-447f-b7bd-80e02a9b6e54",
+  "name": "resolveList",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.resolveList",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def resolveList(self, calleeNs: str, row: int, flag=False) -> list:\n    \"\"\"ID: f309a7cc-8159-447f-b7bd-80e02a9b6e54\"\"\"\n    calleeDefi: Definition = self.def_manager.get(calleeNs)\n    if not calleeDefi:\n        return []\n    if not calleeDefi or calleeDefi.get_type() in [utils.constants.NAME_DEF, utils.constants.NA_DEF,\n                                                   utils.constants.PARAM_DEF, utils.constants.RETURN_DEF]:\n        # nsList = self.get_point(calleeNs, row)\n        # get_last_point_value\n        nsList = calleeDefi.get_last_point_value()\n        if not nsList:\n            return []\n        return reduce(lambda x, y: x + y, map(lambda x: self.resolveList(x, row), nsList))\n    # elif calleeDefi.get_type() == utils.constants.LIST_DEF:\n    #     # memoDict = getattr(calleeDefi,'memo',{})\n    #     # pointList = list(reduce(lambda x, y: x + y, memoDict.values()))\n    #     # pointList = list(reduce(lambda x, y: x + y, calleeDefi.memo.values()))\n    #     # return reduce(lambda x, y: x or y, map(lambda x: self.resolveList(x, row), pointList))\n    #     # return ['<list>']\n    # elif calleeDefi.get_type() == utils.constants.MAP_DEF:\n    #     # pointList = list(reduce(lambda x, y: x + y, calleeDefi.memo.values()))\n    #     # return reduce(lambda x, y: x or y, map(lambda x: self.resolveList(x, row), pointList))\n    #     # return ['<map>']\n    else:\n        return [calleeNs]",
+  "position": {
+    "line_no": 2212,
+    "col_offset": 4,
+    "end_line_no": 2237,
+    "end_col_offset": 0
+  }
+}

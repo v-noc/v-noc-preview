@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f4ad934f-22b6-4cf6-a077-646bab29131f",
+  "name": "DefinitionError",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.definitions.DefinitionError",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "class DefinitionError(Exception):\n    \"\"\"ID: f4ad934f-22b6-4cf6-a077-646bab29131f\"\"\"\n    pass",
+  "position": {
+    "line_no": 345,
+    "col_offset": 0,
+    "end_line_no": 348,
+    "end_col_offset": 0
+  }
+}

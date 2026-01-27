@@ -1,0 +1,15 @@
+{
+  "id": "nodes/765b94b5-f41f-46db-82ea-a0933c14fda3",
+  "name": "process_str",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.callgraph.CallGraph.add_edge.process_str",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/callgraph.py",
+  "file_name": "callgraph",
+  "code": "def process_str(s: str):\n    \"\"\"ID: 765b94b5-f41f-46db-82ea-a0933c14fda3\"\"\"\n    if IF_FLAG in s or ELSE_FLAG in s or WHILE_FLAG in s or LIST_FLAG in s or DICT_FLAG in s:\n        s_list = s.split(\".\")\n        s_list = list(map(lambda x: None if IF_FLAG in x or ELSE_FLAG in x or WHILE_FLAG in x or LIST_FLAG in x\n        or DICT_FLAG in x else x, s_list))\n        s_list = list(filter(lambda x:x,s_list))\n        return \".\".join(s_list)\n    else:\n        return s\n",
+  "position": {
+    "line_no": 52,
+    "col_offset": 8,
+    "end_line_no": 62,
+    "end_col_offset": 0
+  }
+}

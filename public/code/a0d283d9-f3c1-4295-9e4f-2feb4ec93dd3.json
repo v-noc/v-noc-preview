@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a0d283d9-f3c1-4295-9e4f-2feb4ec93dd3",
+  "name": "self.get_modules_analyzed",
+  "node_type": "call",
+  "qname": "nodes/48b534b2-9e6d-4270-b956-69eaf8303848::nodes/93a19904-6289-4ef6-9b3e-bad83779fb4b",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "imports = self.import_manager.get_imp",
+  "position": {
+    "line_no": 608,
+    "col_offset": 18,
+    "end_line_no": 608,
+    "end_col_offset": 45
+  }
+}

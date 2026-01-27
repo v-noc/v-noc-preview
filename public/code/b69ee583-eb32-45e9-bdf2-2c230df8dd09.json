@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b69ee583-eb32-45e9-bdf2-2c230df8dd09",
+  "name": "self.decode_node",
+  "node_type": "call",
+  "qname": "nodes/4a51be97-fe2d-4897-b42d-065d8640953f::nodes/285fe901-0e94-49e9-ad71-7d04ab3bc23f",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "decoded = self.decode_node(node.func)",
+  "position": {
+    "line_no": 1033,
+    "col_offset": 22,
+    "end_line_no": 1033,
+    "end_col_offset": 49
+  }
+}

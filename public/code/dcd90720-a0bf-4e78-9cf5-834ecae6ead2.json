@@ -1,0 +1,15 @@
+{
+  "id": "nodes/dcd90720-a0bf-4e78-9cf5-834ecae6ead2",
+  "name": "get_filepath",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.get_filepath",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def get_filepath(self, modname):\n    \"\"\"ID: dcd90720-a0bf-4e78-9cf5-834ecae6ead2\"\"\"\n    if modname in self.import_graph:\n        return self.import_graph[modname][\"filename\"]\n",
+  "position": {
+    "line_no": 122,
+    "col_offset": 4,
+    "end_line_no": 126,
+    "end_col_offset": 0
+  }
+}

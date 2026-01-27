@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7624d7e2-85ce-441b-908a-5b6353f18c1b",
+  "name": "get_local_modules",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.modules.ModuleManager.get_local_modules",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/modules.py",
+  "file_name": "modules",
+  "code": "def get_local_modules(self):\n    \"\"\"ID: 7624d7e2-85ce-441b-908a-5b6353f18c1b\"\"\"\n    return self.local\n",
+  "position": {
+    "line_no": 62,
+    "col_offset": 4,
+    "end_line_no": 65,
+    "end_col_offset": 0
+  }
+}

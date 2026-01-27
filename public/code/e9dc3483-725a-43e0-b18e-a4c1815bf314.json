@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e9dc3483-725a-43e0-b18e-a4c1815bf314",
+  "name": "analyze_submodule",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.analyze_submodule",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def analyze_submodule(self, cls, imp, *args, **kwargs):\n    \"\"\"ID: e9dc3483-725a-43e0-b18e-a4c1815bf314\"\"\"\n    if imp in self.get_modules_analyzed():\n        return\n\n    fname = self.import_manager.get_filepath(imp)\n    if not fname:\n        return\n    if fname.endswith(\".so\"):\n        return\n    # if not fname or not self.import_manager.get_mod_dir() in fname:\n    #     return\n\n    self.import_manager.set_current_mod(imp, fname)\n\n    visitor = cls(fname, imp, *args, **kwargs)\n    visitor.analyze()\n    self.merge_modules_analyzed(visitor.get_modules_analyzed())\n\n    # self.import_manager.set_current_mod(self.modname, self.filename)\n    self.setMod()\n",
+  "position": {
+    "line_no": 613,
+    "col_offset": 4,
+    "end_line_no": 634,
+    "end_col_offset": 0
+  }
+}

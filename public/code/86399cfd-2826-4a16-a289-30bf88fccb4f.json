@@ -1,0 +1,15 @@
+{
+  "id": "nodes/86399cfd-2826-4a16-a289-30bf88fccb4f",
+  "name": "iterate_mod_items",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Module.iterate_mod_items",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def iterate_mod_items(items, const):\n    \"\"\"ID: 86399cfd-2826-4a16-a289-30bf88fccb4f\"\"\"\n    for item in items:\n        defi = self.def_manager.get(item)\n        if not defi:\n            defi = self.def_manager.create(item, const)\n        splitted = item.split(\".\")\n        name = splitted[-1]\n        parentns = \".\".join(splitted[:-1])\n        self.scope_manager.get_scope(parentns).add_def(name, defi)\n        if const == utils.constants.CLS_DEF:\n            self.class_manager.create(item, self.modname)\n",
+  "position": {
+    "line_no": 223,
+    "col_offset": 8,
+    "end_line_no": 235,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f75b70a3-55c9-46b2-92dd-854719eedf1b",
+  "name": "ModuleManager",
+  "node_type": "call",
+  "qname": "nodes/e9ef06e8-d02c-4660-8bef-a2461b854daf::nodes/e085da26-4e5b-470b-a739-2fe2e6c6d92a",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "self.module_manager = ModuleManager()",
+  "position": {
+    "line_no": 62,
+    "col_offset": 30,
+    "end_line_no": 62,
+    "end_col_offset": 45
+  }
+}

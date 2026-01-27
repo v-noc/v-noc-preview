@@ -1,0 +1,15 @@
+{
+  "id": "nodes/eae4aece-f778-408a-9a00-5fd0c01c0e1b",
+  "name": "add_value",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.gol.add_value",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/gol.py",
+  "file_name": "gol",
+  "code": "def add_value(key):\n    \"\"\"ID: eae4aece-f778-408a-9a00-5fd0c01c0e1b\"\"\"\n    if key not in _global_dict:\n        _global_dict[key] = 1\n    else:\n        _global_dict[key] = _global_dict[key]+1\n",
+  "position": {
+    "line_no": 20,
+    "col_offset": 0,
+    "end_line_no": 26,
+    "end_col_offset": 0
+  }
+}

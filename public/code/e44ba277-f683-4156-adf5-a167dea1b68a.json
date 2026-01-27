@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e44ba277-f683-4156-adf5-a167dea1b68a",
+  "name": "super().merge",
+  "node_type": "call",
+  "qname": "nodes/e0aafc20-fc54-4b2e-9e15-ec781392ece8::nodes/e89434ad-ab4a-474f-91c6-fb6e3aa4b7a4",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "super().merge(pointer)",
+  "position": {
+    "line_no": 163,
+    "col_offset": 8,
+    "end_line_no": 163,
+    "end_col_offset": 30
+  }
+}

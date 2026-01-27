@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7781401c-efd9-4d28-9a4a-e826c4e9418e",
+  "name": "visit_ClassDef",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.visit_ClassDef",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def visit_ClassDef(self, node):\n    \"\"\"ID: 7781401c-efd9-4d28-9a4a-e826c4e9418e\"\"\"\n    self.name_stack.append(node.name)\n    self.method_stack.append(node.name)\n    curScope = self.scope_manager.get_scope(self.current_ns)\n\n    if curScope:\n        curScope.reset_counters()\n    clsRetNs = utils.join_ns(self.current_ns, utils.constants.RETURN_NAME)\n    clsRetDefi: Definition = self.def_manager.get(clsRetNs)\n    if not clsRetDefi:\n        clsRetDefi = self.def_manager.create(\n            clsRetNs, utils.constants.NAME_DEF)\n    clsSelfNs = utils.join_ns(self.current_ns, 'self')\n    clsSelfDefi: Definition = self.def_manager.get(clsSelfNs)\n    if not clsSelfDefi:\n        clsSelfDefi = self.def_manager.create(\n            clsSelfNs, utils.constants.NAME_DEF)\n    clsRetDefi.add_value_point(node.lineno, [self.current_ns])\n    clsSelfDefi.add_value_point(node.lineno, [self.current_ns])\n    for stmt in node.body:\n        self.visit(stmt)\n    self.method_stack.pop()\n    self.name_stack.pop()\n",
+  "position": {
+    "line_no": 190,
+    "col_offset": 4,
+    "end_line_no": 214,
+    "end_col_offset": 0
+  }
+}

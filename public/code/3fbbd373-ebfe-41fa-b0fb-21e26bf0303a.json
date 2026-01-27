@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3fbbd373-ebfe-41fa-b0fb-21e26bf0303a",
+  "name": "ModuleManager",
+  "node_type": "call",
+  "qname": "nodes/eb64ed16-d96d-4f11-b214-d64a26c7d337::nodes/e085da26-4e5b-470b-a739-2fe2e6c6d92a",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "args = parser.parse_args()",
+  "position": {
+    "line_no": 62,
+    "col_offset": 30,
+    "end_line_no": 62,
+    "end_col_offset": 45
+  }
+}

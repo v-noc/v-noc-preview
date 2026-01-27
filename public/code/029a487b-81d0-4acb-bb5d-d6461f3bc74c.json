@@ -1,0 +1,15 @@
+{
+  "id": "nodes/029a487b-81d0-4acb-bb5d-d6461f3bc74c",
+  "name": "get_ns",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.calls.CallItem.get_ns",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/calls.py",
+  "file_name": "calls",
+  "code": "def get_ns(self):\n    \"\"\"ID: 029a487b-81d0-4acb-bb5d-d6461f3bc74c\"\"\"\n    return self.ns\n",
+  "position": {
+    "line_no": 64,
+    "col_offset": 4,
+    "end_line_no": 67,
+    "end_col_offset": 0
+  }
+}

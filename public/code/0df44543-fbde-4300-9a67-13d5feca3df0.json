@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0df44543-fbde-4300-9a67-13d5feca3df0",
+  "name": "self.class_hiearchy",
+  "node_type": "call",
+  "qname": "nodes/11c242a3-876a-4b5f-af32-2e69cec19e4c::nodes/3bebd7c7-60c0-4ff1-b364-8da18f4b25f0",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "\"cha\": self.class_hiearchy()",
+  "position": {
+    "line_no": 250,
+    "col_offset": 19,
+    "end_line_no": 250,
+    "end_col_offset": 40
+  }
+}

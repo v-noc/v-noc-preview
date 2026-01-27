@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7f24283f-d574-46c0-afa7-af86732e6314",
+  "name": "ClassManager",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.classes.ClassManager",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "class ClassManager:\n    \"\"\"ID: 7f24283f-d574-46c0-afa7-af86732e6314\"\"\"\n    def __init__(self):\n        \"\"\"ID: 4849a3b1-080b-412e-bbf8-6b7d0e6ed3fb\"\"\"\n        self.names = {}\n\n    def get(self, name):\n        \"\"\"ID: 47bc7dd6-f7d9-4695-b016-c928e9515b31\"\"\"\n        if name in self.names:\n            return self.names[name]\n\n    def create(self, name, module):\n        \"\"\"ID: 1bd359f5-8911-40fb-937d-e422cda26e75\"\"\"\n        if not name in self.names:\n            cls = ClassNode(name, module)\n            self.names[name] = cls\n        return self.names[name]\n\n    def get_classes(self):\n        \"\"\"ID: b9d58288-bb16-482c-987b-26a3adb41d14\"\"\"\n        return self.names\n",
+  "position": {
+    "line_no": 15,
+    "col_offset": 0,
+    "end_line_no": 36,
+    "end_col_offset": 0
+  }
+}

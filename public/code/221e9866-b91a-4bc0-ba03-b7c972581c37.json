@@ -1,0 +1,15 @@
+{
+  "id": "nodes/221e9866-b91a-4bc0-ba03-b7c972581c37",
+  "name": "convert_final",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.convert_final",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def convert_final(self, curStr):\n    \"\"\"ID: 221e9866-b91a-4bc0-ba03-b7c972581c37\"\"\"\n    curDefi: Definition = self.def_manager.get(curStr)\n    tmp = reduce(\n        lambda x, y: x or y, map(\n            lambda x: x in curStr, utils.constants.BUILTTYPE)\n    )\n    if not curDefi and tmp:\n        return curStr\n    if not curDefi:\n        return None\n    if curDefi.get_type() in [\n        utils.constants.NAME_DEF,\n        utils.constants.PARAM_DEF,\n        utils.constants.RETURN_DEF,\n    ]:\n        curDefiList = curDefi.get_last_point_value()\n        nsList = []\n        for curDefiNs in curDefiList:\n            if curStr == curDefiNs:\n                continue\n            nsList.append(curDefiNs)\n        return nsList\n    if curDefi.get_type() == utils.constants.INT_DEF:\n        return \"<int>\"\n    if curDefi.get_type() == utils.constants.STR_DEF:\n        return \"<str>\"\n    if curDefi.get_type() == utils.constants.LIST_DEF:\n        return curStr\n        return \"<list>\"\n    if curDefi.get_type() == utils.constants.MAP_DEF:\n        return curStr\n        return \"<map>\"\n    if curDefi.get_type() == utils.constants.NA_DEF:\n        return None\n    return curStr\n",
+  "position": {
+    "line_no": 2049,
+    "col_offset": 4,
+    "end_line_no": 2085,
+    "end_col_offset": 0
+  }
+}

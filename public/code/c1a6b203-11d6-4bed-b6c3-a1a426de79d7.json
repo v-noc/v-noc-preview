@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c1a6b203-11d6-4bed-b6c3-a1a426de79d7",
+  "name": "ScopeManager",
+  "node_type": "call",
+  "qname": "nodes/e9ef06e8-d02c-4660-8bef-a2461b854daf::nodes/eac32f56-f89f-49e2-8c67-3f3979c9892a",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "self.scope_manager = ScopeManager()",
+  "position": {
+    "line_no": 59,
+    "col_offset": 29,
+    "end_line_no": 59,
+    "end_col_offset": 43
+  }
+}

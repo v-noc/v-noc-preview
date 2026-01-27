@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2a45ad1e-2663-47c4-9053-be016d630ccb",
+  "name": "callDefi.get_type",
+  "node_type": "call",
+  "qname": "nodes/371b7396-e242-48c4-a993-3ed7e8da101f::nodes/85c5e032-e4b3-4f0f-ab12-d7677d016c98",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "processor = cls(",
+  "position": {
+    "line_no": 127,
+    "col_offset": 11,
+    "end_line_no": 127,
+    "end_col_offset": 30
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/59cfd35c-cc47-4823-9930-6ffda9dd8ec0",
+  "name": "self.get_or_create",
+  "node_type": "call",
+  "qname": "nodes/4ed6bc13-14fa-4338-b297-72f3ac682d6f::nodes/ba090f37-6f33-4cd1-bcca-9cab8fc15d9e",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "arg = self.get_or_create(name)",
+  "position": {
+    "line_no": 86,
+    "col_offset": 14,
+    "end_line_no": 86,
+    "end_col_offset": 38
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/00ba6bcb-38bb-40d3-a9fe-1004f0f062a5",
+  "name": "super().__init__",
+  "node_type": "call",
+  "qname": "nodes/f9b3e29d-ce9e-49ea-9599-ae4ce349f326::nodes/321fc4ad-2dab-43e1-80f6-349c0fbeee46",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/core/model/child.py",
+  "file_name": "child",
+  "code": "super().__init__(name)",
+  "position": {
+    "line_no": 13,
+    "col_offset": 8,
+    "end_line_no": 13,
+    "end_col_offset": 30
+  }
+}

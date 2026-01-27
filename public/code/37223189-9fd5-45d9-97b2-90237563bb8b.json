@@ -1,0 +1,15 @@
+{
+  "id": "nodes/37223189-9fd5-45d9-97b2-90237563bb8b",
+  "name": "BaseFormatter",
+  "node_type": "class",
+  "qname": "Jarvis.formats.base.BaseFormatter",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/base.py",
+  "file_name": "base",
+  "code": "class BaseFormatter:\n    \"\"\"ID: 37223189-9fd5-45d9-97b2-90237563bb8b\"\"\"\n    def generate(self):\n        \"\"\"ID: 2c661cdb-dbdf-441d-ad56-f0dddbe6348b\"\"\"\n        raise NotImplementedError(\"generate method not implemented in child class\")",
+  "position": {
+    "line_no": 16,
+    "col_offset": 0,
+    "end_line_no": 21,
+    "end_col_offset": 0
+  }
+}

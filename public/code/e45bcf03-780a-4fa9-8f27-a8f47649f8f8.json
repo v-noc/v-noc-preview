@@ -1,0 +1,9 @@
+{
+  "id": "nodes/e45bcf03-780a-4fa9-8f27-a8f47649f8f8",
+  "name": "__init__",
+  "node_type": "file",
+  "qname": "sample_project2.__pycache__.__init__",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/__pycache__/__init__.py",
+  "file_name": "__init__",
+  "code": "\"\"\"FolderID: f82bc8a6-37d5-426c-9113-b93b7d35d60b\n\nFileID: e45bcf03-780a-4fa9-8f27-a8f47649f8f8\"\"\""
+}

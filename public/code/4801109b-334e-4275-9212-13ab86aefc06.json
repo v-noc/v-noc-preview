@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4801109b-334e-4275-9212-13ab86aefc06",
+  "name": "visit_Try",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Try",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def visit_Try(self, node):\n    \"\"\"ID: 4801109b-334e-4275-9212-13ab86aefc06\"\"\"\n    for item in node.body:\n        self.visit(item)\n    for handler in node.handlers:\n        self.visit(handler)\n    pass\n",
+  "position": {
+    "line_no": 1615,
+    "col_offset": 4,
+    "end_line_no": 1622,
+    "end_col_offset": 0
+  }
+}

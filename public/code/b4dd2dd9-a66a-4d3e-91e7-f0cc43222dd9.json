@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b4dd2dd9-a66a-4d3e-91e7-f0cc43222dd9",
+  "name": "to_external_uri",
+  "node_type": "function",
+  "qname": "Jarvis.formats.fasten.Fasten.to_external_uri",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "def to_external_uri(self, modname, name=\"\"):\n    \"\"\"ID: b4dd2dd9-a66a-4d3e-91e7-f0cc43222dd9\"\"\"\n    if modname == utils.constants.BUILTIN_NAME:\n        name = name[len(modname) + 1 :]\n        modname = \".builtin\"\n\n    return \"//{}//{}\".format(modname.replace(\"-\", \"_\"), name)\n",
+  "position": {
+    "line_no": 67,
+    "col_offset": 4,
+    "end_line_no": 74,
+    "end_col_offset": 0
+  }
+}

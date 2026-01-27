@@ -1,0 +1,15 @@
+{
+  "id": "nodes/45b503f1-0934-4ac5-b12c-8baa128033b2",
+  "name": "curScope.get_dict_counter",
+  "node_type": "call",
+  "qname": "nodes/f993dde5-95c0-4fc0-9af7-dd32df2dfa73::nodes/bd5b9f29-1921-4c3b-bfac-8cedef6057a4",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "visitor(node, utils.get_dict_name(curScope.get_dict_counter()",
+  "position": {
+    "line_no": 176,
+    "col_offset": 46,
+    "end_line_no": 176,
+    "end_col_offset": 73
+  }
+}

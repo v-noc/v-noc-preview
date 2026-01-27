@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b0aee678-06a1-499d-9d3f-b7cf86be0662",
+  "name": "add_set",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.pointers.Pointer.add_set",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "def add_set(self, s):\n    \"\"\"ID: b0aee678-06a1-499d-9d3f-b7cf86be0662\"\"\"\n    self.values = self.values.union(s)\n",
+  "position": {
+    "line_no": 32,
+    "col_offset": 4,
+    "end_line_no": 35,
+    "end_col_offset": 0
+  }
+}

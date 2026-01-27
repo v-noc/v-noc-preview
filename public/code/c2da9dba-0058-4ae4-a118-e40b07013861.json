@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c2da9dba-0058-4ae4-a118-e40b07013861",
+  "name": "get",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.key_err.KeyErrors.get",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/key_err.py",
+  "file_name": "key_err",
+  "code": "def get(self):\n    \"\"\"ID: c2da9dba-0058-4ae4-a118-e40b07013861\"\"\"\n    return self.key_errs",
+  "position": {
+    "line_no": 37,
+    "col_offset": 4,
+    "end_line_no": 40,
+    "end_col_offset": 0
+  }
+}

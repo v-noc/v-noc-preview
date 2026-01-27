@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e7fc8d97-dd85-4943-8a35-819fdf37af53",
+  "name": "visit_Module",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Module",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def visit_Module(self, node):\n    \"\"\"ID: e7fc8d97-dd85-4943-8a35-819fdf37af53\"\"\"\n    def iterate_mod_items(items, const):\n        \"\"\"ID: 86399cfd-2826-4a16-a289-30bf88fccb4f\"\"\"\n        for item in items:\n            defi = self.def_manager.get(item)\n            if not defi:\n                defi = self.def_manager.create(item, const)\n            splitted = item.split(\".\")\n            name = splitted[-1]\n            parentns = \".\".join(splitted[:-1])\n            self.scope_manager.get_scope(parentns).add_def(name, defi)\n            if const == utils.constants.CLS_DEF:\n                self.class_manager.create(item, self.modname)\n\n    self.cg.add_node(self.modname, self.modname)\n    self.import_manager.set_current_mod(self.modname, self.filename)\n    mod = self.module_manager.create(self.modname, self.filename)\n    first = 1\n    last = len(self.contents.splitlines())\n    if last == 0:\n        first = 0\n    mod.add_method(self.modname, first, last)\n    root_sc = self.scope_manager.get_scope(self.modname)\n    self.node_manager.add(self.modname, node)\n    defi: Definition = self.def_manager.get(self.modname)\n    if not defi:\n        defi = self.def_manager.create(\n            self.modname, utils.constants.MOD_DEF)\n    else:\n        defi.def_type = utils.constants.MOD_DEF\n    self.node_manager.add(self.modname, node)\n    if not root_sc or root_sc:\n        # initialize module scopes\n        items = self.scope_manager.handle_module(\n            self.modname, self.filename, self.contents\n        )\n        root_sc = self.scope_manager.get_scope(self.modname)\n        root_defi = self.def_manager.get(self.modname)\n        if not root_defi:\n            root_defi = self.def_manager.create(\n                self.modname, utils.constants.MOD_DEF\n            )\n        root_sc.add_def(self.modname.split(\".\")[-1], root_defi)\n        # create function and class defs and add them to their scope\n        # we do this here, because scope_manager doesn't have an\n        # interface with def_manager, and we want function definitions\n        # to have the correct points_to set\n        iterate_mod_items(items[\"functions\"], utils.constants.FUN_DEF)\n        iterate_mod_items(items[\"classes\"], utils.constants.CLS_DEF)\n        self.pushStack(root_defi)\n    self.modules_analyzed.add(self.filename)\n",
+  "position": {
+    "line_no": 221,
+    "col_offset": 4,
+    "end_line_no": 273,
+    "end_col_offset": 0
+  }
+}

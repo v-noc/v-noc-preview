@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e99e782d-bd4e-4ee4-90aa-f6aa438579bf",
+  "name": "get_name",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.modules.Module.get_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/modules.py",
+  "file_name": "modules",
+  "code": "def get_name(self):\n    \"\"\"ID: e99e782d-bd4e-4ee4-90aa-f6aa438579bf\"\"\"\n    return self.name\n",
+  "position": {
+    "line_no": 73,
+    "col_offset": 4,
+    "end_line_no": 76,
+    "end_col_offset": 0
+  }
+}

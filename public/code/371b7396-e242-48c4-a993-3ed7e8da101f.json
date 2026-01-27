@@ -1,0 +1,15 @@
+{
+  "id": "nodes/371b7396-e242-48c4-a993-3ed7e8da101f",
+  "name": "self.pushStack",
+  "node_type": "call",
+  "qname": "nodes/baa15735-3352-4240-ab4c-6b8d69218740::nodes/dd3cd62b-13f3-4251-8360-789787d7bb96",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "",
+  "position": {
+    "line_no": 1645,
+    "col_offset": 12,
+    "end_line_no": 1645,
+    "end_col_offset": 50
+  }
+}

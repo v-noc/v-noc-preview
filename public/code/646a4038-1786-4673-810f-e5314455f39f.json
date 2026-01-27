@@ -1,0 +1,15 @@
+{
+  "id": "nodes/646a4038-1786-4673-810f-e5314455f39f",
+  "name": "curScope.get_list_counter",
+  "node_type": "call",
+  "qname": "nodes/42f2ec12-8ca8-45f4-be4b-4a7aa5b3f003::nodes/b3488764-8f5a-4e70-a14c-0cb9a622ef5b",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "",
+  "position": {
+    "line_no": 173,
+    "col_offset": 46,
+    "end_line_no": 173,
+    "end_col_offset": 73
+  }
+}

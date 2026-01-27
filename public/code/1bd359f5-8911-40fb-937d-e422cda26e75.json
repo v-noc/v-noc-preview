@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1bd359f5-8911-40fb-937d-e422cda26e75",
+  "name": "create",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.classes.ClassManager.create",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "def create(self, name, module):\n    \"\"\"ID: 1bd359f5-8911-40fb-937d-e422cda26e75\"\"\"\n    if not name in self.names:\n        cls = ClassNode(name, module)\n        self.names[name] = cls\n    return self.names[name]\n",
+  "position": {
+    "line_no": 26,
+    "col_offset": 4,
+    "end_line_no": 32,
+    "end_col_offset": 0
+  }
+}

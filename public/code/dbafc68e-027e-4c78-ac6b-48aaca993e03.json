@@ -1,0 +1,15 @@
+{
+  "id": "nodes/dbafc68e-027e-4c78-ac6b-48aaca993e03",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.formats.as_graph.AsGraph.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/as_graph.py",
+  "file_name": "as_graph",
+  "code": "def __init__(self, cg_generator):\n    \"\"\"ID: dbafc68e-027e-4c78-ac6b-48aaca993e03\"\"\"\n    self.cg_generator = cg_generator\n",
+  "position": {
+    "line_no": 22,
+    "col_offset": 4,
+    "end_line_no": 25,
+    "end_col_offset": 0
+  }
+}

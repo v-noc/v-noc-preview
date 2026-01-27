@@ -1,0 +1,15 @@
+{
+  "id": "nodes/665894db-074c-4deb-91d7-cb0a80d05841",
+  "name": "self.merge_modules_analyzed",
+  "node_type": "call",
+  "qname": "nodes/e9dc3483-725a-43e0-b18e-a4c1815bf314::nodes/173852e5-4d50-4bbb-8ac4-48bd54821858",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "# if not fname or not self.import_manager.get_mod_dir() in ",
+  "position": {
+    "line_no": 623,
+    "col_offset": 8,
+    "end_line_no": 623,
+    "end_col_offset": 67
+  }
+}

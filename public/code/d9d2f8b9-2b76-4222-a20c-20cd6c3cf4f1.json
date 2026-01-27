@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d9d2f8b9-2b76-4222-a20c-20cd6c3cf4f1",
+  "name": "visit_Lambda",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Lambda",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def visit_Lambda(self, node):\n    \"\"\"ID: d9d2f8b9-2b76-4222-a20c-20cd6c3cf4f1\"\"\"\n    # The name of a lambda is defined by the counter of the current scope\n    fn_ns = self._handle_ns()\n    current_scope = self.scope_manager.get_scope(self.current_ns)\n    lambda_counter = current_scope.inc_lambda_counter()\n    lambda_name = utils.get_lambda_name(lambda_counter)\n    lambda_full_ns = utils.join_ns(self.current_ns, lambda_name)\n\n    # create a scope for the lambda\n    self.scope_manager.create_scope(lambda_full_ns, current_scope)\n    lambda_def = self._handle_function_def(node, lambda_name, fn_ns)\n    current_scope.add_def(lambda_name, lambda_def)\n    self.node_manager.add(lambda_full_ns, node)\n",
+  "position": {
+    "line_no": 659,
+    "col_offset": 4,
+    "end_line_no": 673,
+    "end_col_offset": 0
+  }
+}

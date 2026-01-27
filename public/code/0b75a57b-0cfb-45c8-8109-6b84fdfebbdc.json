@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0b75a57b-0cfb-45c8-8109-6b84fdfebbdc",
+  "name": "get_mod_dir",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.get_mod_dir",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def get_mod_dir(self):\n    \"\"\"ID: 0b75a57b-0cfb-45c8-8109-6b84fdfebbdc\"\"\"\n    return self.mod_dir\n",
+  "position": {
+    "line_no": 73,
+    "col_offset": 4,
+    "end_line_no": 76,
+    "end_col_offset": 0
+  }
+}

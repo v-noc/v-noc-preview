@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ddb0b291-098a-49e3-8524-2258f9559815",
+  "name": "visit_Assign",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Assign",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def visit_Assign(self, node):\n    \"\"\"ID: ddb0b291-098a-49e3-8524-2258f9559815\"\"\"\n    self._visit_assign(node.value, node.targets, node.lineno)\n",
+  "position": {
+    "line_no": 516,
+    "col_offset": 4,
+    "end_line_no": 519,
+    "end_col_offset": 0
+  }
+}

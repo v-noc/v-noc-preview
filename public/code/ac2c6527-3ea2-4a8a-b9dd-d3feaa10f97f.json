@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ac2c6527-3ea2-4a8a-b9dd-d3feaa10f97f",
+  "name": "_do_import",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager._do_import",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def _do_import(self, mod_name, package):\n    \"\"\"ID: ac2c6527-3ea2-4a8a-b9dd-d3feaa10f97f\"\"\"\n    if mod_name == 'pdb':\n        return\n    if mod_name in sys.modules:\n        mod = sys.modules[mod_name]\n        self.create_edge(mod_name)\n        if not hasattr(mod, \"__file__\") or not mod.__file__:\n            return\n        self.create_node(mod_name)\n        self.set_filepath(mod_name,mod.__file__)\n        return sys.modules[mod_name]\n    module_spec = importlib.util.find_spec(mod_name, package=package)\n    if module_spec is None:\n        return importlib.import_module(mod_name, package=package)\n    return importlib.util.module_from_spec(module_spec)\n",
+  "position": {
+    "line_no": 180,
+    "col_offset": 4,
+    "end_line_no": 196,
+    "end_col_offset": 0
+  }
+}

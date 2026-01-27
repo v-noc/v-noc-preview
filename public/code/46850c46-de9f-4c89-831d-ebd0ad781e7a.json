@@ -1,0 +1,15 @@
+{
+  "id": "nodes/46850c46-de9f-4c89-831d-ebd0ad781e7a",
+  "name": "inc_dict_counter",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.inc_dict_counter",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def inc_dict_counter(self, val=1):\n    \"\"\"ID: 46850c46-de9f-4c89-831d-ebd0ad781e7a\"\"\"\n    self.dict_counter += val\n    return self.dict_counter\n",
+  "position": {
+    "line_no": 201,
+    "col_offset": 4,
+    "end_line_no": 205,
+    "end_col_offset": 0
+  }
+}

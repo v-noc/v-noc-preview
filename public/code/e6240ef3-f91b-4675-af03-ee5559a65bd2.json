@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e6240ef3-f91b-4675-af03-ee5559a65bd2",
+  "name": "find_field",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.find_field",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def find_field(self, scopeNs, field):\n    \"\"\"ID: e6240ef3-f91b-4675-af03-ee5559a65bd2\"\"\"\n    if scopeNs in [\"<str>\", \"<list>\", \"<map>\", \"<int>\"]:\n        if scopeNs == \"<str>\":\n            if hasattr(str, field):\n                return utils.join_ns(scopeNs, field)\n        if scopeNs == \"<list>\":\n            if hasattr(list, field):\n                return utils.join_ns(scopeNs, field)\n        if scopeNs == \"<map>\":\n            if hasattr(dict, field):\n                return utils.join_ns(scopeNs, field)\n        if scopeNs == \"<int>\":\n            if hasattr(int, field):\n                return utils.join_ns(scopeNs, field)\n        return None\n        # return utils.join_ns(scopeNs,field)\n    scope: ScopeItem = self.scope_manager.get_scope(scopeNs)\n    scopeDefi: Definition = self.def_manager.get(scopeNs)\n    if not scope and scopeDefi == utils.constants.EXT_DEF:\n        return utils.join_ns(scopeNs, field)\n    defi: Definition = self.def_manager.get(scopeNs)\n    if not scope:\n        return None\n    if not defi:\n        return None\n    if defi.get_type() == utils.constants.CLS_DEF:\n        return self.find_cls_fun_ns(scopeNs, field)\n    return scope.get_def(field)\n",
+  "position": {
+    "line_no": 2102,
+    "col_offset": 4,
+    "end_line_no": 2131,
+    "end_col_offset": 0
+  }
+}

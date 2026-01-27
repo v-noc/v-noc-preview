@@ -1,0 +1,15 @@
+{
+  "id": "nodes/da95dba1-a493-4d9e-8a8d-d9b9ffedef25",
+  "name": "Definition",
+  "node_type": "call",
+  "qname": "nodes/e0138cd5-0e34-4106-b174-c78c4e9e545d::nodes/495a87db-98f2-4250-b089-9edb7d69bbef",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "self.defs[ns] = Definition(ns, def_type)",
+  "position": {
+    "line_no": 58,
+    "col_offset": 24,
+    "end_line_no": 58,
+    "end_col_offset": 48
+  }
+}

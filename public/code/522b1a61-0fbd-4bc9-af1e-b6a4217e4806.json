@@ -1,0 +1,15 @@
+{
+  "id": "nodes/522b1a61-0fbd-4bc9-af1e-b6a4217e4806",
+  "name": "handle_import",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.handle_import",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def handle_import(self, name, level,curScope=None):\n    \"\"\"ID: 522b1a61-0fbd-4bc9-af1e-b6a4217e4806\"\"\"\n    # We currently don't support builtin modules because they're frozen.\n    # Add an edge and continue.\n    # TODO: identify a way to include frozen modules\n    # \u5982\u679c\u662f\u5185\u90e8\u6a21\u5757\uff0c\u662f\u76f4\u63a5\u52a0\u5165\n    root = name.split(\".\")[0]\n    if root in sys.builtin_module_names:\n        self.create_edge(root)\n        return\n\n    # Import the module\n    # \u5982\u679c\u662f\u5916\u90e8\u6a21\u5757\uff0c\u5219\u9700\u8981\u52a8\u6001\u5bfc\u5165\uff0c\u4e0e\u73af\u5883\u76f8\u5173\n    try:\n        mod_name, package = self._handle_import_level(name, level)\n    except ImportError:\n        return\n\n    parent = \".\".join(mod_name.split(\".\")[:-1])\n    parent_name = \".\".join(name.split(\".\")[:-1])\n    combos = [(mod_name, package),\n            (parent, package),\n            (utils.join_ns(package, name), \"\"),\n            (utils.join_ns(package, parent_name), \"\")]\n\n    mod = None\n    for mn, pkg in combos:\n        try:\n            mod = self._do_import(mn, pkg)\n            break\n        except:\n            continue\n\n    if not mod:\n        return\n\n    if not hasattr(mod, \"__file__\") or not mod.__file__:\n        return\n    # \u5982\u679c\u662f\u5916\u90e8\u6a21\u5757\uff0c\u5219\u76f4\u63a5\u8fd4\u56de\u6a21\u5757\u540d\n    if self.mod_dir not in mod.__file__:\n        return mod.__name__\n    # if self.mod_dir not in mod.__file__:\n    #     return mod\n    # \u5982\u679c\u662f\u5185\u90e8\u6a21\u5757\uff0c\u8fd4\u56de\u76f8\u5bf9\u8def\u5f84\n    fname = mod.__file__\n    if fname.endswith(\"__init__.py\"):\n        fname = os.path.split(fname)[0]\n\n    return utils.to_mod_name(\n        os.path.relpath(fname, self.mod_dir))\n",
+  "position": {
+    "line_no": 202,
+    "col_offset": 4,
+    "end_line_no": 252,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0c53d958-ec06-4dc8-8d3e-4b5f8409fabf",
+  "name": "analyze_localfunction",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.analyze_localfunction",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def analyze_localfunction(self, localList):\n    \"\"\"ID: 0c53d958-ec06-4dc8-8d3e-4b5f8409fabf\"\"\"\n    for local in localList:\n        localDefi: Definition = self.def_manager.get(local)\n        self.pushStack(localDefi, False, True)\n",
+  "position": {
+    "line_no": 1643,
+    "col_offset": 4,
+    "end_line_no": 1648,
+    "end_col_offset": 0
+  }
+}

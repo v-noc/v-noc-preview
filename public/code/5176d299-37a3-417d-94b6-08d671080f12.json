@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5176d299-37a3-417d-94b6-08d671080f12",
+  "name": "ReturnManager",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.returns.ReturnManager",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/returns.py",
+  "file_name": "returns",
+  "code": "class ReturnManager(object):\n    \"\"\"ID: 5176d299-37a3-417d-94b6-08d671080f12\"\"\"\n\n    def __init__(self):\n        \"\"\"ID: 6800e6e6-ac3d-4307-9948-c8b25a967731\"\"\"\n\n        self.returns = {}\n\n    def get_return(self):\n        \"\"\"ID: 427d3e3c-09b5-48e9-8d75-fab84f085bc5\"\"\"\n        print(\"\\n\\n\")\n        print(f\"-> self.returns\", self.returns)\n        print(\"\\n\")\n        return self.returns\n\n    def add_returnitem(self, currentNs, left, row, right: str):\n        \"\"\"ID: 4f5e1a20-0899-4b50-a731-4f0984713624\"\"\"\n        right = utils.join_ns(*right.split(\".\")[:-1])\n\n        print(\"add_returnitem \\n\\n\")\n        item = ReturnItem(left, row, right)\n        if not currentNs in self.returns:\n            self.returns[currentNs] = []\n        self.returns[currentNs].append(item)\n\n    def get_returnitem(self, currentNs):\n        \"\"\"ID: 706155fd-4c21-4ccb-aff2-4f5dab67b5b0\"\"\"\n        print(\"get_returnitem \\n\\n\")\n        if currentNs in self.returns:\n            return self.returns[currentNs]\n\n    def pop_returnItem(self, currentNs, row, funcName):\n        \"\"\"ID: f6b83e0f-d184-4f22-bd1b-34cf95e3dc0b\"\"\"\n        if not currentNs in self.returns:\n            return None\n        for item in self.returns[currentNs]:\n            if item.row == row and item.right == funcName:\n                self.returns[currentNs].remove(item)\n                return item.left\n\n    def peek_returnItem(self, currentNs, row, funcName):\n        \"\"\"ID: 799722dc-232a-49fd-81a8-658ebab13426\"\"\"\n        print(\"peek_returnItem\")\n        if not currentNs in self.returns:\n            return None\n        for item in self.returns[currentNs]:\n            if item.row == row and item.right == funcName:\n                return item.left\n",
+  "position": {
+    "line_no": 5,
+    "col_offset": 0,
+    "end_line_no": 53,
+    "end_col_offset": 0
+  }
+}

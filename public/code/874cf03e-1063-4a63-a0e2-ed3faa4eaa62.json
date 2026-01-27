@@ -1,0 +1,15 @@
+{
+  "id": "nodes/874cf03e-1063-4a63-a0e2-ed3faa4eaa62",
+  "name": "add_value_point",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.add_value_point",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def add_value_point(self, row, values):\n    \"\"\"ID: 874cf03e-1063-4a63-a0e2-ed3faa4eaa62\"\"\"\n    curPoint = None\n    point = PointItem(row, values)\n    heapq.heappush(self.points, point)\n    if isinstance(values,str):\n        values = [values]\n    if not gol.get_value('precision'):\n        self.bias = self.bias.union(set(values))\n",
+  "position": {
+    "line_no": 245,
+    "col_offset": 4,
+    "end_line_no": 254,
+    "end_col_offset": 0
+  }
+}

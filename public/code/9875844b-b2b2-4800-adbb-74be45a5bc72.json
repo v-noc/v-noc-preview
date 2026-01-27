@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9875844b-b2b2-4800-adbb-74be45a5bc72",
+  "name": "utils.join_ns",
+  "node_type": "call",
+  "qname": "nodes/6c4f4996-b235-4c8a-96c4-48f660a59f8a::nodes/442d954e-986a-4c2a-92fa-9791c5bbdcd1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "fullns = utils.join_ns(namespace, name)",
+  "position": {
+    "line_no": 45,
+    "col_offset": 25,
+    "end_line_no": 45,
+    "end_col_offset": 55
+  }
+}

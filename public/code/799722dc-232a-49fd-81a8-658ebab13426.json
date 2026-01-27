@@ -1,0 +1,15 @@
+{
+  "id": "nodes/799722dc-232a-49fd-81a8-658ebab13426",
+  "name": "peek_returnItem",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.returns.ReturnManager.peek_returnItem",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/returns.py",
+  "file_name": "returns",
+  "code": "def peek_returnItem(self, currentNs, row, funcName):\n    \"\"\"ID: 799722dc-232a-49fd-81a8-658ebab13426\"\"\"\n    print(\"peek_returnItem\")\n    if not currentNs in self.returns:\n        return None\n    for item in self.returns[currentNs]:\n        if item.row == row and item.right == funcName:\n            return item.left\n",
+  "position": {
+    "line_no": 45,
+    "col_offset": 4,
+    "end_line_no": 53,
+    "end_col_offset": 0
+  }
+}

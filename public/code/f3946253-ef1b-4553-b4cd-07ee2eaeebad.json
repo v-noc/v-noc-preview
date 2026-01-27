@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f3946253-ef1b-4553-b4cd-07ee2eaeebad",
+  "name": "self.import_manager.set_pkg",
+  "node_type": "call",
+  "qname": "nodes/c57b12d9-1df6-48b6-8a3e-373942a30fa6::nodes/25daa120-ca37-4199-aa76-a4b53504ddf1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "self.import_manager.set_pkg(input_pkg)",
+  "position": {
+    "line_no": 125,
+    "col_offset": 16,
+    "end_line_no": 125,
+    "end_col_offset": 54
+  }
+}

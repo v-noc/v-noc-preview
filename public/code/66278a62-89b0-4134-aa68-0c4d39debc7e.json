@@ -1,0 +1,15 @@
+{
+  "id": "nodes/66278a62-89b0-4134-aa68-0c4d39debc7e",
+  "name": "self.get_scopes",
+  "node_type": "call",
+  "qname": "nodes/28b76732-7f66-413c-9c2d-32efa4f1e52d::nodes/2bdff7c1-2adb-4bca-b147-5d34949050f6",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "state[\"classes\"][key] = ch.ge",
+  "position": {
+    "line_no": 89,
+    "col_offset": 24,
+    "end_line_no": 89,
+    "end_col_offset": 41
+  }
+}

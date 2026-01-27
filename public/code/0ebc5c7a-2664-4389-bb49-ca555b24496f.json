@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0ebc5c7a-2664-4389-bb49-ca555b24496f",
+  "name": "self._clear_caches",
+  "node_type": "call",
+  "qname": "nodes/dc3fd211-5ad2-40df-a80b-d29e3a201f1d::nodes/f070d3bb-f82c-484a-8183-1c3335c9553f",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "self._clear_caches()",
+  "position": {
+    "line_no": 266,
+    "col_offset": 8,
+    "end_line_no": 266,
+    "end_col_offset": 28
+  }
+}

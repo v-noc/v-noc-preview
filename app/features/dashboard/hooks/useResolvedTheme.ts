@@ -64,6 +64,7 @@ export function useResolvedTheme() {
   const activeTabId = useTabStore((s) => s.activeTabId);
   const selectedNode = useProjectStore((s) => s.selectedNode[activeTabId]);
 
+
   const selectedPath = useMemo(() => {
     if (!projectData || !selectedNode) return [];
     return findSelectedPath(projectData, selectedNode);

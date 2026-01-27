@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3b34a6de-0ef3-4a3b-ab7d-6c60b5e60ce4",
+  "name": "get_last_point_value",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.get_last_point_value",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def get_last_point_value(self):\n    \"\"\"ID: 3b34a6de-0ef3-4a3b-ab7d-6c60b5e60ce4\"\"\"\n    if not self.points:\n        return set()\n    return self.points[len(self.points) - 1].points_to.union(self.bias)\n",
+  "position": {
+    "line_no": 283,
+    "col_offset": 4,
+    "end_line_no": 288,
+    "end_col_offset": 0
+  }
+}

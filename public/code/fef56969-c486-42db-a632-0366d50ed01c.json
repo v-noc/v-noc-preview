@@ -1,0 +1,15 @@
+{
+  "id": "nodes/fef56969-c486-42db-a632-0366d50ed01c",
+  "name": "merge_change",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Call.merge_change",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def merge_change(callList):\n    \"\"\"ID: fef56969-c486-42db-a632-0366d50ed01c\"\"\"\n    outPoint = {}\n    for call in callList:\n        callChange: dict = self.change_manager.getChange(call)\n        if not callChange:\n            continue\n        for key, point in callChange.items():\n            if key in outPoint:\n                outPoint[key] = outPoint[key].union(\n                    point.get_last_point_value()\n                )\n            if key not in outPoint:\n                outPoint[key] = point.get_last_point_value()\n    out = {}\n    for key, point in outPoint.items():\n        out[key] = ChangeItem(node.lineno, point)\n    return out\n",
+  "position": {
+    "line_no": 1436,
+    "col_offset": 8,
+    "end_line_no": 1454,
+    "end_col_offset": 0
+  }
+}

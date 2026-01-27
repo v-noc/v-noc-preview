@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b76e161a-0f8a-4007-a0ab-dc328219eb40",
+  "name": "clsRetDefi.add_value_point",
+  "node_type": "call",
+  "qname": "nodes/7781401c-efd9-4d28-9a4a-e826c4e9418e::nodes/874cf03e-1063-4a63-a0e2-ed3faa4eaa62",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "clsSelfDefi: Definition = self.def_manager.get(clsSelfNs)",
+  "position": {
+    "line_no": 204,
+    "col_offset": 8,
+    "end_line_no": 204,
+    "end_col_offset": 66
+  }
+}

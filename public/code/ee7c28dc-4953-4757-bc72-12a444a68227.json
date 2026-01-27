@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ee7c28dc-4953-4757-bc72-12a444a68227",
+  "name": "process_if_main",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_If.process_if_main",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def process_if_main():\n    \"\"\"ID: ee7c28dc-4953-4757-bc72-12a444a68227\"\"\"\n    nodeTest: ast.Compare = node.test\n    if not isinstance(nodeTest, ast.Compare):\n        return False\n    if (\n            isinstance(nodeTest.left, ast.Name)\n            and nodeTest.left.id == \"__name__\"\n            and nodeTest.comparators\n            and isinstance(nodeTest.comparators[0], ast.Constant)\n            and nodeTest.comparators[0].value == \"__main__\"\n    ):\n        modNs = self.get_module_ns(self.current_ns)\n        if modNs not in self.module_manager.local:\n            return True\n    return False\n",
+  "position": {
+    "line_no": 456,
+    "col_offset": 8,
+    "end_line_no": 472,
+    "end_col_offset": 0
+  }
+}

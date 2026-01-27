@@ -1,0 +1,15 @@
+{
+  "id": "nodes/706155fd-4c21-4ccb-aff2-4f5dab67b5b0",
+  "name": "get_returnitem",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.returns.ReturnManager.get_returnitem",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/returns.py",
+  "file_name": "returns",
+  "code": "def get_returnitem(self, currentNs):\n    \"\"\"ID: 706155fd-4c21-4ccb-aff2-4f5dab67b5b0\"\"\"\n    print(\"get_returnitem \\n\\n\")\n    if currentNs in self.returns:\n        return self.returns[currentNs]\n",
+  "position": {
+    "line_no": 30,
+    "col_offset": 4,
+    "end_line_no": 35,
+    "end_col_offset": 0
+  }
+}

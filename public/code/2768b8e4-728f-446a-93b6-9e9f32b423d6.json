@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2768b8e4-728f-446a-93b6-9e9f32b423d6",
+  "name": "self.change_manager.getChange",
+  "node_type": "call",
+  "qname": "nodes/1a948556-49fe-4200-ae52-ec26e3ad756c::nodes/4681b1fe-2681-47fc-92ee-6ff793120fc6",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "callChange: dict = self.change_manager.getChange(call)",
+  "position": {
+    "line_no": 1440,
+    "col_offset": 35,
+    "end_line_no": 1440,
+    "end_col_offset": 70
+  }
+}

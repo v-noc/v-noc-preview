@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6a49b1ef-8e22-498b-a2b8-04f5d8408546",
+  "name": "ig_obj.create_node",
+  "node_type": "call",
+  "qname": "nodes/ec7842ba-010e-4fd4-bf77-8d7a22a21adf::nodes/2e7ed7ed-3290-4e43-ab16-4019161fd0d5",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "ig_obj.create_node(self.fullname)",
+  "position": {
+    "line_no": 45,
+    "col_offset": 16,
+    "end_line_no": 45,
+    "end_col_offset": 49
+  }
+}

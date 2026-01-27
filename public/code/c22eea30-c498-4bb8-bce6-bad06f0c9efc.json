@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c22eea30-c498-4bb8-bce6-bad06f0c9efc",
+  "name": "self.flatten",
+  "node_type": "call",
+  "qname": "nodes/bb193c6c-93e7-4417-903a-f0edff5b1654::nodes/54444063-0587-44cb-bf82-0d0259efeefd",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "b += self.flatten(item)",
+  "position": {
+    "line_no": 89,
+    "col_offset": 21,
+    "end_line_no": 89,
+    "end_col_offset": 39
+  }
+}

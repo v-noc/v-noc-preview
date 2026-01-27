@@ -1,0 +1,15 @@
+{
+  "id": "nodes/cbb30bb7-4753-4ea3-b796-e209cd256101",
+  "name": "set_value",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.gol.set_value",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/gol.py",
+  "file_name": "gol",
+  "code": "def set_value(key, value):\n    \"\"\"\u5b9a\u4e49\u4e00\u4e2a\u5168\u5c40\u53d8\u91cf\n\nID: cbb30bb7-4753-4ea3-b796-e209cd256101\"\"\"\n    _global_dict[key] = value\n",
+  "position": {
+    "line_no": 8,
+    "col_offset": 0,
+    "end_line_no": 13,
+    "end_col_offset": 0
+  }
+}

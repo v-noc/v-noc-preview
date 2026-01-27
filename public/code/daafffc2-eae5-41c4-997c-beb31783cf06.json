@@ -1,0 +1,15 @@
+{
+  "id": "nodes/daafffc2-eae5-41c4-997c-beb31783cf06",
+  "name": "self._is_literal",
+  "node_type": "call",
+  "qname": "nodes/6c724754-ab3a-42d9-a5ef-5f70d5d5a170::nodes/8cd5fcba-9940-4cbd-96ad-0716baa8dabc",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "if getattr(node.slice, \"value\", None) is not None and self._is_literal(node.slice.value)",
+  "position": {
+    "line_no": 2161,
+    "col_offset": 62,
+    "end_line_no": 2161,
+    "end_col_offset": 96
+  }
+}

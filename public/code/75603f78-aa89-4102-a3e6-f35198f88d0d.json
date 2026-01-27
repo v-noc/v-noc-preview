@@ -1,0 +1,15 @@
+{
+  "id": "nodes/75603f78-aa89-4102-a3e6-f35198f88d0d",
+  "name": "_get_last_line",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor._get_last_line",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def _get_last_line(self, node):\n    \"\"\"ID: 75603f78-aa89-4102-a3e6-f35198f88d0d\"\"\"\n    lines = sorted(\n        list(ast.walk(node)),\n        key=lambda x: x.lineno if hasattr(x, \"lineno\") else 0,\n        reverse=True,\n    )\n    if not lines:\n        return node.lineno\n    last = getattr(lines[0], \"lineno\", node.lineno)\n    if last < node.lineno:\n        return node.lineno\n    return last\n",
+  "position": {
+    "line_no": 948,
+    "col_offset": 4,
+    "end_line_no": 961,
+    "end_col_offset": 0
+  }
+}

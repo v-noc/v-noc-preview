@@ -1,0 +1,15 @@
+{
+  "id": "nodes/73513dd8-84f4-46eb-ae0e-c6ed634cb097",
+  "name": "is_same_scope",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.is_same_scope",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def is_same_scope(self, first, second):\n    \"\"\"ID: 73513dd8-84f4-46eb-ae0e-c6ed634cb097\"\"\"\n    return self.get_scope_name(first) == self.get_scope_name(second)\n",
+  "position": {
+    "line_no": 173,
+    "col_offset": 4,
+    "end_line_no": 176,
+    "end_col_offset": 0
+  }
+}

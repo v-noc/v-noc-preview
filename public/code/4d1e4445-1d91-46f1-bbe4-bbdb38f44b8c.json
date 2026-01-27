@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4d1e4445-1d91-46f1-bbe4-bbdb38f44b8c",
+  "name": "get_if_name",
+  "node_type": "function",
+  "qname": "Jarvis.utils.common.get_if_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/common.py",
+  "file_name": "common",
+  "code": "def get_if_name(counter):\n    \"\"\"ID: 4d1e4445-1d91-46f1-bbe4-bbdb38f44b8c\"\"\"\n    return \"<if{}>\".format(counter)\n",
+  "position": {
+    "line_no": 34,
+    "col_offset": 0,
+    "end_line_no": 37,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3a1b389a-82bd-4e71-9a8f-4fbe6830bbe1",
+  "name": "defi.add_value_point",
+  "node_type": "call",
+  "qname": "nodes/ee3d86f9-46a4-4bda-b7ff-234c02f86fd8::nodes/874cf03e-1063-4a63-a0e2-ed3faa4eaa62",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "try:",
+  "position": {
+    "line_no": 227,
+    "col_offset": 8,
+    "end_line_no": 227,
+    "end_col_offset": 41
+  }
+}

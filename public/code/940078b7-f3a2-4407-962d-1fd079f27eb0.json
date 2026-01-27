@@ -1,0 +1,15 @@
+{
+  "id": "nodes/940078b7-f3a2-4407-962d-1fd079f27eb0",
+  "name": "get_pos_args",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.pointers.NamePointer.get_pos_args",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "def get_pos_args(self):\n    \"\"\"ID: 940078b7-f3a2-4407-962d-1fd079f27eb0\"\"\"\n    args = {}\n    for pos, name in self.pos_to_name.items():\n        args[pos] = self.args[name]\n    return args\n",
+  "position": {
+    "line_no": 145,
+    "col_offset": 4,
+    "end_line_no": 151,
+    "end_col_offset": 0
+  }
+}

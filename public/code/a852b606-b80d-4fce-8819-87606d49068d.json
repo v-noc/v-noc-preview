@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a852b606-b80d-4fce-8819-87606d49068d",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.modules.Module.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/modules.py",
+  "file_name": "modules",
+  "code": "def __init__(self, name, filename):\n    \"\"\"ID: a852b606-b80d-4fce-8819-87606d49068d\"\"\"\n    self.name = name\n    self.filename = filename\n    self.methods = dict()\n",
+  "position": {
+    "line_no": 67,
+    "col_offset": 4,
+    "end_line_no": 72,
+    "end_col_offset": 0
+  }
+}

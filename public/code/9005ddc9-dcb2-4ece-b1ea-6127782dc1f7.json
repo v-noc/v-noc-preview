@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9005ddc9-dcb2-4ece-b1ea-6127782dc1f7",
+  "name": "__lt__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.calls.CallItem.__lt__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/calls.py",
+  "file_name": "calls",
+  "code": "def __lt__(self, other):\n    \"\"\"ID: 9005ddc9-dcb2-4ece-b1ea-6127782dc1f7\"\"\"\n    return self.row < other.row or self.seq < other.seq\n",
+  "position": {
+    "line_no": 68,
+    "col_offset": 4,
+    "end_line_no": 71,
+    "end_col_offset": 0
+  }
+}

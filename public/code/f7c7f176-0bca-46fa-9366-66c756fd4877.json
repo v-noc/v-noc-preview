@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f7c7f176-0bca-46fa-9366-66c756fd4877",
+  "name": "self._sanitize_pos",
+  "node_type": "call",
+  "qname": "nodes/9197b271-f8f4-4871-89b7-3d67c6ab65bf::nodes/80ef6e3e-2368-4326-bd26-dedd9c298c57",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "pos = self._sanitize_pos(pos)",
+  "position": {
+    "line_no": 106,
+    "col_offset": 14,
+    "end_line_no": 106,
+    "end_col_offset": 37
+  }
+}

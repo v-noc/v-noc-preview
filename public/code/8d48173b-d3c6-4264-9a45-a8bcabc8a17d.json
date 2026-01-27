@@ -1,0 +1,9 @@
+{
+  "id": "nodes/8d48173b-d3c6-4264-9a45-a8bcabc8a17d",
+  "name": "helper",
+  "node_type": "file",
+  "qname": "sample_project2.core.utils.helper",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/core/utils/helper.py",
+  "file_name": "helper",
+  "code": "# ID: 69106042-455e-439f-8735-b247a3b0224d\n\"\"\"FileID: 8d48173b-d3c6-4264-9a45-a8bcabc8a17d\"\"\"\nfrom ..model.child import Child\n\nfrom vn_logger import context_logger, logger_core\n\n\n@context_logger('1a5b7f13-911d-450a-ad84-3ffe6b577edd')\ndef create_child():\n    \"\"\" ID: 1a5b7f13-911d-450a-ad84-3ffe6b577edd \"\"\"\n    child = Child('whhat')\n    child.name = \"lala gf\"\n    logger_core.logger.error('Child created failed')\n    # s\n    return child\n\n\ndef gg():\n    \"\"\"ID: 6e445d46-a576-41e8-a8ee-223eadd6808b\"\"\"\n    pass\n"
+}

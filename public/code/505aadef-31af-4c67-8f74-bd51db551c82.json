@@ -1,0 +1,15 @@
+{
+  "id": "nodes/505aadef-31af-4c67-8f74-bd51db551c82",
+  "name": "gol.get_value",
+  "node_type": "call",
+  "qname": "nodes/2af03edf-aa2b-4e71-ae7c-109c90510a45::nodes/116b5a12-2b2b-4705-b412-5bcf43353d93",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "self.node_manager.add(self.modnam",
+  "position": {
+    "line_no": 252,
+    "col_offset": 15,
+    "end_line_no": 252,
+    "end_col_offset": 41
+  }
+}

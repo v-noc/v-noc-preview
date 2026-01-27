@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1a337601-8d3c-4df5-abc2-c91c441aa729",
+  "name": "helper",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.helper",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def helper(self, defiNs, row):\n    \"\"\"ID: 1a337601-8d3c-4df5-abc2-c91c441aa729\"\"\"\n    curDefi: Definition = self.get(defiNs)\n    if not curDefi:\n        return defiNs\n    if not curDefi.points:\n        return defiNs\n",
+  "position": {
+    "line_no": 177,
+    "col_offset": 4,
+    "end_line_no": 184,
+    "end_col_offset": 0
+  }
+}

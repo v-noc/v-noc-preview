@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import useProjectStore from '@/features/dashboard/store/useProjectStore';
 import useTabStore from '@/features/dashboard/store/useTabStore';
-import { useUpdateBasicInfo, useUpdateTheme } from '@/features/dashboard/features/Main/service/useContainer';
+
 import type { AnyNodeTree, ProjectNodeTree, ThemeConfig } from '@/types/project';
 
 type NodeWithChildren = AnyNodeTree & { children?: AnyNodeTree[] };
@@ -43,8 +43,7 @@ export function useRightSidebarActions() {
   const setProjectData = useProjectStore((s) => s.setProjectData);
   const setSelectedNode = useProjectStore((s) => s.setSelectedNode);
 
-  const { mutate: updateBasicInfoApi } = useUpdateBasicInfo(selectedNode?._key ?? '');
-  const { mutate: updateThemeApi } = useUpdateTheme(selectedNode?._key ?? '');
+
 
   const updateTheme = useCallback((theme: ThemeConfig) => {
     if (!selectedNode || !projectData) return;
@@ -63,10 +62,10 @@ export function useRightSidebarActions() {
       })
     );
 
-    updateThemeApi(theme);
+
     setProjectData(updatedTree);
     setSelectedNode(activeTabId, updatedSelected);
-  }, [projectData, selectedNode, setProjectData, setSelectedNode, activeTabId, updateThemeApi]);
+  }, [projectData, selectedNode, setProjectData, setSelectedNode, activeTabId]);
 
   const updateBasicInfo = useCallback((info: { name: string; description: string; icon: string }) => {
     if (!selectedNode || !projectData) return;
@@ -85,10 +84,10 @@ export function useRightSidebarActions() {
       })
     );
 
-    updateBasicInfoApi(info);
+
     setProjectData(updatedTree);
     setSelectedNode(activeTabId, updatedSelected);
-  }, [projectData, selectedNode, setProjectData, setSelectedNode, updateBasicInfoApi]);
+  }, [projectData, selectedNode, setProjectData, setSelectedNode]);
 
   return {
     updateTheme,

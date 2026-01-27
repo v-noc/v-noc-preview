@@ -1,0 +1,15 @@
+{
+  "id": "nodes/54444063-0587-44cb-bf82-0d0259efeefd",
+  "name": "flatten",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.flatten",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def flatten(self, a):\n    \"\"\"ID: 54444063-0587-44cb-bf82-0d0259efeefd\"\"\"\n    if not isinstance(a, (list,)):\n        return [a]\n    else:\n        b = []\n        for item in a:\n            b += self.flatten(item)\n    return b\n",
+  "position": {
+    "line_no": 82,
+    "col_offset": 4,
+    "end_line_no": 91,
+    "end_col_offset": 0
+  }
+}

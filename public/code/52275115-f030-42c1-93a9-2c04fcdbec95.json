@@ -1,0 +1,15 @@
+{
+  "id": "nodes/52275115-f030-42c1-93a9-2c04fcdbec95",
+  "name": "analyze_allfunction",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.analyze_allfunction",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def analyze_allfunction(self):\n    \"\"\"ID: 52275115-f030-42c1-93a9-2c04fcdbec95\"\"\"\n    def analyze_local(local):\n        \"\"\"ID: c8631869-6856-43ce-8659-ae00e5aaa245\"\"\"\n        moduleNode: Module = self.module_manager.get(local)\n        if not moduleNode:\n            return\n        methodDict: dict = moduleNode.get_methods()\n        for method in list(methodDict.keys()):\n            methodDefi = self.def_manager.get(method)\n            self.pushStack(methodDefi, False, True)\n\n    prev = None\n\n    def equal(prev):\n        \"\"\"ID: 40a489de-98ff-43b0-97a2-9d8c7c793d1a\"\"\"\n        if not prev:\n            return False\n        if set(prev.keys()) == set(\n                self.module_manager.get_internal_modules().copy()\n        ):\n            return True\n        return False\n\n    cnt = 0\n    while not equal(prev):\n        print(\"iteration\", cnt)\n        cnt += 1\n        prev = self.module_manager.get_internal_modules().copy()\n        for local in self.module_manager.get_internal_modules().copy():\n            analyze_local(local)\n    pass\n",
+  "position": {
+    "line_no": 1649,
+    "col_offset": 4,
+    "end_line_no": 1681,
+    "end_col_offset": 0
+  }
+}

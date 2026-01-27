@@ -1,0 +1,15 @@
+{
+  "id": "nodes/667f5a9b-0bbf-47b9-bc81-b65b9e5d5aed",
+  "name": "PointItem",
+  "node_type": "call",
+  "qname": "nodes/cbf81833-d9a6-4478-810a-3c1c1bbb7d4c::nodes/d0ffe58a-fe3e-426a-a99a-0c78e934b7a1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "",
+  "position": {
+    "line_no": 248,
+    "col_offset": 16,
+    "end_line_no": 248,
+    "end_col_offset": 38
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6610425e-51da-421a-99e9-b8747bc6b7f3",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.calls.CallItem.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/calls.py",
+  "file_name": "calls",
+  "code": "def __init__(self,row :int,seq:int,funcDefi:str ,ns:str , params:set,inherit):\n    \"\"\"ID: 6610425e-51da-421a-99e9-b8747bc6b7f3\"\"\"\n    self.row = row\n    self.funcDefi = funcDefi\n    self.seq = seq\n    self.ns = ns\n    self.params = params\n",
+  "position": {
+    "line_no": 57,
+    "col_offset": 4,
+    "end_line_no": 64,
+    "end_col_offset": 0
+  }
+}

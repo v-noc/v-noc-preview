@@ -1,0 +1,15 @@
+{
+  "id": "nodes/83d77ffa-b0db-40e1-876e-cfdd8dba9276",
+  "name": "PointerError",
+  "node_type": "call",
+  "qname": "nodes/ae2a4812-3dcf-4c3c-9ded-c1dc86625156::nodes/379aecb6-4316-40ac-be1b-0c1c8e2a0b6e",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "raise PointerError(\"Invalid position for argument\")",
+  "position": {
+    "line_no": 74,
+    "col_offset": 18,
+    "end_line_no": 74,
+    "end_col_offset": 63
+  }
+}

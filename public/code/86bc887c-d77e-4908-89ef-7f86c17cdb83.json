@@ -1,0 +1,15 @@
+{
+  "id": "nodes/86bc887c-d77e-4908-89ef-7f86c17cdb83",
+  "name": "self.add_ext_mod_node",
+  "node_type": "call",
+  "qname": "nodes/6a8a84da-5b88-440d-abb2-4415fe55b72e::nodes/8c28ed12-e9c9-4159-b0cb-134f2bae8336",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "if self.def_manager.get(ns)",
+  "position": {
+    "line_no": 657,
+    "col_offset": 12,
+    "end_line_no": 657,
+    "end_col_offset": 39
+  }
+}

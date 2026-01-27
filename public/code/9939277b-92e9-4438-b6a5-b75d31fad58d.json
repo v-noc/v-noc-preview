@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9939277b-92e9-4438-b6a5-b75d31fad58d",
+  "name": "_retrieve_parent_names",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase._retrieve_parent_names",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def _retrieve_parent_names(self, node):\n    \"\"\"ID: 9939277b-92e9-4438-b6a5-b75d31fad58d\"\"\"\n    if not isinstance(node, ast.Attribute):\n        raise Exception(\"The node is not an attribute\")\n\n    decoded = self.decode_node(node.value)\n    if not decoded:\n        return set()\n\n    names = set()\n    for parent in decoded:\n        if not parent or not isinstance(parent, Definition):\n            continue\n        if getattr(self, \"closured\", None) and self.closured.get(parent.get_ns(), None):\n            names = names.union(self.closured.get(parent.get_ns()))\n        else:\n            names.add(parent.get_ns())\n    return names\n",
+  "position": {
+    "line_no": 380,
+    "col_offset": 4,
+    "end_line_no": 398,
+    "end_col_offset": 0
+  }
+}

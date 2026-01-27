@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c89ec9c1-c80b-42c5-9e39-2406066c9dde",
+  "name": "ChangeItem",
+  "node_type": "call",
+  "qname": "nodes/cc28cd40-e34f-47c6-bdd2-457084fef5fc::nodes/c8962097-c2a6-46f4-b0f6-696f8005bbe6",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "elif not elseChange and ifChange:\n    for defi, item in ifChange.items():",
+  "position": {
+    "line_no": 1736,
+    "col_offset": 41,
+    "end_line_no": 1737,
+    "end_col_offset": 53
+  }
+}

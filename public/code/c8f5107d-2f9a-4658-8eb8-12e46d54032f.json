@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c8f5107d-2f9a-4658-8eb8-12e46d54032f",
+  "name": "curDefi.get_last_point_value",
+  "node_type": "call",
+  "qname": "nodes/7cead2d5-c022-41c3-8165-e78ec4419b3f::nodes/3b34a6de-0ef3-4a3b-ab7d-6c60b5e60ce4",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "curItemLists = curDefi.get_last_point_value()",
+  "position": {
+    "line_no": 193,
+    "col_offset": 27,
+    "end_line_no": 193,
+    "end_col_offset": 57
+  }
+}

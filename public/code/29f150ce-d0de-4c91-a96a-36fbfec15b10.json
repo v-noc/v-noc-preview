@@ -1,0 +1,15 @@
+{
+  "id": "nodes/29f150ce-d0de-4c91-a96a-36fbfec15b10",
+  "name": "get_unique_and_increment",
+  "node_type": "function",
+  "qname": "Jarvis.formats.fasten.Fasten.get_unique_and_increment",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "def get_unique_and_increment(self):\n    \"\"\"ID: 29f150ce-d0de-4c91-a96a-36fbfec15b10\"\"\"\n    unique = self.unique\n    self.unique += 1\n    return unique\n",
+  "position": {
+    "line_no": 43,
+    "col_offset": 4,
+    "end_line_no": 48,
+    "end_col_offset": 0
+  }
+}

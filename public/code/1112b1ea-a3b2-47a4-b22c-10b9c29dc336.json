@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1112b1ea-a3b2-47a4-b22c-10b9c29dc336",
+  "name": "ChangeItem",
+  "node_type": "call",
+  "qname": "nodes/079d27a4-76fb-4727-b1ba-e5d202c86c2e::nodes/c8962097-c2a6-46f4-b0f6-696f8005bbe6",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "returnChangeItem[defi] = ChangeItem(\n    row, item.get_last_point_value())",
+  "position": {
+    "line_no": 1738,
+    "col_offset": 41,
+    "end_line_no": 1739,
+    "end_col_offset": 53
+  }
+}

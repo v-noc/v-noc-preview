@@ -1,0 +1,15 @@
+{
+  "id": "nodes/465fbb70-6a05-4725-b98d-9171055c3287",
+  "name": "DefinitionError",
+  "node_type": "call",
+  "qname": "nodes/fcc8f219-bc94-49b1-94dd-f2aeb72dff46::nodes/f4ad934f-22b6-4cf6-a077-646bab29131f",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "raise DefinitionError(\"Invalid namespace argument\")",
+  "position": {
+    "line_no": 65,
+    "col_offset": 18,
+    "end_line_no": 65,
+    "end_col_offset": 63
+  }
+}

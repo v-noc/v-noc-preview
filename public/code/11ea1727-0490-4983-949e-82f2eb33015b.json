@@ -1,0 +1,15 @@
+{
+  "id": "nodes/11ea1727-0490-4983-949e-82f2eb33015b",
+  "name": "PointItem",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.definitions.PointItem",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "class PointItem(object):\n    \"\"\"ID: 11ea1727-0490-4983-949e-82f2eb33015b\"\"\"\n    def __init__(self, row, values=set()):\n        \"\"\"ID: d0ffe58a-fe3e-426a-a99a-0c78e934b7a1\"\"\"\n        if isinstance(values, list):\n            values = set(values)\n        elif isinstance(values,str):\n            values = set([values])\n        self.points_to = values\n        self.row = row\n    def __lt__(self, other):\n        \"\"\"ID: 700d95e9-68c9-4558-9fe1-ea468720c11e\"\"\"\n        return self.row < other.row\n",
+  "position": {
+    "line_no": 28,
+    "col_offset": 0,
+    "end_line_no": 41,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/149319b3-f280-4911-b0c5-0f44386fe3e9",
+  "name": "add",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.nodes.NodeManager.add",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/nodes.py",
+  "file_name": "nodes",
+  "code": "def add(self,ns,node):\n    \"\"\"ID: 149319b3-f280-4911-b0c5-0f44386fe3e9\"\"\"\n    if ns in self.nodes:\n        return\n    self.nodes[ns] = node\n",
+  "position": {
+    "line_no": 9,
+    "col_offset": 4,
+    "end_line_no": 14,
+    "end_col_offset": 0
+  }
+}

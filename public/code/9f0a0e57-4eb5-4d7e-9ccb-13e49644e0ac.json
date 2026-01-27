@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9f0a0e57-4eb5-4d7e-9ccb-13e49644e0ac",
+  "name": "format_call",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Call.format_call",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def format_call(call):\n    \"\"\"ID: 9f0a0e57-4eb5-4d7e-9ccb-13e49644e0ac\"\"\"\n    callDefi: Definition = self.def_manager.get(call)\n    if callDefi and callDefi.get_type() == utils.constants.CLS_DEF:\n        # clsCopyNs = self.new(call,node.lineno)\n        clsInit = utils.join_ns(call, utils.constants.CLS_INIT)\n        clsDefi = self.def_manager.get(clsInit)\n        if clsDefi:\n            return clsInit\n        else:\n            return None\n    # if callDefi and callDefi.get_type() == utils.constants.FUN_DEF:\n    #     return call\n    return call\n",
+  "position": {
+    "line_no": 1302,
+    "col_offset": 8,
+    "end_line_no": 1316,
+    "end_col_offset": 0
+  }
+}

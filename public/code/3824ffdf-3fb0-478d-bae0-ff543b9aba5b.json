@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3824ffdf-3fb0-478d-bae0-ff543b9aba5b",
+  "name": "ImportManagerError",
+  "node_type": "call",
+  "qname": "nodes/d364296f-4780-4eb3-aaff-974ddedd66a9::nodes/9993afe1-6927-40d2-8884-a024afaba05e",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "return [a]",
+  "position": {
+    "line_no": 85,
+    "col_offset": 18,
+    "end_line_no": 85,
+    "end_col_offset": 57
+  }
+}

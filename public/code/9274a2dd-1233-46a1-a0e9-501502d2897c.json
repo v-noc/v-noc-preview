@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9274a2dd-1233-46a1-a0e9-501502d2897c",
+  "name": "callScope.reset_counters",
+  "node_type": "call",
+  "qname": "nodes/3f39279c-f00e-4c9e-881a-845ab4f66134::nodes/80a57f81-486c-4ff7-b9ec-5623b09fadbf",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "callScope.reset_counters()",
+  "position": {
+    "line_no": 194,
+    "col_offset": 12,
+    "end_line_no": 194,
+    "end_col_offset": 38
+  }
+}

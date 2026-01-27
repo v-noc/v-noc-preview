@@ -1,0 +1,15 @@
+{
+  "id": "nodes/fb2afff9-a833-4c9f-9d60-d242baf04f0a",
+  "name": "CallGraphError",
+  "node_type": "call",
+  "qname": "nodes/09354c4b-e8c9-4ed3-bfe4-767c54bb812f::nodes/0a506f69-933a-4c88-8d60-f9e421b562c8",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/callgraph.py",
+  "file_name": "callgraph",
+  "code": "raise CallGraphError(\"Only string node names allowed\")",
+  "position": {
+    "line_no": 36,
+    "col_offset": 18,
+    "end_line_no": 36,
+    "end_col_offset": 66
+  }
+}

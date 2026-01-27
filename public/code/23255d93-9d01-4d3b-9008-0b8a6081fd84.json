@@ -1,0 +1,15 @@
+{
+  "id": "nodes/23255d93-9d01-4d3b-9008-0b8a6081fd84",
+  "name": "ImportManagerError",
+  "node_type": "call",
+  "qname": "nodes/a2a25c95-5e00-4ef3-ae0c-a81920f323aa::nodes/9993afe1-6927-40d2-8884-a024afaba05e",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "raise ImportManagerError(\"Invalid node name\")",
+  "position": {
+    "line_no": 97,
+    "col_offset": 18,
+    "end_line_no": 97,
+    "end_col_offset": 57
+  }
+}

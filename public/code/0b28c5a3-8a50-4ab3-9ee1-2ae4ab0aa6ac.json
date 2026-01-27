@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0b28c5a3-8a50-4ab3-9ee1-2ae4ab0aa6ac",
+  "name": "NodeManager",
+  "node_type": "call",
+  "qname": "nodes/eb6f2efa-13a8-465b-8cf2-d7baed695e80::nodes/07447706-7e70-4ae6-9c26-44bccbca737c",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "self.node_manager: NodeManager = NodeManager()",
+  "position": {
+    "line_no": 66,
+    "col_offset": 41,
+    "end_line_no": 66,
+    "end_col_offset": 54
+  }
+}

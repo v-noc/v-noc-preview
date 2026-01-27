@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0a506f69-933a-4c88-8d60-f9e421b562c8",
+  "name": "CallGraphError",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.callgraph.CallGraphError",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/callgraph.py",
+  "file_name": "callgraph",
+  "code": "class CallGraphError(Exception):\n    \"\"\"ID: 0a506f69-933a-4c88-8d60-f9e421b562c8\"\"\"\n    pass",
+  "position": {
+    "line_no": 110,
+    "col_offset": 0,
+    "end_line_no": 113,
+    "end_col_offset": 0
+  }
+}

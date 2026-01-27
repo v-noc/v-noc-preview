@@ -1,0 +1,15 @@
+{
+  "id": "nodes/cc8b6c4d-79a8-40e9-87ef-2e848086e06e",
+  "name": "self.retrieve_subscript_names",
+  "node_type": "call",
+  "qname": "nodes/3a0298d2-e622-4440-8757-637aa31469f8::nodes/926d06ba-e183-4038-b42e-53d7f16578d3",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "names = self.retrieve_subscript_names(node)",
+  "position": {
+    "line_no": 1179,
+    "col_offset": 20,
+    "end_line_no": 1179,
+    "end_col_offset": 55
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/534018d5-68cb-4d4c-9387-5f0bb414994d",
+  "name": "resolve",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.resolve",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def resolve(self, calleeNs: str, row: int, flag=False) -> list:\n    \"\"\"ID: 534018d5-68cb-4d4c-9387-5f0bb414994d\"\"\"\n    if \"__iter__.<return>\" in calleeNs:\n        print()\n    calleeDefi: Definition = self.def_manager.get(calleeNs)\n    tmp = reduce(\n        lambda x, y: x or y, map(\n            lambda x: x in calleeNs, utils.constants.BUILTTYPE)\n    )\n    if not calleeDefi and tmp:\n        return [calleeNs]\n    if not calleeDefi:\n        return [calleeNs]\n    if not calleeDefi or calleeDefi.get_type() in [\n        utils.constants.NAME_DEF,\n        utils.constants.NA_DEF,\n        utils.constants.PARAM_DEF,\n        utils.constants.RETURN_DEF,\n    ]:\n        nsList = self.get_point(calleeNs, row)\n        return list(set(nsList))\n    if not calleeDefi:\n        return []\n    if calleeDefi.get_type() in [utils.constants.FUN_DEF, utils.constants.EXT_DEF]:\n        return [calleeNs]\n    if calleeDefi.get_type() == utils.constants.CLS_DEF:\n        return (\n            [utils.join_ns(calleeNs, utils.constants.CLS_INIT)]\n            if flag\n            else [calleeNs]\n        )\n    elif calleeDefi.get_type() == utils.constants.INT_DEF:\n        return [\"<int>\"]\n    elif calleeDefi.get_type() == utils.constants.STR_DEF:\n        return [\"<str>\"]\n    elif calleeDefi.get_type() == utils.constants.LIST_DEF:\n        # return [\"<list>\"]\n        return [calleeNs]\n    elif calleeDefi.get_type() == utils.constants.MAP_DEF:\n        return [calleeNs]\n        return [\"<map>\"]\n    else:\n        return [calleeNs]\n",
+  "position": {
+    "line_no": 1846,
+    "col_offset": 4,
+    "end_line_no": 1889,
+    "end_col_offset": 0
+  }
+}

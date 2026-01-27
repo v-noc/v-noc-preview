@@ -1,0 +1,15 @@
+{
+  "id": "nodes/99eddb7a-fd41-4f5d-b92a-de664c4855ea",
+  "name": "tmpScope.get_def",
+  "node_type": "call",
+  "qname": "nodes/7f081301-7fd0-4d52-9c94-61866af4af48::nodes/5974ccb2-75ec-4215-878c-668f979d95fd",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "if tmpScope.get_def(fn)",
+  "position": {
+    "line_no": 2139,
+    "col_offset": 15,
+    "end_line_no": 2139,
+    "end_col_offset": 35
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3005969f-ff75-4681-91bc-8e1799404319",
+  "name": "CallGraphError",
+  "node_type": "call",
+  "qname": "nodes/a432de26-38c8-42e2-8455-083b083ff791::nodes/0a506f69-933a-4c88-8d60-f9e421b562c8",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "",
+  "position": {
+    "line_no": 36,
+    "col_offset": 18,
+    "end_line_no": 36,
+    "end_col_offset": 66
+  }
+}

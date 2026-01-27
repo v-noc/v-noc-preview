@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3b26fae4-5f8c-443f-9624-77ed3075d135",
+  "name": "self.flatten",
+  "node_type": "call",
+  "qname": "nodes/ebaebdf6-5d25-4d0e-8164-4a279d238e5d::nodes/54444063-0587-44cb-bf82-0d0259efeefd",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "leftList = self.flatten(list(map(self.convert, leftList)))",
+  "position": {
+    "line_no": 1923,
+    "col_offset": 23,
+    "end_line_no": 1923,
+    "end_col_offset": 70
+  }
+}

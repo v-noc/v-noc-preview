@@ -1,0 +1,15 @@
+{
+  "id": "nodes/973db2b0-b0f5-42f5-8734-9bad755944ae",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.formats.fasten.Fasten.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "def __init__(self, cg_generator, package, product, forge, version, timestamp):\n    \"\"\"ID: 973db2b0-b0f5-42f5-8734-9bad755944ae\"\"\"\n    self.cg_generator = cg_generator\n    self.internal_mods = self.cg_generator.output_internal_mods() or {}\n    self.external_mods = self.cg_generator.output_external_mods() or {}\n    self.classes = self.cg_generator.output_classes() or {}\n    self.edges = self.cg_generator.output_edges() or []\n    self.functions = self.cg_generator.output_functions() or []\n    self.unique = 0\n    self.namespace_map = {}\n    self.package = package\n    self.product = product\n    self.forge = forge\n    self.version = version\n    self.timestamp = timestamp\n",
+  "position": {
+    "line_no": 27,
+    "col_offset": 4,
+    "end_line_no": 42,
+    "end_col_offset": 0
+  }
+}

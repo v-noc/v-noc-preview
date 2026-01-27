@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6f28f339-a030-4aac-8160-7e86295892b0",
+  "name": "self.create",
+  "node_type": "call",
+  "qname": "nodes/bbb264c7-e418-4010-ad27-4009b4fe0cd9::nodes/e0138cd5-0e34-4106-b174-c78c4e9e545d",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "defi = self.create(full_ns, utils.constants.FUN_DEF)",
+  "position": {
+    "line_no": 100,
+    "col_offset": 19,
+    "end_line_no": 100,
+    "end_col_offset": 64
+  }
+}

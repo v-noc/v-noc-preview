@@ -1,0 +1,15 @@
+{
+  "id": "nodes/87461d21-de1c-4423-811b-299e054931d0",
+  "name": "PointItem",
+  "node_type": "call",
+  "qname": "nodes/b15828b1-f5e9-466a-af6f-015aaeb3701f::nodes/d0ffe58a-fe3e-426a-a99a-0c78e934b7a1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "defi = self.def_manager.cr",
+  "position": {
+    "line_no": 248,
+    "col_offset": 16,
+    "end_line_no": 248,
+    "end_col_offset": 38
+  }
+}

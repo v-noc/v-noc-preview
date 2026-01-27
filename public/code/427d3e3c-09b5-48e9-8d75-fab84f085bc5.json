@@ -1,0 +1,15 @@
+{
+  "id": "nodes/427d3e3c-09b5-48e9-8d75-fab84f085bc5",
+  "name": "get_return",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.returns.ReturnManager.get_return",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/returns.py",
+  "file_name": "returns",
+  "code": "def get_return(self):\n    \"\"\"ID: 427d3e3c-09b5-48e9-8d75-fab84f085bc5\"\"\"\n    print(\"\\n\\n\")\n    print(f\"-> self.returns\", self.returns)\n    print(\"\\n\")\n    return self.returns\n",
+  "position": {
+    "line_no": 13,
+    "col_offset": 4,
+    "end_line_no": 19,
+    "end_col_offset": 0
+  }
+}

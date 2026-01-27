@@ -1,0 +1,15 @@
+{
+  "id": "nodes/eb2e2ce6-8d6a-4684-aa66-c0cc898992f7",
+  "name": "_handle_ns",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor._handle_ns",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def _handle_ns(self):\n    \"\"\"ID: eb2e2ce6-8d6a-4684-aa66-c0cc898992f7\"\"\"\n    tmpStack = self.callStack[:]\n    curNsDefi: Definition = self.def_manager.get(tmpStack[-1])\n    while curNsDefi.get_type() in [\n        utils.constants.IF_DEF,\n        utils.constants.ELSE_DEF,\n        utils.constants.WHILE_DEF,\n    ]:\n        tmpStack.pop()\n        curNsDefi = self.def_manager.get(tmpStack[-1])\n    finalNs = curNsDefi.get_ns()\n    return finalNs\n",
+  "position": {
+    "line_no": 1714,
+    "col_offset": 4,
+    "end_line_no": 1727,
+    "end_col_offset": 0
+  }
+}

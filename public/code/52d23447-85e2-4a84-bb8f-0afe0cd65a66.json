@@ -1,0 +1,15 @@
+{
+  "id": "nodes/52d23447-85e2-4a84-bb8f-0afe0cd65a66",
+  "name": "get_imports",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.get_imports",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def get_imports(self, modname):\n    \"\"\"ID: 52d23447-85e2-4a84-bb8f-0afe0cd65a66\"\"\"\n    if not modname in self.import_graph:\n        return []\n    return self.import_graph[modname][\"imports\"]\n",
+  "position": {
+    "line_no": 150,
+    "col_offset": 4,
+    "end_line_no": 155,
+    "end_col_offset": 0
+  }
+}

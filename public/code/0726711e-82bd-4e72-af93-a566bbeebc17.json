@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0726711e-82bd-4e72-af93-a566bbeebc17",
+  "name": "generate",
+  "node_type": "function",
+  "qname": "Jarvis.formats.as_graph.AsGraph.generate",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/as_graph.py",
+  "file_name": "as_graph",
+  "code": "def generate(self):\n    \"\"\"ID: 0726711e-82bd-4e72-af93-a566bbeebc17\"\"\"\n    graph = self.cg_generator.get_as_graph()\n    output = {}\n    for key, defi in graph:\n        output[key] = list(defi.get_name_pointer().get().copy())\n    return output",
+  "position": {
+    "line_no": 26,
+    "col_offset": 4,
+    "end_line_no": 33,
+    "end_col_offset": 0
+  }
+}

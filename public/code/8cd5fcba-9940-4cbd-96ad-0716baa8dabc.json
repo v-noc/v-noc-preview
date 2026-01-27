@@ -1,0 +1,15 @@
+{
+  "id": "nodes/8cd5fcba-9940-4cbd-96ad-0716baa8dabc",
+  "name": "_is_literal",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase._is_literal",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def _is_literal(self, item):\n    \"\"\"ID: 8cd5fcba-9940-4cbd-96ad-0716baa8dabc\"\"\"\n    return isinstance(item, int) or isinstance(item, str) or isinstance(item, float)\n",
+  "position": {
+    "line_no": 353,
+    "col_offset": 4,
+    "end_line_no": 356,
+    "end_col_offset": 0
+  }
+}

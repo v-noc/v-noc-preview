@@ -1,0 +1,15 @@
+{
+  "id": "nodes/dbd1c301-f481-4d4d-9946-f203027ef17d",
+  "name": "visit_BinOp",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.visit_BinOp",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def visit_BinOp(self, node):\n    \"\"\"ID: dbd1c301-f481-4d4d-9946-f203027ef17d\"\"\"\n    self.visit(node.left)\n    self.visit(node.right)\n",
+  "position": {
+    "line_no": 185,
+    "col_offset": 4,
+    "end_line_no": 189,
+    "end_col_offset": 0
+  }
+}

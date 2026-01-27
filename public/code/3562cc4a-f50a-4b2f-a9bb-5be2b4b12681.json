@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3562cc4a-f50a-4b2f-a9bb-5be2b4b12681",
+  "name": "get_else_name",
+  "node_type": "function",
+  "qname": "Jarvis.utils.common.get_else_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/common.py",
+  "file_name": "common",
+  "code": "def get_else_name(counter):\n    \"\"\"ID: 3562cc4a-f50a-4b2f-a9bb-5be2b4b12681\"\"\"\n    return \"<else{}>\".format(counter)\n",
+  "position": {
+    "line_no": 37,
+    "col_offset": 0,
+    "end_line_no": 40,
+    "end_col_offset": 0
+  }
+}

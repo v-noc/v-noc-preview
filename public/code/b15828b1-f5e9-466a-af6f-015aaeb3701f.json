@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b15828b1-f5e9-466a-af6f-015aaeb3701f",
+  "name": "tgt_defi.add_value_point",
+  "node_type": "call",
+  "qname": "nodes/1b47c611-0a04-4b0e-ac99-4e7cf58b7c31::nodes/874cf03e-1063-4a63-a0e2-ed3faa4eaa62",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "# tgt_defi.add_name_point(row).add(defi.get_",
+  "position": {
+    "line_no": 425,
+    "col_offset": 16,
+    "end_line_no": 425,
+    "end_col_offset": 60
+  }
+}

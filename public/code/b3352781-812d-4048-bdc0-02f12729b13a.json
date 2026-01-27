@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b3352781-812d-4048-bdc0-02f12729b13a",
+  "name": "self.set_filepath",
+  "node_type": "call",
+  "qname": "nodes/cdea4f42-72d7-4477-bc3c-5094a059edcc::nodes/9c5dd1ef-9566-445d-a99b-6760ed07fb30",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "callNs: str = self.callStack.pop()",
+  "position": {
+    "line_no": 190,
+    "col_offset": 12,
+    "end_line_no": 190,
+    "end_col_offset": 52
+  }
+}

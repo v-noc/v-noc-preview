@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5bfb9269-6288-4509-86ce-1a1a3d553a50",
+  "name": "curScope.get_dict_counter",
+  "node_type": "call",
+  "qname": "nodes/371b7396-e242-48c4-a993-3ed7e8da101f::nodes/bd5b9f29-1921-4c3b-bfac-8cedef6057a4",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def output(self):",
+  "position": {
+    "line_no": 175,
+    "col_offset": 46,
+    "end_line_no": 175,
+    "end_col_offset": 73
+  }
+}

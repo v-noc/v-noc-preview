@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c7caac6a-24b6-40a3-b261-35a0388ceaa4",
+  "name": "self.find_dependencies",
+  "node_type": "call",
+  "qname": "nodes/11c242a3-876a-4b5f-af32-2e69cec19e4c::nodes/48886d8a-079b-47bd-94b9-645830fcd748",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "\"depset\": self.find_dependencies(self.package)",
+  "position": {
+    "line_no": 246,
+    "col_offset": 22,
+    "end_line_no": 246,
+    "end_col_offset": 58
+  }
+}

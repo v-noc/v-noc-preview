@@ -1,0 +1,15 @@
+{
+  "id": "nodes/926d06ba-e183-4038-b42e-53d7f16578d3",
+  "name": "retrieve_subscript_names",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.retrieve_subscript_names",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def retrieve_subscript_names(self, node, literFlag=False):\n    \"\"\"ID: 926d06ba-e183-4038-b42e-53d7f16578d3\"\"\"\n    if not isinstance(node, ast.Subscript):\n        raise Exception(\"The node is not an subcript\")\n    if getattr(node.slice, \"value\", None) is not None and self._is_literal(node.slice.value):\n        sl_names = [node.slice.value]\n    else:\n        sl_names = self.decode_node(node.slice)\n\n    val_names = self.decode_node(node.value)\n\n    decoded_vals = set()\n    keys = set()\n    full_names = set()\n    # get all names associated with this variable name\n    for n in val_names:\n        if n and isinstance(n, Definition):\n            # decoded_vals |= self.closured.get(n.get_ns())\n            decoded_vals.add(n.get_ns())\n    for s in sl_names:\n        if isinstance(s, Definition):\n            keys.add(s.get_ns())\n        elif isinstance(s, str):\n            keys.add(s)\n        elif isinstance(s, int):\n            keys.add(s)\n    returnDefins = set()\n    for d in decoded_vals:\n        definsList = self.resolveList(d, node.lineno)\n        for defins in definsList:\n            defi: Definition = self.def_manager.get(defins)\n            if defi and defi.get_type() in [utils.constants.LIST_DEF, utils.constants.MAP_DEF]:\n                if hasattr(defi, 'memo'):\n                    defiList = set(\n                        reduce(lambda x, y: x + y, defi.memo.values()))\n\n                    # defiList = set(map(lambda x:self.resolveList(x,node.lineno),defiList))\n                    returnDefins = returnDefins.union(defiList)\n            elif defi:\n                returnDefins.add(defins)\n        # for key in keys:\n        #     # check for existence of var name and key combination\n        #     definsList = self.resolve(d,node.lineno)\n        #     for defins in definsList:\n        #         defi:Definition = self.def_manager.get(defins)\n        #         if defi and defi.get_type() == utils.constants.LIST_DEF:\n        #             # defi:Definition = self.def_manager.get(defins)\n        #             # if not defi:\n        #             #     continue\n        #             defiList = defi.get_element(key)\n        #             # defiList = set(map(lambda x:self.resolveList(x,node.lineno),defiList))\n        #             returnDefins = returnDefins.union(set(defiList))\n\n    return returnDefins\n",
+  "position": {
+    "line_no": 2157,
+    "col_offset": 4,
+    "end_line_no": 2211,
+    "end_col_offset": 0
+  }
+}

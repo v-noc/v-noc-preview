@@ -1,0 +1,15 @@
+{
+  "id": "nodes/44d27bb0-a40c-4ee0-a5ec-1f257c6018fe",
+  "name": "cls.clear_mro",
+  "node_type": "call",
+  "qname": "nodes/336be0e5-b19f-41da-a1d9-e9ca99b29d2c::nodes/f9d71b8b-b9dd-4b73-be4b-c0f9b3606521",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "cls.clear_mro()",
+  "position": {
+    "line_no": 996,
+    "col_offset": 8,
+    "end_line_no": 996,
+    "end_col_offset": 23
+  }
+}

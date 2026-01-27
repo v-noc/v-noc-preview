@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6431682b-631d-4f92-8555-bf9bca7fe4e6",
+  "name": "enter_call",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Call.enter_call",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def enter_call(call: str):\n    \"\"\"ID: 6431682b-631d-4f92-8555-bf9bca7fe4e6\"\"\"\n    # self.cg.add_edge(self.current_ns, call)\n    callDefi: Definition = self.def_manager.get(call)\n    if callDefi and callDefi.get_type() != utils.constants.EXT_DEF:\n        self.cg.add_edge(self.current_ns, call)\n    tmp = reduce(\n        lambda x, y: x or y, map(\n            lambda x: x in call, utils.constants.BUILTTYPE)\n    )\n    if not callDefi and tmp:\n        self.cg.add_edge(self.current_ns, call)\n    self.pushStack(callDefi)\n    pass\n",
+  "position": {
+    "line_no": 1421,
+    "col_offset": 8,
+    "end_line_no": 1435,
+    "end_col_offset": 0
+  }
+}

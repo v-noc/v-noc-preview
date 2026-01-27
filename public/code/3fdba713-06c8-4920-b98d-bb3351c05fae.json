@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3fdba713-06c8-4920-b98d-bb3351c05fae",
+  "name": "update_change",
+  "node_type": "call",
+  "qname": "nodes/436926fb-45f8-438e-bec0-259e576ac89d::nodes/15c4a2ad-7c68-4189-ae07-53c008039503",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "update_change(changeDict)",
+  "position": {
+    "line_no": 1493,
+    "col_offset": 8,
+    "end_line_no": 1493,
+    "end_col_offset": 33
+  }
+}

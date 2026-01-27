@@ -1,0 +1,15 @@
+{
+  "id": "nodes/8db4e6a1-97b4-4670-b2a9-b9998a568883",
+  "name": "get",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.callgraph.CallGraph.get",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/callgraph.py",
+  "file_name": "callgraph",
+  "code": "def get(self):\n    \"\"\"ID: 8db4e6a1-97b4-4670-b2a9-b9998a568883\"\"\"\n    return self.cg\n",
+  "position": {
+    "line_no": 87,
+    "col_offset": 4,
+    "end_line_no": 90,
+    "end_col_offset": 0
+  }
+}

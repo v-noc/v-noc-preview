@@ -1,0 +1,15 @@
+{
+  "id": "nodes/cc28cd40-e34f-47c6-bdd2-457084fef5fc",
+  "name": "self.mergeIfElse",
+  "node_type": "call",
+  "qname": "nodes/2cd1eccb-4307-45cc-befc-abf61450a62e::nodes/079d27a4-76fb-4727-b1ba-e5d202c86c2e",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "self.pushStack(if_def)\nchangeList = self.mergeIfElse(",
+  "position": {
+    "line_no": 505,
+    "col_offset": 21,
+    "end_line_no": 506,
+    "end_col_offset": 60
+  }
+}

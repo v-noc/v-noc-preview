@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d24f0c0d-a48a-43f3-b7ac-592904135cbe",
+  "name": "handle_src_name",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Import.handle_src_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def handle_src_name(name):\n    \"\"\"ID: d24f0c0d-a48a-43f3-b7ac-592904135cbe\"\"\"\n    # Get the module name and prepend prefix if necessary\n    src_name = name\n    if prefix:\n        src_name = prefix + \".\" + src_name\n    return src_name\n",
+  "position": {
+    "line_no": 360,
+    "col_offset": 8,
+    "end_line_no": 367,
+    "end_col_offset": 0
+  }
+}

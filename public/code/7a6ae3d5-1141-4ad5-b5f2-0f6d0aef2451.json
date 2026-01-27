@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7a6ae3d5-1141-4ad5-b5f2-0f6d0aef2451",
+  "name": "to_uri",
+  "node_type": "function",
+  "qname": "Jarvis.formats.fasten.Fasten.to_uri",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "def to_uri(self, modname, name=\"\"):\n    \"\"\"ID: 7a6ae3d5-1141-4ad5-b5f2-0f6d0aef2451\"\"\"\n    cleared = name\n    if name:\n        if name == modname:\n            cleared = \"\"\n        else:\n            if not name.startswith(modname + \".\"):\n                raise Exception(\"name should start with modname\", name, modname)\n\n            cleared = name[len(modname) + 1 :]\n\n    suffix = \"\"\n    if name in self.functions:\n        suffix = \"()\"\n\n    return \"/{}/{}{}\".format(modname.replace(\"-\", \"_\"), cleared, suffix)\n",
+  "position": {
+    "line_no": 49,
+    "col_offset": 4,
+    "end_line_no": 66,
+    "end_col_offset": 0
+  }
+}

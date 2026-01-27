@@ -1,0 +1,15 @@
+{
+  "id": "nodes/32648aea-738c-4654-8d4f-64e4dbf799b7",
+  "name": "output_functions",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.output_functions",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def output_functions(self):\n    \"\"\"ID: 32648aea-738c-4654-8d4f-64e4dbf799b7\"\"\"\n    functions = []\n    for ns, defi in self.def_manager.get_defs().items():\n        if defi.is_function_def():\n            functions.append(ns)\n    return functions\n",
+  "position": {
+    "line_no": 211,
+    "col_offset": 4,
+    "end_line_no": 218,
+    "end_col_offset": 0
+  }
+}

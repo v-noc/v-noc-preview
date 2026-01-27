@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b7c2c1bc-b3e7-4f95-8666-c5f568a5c90d",
+  "name": "do_assign",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase._visit_assign.do_assign",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def do_assign(decoded, target):\n    \"\"\"ID: b7c2c1bc-b3e7-4f95-8666-c5f568a5c90d\"\"\"\n    self.visit(target)\n    # \u5143\u7ec4\u9700\u8981\u89e3\u6784\n    if isinstance(target, ast.Tuple):\n        for pos, elt in enumerate(target.elts):\n            if not isinstance(decoded, Definition) and pos < len(decoded):\n                do_assign(decoded[pos], elt)\n    else:\n        targetns = self._get_target_ns(target)\n        for tns in targetns:\n            if not tns:\n                continue\n            defi = self._handle_assign(tns, decoded)\n            splitted = tns.split(\".\")\n            self.scope_manager.handle_assign(\n                \".\".join(splitted[:-1]), splitted[-1], defi)\n",
+  "position": {
+    "line_no": 250,
+    "col_offset": 8,
+    "end_line_no": 267,
+    "end_col_offset": 0
+  }
+}

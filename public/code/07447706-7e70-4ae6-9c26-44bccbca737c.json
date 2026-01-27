@@ -1,0 +1,15 @@
+{
+  "id": "nodes/07447706-7e70-4ae6-9c26-44bccbca737c",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.nodes.NodeManager.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/nodes.py",
+  "file_name": "nodes",
+  "code": "def __init__(self):\n    \"\"\"ID: 07447706-7e70-4ae6-9c26-44bccbca737c\"\"\"\n    self.nodes = {}\n",
+  "position": {
+    "line_no": 6,
+    "col_offset": 4,
+    "end_line_no": 9,
+    "end_col_offset": 0
+  }
+}

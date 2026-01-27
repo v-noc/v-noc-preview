@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1ba8b3d4-86ea-4f2b-990e-1c0b30318fec",
+  "name": "add_method",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.modules.Module.add_method",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/modules.py",
+  "file_name": "modules",
+  "code": "def add_method(self, method, first=None, last=None):\n    \"\"\"ID: 1ba8b3d4-86ea-4f2b-990e-1c0b30318fec\"\"\"\n    if not self.methods.get(method, None):\n        self.methods[method] = dict(\n                name=method,\n                first=first,\n                last=last)",
+  "position": {
+    "line_no": 85,
+    "col_offset": 4,
+    "end_line_no": 92,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/8822333b-a0df-4234-9647-ecbe80ed3fa0",
+  "name": "get_import_graph",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.get_import_graph",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def get_import_graph(self):\n    \"\"\"ID: 8822333b-a0df-4234-9647-ecbe80ed3fa0\"\"\"\n    return self.import_graph\n",
+  "position": {
+    "line_no": 253,
+    "col_offset": 4,
+    "end_line_no": 256,
+    "end_col_offset": 0
+  }
+}

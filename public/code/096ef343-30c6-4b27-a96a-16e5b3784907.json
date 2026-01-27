@@ -1,0 +1,15 @@
+{
+  "id": "nodes/096ef343-30c6-4b27-a96a-16e5b3784907",
+  "name": "utils.get_lambda_name",
+  "node_type": "call",
+  "qname": "nodes/e06ae3e3-eac8-4296-8f86-d3293c19f51d::nodes/f64fdbbf-4774-4958-a381-562ca589c7d3",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "",
+  "position": {
+    "line_no": 295,
+    "col_offset": 26,
+    "end_line_no": 295,
+    "end_col_offset": 63
+  }
+}

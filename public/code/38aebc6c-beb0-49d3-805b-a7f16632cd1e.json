@@ -1,0 +1,15 @@
+{
+  "id": "nodes/38aebc6c-beb0-49d3-805b-a7f16632cd1e",
+  "name": "CallGraph",
+  "node_type": "call",
+  "qname": "nodes/70e9b073-d1ec-46be-bc03-75552b965e91::nodes/4e656e3a-cd6c-4914-9483-cf8366b92e7b",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "raise Exception(\"Need",
+  "position": {
+    "line_no": 65,
+    "col_offset": 18,
+    "end_line_no": 65,
+    "end_col_offset": 29
+  }
+}

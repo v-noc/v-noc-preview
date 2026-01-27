@@ -1,0 +1,15 @@
+{
+  "id": "nodes/eac32f56-f89f-49e2-8c67-3f3979c9892a",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeManager.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def __init__(self):\n    \"\"\"ID: eac32f56-f89f-49e2-8c67-3f3979c9892a\"\"\"\n    self.scopes = {}\n    self.copySeq = {}\n",
+  "position": {
+    "line_no": 33,
+    "col_offset": 4,
+    "end_line_no": 37,
+    "end_col_offset": 0
+  }
+}

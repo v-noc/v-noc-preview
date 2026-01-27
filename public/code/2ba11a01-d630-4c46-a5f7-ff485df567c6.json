@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2ba11a01-d630-4c46-a5f7-ff485df567c6",
+  "name": "get_scope_name",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.get_scope_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def get_scope_name(self, ns: str):\n    \"\"\"ID: 2ba11a01-d630-4c46-a5f7-ff485df567c6\"\"\"\n    while ns.rfind('.') != -1:\n        rIndex = ns.rfind('.')\n        scopeNs = ns[:rIndex]\n        if self.get(scopeNs) and self.get(scopeNs).get_type() in [utils.constants.MOD_DEF,\n                                                                  utils.constants.CLS_DEF,\n                                                                  utils.constants.FUN_DEF,\n                                                                  ]:\n            return scopeNs\n        ns = scopeNs\n",
+  "position": {
+    "line_no": 152,
+    "col_offset": 4,
+    "end_line_no": 163,
+    "end_col_offset": 0
+  }
+}

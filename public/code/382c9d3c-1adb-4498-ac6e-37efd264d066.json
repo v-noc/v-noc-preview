@@ -1,0 +1,15 @@
+{
+  "id": "nodes/382c9d3c-1adb-4498-ac6e-37efd264d066",
+  "name": "_handle_import_level",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager._handle_import_level",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def _handle_import_level(self, name, level):\n    \"\"\"ID: 382c9d3c-1adb-4498-ac6e-37efd264d066\"\"\"\n    # add a dot for each level\n    package = self._get_module_path().split(\".\")\n    if level > len(package):\n        raise ImportError(\"Attempting import beyond top level package\")\n\n    mod_name = (\".\" * level) + name\n    # When an __init__ file is analyzed, then the module name doesn't contain\n    # the __init__ part in it, so special care must be taken for levels.\n    if self._is_init_file() and level >= 1:\n        if level != 1:\n            level -= 1\n            package = package[:-level]\n    else:\n        package = package[:-level]\n\n    return mod_name, \".\".join(package)\n",
+  "position": {
+    "line_no": 161,
+    "col_offset": 4,
+    "end_line_no": 179,
+    "end_col_offset": 0
+  }
+}

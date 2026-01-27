@@ -1,0 +1,15 @@
+{
+  "id": "nodes/66df552c-b457-436a-b816-f6c0c6f8dc57",
+  "name": "retrieve_call_names",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.retrieve_call_names",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def retrieve_call_names(self, node):\n    \"\"\"ID: 66df552c-b457-436a-b816-f6c0c6f8dc57\"\"\"\n    names = set()\n    if isinstance(node.func, ast.Name):\n        defi = self.scope_manager.get_def(self.current_ns, node.func.id)\n        if defi:\n            names = self.closured.get(defi.get_ns(), None)\n    elif isinstance(node.func, ast.Call) and self.last_called_names:\n        for name in self.last_called_names:\n            return_ns = utils.join_ns(name, utils.constants.RETURN_NAME)\n            returns = self.closured.get(return_ns)\n            if not returns:\n                continue\n            for ret in returns:\n                defi = self.def_manager.get(ret)\n                names.add(defi.get_ns())\n    elif isinstance(node.func, ast.Attribute):\n        names = self._retrieve_attribute_names(node.func)\n    elif isinstance(node.func, ast.Subscript):\n        # Calls can be performed only on single indices, not ranges\n        full_names = self.retrieve_subscript_names(node.func)\n        for n in full_names:\n            if self.closured.get(n, None):\n                names |= self.closured.get(n)\n\n    return names\n",
+  "position": {
+    "line_no": 579,
+    "col_offset": 4,
+    "end_line_no": 605,
+    "end_col_offset": 0
+  }
+}

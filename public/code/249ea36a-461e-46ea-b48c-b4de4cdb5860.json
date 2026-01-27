@@ -1,0 +1,15 @@
+{
+  "id": "nodes/249ea36a-461e-46ea-b48c-b4de4cdb5860",
+  "name": "is_ext_def",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.is_ext_def",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def is_ext_def(self, row=0):\n    \"\"\"ID: 249ea36a-461e-46ea-b48c-b4de4cdb5860\"\"\"\n    return self.def_type == utils.constants.EXT_DEF\n",
+  "position": {
+    "line_no": 263,
+    "col_offset": 4,
+    "end_line_no": 266,
+    "end_col_offset": 0
+  }
+}

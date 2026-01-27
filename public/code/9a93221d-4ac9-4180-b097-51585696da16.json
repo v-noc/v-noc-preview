@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9a93221d-4ac9-4180-b097-51585696da16",
+  "name": "get_point",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.get_point",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def get_point(self, row) -> PointItem:\n    \"\"\"ID: 9a93221d-4ac9-4180-b097-51585696da16\"\"\"\n    cur_point = None\n    for point in self.points:\n        if point.row <= row:\n            cur_point = point\n        else:\n            break\n    return cur_point\n",
+  "position": {
+    "line_no": 229,
+    "col_offset": 4,
+    "end_line_no": 238,
+    "end_col_offset": 0
+  }
+}

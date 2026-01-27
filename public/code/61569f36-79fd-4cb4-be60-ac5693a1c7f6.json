@@ -1,0 +1,15 @@
+{
+  "id": "nodes/61569f36-79fd-4cb4-be60-ac5693a1c7f6",
+  "name": "update",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.update",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def update(self, row, changeList: dict):\n    \"\"\"ID: 61569f36-79fd-4cb4-be60-ac5693a1c7f6\"\"\"\n    curNsDefi: Definition = self.def_manager.get(self.current_ns)\n    if curNsDefi.get_type() not in [\n        utils.constants.IF_DEF,\n        utils.constants.WHILE_DEF,\n        utils.constants.ELSE_DEF,\n    ]:\n        for changedDefiNs, change in changeList.items():\n            changedDefi: Definition = self.def_manager.get(changedDefiNs)\n            if not changedDefi:\n                changedDefi = self.def_manager.create(\n                    changedDefiNs, utils.constants.NAME_DEF\n                )\n            changedDefi.add_value_point(row, change.get_last_point_value())\n            curScopeNs = self.get_scope_ns(changedDefiNs)\n            curScope: ScopeItem = self.scope_manager.get_scope(curScopeNs)\n            if curScope:\n                curScope.add_def(\n                    changedDefiNs[len(curScopeNs) + 1:], changedDefi)\n        return\n    curChange: dict = self.change_manager.getChange(self.current_ns)\n    for defiNs, changePoint in changeList.items():\n        if defiNs in curChange:\n            if changePoint.if_union:\n                curChange[defiNs].addPoint(\n                    row,\n                    changePoint.get_last_point_value()\n                    | changePoint.get_last_point_value(),\n                )\n            else:\n                curChange[defiNs].addPoint(\n                    row, changePoint.get_last_point_value())\n        else:\n            curChange[defiNs] = ChangeItem(\n                row, changePoint.get_last_point_value())\n        changedDefi: Definition = self.def_manager.get(defiNs)\n        if not changedDefi:\n            changedDefi = self.def_manager.create(\n                defiNs, utils.constants.NAME_DEF)\n        changedDefi.add_value_point(\n            row, changePoint.get_last_point_value())\n        curScopeNs = self.get_scope_ns(defiNs)\n        curScope: ScopeItem = self.scope_manager.get_scope(curScopeNs)\n        if curScope:\n            curScope.add_def(defiNs[len(curScopeNs) + 1:], changedDefi)\n",
+  "position": {
+    "line_no": 1799,
+    "col_offset": 4,
+    "end_line_no": 1845,
+    "end_col_offset": 0
+  }
+}

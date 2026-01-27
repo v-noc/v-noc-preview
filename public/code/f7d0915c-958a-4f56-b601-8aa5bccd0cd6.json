@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f7d0915c-958a-4f56-b601-8aa5bccd0cd6",
+  "name": "self.decode_node",
+  "node_type": "call",
+  "qname": "nodes/de010d1b-2094-44dd-affa-8466e8a43fe5::nodes/285fe901-0e94-49e9-ad71-7d04ab3bc23f",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "decoded_elt = self.decode_node(val, utils.get_dict_name(\n    self.scope_manager.get_scope(self.current_ns).get_dict_counter()))",
+  "position": {
+    "line_no": 736,
+    "col_offset": 26,
+    "end_line_no": 737,
+    "end_col_offset": 82
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a2a25c95-5e00-4ef3-ae0c-a81920f323aa",
+  "name": "ig_obj.create_edge",
+  "node_type": "call",
+  "qname": "nodes/ec7842ba-010e-4fd4-bf77-8d7a22a21adf::nodes/0800561a-8514-42b5-aad5-ec0a3ff8edc0",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "ig_obj.create_edge(self.fullname)",
+  "position": {
+    "line_no": 43,
+    "col_offset": 12,
+    "end_line_no": 43,
+    "end_col_offset": 45
+  }
+}

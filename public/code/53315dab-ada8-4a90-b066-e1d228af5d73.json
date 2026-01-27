@@ -1,0 +1,15 @@
+{
+  "id": "nodes/53315dab-ada8-4a90-b066-e1d228af5d73",
+  "name": "get",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.nodes.NodeManager.get",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/nodes.py",
+  "file_name": "nodes",
+  "code": "def get(self,ns):\n    \"\"\"ID: 53315dab-ada8-4a90-b066-e1d228af5d73\"\"\"\n    if ns in self.nodes:\n        return self.nodes[ns]\n    return None",
+  "position": {
+    "line_no": 14,
+    "col_offset": 4,
+    "end_line_no": 18,
+    "end_col_offset": 19
+  }
+}

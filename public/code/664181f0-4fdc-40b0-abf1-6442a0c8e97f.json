@@ -1,0 +1,15 @@
+{
+  "id": "nodes/664181f0-4fdc-40b0-abf1-6442a0c8e97f",
+  "name": "gol._init",
+  "node_type": "call",
+  "qname": "nodes/eb6f2efa-13a8-465b-8cf2-d7baed695e80::nodes/2688f820-2101-4de6-8802-cc6324228d71",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "gol._init()",
+  "position": {
+    "line_no": 67,
+    "col_offset": 8,
+    "end_line_no": 67,
+    "end_col_offset": 19
+  }
+}

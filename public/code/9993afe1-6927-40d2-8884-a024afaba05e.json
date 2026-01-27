@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9993afe1-6927-40d2-8884-a024afaba05e",
+  "name": "ImportManagerError",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.imports.ImportManagerError",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "class ImportManagerError(Exception):\n    \"\"\"ID: 9993afe1-6927-40d2-8884-a024afaba05e\"\"\"\n    pass",
+  "position": {
+    "line_no": 275,
+    "col_offset": 0,
+    "end_line_no": 278,
+    "end_col_offset": 0
+  }
+}

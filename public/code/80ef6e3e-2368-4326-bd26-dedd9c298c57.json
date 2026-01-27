@@ -1,0 +1,15 @@
+{
+  "id": "nodes/80ef6e3e-2368-4326-bd26-dedd9c298c57",
+  "name": "_sanitize_pos",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.pointers.NamePointer._sanitize_pos",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "def _sanitize_pos(self, pos):\n    \"\"\"ID: 80ef6e3e-2368-4326-bd26-dedd9c298c57\"\"\"\n    try:\n        int(pos)\n    except ValueError:\n        raise PointerError(\"Invalid position for argument\")\n\n    return pos\n",
+  "position": {
+    "line_no": 69,
+    "col_offset": 4,
+    "end_line_no": 77,
+    "end_col_offset": 0
+  }
+}

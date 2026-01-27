@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3870bd0f-4cbc-4498-afb7-788343e6e238",
+  "name": "utils.get_list_name",
+  "node_type": "call",
+  "qname": "nodes/c43bb5c2-437b-4e25-9e63-fdb42aae780b::nodes/511e16c4-d97a-464b-9d94-7b9b48906ec2",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "list_name = utils.get_list_name(list_counter)",
+  "position": {
+    "line_no": 339,
+    "col_offset": 24,
+    "end_line_no": 339,
+    "end_col_offset": 57
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/02715ace-274e-4e92-b342-124448ebb9d2",
+  "name": "inc_if_counter",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.inc_if_counter",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def inc_if_counter(self,val=1):\n    \"\"\"ID: 02715ace-274e-4e92-b342-124448ebb9d2\"\"\"\n    self.if_counter += val\n    return self.if_counter\n",
+  "position": {
+    "line_no": 211,
+    "col_offset": 4,
+    "end_line_no": 215,
+    "end_col_offset": 0
+  }
+}

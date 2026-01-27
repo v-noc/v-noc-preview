@@ -1,0 +1,15 @@
+{
+  "id": "nodes/422f0a42-25a3-418c-8ffb-ffe004bfb445",
+  "name": "getOrCreate",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.DefinitionManager.getOrCreate",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def getOrCreate(self, ns, def_type):\n    \"\"\"ID: 422f0a42-25a3-418c-8ffb-ffe004bfb445\"\"\"\n    if not self.get(ns):\n        return self.create(ns, def_type)\n",
+  "position": {
+    "line_no": 86,
+    "col_offset": 4,
+    "end_line_no": 90,
+    "end_col_offset": 0
+  }
+}

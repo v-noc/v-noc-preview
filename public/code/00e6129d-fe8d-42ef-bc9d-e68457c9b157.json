@@ -1,0 +1,15 @@
+{
+  "id": "nodes/00e6129d-fe8d-42ef-bc9d-e68457c9b157",
+  "name": "process",
+  "node_type": "call",
+  "qname": "nodes/330b1663-4ce7-4c2f-96ba-4a10746e261c::nodes/6c4f4996-b235-4c8a-96c4-48f660a59f8a",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "process(modulename, None, symtable.symtable(contents, filename, compile_type=\"exec\"))",
+  "position": {
+    "line_no": 60,
+    "col_offset": 8,
+    "end_line_no": 60,
+    "end_col_offset": 93
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/49b36dd1-1ad2-45b7-bb8d-eb793fba5edd",
+  "name": "self._is_literal",
+  "node_type": "call",
+  "qname": "nodes/d3071413-ba3d-4e6e-849e-a7810a709a2c::nodes/8cd5fcba-9940-4cbd-96ad-0716baa8dabc",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "if getattr(node.slice, \"value\", None) is not None and self._is_literal(node.slice.value)",
+  "position": {
+    "line_no": 528,
+    "col_offset": 62,
+    "end_line_no": 528,
+    "end_col_offset": 96
+  }
+}

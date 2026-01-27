@@ -1,0 +1,15 @@
+{
+  "id": "nodes/530874ea-ce4b-493d-b5cb-bb1f6ced0583",
+  "name": "_visit_return",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor._visit_return",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def _visit_return(self, node):\n    \"\"\"ID: 530874ea-ce4b-493d-b5cb-bb1f6ced0583\"\"\"\n    if not node or not node.value:\n        return\n    self.visit(node.value)\n    return_ns = utils.join_ns(self.current_ns, utils.constants.RETURN_NAME)\n    self._handle_assign(\n        return_ns,\n        self.getYPOint(node.lineno, self.decode_node(node.value)),\n        row=node.lineno,\n        defiType=utils.constants.RETURN_DEF,\n    )\n    splitted = return_ns.split(\".\")\n    self.scope_manager.handle_assign(\n        \".\".join(splitted[:-1]\n                 ), splitted[-1], self.def_manager.get(return_ns)\n    )\n",
+  "position": {
+    "line_no": 1556,
+    "col_offset": 4,
+    "end_line_no": 1573,
+    "end_col_offset": 0
+  }
+}

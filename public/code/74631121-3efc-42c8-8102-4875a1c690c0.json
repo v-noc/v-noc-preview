@@ -1,0 +1,9 @@
+{
+  "id": "nodes/74631121-3efc-42c8-8102-4875a1c690c0",
+  "name": "gol",
+  "node_type": "file",
+  "qname": "Jarvis.machinery.gol",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/gol.py",
+  "file_name": "gol",
+  "code": "# -*- coding: utf-8 -*-\n\n\"\"\"FileID: 74631121-3efc-42c8-8102-4875a1c690c0\"\"\"\ndef _init():  # \u521d\u59cb\u5316\n    \"\"\"ID: 2688f820-2101-4de6-8802-cc6324228d71\"\"\"\n    global _global_dict\n    _global_dict = {}\ndef set_value(key, value):\n    \"\"\"\u5b9a\u4e49\u4e00\u4e2a\u5168\u5c40\u53d8\u91cf\n\nID: cbb30bb7-4753-4ea3-b796-e209cd256101\"\"\"\n    _global_dict[key] = value\ndef get_value(key, defValue=0):\n    \"\"\"ID: 116b5a12-2b2b-4705-b412-5bcf43353d93\"\"\"\n    try:\n        return _global_dict[key]\n    except KeyError:\n        return defValue\n\ndef add_value(key):\n    \"\"\"ID: eae4aece-f778-408a-9a00-5fd0c01c0e1b\"\"\"\n    if key not in _global_dict:\n        _global_dict[key] = 1\n    else:\n        _global_dict[key] = _global_dict[key]+1\n\ndef transfer():\n    \"\"\"ID: a7905c2c-697b-405f-beaf-000c3257e31d\"\"\"\n    print(_global_dict)\n"
+}

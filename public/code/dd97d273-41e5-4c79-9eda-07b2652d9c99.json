@@ -1,0 +1,15 @@
+{
+  "id": "nodes/dd97d273-41e5-4c79-9eda-07b2652d9c99",
+  "name": "equal",
+  "node_type": "call",
+  "qname": "nodes/52275115-f030-42c1-93a9-2c04fcdbec95::nodes/40a489de-98ff-43b0-97a2-9d8c7c793d1a",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "while not equal(prev)",
+  "position": {
+    "line_no": 1674,
+    "col_offset": 18,
+    "end_line_no": 1674,
+    "end_col_offset": 29
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b68e722a-7fbc-4c09-b4c5-dceb3f744d7f",
+  "name": "visit_While",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_While",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def visit_While(self, node):\n    \"\"\"ID: b68e722a-7fbc-4c09-b4c5-dceb3f744d7f\"\"\"\n    self.visit_If(node)\n    pass\n",
+  "position": {
+    "line_no": 511,
+    "col_offset": 4,
+    "end_line_no": 515,
+    "end_col_offset": 0
+  }
+}

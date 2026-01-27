@@ -1,0 +1,15 @@
+{
+  "id": "nodes/60cc89b0-cceb-4a92-b58b-be9f80cfbad2",
+  "name": "remove_import_hooks",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.remove_import_hooks",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def remove_import_hooks(self):\n    \"\"\"ID: 60cc89b0-cceb-4a92-b58b-be9f80cfbad2\"\"\"\n    self.import_manager.remove_hooks()\n",
+  "position": {
+    "line_no": 97,
+    "col_offset": 4,
+    "end_line_no": 100,
+    "end_col_offset": 0
+  }
+}

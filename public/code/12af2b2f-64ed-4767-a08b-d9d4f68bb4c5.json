@@ -1,0 +1,15 @@
+{
+  "id": "nodes/12af2b2f-64ed-4767-a08b-d9d4f68bb4c5",
+  "name": "assign",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor._visit_assign.assign",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def assign(xList, y):\n    \"\"\"ID: 12af2b2f-64ed-4767-a08b-d9d4f68bb4c5\"\"\"\n    for x in xList:\n        x_defi = None\n        if isinstance(x, str):\n            x_defi: Definition = self.get_or_create(\n                self.current_ns,\n                x[len(self.current_ns) + 1:],\n                utils.constants.NAME_DEF,\n            )\n        elif isinstance(x, Definition):\n            x_defi = x\n        if not x_defi:\n            return\n        curNsDefi: Definition = self.def_manager.get(self.current_ns)\n        try:\n            iter(decoded)\n        except TypeError:\n            return\n        if not y:\n            y_point = []\n        else:\n            y_point = self.getYPOint(row, y)\n        if curNsDefi.get_type() not in [\n            utils.constants.IF_DEF,\n            utils.constants.WHILE_DEF,\n            utils.constants.ELSE_DEF,\n        ]:\n            x_defi.add_value_point(row, y_point)\n        else:\n            if self.iSDefiInScope(x_defi.get_ns(), self.current_ns):\n                x_defi.add_value_point(row, y_point)\n            else:\n                self.change_manager.addChange(\n                    self.current_ns, x_defi.get_ns(), row, y_point\n                )\n    pass\n",
+  "position": {
+    "line_no": 526,
+    "col_offset": 8,
+    "end_line_no": 563,
+    "end_col_offset": 0
+  }
+}

@@ -1,4 +1,4 @@
-import { json, type ActionFunctionArgs, type LoaderFunctionArgs } from "react-router";
+import { type ActionFunctionArgs, type LoaderFunctionArgs } from "react-router";
 import { documentActions } from "@/services/serverActions";
 
 /**
@@ -8,21 +8,21 @@ import { documentActions } from "@/services/serverActions";
 export async function loader({ request }: LoaderFunctionArgs) {
   const url = new URL(request.url);
   const pathname = url.pathname;
-  
+
   // Extract nodeId from pathname (e.g., /api/v1/documents/{nodeId})
   const nodeId = pathname.replace('/api/v1/documents', '').replace(/^\//, '').split('?')[0];
-  
+
   if (!nodeId || nodeId.length === 0) {
-    return json({ error: 'Node ID is required' }, { status: 400 });
+    return Response.json({ error: 'Node ID is required' }, { status: 400 });
   }
 
   try {
     // Extract _key from nodeId (could be full ID like "nodes/xxx" or just "xxx")
     const key = nodeId.includes('/') ? nodeId.split('/').pop()! : nodeId;
     const documents = documentActions.getDocumentsByKey(key);
-    return json(documents);
+    return Response.json(documents);
   } catch (error) {
-    return json(
+    return Response.json(
       { error: error instanceof Error ? error.message : 'Failed to fetch documents' },
       { status: 404 }
     );
@@ -31,7 +31,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
 // Disable POST/PUT for now
 export async function action({ request }: ActionFunctionArgs) {
-  return json(
+  return Response.json(
     { error: 'POST/PUT requests are disabled' },
     { status: 405 }
   );

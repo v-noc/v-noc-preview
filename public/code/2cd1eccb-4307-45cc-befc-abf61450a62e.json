@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2cd1eccb-4307-45cc-befc-abf61450a62e",
+  "name": "visit_If",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_If",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def visit_If(self, node):\n    \"\"\"ID: 2cd1eccb-4307-45cc-befc-abf61450a62e\"\"\"\n    def process_if_main():\n        \"\"\"ID: ee7c28dc-4953-4757-bc72-12a444a68227\"\"\"\n        nodeTest: ast.Compare = node.test\n        if not isinstance(nodeTest, ast.Compare):\n            return False\n        if (\n                isinstance(nodeTest.left, ast.Name)\n                and nodeTest.left.id == \"__name__\"\n                and nodeTest.comparators\n                and isinstance(nodeTest.comparators[0], ast.Constant)\n                and nodeTest.comparators[0].value == \"__main__\"\n        ):\n            modNs = self.get_module_ns(self.current_ns)\n            if modNs not in self.module_manager.local:\n                return True\n        return False\n\n    # The name of a lambda is defined by the counter of the current scope\n    current_scope = self.scope_manager.get_scope(self.current_ns)\n    if_counter = current_scope.inc_if_counter()\n    if_name = utils.get_if_name(if_counter)\n    if_full_ns = utils.join_ns(self.current_ns, if_name)\n    # create a scope for the lambda\n    self.scope_manager.create_scope(if_full_ns, current_scope)\n    if_def = self.def_manager.handle_if_def(self.current_ns, if_name)\n    # add it to the current scope\n    current_scope.add_def(if_name, if_def)\n\n    self.visit(node.test)\n    if process_if_main():\n        return\n    self.node_manager.add(if_full_ns, node)\n    # super().visit_If(node, if_name)\n    # \u5982\u679c\u6709orelse\uff0c\u5c31\u8bf4\u660e\u6709else\n    if hasattr(node, \"orelse\") and len(node.orelse) > 0:\n        current_scope = self.scope_manager.get_scope(self.current_ns)\n        if_counter = current_scope.get_if_counter()\n        else_name = utils.get_else_name(if_counter)\n        else_full_ns = utils.join_ns(self.current_ns, else_name)\n        self.scope_manager.create_scope(else_full_ns, current_scope)\n        else_def = self.def_manager.handle_if_def(\n            self.current_ns, else_name, utils.constants.ELSE_DEF\n        )\n        current_scope.add_def(else_name, else_def)\n        self.match[if_full_ns] = else_full_ns\n        self.node_manager.add(else_full_ns, node)\n        self.pushStack(else_def)\n    else:\n        self.match[if_full_ns] = None\n    self.pushStack(if_def)\n    changeList = self.mergeIfElse(\n        if_full_ns, self.match[if_full_ns], node.lineno)\n\n    self.update(self._get_last_line(node), changeList)\n",
+  "position": {
+    "line_no": 454,
+    "col_offset": 4,
+    "end_line_no": 510,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c849a6c9-6106-4ebf-bd65-6f2d3752da4b",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def __init__(self, fullns, parent):\n    \"\"\"ID: c849a6c9-6106-4ebf-bd65-6f2d3752da4b\"\"\"\n    if parent and not isinstance(parent, ScopeItem):\n        raise ScopeError(\"Parent must be a ScopeItem instance\")\n\n    if not isinstance(fullns, str):\n        raise ScopeError(\"Namespace should be a string\")\n\n    self.parent = parent\n    self.defs = {}\n    self.lambda_counter = 0\n    self.dict_counter = 0\n    self.list_counter = 0\n    self.if_counter = 0\n    self.while_counter = 0\n    self.fullns = fullns\n    self.params = []\n    self.inputs = set()\n",
+  "position": {
+    "line_no": 136,
+    "col_offset": 4,
+    "end_line_no": 154,
+    "end_col_offset": 0
+  }
+}

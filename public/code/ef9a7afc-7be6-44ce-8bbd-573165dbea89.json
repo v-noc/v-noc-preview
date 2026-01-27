@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ef9a7afc-7be6-44ce-8bbd-573165dbea89",
+  "name": "get_prefix_defi",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.get_prefix_defi",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def get_prefix_defi(self,prefix:str)->list:\n    \"\"\"ID: ef9a7afc-7be6-44ce-8bbd-573165dbea89\"\"\"\n    defiNameList = []\n    for defi in self.defs.values():\n        if defi.get_ns().startswith(prefix):\n            defiNameList.append(defi)\n    return defiNameList\n",
+  "position": {
+    "line_no": 243,
+    "col_offset": 4,
+    "end_line_no": 250,
+    "end_col_offset": 0
+  }
+}

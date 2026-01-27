@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f64fdbbf-4774-4958-a381-562ca589c7d3",
+  "name": "get_lambda_name",
+  "node_type": "function",
+  "qname": "Jarvis.utils.common.get_lambda_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/common.py",
+  "file_name": "common",
+  "code": "def get_lambda_name(counter):\n    \"\"\"ID: f64fdbbf-4774-4958-a381-562ca589c7d3\"\"\"\n    return \"<lambda{}>\".format(counter)\n",
+  "position": {
+    "line_no": 18,
+    "col_offset": 0,
+    "end_line_no": 21,
+    "end_col_offset": 0
+  }
+}

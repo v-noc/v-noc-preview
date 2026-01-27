@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1304b8da-b55b-4ea1-985a-36ce3bf53b2e",
+  "name": "self.to_uri",
+  "node_type": "call",
+  "qname": "nodes/2a6bf634-b815-4ecf-87ae-7106a04b1e8a::nodes/7a6ae3d5-1141-4ad5-b5f2-0f6d0aef2451",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "name = self.to_uri(modname)",
+  "position": {
+    "line_no": 166,
+    "col_offset": 19,
+    "end_line_no": 166,
+    "end_col_offset": 39
+  }
+}

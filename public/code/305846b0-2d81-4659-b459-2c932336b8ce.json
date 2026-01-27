@@ -1,0 +1,15 @@
+{
+  "id": "nodes/305846b0-2d81-4659-b459-2c932336b8ce",
+  "name": "param.get_ns",
+  "node_type": "call",
+  "qname": "nodes/54664d41-3f49-4c9a-8663-00498572c6c8::nodes/2d90a126-ca55-4fab-80ff-2bbeba0673b5",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "paramsMap[paramList[index].get_ns()] = param.get_ns()",
+  "position": {
+    "line_no": 1345,
+    "col_offset": 63,
+    "end_line_no": 1345,
+    "end_col_offset": 77
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/dc3fd211-5ad2-40df-a80b-d29e3a201f1d",
+  "name": "install_hooks",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.install_hooks",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def install_hooks(self):\n    \"\"\"ID: dc3fd211-5ad2-40df-a80b-d29e3a201f1d\"\"\"\n    loader = get_custom_loader(self)\n    self.old_path_hooks = copy.deepcopy(sys.path_hooks)\n    self.old_path = copy.deepcopy(sys.path)\n    loader_details = loader, importlib.machinery.all_suffixes()\n    sys.path_hooks.insert(0, importlib.machinery.FileFinder.path_hook(loader_details))\n    sys.path.insert(0, os.path.abspath(self.mod_dir))\n    sys.path.append(os.path.abspath(self.mod_dir))\n    self._clear_caches()\n",
+  "position": {
+    "line_no": 257,
+    "col_offset": 4,
+    "end_line_no": 267,
+    "end_col_offset": 0
+  }
+}

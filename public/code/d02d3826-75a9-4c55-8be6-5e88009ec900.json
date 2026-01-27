@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d02d3826-75a9-4c55-8be6-5e88009ec900",
+  "name": "self.is_builtin",
+  "node_type": "call",
+  "qname": "nodes/ac872650-10a6-4ccc-b1d3-accdd8a10ed3::nodes/8a0c699c-a887-4898-879c-c1b1d77c7ee4",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "if getattr(node, \"id\", None) and self.is_builtin(node.id)",
+  "position": {
+    "line_no": 1198,
+    "col_offset": 53,
+    "end_line_no": 1198,
+    "end_col_offset": 77
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "nodes/a7588afd-bdbf-4c49-8f4f-2f6513c48d2c",
+  "name": "constants",
+  "node_type": "file",
+  "qname": "Jarvis.utils.constants",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/utils/constants.py",
+  "file_name": "constants",
+  "code": "# Copyright [pythonJaRvis] [name of copyright owner]\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this file except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#     http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n\"\"\"FileID: a7588afd-bdbf-4c49-8f4f-2f6513c48d2c\"\"\"\nRETURN_NAME     = \"<RETURN>\"\nLAMBDA_NAME     = \"<LAMBDA_{}>\" # needs to be formatted\nBUILTIN_NAME    = \"<builtin>\"\nEXT_NAME        = \"<external>\"\n\nFUN_DEF         = \"FUNCTIONDEF\"\nNAME_DEF        = \"NAMEDEF\"\nMOD_DEF         = \"MODULEDEF\"\nCLS_DEF         = \"CLASSDEF\"\nEXT_DEF         = \"EXTERNALDEF\"\nIF_DEF          = \"IFDEF\"\nELSE_DEF        = \"ELSEDEF\"\nWHILE_DEF       = \"WHILEDEF\"\nNA_DEF          = \"NA\"\nPARAM_DEF       = \"PARAMDEF\"\nRETURN_DEF      = \"RETUREN\"\nINT_DEF         = \"INT\"\nSTR_DEF         = \"STR\"\nMAP_DEF         = \"MAP\"\nLIST_DEF        = \"LIST\"\nCOPY_DEF        = \"COPY\"\n\nOBJECT_BASE     = \"object\"\n\nCLS_INIT        = \"__init__\"\nITER_METHOD     = \"__iter__\"\nNEXT_METHOD     = \"__next__\"\nSTATIC_METHOD   = \"staticmethod\"\n\nINVALID_NAME    = \"<**INVALID**>\"\n\nCALL_GRAPH_OP   = \"call-graph\"\nKEY_ERR_OP      = \"key-error\"\n\nBUILTTYPE       = ['<list>', '<int>', '<str>', '<map>']\n\n"
+}

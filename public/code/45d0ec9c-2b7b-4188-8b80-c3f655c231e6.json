@@ -1,0 +1,15 @@
+{
+  "id": "nodes/45d0ec9c-2b7b-4188-8b80-c3f655c231e6",
+  "name": "get_seq",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeManager.get_seq",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def get_seq(self,ns):\n    \"\"\"ID: 45d0ec9c-2b7b-4188-8b80-c3f655c231e6\"\"\"\n    if ns in self.copySeq:\n        return self.copySeq[ns]\n    return 0\n",
+  "position": {
+    "line_no": 122,
+    "col_offset": 4,
+    "end_line_no": 127,
+    "end_col_offset": 0
+  }
+}

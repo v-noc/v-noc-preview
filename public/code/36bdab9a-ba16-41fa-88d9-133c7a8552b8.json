@@ -1,0 +1,15 @@
+{
+  "id": "nodes/36bdab9a-ba16-41fa-88d9-133c7a8552b8",
+  "name": "analyze_submodules",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.analyze_submodules",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def analyze_submodules(self, cls, *args, **kwargs):\n    \"\"\"ID: 36bdab9a-ba16-41fa-88d9-133c7a8552b8\"\"\"\n    imports = self.import_manager.get_imports(self.modname)\n\n    for imp in imports:\n        self.analyze_submodule(cls, imp, *args, **kwargs)\n",
+  "position": {
+    "line_no": 606,
+    "col_offset": 4,
+    "end_line_no": 612,
+    "end_col_offset": 0
+  }
+}

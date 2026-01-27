@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c24ce738-20e4-4570-af3c-74bfb4989d4f",
+  "name": "get_scope_ns",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.get_scope_ns",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def get_scope_ns(self, ns):\n    \"\"\"ID: c24ce738-20e4-4570-af3c-74bfb4989d4f\"\"\"\n    while ns and not ns in self.scope_manager.get_scopes():\n        ns = ns[: ns.rfind(\".\")]\n    return ns if ns else None\n",
+  "position": {
+    "line_no": 2096,
+    "col_offset": 4,
+    "end_line_no": 2101,
+    "end_col_offset": 0
+  }
+}

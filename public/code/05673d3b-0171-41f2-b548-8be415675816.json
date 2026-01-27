@@ -1,0 +1,15 @@
+{
+  "id": "nodes/05673d3b-0171-41f2-b548-8be415675816",
+  "name": "_visit_return",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase._visit_return",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def _visit_return(self, node):\n    \"\"\"ID: 05673d3b-0171-41f2-b548-8be415675816\"\"\"\n    if not node or not node.value:\n        return\n\n    self.visit(node.value)\n\n    return_ns = utils.join_ns(self.current_ns, utils.constants.RETURN_NAME)\n    self._handle_assign(return_ns, self.decode_node(node.value))\n",
+  "position": {
+    "line_no": 234,
+    "col_offset": 4,
+    "end_line_no": 243,
+    "end_col_offset": 0
+  }
+}

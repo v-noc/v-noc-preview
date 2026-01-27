@@ -1,0 +1,15 @@
+{
+  "id": "nodes/de010d1b-2094-44dd-affa-8466e8a43fe5",
+  "name": "visit_Dict",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Dict",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def visit_Dict(self, node):\n    \"\"\"ID: de010d1b-2094-44dd-affa-8466e8a43fe5\"\"\"\n    dict_counter = self.scope_manager.get_scope(\n        self.current_ns).inc_dict_counter()\n    dict_name = utils.get_dict_name(dict_counter)\n    defiNs = utils.join_ns(self.current_ns, dict_name)\n    dict_defi: Definition = self.def_manager.get(defiNs)\n    if not dict_defi:\n        dict_defi = self.def_manager.create(\n            defiNs, utils.constants.MAP_DEF)\n        self.scope_manager.handle_assign(\n            self.current_ns, dict_name, dict_defi)\n        self.node_manager.add(dict_defi.get_ns(), node)\n        current_scope: ScopeItem = self.scope_manager.get_scope(\n            self.current_ns)\n        self.scope_manager.create_scope(dict_defi.get_ns(), current_scope)\n    self.pushStack(dict_defi)\n    for key, val in zip(node.keys, node.values):\n        # self.visit(elt)\n        # tmp = self.decode_node(elt)\n        # key_full_ns = utils.join_ns(list_defi.get_ns(), utils.get_int_name(idx))\n        # key_def:Definition = self.def_manager.get(key_full_ns)\n        # if not key_def:\n        #     key_def = self.def_manager.create(key_full_ns, utils.constants.NAME_DEF)\n        decoded_elt = self.decode_node(val, utils.get_dict_name(\n            self.scope_manager.get_scope(self.current_ns).get_dict_counter()))\n        decoded_elt = self.getYPOint(node.lineno, decoded_elt)\n        dict_defi.set_element(key, decoded_elt)\n        # key_def.add_value_point(node.lineno,decoded_elt)\n        # for v in decoded_elt:\n        #     if isinstance(v, Definition):\n        #         key_def.add_value_point(node.lineno,[v.get_ns()])\n        #     else:\n        #         key_def.get_lit_pointer().add(v)\n    pass\n    pass\n",
+  "position": {
+    "line_no": 712,
+    "col_offset": 4,
+    "end_line_no": 748,
+    "end_col_offset": 0
+  }
+}

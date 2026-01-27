@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d281528c-1135-4bc7-9f20-5e1b3c314e6f",
+  "name": "mergeLeftRight",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.mergeLeftRight",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def mergeLeftRight(self, left, row, right):\n    \"\"\"ID: d281528c-1135-4bc7-9f20-5e1b3c314e6f\"\"\"\n    if left in [\"<map>\", \"<int>\", \"<str>\", \"<list>\"]:\n        return left\n    right = right[1:]\n    leftScope: ScopeItem = self.scope_manager.get_scope(left)\n    if leftScope:\n        if self.find_field(left, right):\n            return self.find_field(left, right).get_ns()\n    ns = utils.join_ns(left, right)\n    defi = self.def_manager.get(ns)\n    if defi:\n        return defi.get_ns()\n    return ns\n",
+  "position": {
+    "line_no": 1935,
+    "col_offset": 4,
+    "end_line_no": 1949,
+    "end_col_offset": 0
+  }
+}

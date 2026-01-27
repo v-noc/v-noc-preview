@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9affcc9a-5a6a-473c-a4ac-27ec0c21fa46",
+  "name": "get_pos_names",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.pointers.NamePointer.get_pos_names",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "def get_pos_names(self):\n    \"\"\"ID: 9affcc9a-5a6a-473c-a4ac-27ec0c21fa46\"\"\"\n    return self.pos_to_name\n",
+  "position": {
+    "line_no": 157,
+    "col_offset": 4,
+    "end_line_no": 160,
+    "end_col_offset": 0
+  }
+}

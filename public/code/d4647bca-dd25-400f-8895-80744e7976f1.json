@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d4647bca-dd25-400f-8895-80744e7976f1",
+  "name": "add_pos_lit_arg",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.pointers.NamePointer.add_pos_lit_arg",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/pointers.py",
+  "file_name": "pointers",
+  "code": "def add_pos_lit_arg(self, pos, name, item):\n    \"\"\"ID: d4647bca-dd25-400f-8895-80744e7976f1\"\"\"\n    pos = self._sanitize_pos(pos)\n    if not name:\n        name = str(pos)\n    self.pos_to_name[pos] = name\n    self.name_to_pos[name] = pos\n    self.add_lit_arg(name, item)\n",
+  "position": {
+    "line_no": 121,
+    "col_offset": 4,
+    "end_line_no": 129,
+    "end_col_offset": 0
+  }
+}

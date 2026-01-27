@@ -1,0 +1,15 @@
+{
+  "id": "nodes/1cb166ad-8e07-44a5-9f56-44b07ac6be45",
+  "name": "inc_while_counter",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.inc_while_counter",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def inc_while_counter(self,val=1):\n    \"\"\"ID: 1cb166ad-8e07-44a5-9f56-44b07ac6be45\"\"\"\n    self.while_counter += val\n    return self.while_counter\n",
+  "position": {
+    "line_no": 216,
+    "col_offset": 4,
+    "end_line_no": 220,
+    "end_col_offset": 0
+  }
+}

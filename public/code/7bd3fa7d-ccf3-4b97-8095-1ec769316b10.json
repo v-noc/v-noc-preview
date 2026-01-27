@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7bd3fa7d-ccf3-4b97-8095-1ec769316b10",
+  "name": "self.setMod",
+  "node_type": "call",
+  "qname": "nodes/48b534b2-9e6d-4270-b956-69eaf8303848::nodes/b2ca4881-2c0d-4992-bce7-8844d70ae07c",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "self.import_m",
+  "position": {
+    "line_no": 626,
+    "col_offset": 8,
+    "end_line_no": 626,
+    "end_col_offset": 21
+  }
+}

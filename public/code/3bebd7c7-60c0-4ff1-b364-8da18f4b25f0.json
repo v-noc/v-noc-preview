@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3bebd7c7-60c0-4ff1-b364-8da18f4b25f0",
+  "name": "class_hiearchy",
+  "node_type": "function",
+  "qname": "Jarvis.formats.fasten.Fasten.class_hiearchy",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "def class_hiearchy(self):\n    \"\"\"ID: 3bebd7c7-60c0-4ff1-b364-8da18f4b25f0\"\"\"\n    hierarchy = {}\n    for cls_name, cls in self.classes.items():\n        cls_uri = self.namespace_map.get(self.to_uri(cls[\"module\"], cls_name))\n        hierarchy[cls_uri] = []\n        for parent in cls[\"mro\"]:\n            if parent == cls_name:\n                continue\n\n            if self.classes.get(parent):\n                parent_uri = self.to_uri(self.classes[parent][\"module\"], parent)\n                parent_uri = self.namespace_map.get(parent_uri, parent_uri)\n            else:\n                parent_mod = parent.split(\".\")[0]\n                parent_uri = self.to_external_uri(parent_mod, parent)\n\n            hierarchy[cls_uri].append(parent_uri)\n\n    return hierarchy\n",
+  "position": {
+    "line_no": 184,
+    "col_offset": 4,
+    "end_line_no": 204,
+    "end_col_offset": 0
+  }
+}

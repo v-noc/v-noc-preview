@@ -1,0 +1,15 @@
+{
+  "id": "nodes/54d40a2d-7030-4afe-80df-121facea7c07",
+  "name": "ScopeError",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.scopes.ScopeError",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "class ScopeError(Exception):\n    \"\"\"ID: 54d40a2d-7030-4afe-80df-121facea7c07\"\"\"\n    pass",
+  "position": {
+    "line_no": 283,
+    "col_offset": 0,
+    "end_line_no": 286,
+    "end_col_offset": 0
+  }
+}

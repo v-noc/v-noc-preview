@@ -1,0 +1,15 @@
+{
+  "id": "nodes/47bc7dd6-f7d9-4695-b016-c928e9515b31",
+  "name": "get",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.classes.ClassManager.get",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "def get(self, name):\n    \"\"\"ID: 47bc7dd6-f7d9-4695-b016-c928e9515b31\"\"\"\n    if name in self.names:\n        return self.names[name]\n",
+  "position": {
+    "line_no": 21,
+    "col_offset": 4,
+    "end_line_no": 25,
+    "end_col_offset": 0
+  }
+}

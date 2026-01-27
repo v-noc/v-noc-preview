@@ -1,0 +1,15 @@
+{
+  "id": "nodes/12c54ec7-95f6-4290-871b-b913b9dd6398",
+  "name": "gol.set_value",
+  "node_type": "call",
+  "qname": "nodes/e9ef06e8-d02c-4660-8bef-a2461b854daf::nodes/cbb30bb7-4753-4ea3-b796-e209cd256101",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "gol.set_value(\"precision\", self.precision)",
+  "position": {
+    "line_no": 69,
+    "col_offset": 12,
+    "end_line_no": 69,
+    "end_col_offset": 54
+  }
+}

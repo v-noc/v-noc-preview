@@ -1,0 +1,15 @@
+{
+  "id": "nodes/dc1a7557-d329-4c4c-962f-1064a526e539",
+  "name": "get_module_ns",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.get_module_ns",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def get_module_ns(self, ns):\n    \"\"\"ID: dc1a7557-d329-4c4c-962f-1064a526e539\"\"\"\n    defi: Definition = self.def_manager.get(ns)\n    while not defi or defi.get_type() != utils.constants.MOD_DEF:\n        ns = ns[: ns.rfind(\".\")]\n        if not ns:\n            break\n        defi = self.def_manager.get(ns)\n    return ns\n",
+  "position": {
+    "line_no": 2086,
+    "col_offset": 4,
+    "end_line_no": 2095,
+    "end_col_offset": 0
+  }
+}

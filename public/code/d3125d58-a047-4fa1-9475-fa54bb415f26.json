@@ -1,0 +1,15 @@
+{
+  "id": "nodes/d3125d58-a047-4fa1-9475-fa54bb415f26",
+  "name": "__str__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.__str__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def __str__(self):\n    \"\"\"ID: d3125d58-a047-4fa1-9475-fa54bb415f26\"\"\"\n    def find_ns(ns):\n        \"\"\"ID: 63d448c7-b634-4c57-a2d1-9fd5b76bd142\"\"\"\n        for defiNs,defi in self.defs.items():\n            if defi.get_ns() == ns:\n                return defi\n        return None\n    ans = self.fullns\n    ans += \"-\"\n    for param in self.params:\n        paramDefi = find_ns(param.get_ns())\n        if not param:\n            continue\n        else:\n            pointValue = param.get_last_point_value()\n            if not pointValue:\n                tmp = param.get_ns() + \":\" + \"None\"\n            else:\n                tmp = param.get_ns() + \":\" + utils.join_ns(*list(pointValue))\n        ans += tmp\n        ans += \"-\"\n    return ans\n",
+  "position": {
+    "line_no": 260,
+    "col_offset": 4,
+    "end_line_no": 283,
+    "end_col_offset": 0
+  }
+}

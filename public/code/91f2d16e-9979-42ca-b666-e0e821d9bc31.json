@@ -1,0 +1,15 @@
+{
+  "id": "nodes/91f2d16e-9979-42ca-b666-e0e821d9bc31",
+  "name": "utils.get_list_name",
+  "node_type": "call",
+  "qname": "nodes/090a940c-0482-4c23-b591-ac80fc044c35::nodes/511e16c4-d97a-464b-9d94-7b9b48906ec2",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "self.current_ns).get_dict_counter()",
+  "position": {
+    "line_no": 332,
+    "col_offset": 24,
+    "end_line_no": 332,
+    "end_col_offset": 57
+  }
+}

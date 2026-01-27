@@ -1,0 +1,15 @@
+{
+  "id": "nodes/501a2f73-e60e-4a4f-95d1-b1f7a1f6df2c",
+  "name": "extract_state",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.extract_state",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def extract_state(self):\n    \"\"\"ID: 501a2f73-e60e-4a4f-95d1-b1f7a1f6df2c\"\"\"\n    state = {}\n    state[\"defs\"] = {}\n    for key, defi in self.def_manager.get_defs().items():\n        state[\"defs\"][key] = {\n            \"names\": defi.get_name_pointer().get().copy(),\n            \"lit\": defi.get_lit_pointer().get().copy(),\n        }\n\n    state[\"scopes\"] = {}\n    for key, scope in self.scope_manager.get_scopes().items():\n        state[\"scopes\"][key] = set(\n            [x.get_ns() for (_, x) in scope.get_defs().items()]\n        )\n\n    state[\"classes\"] = {}\n    for key, ch in self.class_manager.get_classes().items():\n        state[\"classes\"][key] = ch.get_mro().copy()\n    return state\n",
+  "position": {
+    "line_no": 71,
+    "col_offset": 4,
+    "end_line_no": 91,
+    "end_col_offset": 0
+  }
+}

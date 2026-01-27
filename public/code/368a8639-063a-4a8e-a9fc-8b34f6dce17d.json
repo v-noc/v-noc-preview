@@ -1,0 +1,15 @@
+{
+  "id": "nodes/368a8639-063a-4a8e-a9fc-8b34f6dce17d",
+  "name": "output",
+  "node_type": "function",
+  "qname": "Jarvis.jarvis.CallGraphGenerator.output",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "def output(self):\n    \"\"\"ID: 368a8639-063a-4a8e-a9fc-8b34f6dce17d\"\"\"\n    return self.cg.get()\n",
+  "position": {
+    "line_no": 175,
+    "col_offset": 4,
+    "end_line_no": 178,
+    "end_col_offset": 0
+  }
+}

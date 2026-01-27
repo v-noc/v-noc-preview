@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ec7842ba-010e-4fd4-bf77-8d7a22a21adf",
+  "name": "__init__",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.get_custom_loader.CustomLoader.__init__",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def __init__(self, fullname, path):\n    \"\"\"ID: ec7842ba-010e-4fd4-bf77-8d7a22a21adf\"\"\"\n    self.fullname = fullname\n    self.path = path\n\n    ig_obj.create_edge(self.fullname)\n    if not ig_obj.get_node(self.fullname):\n        ig_obj.create_node(self.fullname)\n        ig_obj.set_filepath(self.fullname, self.path)\n",
+  "position": {
+    "line_no": 38,
+    "col_offset": 8,
+    "end_line_no": 47,
+    "end_col_offset": 0
+  }
+}

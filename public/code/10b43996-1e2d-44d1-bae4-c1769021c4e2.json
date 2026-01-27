@@ -1,0 +1,15 @@
+{
+  "id": "nodes/10b43996-1e2d-44d1-bae4-c1769021c4e2",
+  "name": "processor.analyze_localfunction",
+  "node_type": "call",
+  "qname": "nodes/ad0b6723-9bb1-42af-9c2d-609b1c36492d::nodes/0c53d958-ec06-4dc8-8d3e-4b5f8409fabf",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "",
+  "position": {
+    "line_no": 152,
+    "col_offset": 8,
+    "end_line_no": 152,
+    "end_col_offset": 57
+  }
+}

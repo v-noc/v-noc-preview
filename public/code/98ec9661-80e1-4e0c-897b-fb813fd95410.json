@@ -1,0 +1,15 @@
+{
+  "id": "nodes/98ec9661-80e1-4e0c-897b-fb813fd95410",
+  "name": "get_defs",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeItem.get_defs",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def get_defs(self):\n    \"\"\"ID: 98ec9661-80e1-4e0c-897b-fb813fd95410\"\"\"\n    return self.defs\n",
+  "position": {
+    "line_no": 158,
+    "col_offset": 4,
+    "end_line_no": 161,
+    "end_col_offset": 0
+  }
+}

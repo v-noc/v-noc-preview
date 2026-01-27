@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f12c544c-9e62-4c2e-a14a-2c8cb6880a48",
+  "name": "ScopeError",
+  "node_type": "call",
+  "qname": "nodes/c06b6944-8a6a-4a94-8b54-d3aff04588b6::nodes/54d40a2d-7030-4afe-80df-121facea7c07",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "raise ScopeError(\"Parent must be a ScopeItem instance\")",
+  "position": {
+    "line_no": 139,
+    "col_offset": 18,
+    "end_line_no": 139,
+    "end_col_offset": 67
+  }
+}

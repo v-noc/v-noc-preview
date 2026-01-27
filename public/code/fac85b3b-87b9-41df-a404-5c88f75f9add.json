@@ -1,0 +1,15 @@
+{
+  "id": "nodes/fac85b3b-87b9-41df-a404-5c88f75f9add",
+  "name": "create_child",
+  "node_type": "call",
+  "qname": "nodes/11b1c19e-faa5-44f1-836a-c1ef80d43c87::nodes/1a5b7f13-911d-450a-ad84-3ffe6b577edd",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/main.py",
+  "file_name": "main",
+  "code": "child = create_child()",
+  "position": {
+    "line_no": 10,
+    "col_offset": 12,
+    "end_line_no": 10,
+    "end_col_offset": 26
+  }
+}

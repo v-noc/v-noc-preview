@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2b593a27-a675-4a00-b30a-5991cb41080c",
+  "name": "visit_while_else",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.visit_while_else",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def visit_while_else(self, node, else_name=None):\n    \"\"\"ID: 2b593a27-a675-4a00-b30a-5991cb41080c\"\"\"\n    self.visit_else(node, else_name)\n",
+  "position": {
+    "line_no": 136,
+    "col_offset": 4,
+    "end_line_no": 139,
+    "end_col_offset": 0
+  }
+}

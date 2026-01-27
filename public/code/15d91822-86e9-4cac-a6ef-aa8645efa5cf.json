@@ -1,0 +1,15 @@
+{
+  "id": "nodes/15d91822-86e9-4cac-a6ef-aa8645efa5cf",
+  "name": "add_seq",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeManager.add_seq",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def add_seq(self,ns):\n    \"\"\"ID: 15d91822-86e9-4cac-a6ef-aa8645efa5cf\"\"\"\n    if ns in self.copySeq:\n        self.copySeq[ns] += 1\n    else:\n        self.copySeq[ns] = 1\n    return self.copySeq[ns]\n",
+  "position": {
+    "line_no": 114,
+    "col_offset": 4,
+    "end_line_no": 121,
+    "end_col_offset": 0
+  }
+}

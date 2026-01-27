@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e419ab34-fca3-43ba-aebd-8dde5fbcefc5",
+  "name": "visit_List",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.visit_List",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def visit_List(self, node, listNode=None):\n    \"\"\"ID: e419ab34-fca3-43ba-aebd-8dde5fbcefc5\"\"\"\n    # if not self.scope_manager.get_scope(self.current_ns):\n    #     return\n    # counter = self.scope_manager.get_scope(self.current_ns).inc_list_counter()\n    # list_name = utils.get_list_name(counter)\n    #\n    # sc = self.scope_manager.get_scope(utils.join_ns(self.current_ns, list_name))\n    # if not sc:\n    #     return\n    # self.name_stack.append(list_name)\n    # sc.reset_counters()\n    for elt in node.elts:\n        self.visit(elt)\n",
+  "position": {
+    "line_no": 169,
+    "col_offset": 4,
+    "end_line_no": 183,
+    "end_col_offset": 0
+  }
+}

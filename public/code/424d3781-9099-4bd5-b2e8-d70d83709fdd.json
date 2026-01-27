@@ -1,0 +1,15 @@
+{
+  "id": "nodes/424d3781-9099-4bd5-b2e8-d70d83709fdd",
+  "name": "add_local_modules",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.modules.ModuleManager.add_local_modules",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/modules.py",
+  "file_name": "modules",
+  "code": "def add_local_modules(self,moduleNs):\n    \"\"\"ID: 424d3781-9099-4bd5-b2e8-d70d83709fdd\"\"\"\n    self.local.add(moduleNs)\n",
+  "position": {
+    "line_no": 58,
+    "col_offset": 4,
+    "end_line_no": 61,
+    "end_col_offset": 0
+  }
+}

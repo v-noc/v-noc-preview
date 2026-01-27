@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f611873f-315e-400b-bde4-716fb04028f4",
+  "name": "add_edge",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.callgraph.CallGraph.add_edge",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/callgraph.py",
+  "file_name": "callgraph",
+  "code": "def add_edge(self, src, dest):\n    \"\"\"ID: f611873f-315e-400b-bde4-716fb04028f4\"\"\"\n    if not src:\n        return\n    def process_str(s: str):\n        \"\"\"ID: 765b94b5-f41f-46db-82ea-a0933c14fda3\"\"\"\n        if IF_FLAG in s or ELSE_FLAG in s or WHILE_FLAG in s or LIST_FLAG in s or DICT_FLAG in s:\n            s_list = s.split(\".\")\n            s_list = list(map(lambda x: None if IF_FLAG in x or ELSE_FLAG in x or WHILE_FLAG in x or LIST_FLAG in x\n            or DICT_FLAG in x else x, s_list))\n            s_list = list(filter(lambda x:x,s_list))\n            return \".\".join(s_list)\n        else:\n            return s\n    if utils.constants.RETURN_NAME in src or utils.constants.RETURN_NAME in dest:\n        return\n    src = process_str(src)\n    dest = process_str(dest)\n    if dest == '<str>':\n        return\n    if dest == '<int>':\n        return\n    # print(src,\"\u8c03\u7528\u4e86\",dest)\n    self.add_node(src)\n    self.add_node(dest)\n    self.cg[src].add(dest)\n",
+  "position": {
+    "line_no": 48,
+    "col_offset": 4,
+    "end_line_no": 74,
+    "end_col_offset": 0
+  }
+}

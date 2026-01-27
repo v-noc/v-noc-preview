@@ -1,0 +1,15 @@
+{
+  "id": "nodes/7065d615-46ff-41f3-b61a-af8c1599d03e",
+  "name": "ChangeManager",
+  "node_type": "class",
+  "qname": "Jarvis.machinery.definitions.ChangeManager",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "class ChangeManager:\n    \"\"\"ID: 7065d615-46ff-41f3-b61a-af8c1599d03e\"\"\"\n    def __init__(self):\n        \"\"\"ID: f6125e7c-8e02-40f8-bc4b-b17a8d2847d1\"\"\"\n        self.changes = {}\n\n    def getChange(self, ns):\n        \"\"\"ID: 4681b1fe-2681-47fc-92ee-6ff793120fc6\"\"\"\n        if ns in self.changes:\n            return self.changes[ns]\n        self.changes[ns] = {}\n        return self.changes[ns]\n\n    def addChange(self, ns, defins, row, values):\n        \"\"\"ID: 16d677c3-6944-479c-b31e-6e217c445c78\"\"\"\n        if ns not in self.changes:\n            self.changes[ns] = {}\n        item = ChangeItem(row, values)\n        if defins not in self.changes[ns]:\n            # self.changes[ns].setdefault(defins, item)\n            self.changes[ns][defins] = item\n        else:\n            self.changes[ns].get(defins).addPoint(row,values)\n",
+  "position": {
+    "line_no": 309,
+    "col_offset": 0,
+    "end_line_no": 332,
+    "end_col_offset": 0
+  }
+}

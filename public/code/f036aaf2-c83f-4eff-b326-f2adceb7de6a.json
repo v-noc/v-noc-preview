@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f036aaf2-c83f-4eff-b326-f2adceb7de6a",
+  "name": "self.retrieve_subscript_names",
+  "node_type": "call",
+  "qname": "nodes/66df552c-b457-436a-b816-f6c0c6f8dc57::nodes/1cd8b67b-fd10-48ef-b508-f3bd9efe8280",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "for ret in returns:",
+  "position": {
+    "line_no": 592,
+    "col_offset": 25,
+    "end_line_no": 592,
+    "end_col_offset": 65
+  }
+}

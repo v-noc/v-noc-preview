@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c0bacd5e-f5c2-48be-9d6a-4a0c038b16b5",
+  "name": "helper",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.get_point.helper",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def helper(ns: str):\n    \"\"\"ID: c0bacd5e-f5c2-48be-9d6a-4a0c038b16b5\"\"\"\n    rightList = []\n    defi: Definition = self.def_manager.get(ns)\n    while not defi or defi.get_type() in [\n        utils.constants.NA_DEF,\n        utils.constants.PARAM_DEF,\n        utils.constants.RETURN_DEF,\n    ]:\n        rIndex = ns.rfind(\".\")\n        if rIndex == -1:\n            break\n        rightList.insert(0, ns[rIndex:])\n        ns = ns[:rIndex]\n        defi = self.def_manager.get(ns)\n    rIndex = ns.rfind(\".\")\n    if rIndex != -1:\n        rightList.insert(0, ns[rIndex:])\n        ns = ns[:rIndex]\n    return [ns], rightList\n",
+  "position": {
+    "line_no": 1892,
+    "col_offset": 8,
+    "end_line_no": 1912,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a80645aa-d435-40e9-bea8-d50ea44d916e",
+  "name": "is_callable",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.is_callable",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def is_callable(self):\n    \"\"\"ID: a80645aa-d435-40e9-bea8-d50ea44d916e\"\"\"\n    return self.is_function_def() or self.is_ext_def()\n",
+  "position": {
+    "line_no": 267,
+    "col_offset": 4,
+    "end_line_no": 270,
+    "end_col_offset": 0
+  }
+}

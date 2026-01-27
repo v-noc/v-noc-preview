@@ -1,0 +1,15 @@
+{
+  "id": "nodes/4a22d6fb-982b-411a-83f6-aada63ba18a2",
+  "name": "self.to_uri",
+  "node_type": "call",
+  "qname": "nodes/0df44543-fbde-4300-9a67-13d5feca3df0::nodes/7a6ae3d5-1141-4ad5-b5f2-0f6d0aef2451",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/formats/fasten.py",
+  "file_name": "fasten",
+  "code": "cls_uri = self.namespace_map.get(self.to_uri(cls[\"module\"], cls_name)",
+  "position": {
+    "line_no": 188,
+    "col_offset": 45,
+    "end_line_no": 188,
+    "end_col_offset": 81
+  }
+}

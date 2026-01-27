@@ -1,0 +1,9 @@
+{
+  "id": "nodes/4b681970-4c82-4bcf-8c93-2d04fe082ad1",
+  "name": "key_err",
+  "node_type": "file",
+  "qname": "Jarvis.machinery.key_err",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/key_err.py",
+  "file_name": "key_err",
+  "code": "#\n# Copyright (c) 2021 Vitalis Salis.\n#\n# Licensed to the Apache Software Foundation (ASF) under one\n# or more contributor license agreements.  See the NOTICE file\n# distributed with this work for additional information\n# regarding copyright ownership.  The ASF licenses this file\n# to you under the Apache License, Version 2.0 (the\n# \"License\"); you may not use this file except in compliance\n# with the License.  You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing,\n# software distributed under the License is distributed on an\n# \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY\n# KIND, either express or implied.  See the License for the\n# specific language governing permissions and limitations\n# under the License.\n#\n\"\"\"FileID: 4b681970-4c82-4bcf-8c93-2d04fe082ad1\"\"\"\nclass KeyErrors(object):\n    \"\"\"ID: c25abe04-fb74-4d67-ae2f-18704d20c6ad\"\"\"\n    def __init__(self):\n        \"\"\"ID: 259c9c8d-6723-4813-93c7-924151b64877\"\"\"\n        self.key_errs = []\n\n    def add(self, filename, lineno, namespace, key):\n        \"\"\"ID: a627267a-45e1-413e-9954-a168f7f1e39c\"\"\"\n        self.key_errs.append({\n            \"filename\": filename,\n            \"lineno\": lineno,\n            \"namespace\": namespace,\n            \"key\": key\n        })\n\n    def get(self):\n        \"\"\"ID: c2da9dba-0058-4ae4-a118-e40b07013861\"\"\"\n        return self.key_errs\n"
+}

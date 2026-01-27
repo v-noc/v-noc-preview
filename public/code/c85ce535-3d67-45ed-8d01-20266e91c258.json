@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c85ce535-3d67-45ed-8d01-20266e91c258",
+  "name": "self.module_manager.add_local_modules",
+  "node_type": "call",
+  "qname": "nodes/c57b12d9-1df6-48b6-8a3e-373942a30fa6::nodes/424d3781-9099-4bd5-b2e8-d70d83709fdd",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "self.module_manager.add_local_modules(input_mod)",
+  "position": {
+    "line_no": 135,
+    "col_offset": 12,
+    "end_line_no": 135,
+    "end_col_offset": 60
+  }
+}

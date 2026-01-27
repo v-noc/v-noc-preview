@@ -1,0 +1,15 @@
+{
+  "id": "nodes/f0e939e3-cdb3-4e02-bd40-ea639f716011",
+  "name": "is_function_def",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.is_function_def",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def is_function_def(self):\n    \"\"\"ID: f0e939e3-cdb3-4e02-bd40-ea639f716011\"\"\"\n    return self.def_type == utils.constants.FUN_DEF\n",
+  "position": {
+    "line_no": 259,
+    "col_offset": 4,
+    "end_line_no": 262,
+    "end_col_offset": 0
+  }
+}

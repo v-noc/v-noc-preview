@@ -1,0 +1,15 @@
+{
+  "id": "nodes/8d5eac56-ee95-4902-8d35-7efe705bcc40",
+  "name": "ScopeManager",
+  "node_type": "call",
+  "qname": "nodes/70e9b073-d1ec-46be-bc03-75552b965e91::nodes/eac32f56-f89f-49e2-8c67-3f3979c9892a",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis_cli.py",
+  "file_name": "jarvis_cli",
+  "code": "help=\"Output path\",",
+  "position": {
+    "line_no": 59,
+    "col_offset": 29,
+    "end_line_no": 59,
+    "end_col_offset": 43
+  }
+}

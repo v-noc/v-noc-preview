@@ -1,0 +1,15 @@
+{
+  "id": "nodes/9c5dd1ef-9566-445d-a99b-6760ed07fb30",
+  "name": "set_filepath",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.ImportManager.set_filepath",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def set_filepath(self, node_name, filename):\n    \"\"\"ID: 9c5dd1ef-9566-445d-a99b-6760ed07fb30\"\"\"\n    if not filename or not isinstance(filename, str):\n        raise ImportManagerError(\"Invalid node name\")\n\n    node = self.get_node(node_name)\n    if not node:\n        raise ImportManagerError(\"Node does not exist\")\n\n    node[\"filename\"] = os.path.abspath(filename)\n",
+  "position": {
+    "line_no": 127,
+    "col_offset": 4,
+    "end_line_no": 137,
+    "end_col_offset": 0
+  }
+}

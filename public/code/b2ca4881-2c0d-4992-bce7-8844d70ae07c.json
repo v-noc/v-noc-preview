@@ -1,0 +1,15 @@
+{
+  "id": "nodes/b2ca4881-2c0d-4992-bce7-8844d70ae07c",
+  "name": "setMod",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.setMod",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def setMod(self):\n    \"\"\"ID: b2ca4881-2c0d-4992-bce7-8844d70ae07c\"\"\"\n    imp = self.module_manager.get(self.get_module_ns(self.current_ns))\n    if not imp:\n        print()\n    self.import_manager.set_current_mod(imp.name, imp.filename)\n",
+  "position": {
+    "line_no": 635,
+    "col_offset": 4,
+    "end_line_no": 641,
+    "end_col_offset": 0
+  }
+}

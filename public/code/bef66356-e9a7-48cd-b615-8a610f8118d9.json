@@ -1,0 +1,15 @@
+{
+  "id": "nodes/bef66356-e9a7-48cd-b615-8a610f8118d9",
+  "name": "closure",
+  "node_type": "call",
+  "qname": "nodes/cb302a8d-5fc0-46cb-9e02-bdb32e8943f7::nodes/4419fdf4-5af4-4c12-af87-c401a645b3fd",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "return reduce(lambda x, y: x + y, map(closure()",
+  "position": {
+    "line_no": 112,
+    "col_offset": 46,
+    "end_line_no": 112,
+    "end_col_offset": 55
+  }
+}

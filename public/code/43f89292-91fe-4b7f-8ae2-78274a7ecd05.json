@@ -1,0 +1,15 @@
+{
+  "id": "nodes/43f89292-91fe-4b7f-8ae2-78274a7ecd05",
+  "name": "utils.join_ns",
+  "node_type": "call",
+  "qname": "nodes/522b1a61-0fbd-4bc9-af1e-b6a4217e4806::nodes/442d954e-986a-4c2a-92fa-9791c5bbdcd1",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "(utils.join_ns(package, name)",
+  "position": {
+    "line_no": 224,
+    "col_offset": 17,
+    "end_line_no": 224,
+    "end_col_offset": 45
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a56f2399-550d-4f4f-ac01-7fbc376da65a",
+  "name": "get_scope",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.scopes.ScopeManager.get_scope",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "def get_scope(self, namespace):\n    \"\"\"ID: a56f2399-550d-4f4f-ac01-7fbc376da65a\"\"\"\n    if namespace in self.get_scopes():\n        return self.get_scopes()[namespace]\n",
+  "position": {
+    "line_no": 87,
+    "col_offset": 4,
+    "end_line_no": 91,
+    "end_col_offset": 0
+  }
+}

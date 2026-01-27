@@ -1,0 +1,15 @@
+{
+  "id": "nodes/6f0276d2-c919-4e74-9f0f-16b1c008ae28",
+  "name": "get_name",
+  "node_type": "function",
+  "qname": "sample_project2.core.model.parent.Uncle.get_name",
+  "file_path": "/Users/yared/Documents/Programing/ide/playground/parser/sample_project2/core/model/parent.py",
+  "file_name": "parent",
+  "code": "def get_name(self):\n    \"\"\" ID: 6f0276d2-c919-4e74-9f0f-16b1c008ae28 \"\"\"\n    pass\n",
+  "position": {
+    "line_no": 28,
+    "col_offset": 4,
+    "end_line_no": 31,
+    "end_col_offset": 0
+  }
+}

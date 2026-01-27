@@ -1,0 +1,15 @@
+{
+  "id": "nodes/2898bc8d-f441-414c-9330-a5171b24516a",
+  "name": "is_exist_edge",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.callgraph.CallGraph.is_exist_edge",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/callgraph.py",
+  "file_name": "callgraph",
+  "code": "def is_exist_edge(self, src, dst):\n    \"\"\"ID: 2898bc8d-f441-414c-9330-a5171b24516a\"\"\"\n    if not src in self.cg:\n        return False\n    return dst in self.cg[src]\n",
+  "position": {
+    "line_no": 81,
+    "col_offset": 4,
+    "end_line_no": 86,
+    "end_col_offset": 0
+  }
+}

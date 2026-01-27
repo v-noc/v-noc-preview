@@ -1,0 +1,15 @@
+{
+  "id": "nodes/8c28ed12-e9c9-4159-b0cb-134f2bae8336",
+  "name": "add_ext_mod_node",
+  "node_type": "function",
+  "qname": "Jarvis.processing.base.ProcessingBase.add_ext_mod_node",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def add_ext_mod_node(self, name):\n    \"\"\"ID: 8c28ed12-e9c9-4159-b0cb-134f2bae8336\"\"\"\n\n    ext_modname = name.split(\".\")[0]\n    ext_mod = self.module_manager.get(ext_modname)\n    if not ext_mod:\n        ext_mod = self.module_manager.create(\n            ext_modname, None, external=True)\n        ext_mod.add_method(ext_modname)\n\n    ext_mod.add_method(name)",
+  "position": {
+    "line_no": 669,
+    "col_offset": 4,
+    "end_line_no": 680,
+    "end_col_offset": 0
+  }
+}

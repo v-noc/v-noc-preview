@@ -1,0 +1,15 @@
+{
+  "id": "nodes/0dbe964d-673a-4679-8f9b-7bb25788cd8c",
+  "name": "ImportManagerError",
+  "node_type": "call",
+  "qname": "nodes/19da2528-6ccb-4470-ac02-b887cbf050d8::nodes/9993afe1-6927-40d2-8884-a024afaba05e",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "if callDefi.get_type() == utils.constants.CLS_DEF",
+  "position": {
+    "line_no": 130,
+    "col_offset": 18,
+    "end_line_no": 130,
+    "end_col_offset": 57
+  }
+}

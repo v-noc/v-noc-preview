@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5eb038d3-871e-47e3-a4df-47b95935d31c",
+  "name": "get_name",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.Definition.get_name",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def get_name(self):\n    \"\"\"ID: 5eb038d3-871e-47e3-a4df-47b95935d31c\"\"\"\n    return self.fullns.split(\".\")[-1]\n",
+  "position": {
+    "line_no": 273,
+    "col_offset": 4,
+    "end_line_no": 276,
+    "end_col_offset": 0
+  }
+}

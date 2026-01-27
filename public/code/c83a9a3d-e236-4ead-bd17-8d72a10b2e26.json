@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c83a9a3d-e236-4ead-bd17-8d72a10b2e26",
+  "name": "self.visit_else",
+  "node_type": "call",
+  "qname": "nodes/2b593a27-a675-4a00-b30a-5991cb41080c::nodes/9412cf58-6ed6-436d-850d-78bc044a9d2e",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/base.py",
+  "file_name": "base",
+  "code": "def visit_while_else(self, node, el",
+  "position": {
+    "line_no": 136,
+    "col_offset": 8,
+    "end_line_no": 136,
+    "end_col_offset": 39
+  }
+}

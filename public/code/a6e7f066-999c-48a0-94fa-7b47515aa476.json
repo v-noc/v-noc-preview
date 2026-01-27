@@ -1,0 +1,15 @@
+{
+  "id": "nodes/a6e7f066-999c-48a0-94fa-7b47515aa476",
+  "name": "addPoint",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.definitions.ChangeItem.addPoint",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/definitions.py",
+  "file_name": "definitions",
+  "code": "def addPoint(self,row,values):\n    \"\"\"ID: a6e7f066-999c-48a0-94fa-7b47515aa476\"\"\"\n    point = PointItem(row,values)\n    heapq.heappush(self.points,point)\n",
+  "position": {
+    "line_no": 341,
+    "col_offset": 4,
+    "end_line_no": 345,
+    "end_col_offset": 0
+  }
+}

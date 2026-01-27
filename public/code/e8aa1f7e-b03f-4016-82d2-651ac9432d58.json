@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e8aa1f7e-b03f-4016-82d2-651ac9432d58",
+  "name": "find_ns",
+  "node_type": "call",
+  "qname": "nodes/d3125d58-a047-4fa1-9475-fa54bb415f26::nodes/63d448c7-b634-4c57-a2d1-9fd5b76bd142",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/scopes.py",
+  "file_name": "scopes",
+  "code": "paramDefi = find_ns(param.get_ns())",
+  "position": {
+    "line_no": 271,
+    "col_offset": 24,
+    "end_line_no": 271,
+    "end_col_offset": 47
+  }
+}

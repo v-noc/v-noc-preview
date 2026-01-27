@@ -1,0 +1,15 @@
+{
+  "id": "nodes/92c9a39a-82e3-41ca-82a6-d2b74db34bd2",
+  "name": "self.import_manager.remove_hooks",
+  "node_type": "call",
+  "qname": "nodes/154dc77c-4a3b-4182-bda5-41b6c245d7a5::nodes/a3f8a734-40e7-4eb6-bb9a-2b85c13033cd",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/jarvis.py",
+  "file_name": "jarvis",
+  "code": "self.import_manager.remove_hooks()",
+  "position": {
+    "line_no": 99,
+    "col_offset": 8,
+    "end_line_no": 99,
+    "end_col_offset": 42
+  }
+}

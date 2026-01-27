@@ -1,0 +1,15 @@
+{
+  "id": "nodes/ef3c17bf-db56-43c7-8c7f-9e8f9d8a7f22",
+  "name": "get_data",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.imports.get_custom_loader.CustomLoader.get_data",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/imports.py",
+  "file_name": "imports",
+  "code": "def get_data(self, filename):\n    \"\"\"ID: ef3c17bf-db56-43c7-8c7f-9e8f9d8a7f22\"\"\"\n    return \"\"\n",
+  "position": {
+    "line_no": 52,
+    "col_offset": 8,
+    "end_line_no": 55,
+    "end_col_offset": 0
+  }
+}

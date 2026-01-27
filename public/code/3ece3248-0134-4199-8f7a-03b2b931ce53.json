@@ -1,0 +1,15 @@
+{
+  "id": "nodes/3ece3248-0134-4199-8f7a-03b2b931ce53",
+  "name": "add_edges",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.callgraph.CallGraph.add_edges",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/callgraph.py",
+  "file_name": "callgraph",
+  "code": "def add_edges(self,src,destList):\n    \"\"\"ID: 3ece3248-0134-4199-8f7a-03b2b931ce53\"\"\"\n    self.add_node(src)\n    for dest in destList:\n        self.add_node(dest)\n        self.cg[src].add(dest)\n",
+  "position": {
+    "line_no": 75,
+    "col_offset": 4,
+    "end_line_no": 81,
+    "end_col_offset": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodes/e52308e5-6d6f-4934-8a73-0679158fc978",
+  "name": "create_def",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Import.handle_scopes.create_def",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def create_def(scope, name):\n    \"\"\"ID: e52308e5-6d6f-4934-8a73-0679158fc978\"\"\"\n    if name not in scope.get_defs():\n        def_ns = utils.join_ns(scope.get_ns(), name)\n        defi = self.def_manager.get(def_ns)\n        if not defi:\n            defi = self.def_manager.create(\n                def_ns, utils.constants.NAME_DEF)\n        current_scope.add_def(name, defi)\n",
+  "position": {
+    "line_no": 370,
+    "col_offset": 12,
+    "end_line_no": 379,
+    "end_col_offset": 0
+  }
+}

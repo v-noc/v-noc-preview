@@ -1,0 +1,15 @@
+{
+  "id": "nodes/5f6bbfb7-5db5-4d45-9a5e-bca9ee90741b",
+  "name": "ClassNode",
+  "node_type": "call",
+  "qname": "nodes/1bd359f5-8911-40fb-937d-e422cda26e75::nodes/87c0135a-044f-431f-b4d2-aa905587b15b",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/classes.py",
+  "file_name": "classes",
+  "code": "cls = ClassNode(name, module)",
+  "position": {
+    "line_no": 29,
+    "col_offset": 18,
+    "end_line_no": 29,
+    "end_col_offset": 41
+  }
+}

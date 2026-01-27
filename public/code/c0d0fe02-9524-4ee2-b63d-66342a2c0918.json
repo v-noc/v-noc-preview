@@ -1,0 +1,15 @@
+{
+  "id": "nodes/c0d0fe02-9524-4ee2-b63d-66342a2c0918",
+  "name": "visit_Raise",
+  "node_type": "function",
+  "qname": "Jarvis.processing.extProcessor.ExtProcessor.visit_Raise",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/processing/extProcessor.py",
+  "file_name": "extProcessor",
+  "code": "def visit_Raise(self, node):\n    \"\"\"ID: c0d0fe02-9524-4ee2-b63d-66342a2c0918\"\"\"\n    if not node.exc:\n        return\n    self.visit(node.exc)\n    decoded = self.decode_node(node.exc)\n    for d in decoded:\n        if not isinstance(d, Definition):\n            continue\n        names = self.getYPOint(node.lineno, d.get_ns())\n        for name in names:\n            pointer_def = self.def_manager.get(name)\n            if not pointer_def:\n                continue\n            if pointer_def.get_type() == utils.constants.CLS_DEF:\n                init_defi = self.find_cls_fun_ns(\n                    name, utils.constants.CLS_INIT)\n                if init_defi:\n                    self.pushStack(init_defi)\n            if pointer_def.get_type() == utils.constants.EXT_DEF:\n                self.cg.add_edge(self.current_ns, name)\n",
+  "position": {
+    "line_no": 1534,
+    "col_offset": 4,
+    "end_line_no": 1555,
+    "end_col_offset": 0
+  }
+}

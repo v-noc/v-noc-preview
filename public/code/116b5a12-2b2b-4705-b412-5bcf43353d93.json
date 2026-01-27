@@ -1,0 +1,15 @@
+{
+  "id": "nodes/116b5a12-2b2b-4705-b412-5bcf43353d93",
+  "name": "get_value",
+  "node_type": "function",
+  "qname": "Jarvis.machinery.gol.get_value",
+  "file_path": "/Users/yared/Documents/Programing/personal/pythonJaRvis.github.io/Jarvis/tool/Jarvis/machinery/gol.py",
+  "file_name": "gol",
+  "code": "def get_value(key, defValue=0):\n    \"\"\"ID: 116b5a12-2b2b-4705-b412-5bcf43353d93\"\"\"\n    try:\n        return _global_dict[key]\n    except KeyError:\n        return defValue\n",
+  "position": {
+    "line_no": 13,
+    "col_offset": 0,
+    "end_line_no": 19,
+    "end_col_offset": 0
+  }
+}
