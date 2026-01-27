@@ -2,7 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Play, Settings } from "lucide-react";
 import Playground from "./features/Playground";
-import LogsContainer from "./features/Logs";
+import LogsContainer from "@/features/dashboard/features/Main/components/Sandbox/features/Logs";
 import Test from "./features/Test";
 import { useSandboxState } from "./hooks/useSandboxState";
 import { useEffect, useRef, useState } from "react";
