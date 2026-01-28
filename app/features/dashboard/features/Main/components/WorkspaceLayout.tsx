@@ -79,7 +79,7 @@ export default function WorkspaceLayout({
             className="h-full"
             onLayout={handleHorizontalLayout}
           >
-            <ResizablePanel defaultSize={mainContentDefaultSize} minSize={30}>
+            <ResizablePanel defaultSize={mainContentDefaultSize} minSize={20}>
               <div className="h-full w-full overflow-hidden">
                 {topPanelContent}
               </div>
@@ -87,7 +87,11 @@ export default function WorkspaceLayout({
             {rightSidebarContent && (
               <>
                 <ResizableHandle className="w-1 bg-border" />
-                <ResizablePanel defaultSize={sidebarDefaultSize} minSize={20}>
+                <ResizablePanel
+                  defaultSize={sidebarDefaultSize}
+                  maxSize={90}
+                  minSize={20}
+                >
                   <div className="h-full w-full overflow-hidden">
                     {rightSidebarContent}
                   </div>
@@ -103,6 +107,7 @@ export default function WorkspaceLayout({
           ref={bottomPanelRef}
           defaultSize={30}
           minSize={16}
+          maxSize={80}
           onCollapse={() => {
             setIsSandboxOpen(false);
           }}

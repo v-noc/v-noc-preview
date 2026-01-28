@@ -34,7 +34,7 @@ export default function Layout({ navbar, leftSidebar, main }: LayoutProps) {
           collapsible
           collapsedSize={0}
           minSize={15}
-          maxSize={30}
+          maxSize={80}
           onCollapse={leftPanel.onCollapse}
           onExpand={leftPanel.onExpand}
           className="relative border-r bg-(--left-sidebar-color) transition-colors"
