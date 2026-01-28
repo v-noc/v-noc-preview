@@ -86,7 +86,7 @@ export default function DocSidebar({
           nodeId={nodeId}
           autoSave={true}
           onChange={onDocumentChange}
-          containerClassName="px-2 py-2"
+          containerClassName="px-0 py-0 md:px-2 md:py-2"
         />
       </div>
     </div>
