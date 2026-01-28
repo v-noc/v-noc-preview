@@ -15,7 +15,7 @@ import type { AnyNodeTree, ProjectNodeTree } from "@/types/project";
  */
 export function useSidebarData() {
   const { projectId } = useParams();
-  const queryClient = useQueryClient();
+
 
   const { data, isLoading, isSuccess } =
     useGetProjectTreeWithKeyProject({
