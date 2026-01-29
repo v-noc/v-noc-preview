@@ -5,4 +5,8 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+  ssr: {
+    // Exclude posthog-js from SSR bundling since it's client-only
+    external: ['posthog-js'],
+  },
 });
