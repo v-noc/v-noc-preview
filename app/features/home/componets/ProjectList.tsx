@@ -19,10 +19,12 @@ import {
   Folder,
   MoreHorizontal,
   Trash,
+  Loader2,
 } from "lucide-react";
 import { useNavigate } from "react-router";
 import { truncatePath } from "@/utils";
 import type { ProjectNode } from "@/types/project";
+import { useState } from "react";
 
 import { formatDate } from "date-fns";
 
@@ -33,21 +35,35 @@ const ProjectList = ({
   viewMode: "list" | "grid";
   projects: ProjectNode[];
 }) => {
-
   const navigate = useNavigate();
+  const [navigatingProjectId, setNavigatingProjectId] = useState<string | null>(null);
+
+  const handleProjectClick = (projectId: string) => {
+    setNavigatingProjectId(projectId);
+    navigate(`/project/${projectId}`);
+  };
   if (viewMode === "grid") {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project) => (
-          <Card
-            key={project._key}
-            className="hover:shadow-md transition-shadow p-4 cursor-pointer"
-            onClick={() => navigate(`/project/${project._key}`)}
-          >
+        {projects.map((project) => {
+          const isNavigating = navigatingProjectId === project._key;
+          return (
+            <Card
+              key={project._key}
+              className={`hover:shadow-md transition-shadow p-4 cursor-pointer relative ${
+                isNavigating ? "opacity-75 pointer-events-none" : ""
+              }`}
+              onClick={() => handleProjectClick(project._key)}
+            >
+            {isNavigating && (
+              <div className="absolute inset-0 flex items-center justify-center bg-background/50 backdrop-blur-sm rounded-lg z-10">
+                <Loader2 className="h-6 w-6 animate-spin text-primary" />
+              </div>
+            )}
             <CardHeader className="p-0 ">
               <div className="flex items-start justify-between">
                 <div className="flex items-center gap-2 min-w-0 flex-1">
-                  <Folder className="h-5 w-5 text-muted-foreground flex-shrink-0" />
+                  <Folder className="h-5 w-5 text-muted-foreground shrink-0" />
                   <CardTitle className="text-lg truncate">
                     {project.name}
                   </CardTitle>
@@ -67,9 +83,7 @@ const ProjectList = ({
                       <Edit className="h-4 w-4 mr-2" />
                       Edit
                     </DropdownMenuItem>
-                    <DropdownMenuItem
-                      disabled
-                    >
+                    <DropdownMenuItem disabled>
                       <Trash className="h-4 w-4 mr-2" />
                       Delete
                     </DropdownMenuItem>
@@ -96,23 +110,33 @@ const ProjectList = ({
               </div>
             </CardContent>
           </Card>
-        ))}
+          );
+        })}
       </div>
     );
   }
   return (
     <div className="space-y-4">
-      {projects.map((project) => (
-        <Card
-          key={project._key}
-          className="hover:shadow-md transition-shadow p-4 cursor-pointer"
-          onClick={() => navigate(`/project/${project._key}`)}
-        >
+      {projects.map((project) => {
+        const isNavigating = navigatingProjectId === project._key;
+        return (
+          <Card
+            key={project._key}
+            className={`hover:shadow-md transition-shadow p-4 cursor-pointer relative ${
+              isNavigating ? "opacity-75 pointer-events-none" : ""
+            }`}
+            onClick={() => handleProjectClick(project._key)}
+          >
+            {isNavigating && (
+              <div className="absolute inset-0 flex items-center justify-center bg-background/50 backdrop-blur-sm rounded-lg z-10">
+                <Loader2 className="h-6 w-6 animate-spin text-primary" />
+              </div>
+            )}
           <CardContent className="p-2">
             <div className="flex items-start justify-between">
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-3 mb-2">
-                  <Folder className="h-5 w-5 text-muted-foreground flex-shrink-0" />
+                  <Folder className="h-5 w-5 text-muted-foreground shrink-0" />
                   <h3 className="text-lg font-semibold truncate">
                     {project.name}
                   </h3>
@@ -145,9 +169,7 @@ const ProjectList = ({
                     <Edit className="h-4 w-4 mr-2" />
                     Edit
                   </DropdownMenuItem>
-                  <DropdownMenuItem
-                    disabled
-                  >
+                  <DropdownMenuItem disabled>
                     <Trash className="h-4 w-4 mr-2" />
                     Delete
                   </DropdownMenuItem>
@@ -156,7 +178,8 @@ const ProjectList = ({
             </div>
           </CardContent>
         </Card>
-      ))}
+        );
+      })}
     </div>
   );
 };

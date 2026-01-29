@@ -3,6 +3,7 @@ import Header from "@/features/home/componets/Header";
 import SearchAndViewController from "@/features/home/componets/SearchAndViewController";
 import ProjectList from "@/features/home/componets/ProjectList";
 import { useProjects } from "@/features/home/hook/useProject";
+import { Loader2 } from "lucide-react";
 
 export function meta() {
   return [
@@ -25,7 +26,9 @@ const HomePage = () => {
           setViewMode={setViewMode}
         />
         {isLoading ? (
-          <div>Loading...</div>
+          <div className="flex items-center justify-center py-12">
+            <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
+          </div>
         ) : (
           <ProjectList viewMode={viewMode} projects={projects || []} />
         )}
