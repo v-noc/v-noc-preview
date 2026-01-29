@@ -7,6 +7,8 @@ import {
   MenubarSeparator,
   MenubarShortcut,
 } from "@/components/ui/menubar";
+import { Link } from "react-router";
+
 const Navbar = () => {
   return (
     <div className="w-full flex items-center justify-between">
@@ -31,7 +33,9 @@ const Navbar = () => {
             Help
           </MenubarTrigger>
           <MenubarContent>
-            <MenubarItem>About</MenubarItem>
+            <MenubarItem asChild>
+              <Link to="/about">About</Link>
+            </MenubarItem>
           </MenubarContent>
         </MenubarMenu>
       </Menubar>
