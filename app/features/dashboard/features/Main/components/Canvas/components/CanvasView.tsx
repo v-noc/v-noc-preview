@@ -80,7 +80,7 @@ const CanvasView: React.FC<CanvasViewProps> = ({
     : centerNode;
   const { initialNodes, initialEdges } = useEnhancedTreeLayout({
     centerNode: centerNode,
-    selectedNode: effectiveSelectedNode as SimpleTreeNode,
+
     expandedNodeIds,
     toggleNodeExpansion: (nodeId: string) => toggleNodeExpansion(tabId, nodeId),
     layoutConfig,
