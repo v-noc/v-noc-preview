@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import type { ImperativePanelHandle } from "react-resizable-panels";
+import { Info } from "lucide-react";
 
 import { useWorkspaceState } from "./hooks/useWorkspaceState";
 import { useWorkspaceActions } from "./hooks/useWorkspaceActions";
@@ -76,6 +77,18 @@ const Workspace = ({ tabId }: WorkspaceProps) => {
             onSelectDocument={selectDocument}
             onClose={() => setDocSidebarOpen(tabId, false)}
           />
+        ) : undefined
+      }
+      floatingButton={
+        tabValue !== "docs" && documents.length > 0 && !isDocSidebarOpen ? (
+          <button
+            type="button"
+            aria-label="Open document sidebar"
+            onClick={() => setDocSidebarOpen(tabId, true)}
+            className="absolute top-20 right-3 z-50 size-10 rounded-full border bg-white/90 shadow-sm backdrop-blur hover:bg-white flex items-center justify-center"
+          >
+            <Info className="h-4 w-4" />
+          </button>
         ) : undefined
       }
       topPanelContent={

@@ -13,6 +13,7 @@ import type { ImperativePanelHandle } from "react-resizable-panels";
 interface WorkspaceLayoutProps {
   topPanelContent: React.ReactNode;
   rightSidebarContent?: React.ReactNode;
+  floatingButton?: React.ReactNode;
   tabId: string;
 }
 
@@ -23,6 +24,7 @@ interface WorkspaceLayoutProps {
 export default function WorkspaceLayout({
   topPanelContent,
   rightSidebarContent,
+  floatingButton,
   tabId,
 }: WorkspaceLayoutProps) {
   const [isSandboxOpen, setIsSandboxOpen] = useState(false);
@@ -142,6 +144,9 @@ export default function WorkspaceLayout({
           <span className="align-middle">Open sandbox</span>
         </button>
       )}
+
+      {/* Floating button for additional actions */}
+      {floatingButton}
     </div>
   );
 }

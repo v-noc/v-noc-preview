@@ -15,15 +15,15 @@ const GitHubStarButton = ({ className }: GitHubStarButtonProps) => {
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
-                "flex items-center gap-1 bg-[#121212] hover:bg-[#1a1a1a] text-white px-3 py-1 rounded-2xl transition-colors border border-white/10 group",
+                "flex items-center gap-1 bg-[#121212] hover:bg-[#1a1a1a] text-white px-3 py-1 rounded-sm transition-colors border border-white/10 group",
                 className
             )}
         >
             <Github className="h-4 w-4" />
 
-            <div className="flex items-center gap-1 ml-1">
+            <div className="flex items-center gap-1 ">
                 <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
-                <div className="bg-[#2a2a2a] px-2 py-0.5 rounded text-xs font-semibold min-w-[30px] text-center">
+                <div className="bg-[#2a2a2a] px-1 py-0.5 rounded text-xs font-semibold min-w-[30px] text-center">
                     {stars !== null ? stars : "..."}
                 </div>
             </div>
