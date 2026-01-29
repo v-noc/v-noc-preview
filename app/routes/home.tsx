@@ -4,6 +4,7 @@ import SearchAndViewController from "@/features/home/componets/SearchAndViewCont
 import ProjectList from "@/features/home/componets/ProjectList";
 import { useProjects } from "@/features/home/hook/useProject";
 import { Loader2 } from "lucide-react";
+import { Link } from "react-router";
 
 export function meta() {
   return [
@@ -18,8 +19,8 @@ const HomePage = () => {
   const [viewMode, setViewMode] = useState<"list" | "grid">("grid");
 
   return (
-    <div className="min-h-screen bg-[#f9f9f9] p-6 w-full">
-      <div className="max-w-screen w-full mx-auto">
+    <div className="min-h-screen bg-[#f9f9f9] w-full flex flex-col">
+      <div className="max-w-screen w-full mx-auto flex-grow p-6">
         <Header />
         <SearchAndViewController
           viewMode={viewMode}
@@ -33,6 +34,14 @@ const HomePage = () => {
           <ProjectList viewMode={viewMode} projects={projects || []} />
         )}
       </div>
+      <footer className="flex justify-center pb-4">
+        <Link
+          to="/about"
+          className="text-sm text-blue-600 hover:underline transition-colors"
+        >
+          About
+        </Link>
+      </footer>
     </div>
   );
 };

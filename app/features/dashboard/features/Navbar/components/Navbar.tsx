@@ -8,6 +8,9 @@ import {
   MenubarShortcut,
 } from "@/components/ui/menubar";
 import { Link } from "react-router";
+import { Button } from "@/components/ui/button";
+import { Github } from "lucide-react";
+import GitHubStarButton from "@/components/GitHubStarButton";
 
 const Navbar = () => {
   return (
@@ -39,6 +42,9 @@ const Navbar = () => {
           </MenubarContent>
         </MenubarMenu>
       </Menubar>
+      <div className="flex items-center gap-2 px-4">
+        <GitHubStarButton />
+      </div>
     </div>
   );
 };
