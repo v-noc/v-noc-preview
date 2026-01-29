@@ -73,7 +73,7 @@ export function DocumentEditor({
   document,
   onChange,
   nodeId = "",
-  autoSave = true,
+  autoSave = false,
   debounceMs = 1000,
   containerClassName = "",
 }: DocumentEditorProps) {
@@ -96,6 +96,9 @@ export function DocumentEditor({
     () =>
       debounce(
         (payload: { id: string; data: string }) => {
+          // INTERCEPTED FOR DEMO
+          console.log("Demo: Save document intercepted", payload);
+          return;
           if (autoSave && nodeId) {
             // Update lastAppliedDataRef to the data we're about to save
             // This prevents reloading when cache updates with the same content

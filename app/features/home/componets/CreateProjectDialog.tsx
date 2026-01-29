@@ -20,6 +20,8 @@ import { useNavigate } from "react-router";
 import { parse } from "toml";
 
 import { extractFieldErrors } from "@/utils/errorMessagextractor";
+import { DemoReadOnlyDialog } from "@/components/DemoReadOnlyDialog";
+import { useState } from "react";
 
 interface CreateProjectDialogProps {
   trigger?: React.ReactNode;
@@ -60,22 +62,10 @@ const CreateProjectDialog = ({
     },
   });
 
+  const [isDemoDialogOpen, setIsDemoDialogOpen] = useState(false);
+
   const onSubmit = (data: FormValues) => {
-    createProject(data, {
-      onSuccess(data) {
-        const key = data._key;
-        console.log("project ket", key);
-        setTimeout(() => navigate(`/project/${key}`));
-      },
-      onError: (error) => {
-        const fieldErrors = extractFieldErrors(error);
-        if (fieldErrors.length === 0) return;
-        fieldErrors.forEach((fe) => {
-          const field = fe.field as keyof FormValues;
-          setError(field, { type: "server", message: fe.message });
-        });
-      },
-    });
+    setIsDemoDialogOpen(true);
   };
 
   const handleFolderSelect = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -193,15 +183,16 @@ const CreateProjectDialog = ({
           <div className="flex justify-end gap-3">
             <Button
               variant="outline"
-            // onClick={() => setIsImportDialogOpen(false)}
+              type="button"
             >
               Cancel
             </Button>
-            <Button type="submit" disabled={isPending}>
-              {isPending ? "Creating..." : "Create Project"}
+            <Button type="submit">
+              Create Project
             </Button>
           </div>
         </form>
+        <DemoReadOnlyDialog isOpen={isDemoDialogOpen} onClose={() => setIsDemoDialogOpen(false)} />
       </DialogContent>
     </Dialog>
   );

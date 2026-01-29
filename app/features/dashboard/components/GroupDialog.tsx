@@ -19,6 +19,7 @@ import { useCreateGroup, useUpdateGroup, useGroupUpdate } from "../service/useGr
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { useSidebarModalStore } from "../store/useSidebarModalStore";
 
 type ChildCandidate = AnyNodeTree;
 
@@ -100,6 +101,7 @@ const GroupDialog = ({
         group?._key || "",
         project_key
     );
+    const openModal = useSidebarModalStore(s => s.openModal);
 
     const form = useForm<GroupFormValues>({
         resolver: zodResolver(formSchema),
@@ -126,14 +128,14 @@ const GroupDialog = ({
             setCurrentChildren((group.children || []) as ChildCandidate[]);
             form.reset({ name: group.name, description: group.description || "" });
         }
-        
+
         // Clear filters and selections
         setChildrenSelected({});
         setSiblingsSelected({});
         setLeftFilter("");
         setRightFilter("");
     });
-    
+
     // 2. THE "WHEN": The Effect (Reactive)
     // This only triggers when the fundamental "source of truth" changes.
     useEffect(() => {
@@ -178,39 +180,19 @@ const GroupDialog = ({
 
     const handleAddSelection = async () => {
         if (!hasAddSelection) return;
-        if (isCreate) {
-            const selectedNodes = availableSiblings.filter(s => siblingsSelected[s._key]);
-            setCurrentChildren(prev => [...prev, ...selectedNodes]);
-            setSiblingsSelected({});
-        } else {
-            await Promise.all(selectedSiblingIds.map(id => addChildToGroupMutation.mutateAsync(id)));
-            setSiblingsSelected({});
-            // Note: currentChildren will update via query invalidation if the parent re-renders,
-            // but to feel "immediate" without a full tree refresh waiting, we could optimistically update.
-            // For now, relying on the fact that 'group' prop will change when query invalidates.
-        }
+        onClose();
+        openModal('demo-read-only', group as AnyNodeTree);
     };
 
     const handleRemoveSelection = async () => {
         if (!hasRemoveSelection) return;
-        if (isCreate) {
-            setCurrentChildren(prev => prev.filter(c => !childrenSelected[c._key]));
-            setChildrenSelected({});
-        } else {
-            await Promise.all(selectedChildrenIds.map(id => removeChildFromGroupMutation.mutateAsync(id)));
-            setChildrenSelected({});
-        }
+        onClose();
+        openModal('demo-read-only', group as AnyNodeTree);
     };
 
     const onSubmit = (values: GroupFormValues) => {
-        if (isCreate) {
-            createGroup({
-                ...values,
-                children_ids: currentChildren.map(c => c._key),
-            }, { onSuccess: onClose });
-        } else {
-            updateGroup(values, { onSuccess: onClose });
-        }
+        onClose();
+        openModal('demo-read-only', group as AnyNodeTree);
     };
 
     const hasInfoChanges = isCreate ||
@@ -219,7 +201,7 @@ const GroupDialog = ({
 
     // Update current children if group children changes (for manage mode immediate feel)
     useEffect(() => {
-     
+
         if (!isCreate && group?.children) {
             setCurrentChildren(group.children as ChildCandidate[]);
         }

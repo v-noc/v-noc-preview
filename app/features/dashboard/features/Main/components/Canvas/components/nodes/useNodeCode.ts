@@ -3,6 +3,8 @@ import { useCode } from "@/services/code";
 import { useEditableCode } from "@/features/dashboard/features/Main/components/Code/useEditableCode";
 import { detectLanguage } from "@/components/CodeEditor/detectLanguage";
 import useProjectStore from "@/features/dashboard/store/useProjectStore";
+import { useSidebarModalStore } from "@/features/dashboard/store/useSidebarModalStore";
+import type { AnyNodeTree } from "@/types/project";
 
 export interface UseNodeCodeOptions {
   nodeId: string;
@@ -14,6 +16,7 @@ export function useNodeCode({ nodeId, targetKey, nodeType }: UseNodeCodeOptions)
   const [showCode, setShowCode] = useState(false);
   const { projectData } = useProjectStore();
   const projectId = projectData?._key;
+  const openModal = useSidebarModalStore(s => s.openModal);
 
   // Fetch code dynamically for the node
   const effectiveNodeId = nodeType === "call" && targetKey ? targetKey : nodeId;
@@ -44,6 +47,10 @@ export function useNodeCode({ nodeId, targetKey, nodeType }: UseNodeCodeOptions)
 
   const toggleCode = () => setShowCode((prev) => !prev);
 
+  const interceptedHandleSave = () => {
+    openModal('demo-read-only', projectData as AnyNodeTree);
+  };
+
   return {
     showCode,
     toggleCode,
@@ -56,6 +63,6 @@ export function useNodeCode({ nodeId, targetKey, nodeType }: UseNodeCodeOptions)
     isError,
     fileName,
     language,
-    handleSave,
+    handleSave: interceptedHandleSave,
   };
 }

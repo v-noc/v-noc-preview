@@ -22,7 +22,8 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Plus, Pencil, Trash2, FileText } from "lucide-react";
-import type { CallNodeTree } from "@/types/project";
+import type { AnyNodeTree, CallNodeTree } from "@/types/project";
+import { useSidebarModalStore } from "@/features/dashboard/store/useSidebarModalStore";
 
 const DocumentsList: React.FC = () => {
   const activeTabId = useTabStore((s) => s.activeTabId);
@@ -42,6 +43,7 @@ const DocumentsList: React.FC = () => {
   const createMutation = useCreateDocument();
   const updateMutation = useUpdateDocument(nodeKey ?? "");
   const deleteMutation = useDeleteDocument();
+  const openModal = useSidebarModalStore((s) => s.openModal);
 
   const [formName, setFormName] = useState("");
   const [formDesc, setFormDesc] = useState("");
@@ -67,32 +69,12 @@ const DocumentsList: React.FC = () => {
 
   const onSubmitDialog = async () => {
     if (!formName.trim() || !formDesc.trim()) return;
-    if (editingId) {
-      await updateMutation.mutateAsync({
-        id: editingId,
-        name: formName.trim(),
-        description: formDesc.trim(),
-      });
-    } else {
-      if (!canUseDocs) return;
-      await createMutation.mutateAsync({
-        name: formName.trim(),
-        description: formDesc.trim(),
-        node_id: nodeKey ?? "",
-      });
-    }
     setOpen(false);
-    setEditingId(null);
-    // Cache updates are handled automatically by mutations
+    openModal("demo-read-only", selectedNode as AnyNodeTree);
   };
 
   const onDelete = async (doc: DocumentData) => {
-    if (!canUseDocs) return;
-    await deleteMutation.mutateAsync({
-      documentId: doc._key,
-      nodeId: nodeKey ?? "",
-    });
-    // Cache updates are handled automatically by mutations
+    openModal("demo-read-only", selectedNode as AnyNodeTree);
   };
 
   if (!selectedNode) {

@@ -7,6 +7,7 @@ import { getParentNode, getSiblings } from "@/features/dashboard/utils/treeUtils
 import { useTreeNodeActions } from "../hooks/useNodeAction";
 import type { AnyNodeTree, ContainerNodeTree, GroupNodeTree } from "@/types/project";
 import { useMemo } from "react";
+import { DemoReadOnlyDialog } from "@/components/DemoReadOnlyDialog";
 
 export function SidebarDialogs() {
   const { activeModal, targetNode, closeModal } = useSidebarModalStore();
@@ -61,6 +62,11 @@ export function SidebarDialogs() {
         open={activeModal === "prompt-builder"}
         onOpenChange={(open) => !open && closeModal()}
         rootNode={targetNode as ContainerNodeTree}
+      />
+
+      <DemoReadOnlyDialog
+        isOpen={activeModal === "demo-read-only"}
+        onClose={closeModal}
       />
     </>
   );

@@ -9,6 +9,7 @@ type ModalType =
   | 'prompt-builder'
   | 'edit-virtual-folder'
   | 'select-node'
+  | 'demo-read-only'
   | null;
 
 interface SidebarModalState {

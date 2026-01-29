@@ -78,8 +78,10 @@ export function useNodeHandlers(nodeId: string, tabId: string) {
     if (!node) return;
     switch (action) {
       case 'create-group':
-      case 'manage-group':
       case 'add-call':
+        openModal('demo-read-only', node as AnyNodeTree);
+        break;
+      case 'manage-group':
       case 'prompt-builder':
       case 'edit-virtual':
         openModal(action as any, node as AnyNodeTree);
@@ -93,11 +95,11 @@ export function useNodeHandlers(nodeId: string, tabId: string) {
 
   const onAction = (action: string) => {
     if (action === "remove-call") {
-      handleRemoveCall(node as unknown as CallNodeTree);
+      openModal('demo-read-only', node as AnyNodeTree);
       return;
     }
     if (action === "delete-group") {
-      handleDeleteGroup();
+      openModal('demo-read-only', node as AnyNodeTree);
       return;
     }
     if (action === "focus") {
