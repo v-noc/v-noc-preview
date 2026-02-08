@@ -7,11 +7,11 @@ import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const treeVariants = cva(
-  "group hover:before:opacity-100 before:absolute before:rounded-lg before:left-0 px-2 before:w-full before:opacity-0 before:bg-accent/70 before:h-[2rem] before:-z-10",
+  "relative group transition-colors hover:before:opacity-100 before:absolute before:rounded-lg before:left-0 px-2 before:w-full before:opacity-0 before:bg-accent/40 before:h-[2.2rem] before:-z-10",
 );
 
 const selectedTreeVariants = cva(
-  "before:opacity-100 before:bg-accent/70 text-accent-foreground",
+  "before:opacity-100 before:bg-accent/80 text-accent-foreground font-medium before:ring-1 before:ring-accent-foreground/10 before:shadow-sm after:absolute after:left-0 after:top-[0.4rem] after:bottom-[0.4rem] after:w-1 after:bg-primary after:rounded-r-full",
 );
 
 const dragOverVariants = cva(
@@ -291,6 +291,9 @@ const TreeNode = ({
           onDragLeave={onDragLeave}
           onDrop={onDrop}
         >
+          <TreeActions>
+            {item.actions}
+          </TreeActions>
           <TreeIcon
             item={item}
             isSelected={selectedItemId === item.id}
@@ -305,9 +308,7 @@ const TreeNode = ({
               </span>
             ) : null}
           </div>
-          <TreeActions isSelected={selectedItemId === item.id}>
-            {item.actions}
-          </TreeActions>
+
         </AccordionTrigger>
         <AccordionContent className="ml-4 pl-1 border-l">
           <TreeItem
@@ -410,6 +411,9 @@ const TreeLeaf = React.forwardRef<
         onDrop={onDrop}
         {...props}
       >
+        <TreeActions>
+          {item.actions}
+        </TreeActions>
         <TreeIcon
           item={item}
           isSelected={selectedItemId === item.id}
@@ -423,9 +427,7 @@ const TreeLeaf = React.forwardRef<
             </span>
           ) : null}
         </div>
-        <TreeActions isSelected={selectedItemId === item.id && !item.disabled}>
-          {item.actions}
-        </TreeActions>
+
       </div>
     );
   },
@@ -493,18 +495,12 @@ const TreeIcon = ({
 
 const TreeActions = ({
   children,
-  isSelected,
 }: {
   children: React.ReactNode;
-  isSelected: boolean;
+  isSelected?: boolean;
 }) => {
   return (
-    <div
-      className={cn(
-        isSelected ? "block" : "hidden",
-        "absolute right-3 group-hover:block",
-      )}
-    >
+    <div className="mr-2 shrink-0">
       {children}
     </div>
   );

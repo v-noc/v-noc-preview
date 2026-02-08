@@ -58,11 +58,22 @@ export const usePromptBuilder = (rootNode: ContainerNodeTree): UsePromptBuilderS
 
   const buildXml = useCallback((node: AnyNodeTree): string => {
     if (!checked[node._key]) return "";
+
+    const isCall = node.node_type === "call";
+    const targetNode = isCall ? (node as any).target : null;
+    const effectiveNode = targetNode || node;
+    const nodeType = effectiveNode.node_type;
+
     const attrs: string[] = [
-      `name="${escapeAttr(node.name)}"`,
+      `name="${escapeAttr(effectiveNode.name)}"`,
     ];
-    if (node.description) attrs.push(`description="${escapeAttr(node.description)}"`);
-    if (node.node_type === "group" && node.group_type) attrs.push(`group_type="${escapeAttr(node.group_type)}"`);
+    if (effectiveNode.description) attrs.push(`description="${escapeAttr(effectiveNode.description)}"`);
+    if (effectiveNode.node_type === "group" && (effectiveNode as any).group_type) {
+      attrs.push(`group_type="${escapeAttr((effectiveNode as any).group_type)}"`);
+    }
+    if ((effectiveNode as any).qname) {
+      attrs.push(`qname="${escapeAttr((effectiveNode as any).qname)}"`);
+    }
 
     const children = (node.children ?? []) as AnyNodeTree[];
     const childrenXml = children.map(buildXml).filter(Boolean).join("");
@@ -75,12 +86,12 @@ export const usePromptBuilder = (rootNode: ContainerNodeTree): UsePromptBuilderS
       parts.push(`<documents>${docsXml}</documents>`);
     }
     // code
-    if (includeCode[node._key] && supportsCode(node.node_type)) {
+    if (includeCode[node._key] && supportsCode(nodeType)) {
       const code = codeByNode[node._key] ?? "";
       parts.push(`<code>${wrapCdata(code)}</code>`);
     }
 
-    return `<${node.node_type} ${attrs.join(" ")}>${parts.join("")}${childrenXml}</${node.node_type}>`;
+    return `<${nodeType} ${attrs.join(" ")}>${parts.join("")}${childrenXml}</${nodeType}>`;
   }, [checked, includeDocs, includeCode, documentsByNode, codeByNode]);
 
   const generateXml = useCallback(() => {

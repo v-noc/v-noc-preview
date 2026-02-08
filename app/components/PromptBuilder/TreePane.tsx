@@ -13,15 +13,48 @@ interface TreePaneProps {
   onSelect: (key: string) => void;
 }
 
+import {
+  FileCode2,
+  Folder,
+  Box,
+  FunctionSquare,
+  Link2,
+  Files,
+  Library
+} from "lucide-react";
+
+const getNodeIcon = (type: string) => {
+  switch (type) {
+    case "file": return FileCode2;
+    case "folder": return Folder;
+    case "project": return Library;
+    case "function": return FunctionSquare;
+    case "class": return Box;
+    case "call": return Link2;
+    case "group": return Files;
+    default: return FileCode2;
+  }
+};
+
 const nodeToTreeItem = (
   node: AnyNodeTree,
   checked: Record<string, boolean>,
   onToggleChecked: (key: string) => void
 ): TreeDataItem => {
+  const isCall = node.node_type === "call";
+  const targetNode = isCall ? (node as any).target : null;
+  const effectiveNode = targetNode || node;
+
+  const Icon = getNodeIcon(node.node_type);
+  const subtitle = (effectiveNode.description && effectiveNode.description.trim())
+    ? effectiveNode.description.substring(0, 100)
+    : effectiveNode.qname;
+
   return {
     id: node._key,
     name: node.name,
-    subtitle: node.description ? node.description.substring(0, 50) : undefined,
+    subtitle,
+    icon: Icon,
     children: (node.children ?? []).map((c) =>
       nodeToTreeItem(c as AnyNodeTree, checked, onToggleChecked)
     ),
